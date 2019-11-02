@@ -9,7 +9,6 @@ const AboutPage = () => {
       <h1> Hi, I am Evans</h1>
 
       <h3>I love designing websites and building digital products!</h3>
-
     </Layout>
   )
 }
