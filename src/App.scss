@@ -4,13 +4,16 @@ body {
 }
 
 header {
-  display: flex;
   background: #fff;
 
-  button {
-    
-    background: rgb(211, 28, 28);
-    border: none;
-    color: #fff;
+  .headerContentContainer {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      background: rgb(211, 28, 28);
+      border: none;
+      color: #fff;
+    }
   }
 }

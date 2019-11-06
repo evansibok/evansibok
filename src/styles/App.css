@@ -4,10 +4,13 @@ body {
 }
 
 header {
-  display: flex;
   background: #fff;
 }
-header button {
+header .headerContentContainer {
+  display: flex;
+  justify-content: space-between;
+}
+header .headerContentContainer button {
   background: #d31c1c;
   border: none;
   color: #fff;
