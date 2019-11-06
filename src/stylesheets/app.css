@@ -1,6 +1,5 @@
 body {
-  background: #383737;
-  color: white;
+  color: #383737;
 }
 
 header {
@@ -9,6 +8,7 @@ header {
 header .headerContentContainer {
   display: flex;
   justify-content: space-between;
+  border-bottom: 0.08rem solid #b4b4b4;
 }
 header .headerContentContainer button {
   background: #d31c1c;
@@ -19,4 +19,4 @@ header .headerContentContainer button:hover {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */
