@@ -3,4 +3,14 @@ body {
   color: white;
 }
 
+header {
+  display: flex;
+  background: #fff;
+}
+header button {
+  background: #d31c1c;
+  border: none;
+  color: #fff;
+}
+
 /*# sourceMappingURL=App.css.map */

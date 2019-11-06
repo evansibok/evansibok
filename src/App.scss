@@ -2,3 +2,15 @@ body {
   background: rgb(56, 55, 55);
   color: white;
 }
+
+header {
+  display: flex;
+  background: #fff;
+
+  button {
+    
+    background: rgb(211, 28, 28);
+    border: none;
+    color: #fff;
+  }
+}
