@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "evans-ibok-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Evans Ibok's Portfolio Website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Evans Ibok <evansibok@gmail.com>",
   "dependencies": {
     "gatsby": "^2.17.6",
     "gatsby-image": "^2.2.30",
@@ -19,7 +19,9 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "node-sass": "^4.13.0",
+    "prettier": "^1.18.2",
+    "sass-loader": "^8.0.0"
   },
   "keywords": [
     "gatsby"
