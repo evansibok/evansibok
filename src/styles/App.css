@@ -15,5 +15,8 @@ header .headerContentContainer button {
   border: none;
   color: #fff;
 }
+header .headerContentContainer button:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=App.css.map */

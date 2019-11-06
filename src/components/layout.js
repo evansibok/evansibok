@@ -42,9 +42,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          &copy; {new Date().getFullYear()}. Designed &amp; Developed with love by
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.evansibok.com">E V \ N S</a>
         </footer>
       </div>
     </>
