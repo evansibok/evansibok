@@ -27,6 +27,11 @@ const Header = () => {
         </div>
 
         <div className="rightCon">
+          <div className="toggleCon">
+            <div className="dark-mode__toggle">
+              <div className="toggle" />
+            </div>
+          </div>
           <nav>
             <Link to="/about">About Me</Link>
             <Link to="/projects">Projects</Link>
@@ -39,14 +44,6 @@ const Header = () => {
               <button>View Resume</button>
             </a>
           </nav>
-
-          <div className="toggleCon">
-            <div className="dark-mode__toggle">
-              <div className="toggle" />
-            </div>
-            <em>Enable Dark Mode!</em>
-          </div>
-
         </div>
       </div>
     </header>
