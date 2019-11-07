@@ -11,8 +11,8 @@ import { Link } from 'gatsby'
 // import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "../stylesheets/layout.css"
-import "../stylesheets/app.css"
+import "../css/layout.css"
+import "../css/app.css"
 
 const Layout = ({ children }) => {
 

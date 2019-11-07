@@ -29,7 +29,7 @@ header {
         padding-bottom: 0.2em;
 
         &:hover {
-          border-bottom: 0.2em solid #eb3349;
+          border-bottom: 0.2em solid $primary_color;
         }
 
         button {
@@ -41,9 +41,9 @@ header {
 
           &:hover {
             cursor: pointer;
-          background: #eb3349;
-          border: 0.13em solid #eb3349;
-          color: #fff;
+            background: $primary_color;
+            border: 0.13em solid $primary_color;
+            color: #fff;
           }
         }
       }
