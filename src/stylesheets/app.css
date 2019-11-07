@@ -1,21 +1,35 @@
-body {
-  color: #383737;
-}
-
 header {
-  background: #fff;
+  padding: 1em 0;
+  border-bottom: 0.08rem solid #b4b4b4;
 }
 header .headerContentContainer {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.08rem solid #b4b4b4;
+  align-items: center;
 }
-header .headerContentContainer button {
-  background: #d31c1c;
-  border: none;
-  color: #fff;
+header .headerContentContainer .brandLogoCon {
+  max-width: 100%;
 }
-header .headerContentContainer button:hover {
+header .headerContentContainer .brandLogoCon img {
+  width: 130px;
+  margin-bottom: 0;
+}
+header .headerContentContainer nav {
+  font-size: 0.8rem;
+}
+header .headerContentContainer nav a {
+  margin-left: 2em;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+header .headerContentContainer nav button {
+  padding: 0.6em 1.2em;
+  border-radius: 0 1em;
+  border: 0.13em solid rgba(0, 0, 0, 0.8);
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);
+}
+header .headerContentContainer nav button:hover {
   cursor: pointer;
 }
 

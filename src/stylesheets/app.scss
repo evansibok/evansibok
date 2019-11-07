@@ -1,25 +1,41 @@
 
 
-
-body {
-  color: rgb(56, 55, 55);
-}
-
 header {
-  background: #fff;
-
+  padding: 1em 0;
+  border-bottom: 0.08rem solid rgb(180, 180, 180);
+  
   .headerContentContainer {
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.08rem solid rgb(180, 180, 180);
+    align-items: center;
 
-    button {
-      background: rgb(211, 28, 28);
-      border: none;
-      color: #fff;
-      
-      &:hover {
-        cursor: pointer;
+    .brandLogoCon {
+      max-width: 100%;
+
+      img {
+        width: 130px;
+        margin-bottom: 0;
+      }
+    }
+
+    nav {
+      font-size: 0.8rem;
+
+      a {
+        margin-left: 2em;
+        color: hsla(0, 0%, 0%, 0.8);
+        text-decoration: none;
+      }
+      button {
+        padding: 0.6em 1.2em;
+        border-radius: 0 1em ;
+        border: 0.13em solid hsla(0, 0%, 0%, 0.8);
+        background: transparent;
+        color: hsla(0, 0%, 0%, 0.8);
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
