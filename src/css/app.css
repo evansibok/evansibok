@@ -1,6 +1,7 @@
 header {
   padding: 1em 0;
   border-bottom: 0.1em solid #b4b4b4;
+  font-size: 0.8rem;
 }
 header .headerContentContainer {
   display: flex;
@@ -14,33 +15,45 @@ header .headerContentContainer .brandLogoCon img {
   width: 130px;
   margin-bottom: 0;
 }
-header .headerContentContainer nav {
-  font-size: 0.8rem;
+header .headerContentContainer .rightCon {
+  display: flex;
+  align-items: center;
+}
+header .headerContentContainer .rightCon nav {
   font-family: "PT Sans", "sans-serif";
   font-weight: 500;
 }
-header .headerContentContainer nav a {
+header .headerContentContainer .rightCon nav a {
   margin-left: 2em;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   letter-spacing: 0.1em;
   padding-bottom: 0.2em;
 }
-header .headerContentContainer nav a:hover {
+header .headerContentContainer .rightCon nav a:hover {
   border-bottom: 0.2em solid #eb3349;
 }
-header .headerContentContainer nav a button {
+header .headerContentContainer .rightCon nav a button {
   padding: 0.6em 1.2em;
   border-radius: 0 1em;
   border: 0.13em solid rgba(0, 0, 0, 0.8);
   background: transparent;
   color: rgba(0, 0, 0, 0.8);
 }
-header .headerContentContainer nav a button:hover {
+header .headerContentContainer .rightCon nav a button:hover {
   cursor: pointer;
   background: #eb3349;
   border: 0.13em solid #eb3349;
   color: #fff;
+}
+header .headerContentContainer .rightCon .toggleCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+}
+header .headerContentContainer .rightCon .toggleCon em {
+  margin-left: 0.8em;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -25,17 +25,29 @@ const Header = () => {
             />
           </Link>
         </div>
-        <nav>
-          <Link to="/about">About Me</Link>
-          <Link to="/projects">Projects</Link>
-          <a
-            href="https://google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button>View Resume</button>
-          </a>
-        </nav>
+
+        <div className="rightCon">
+          <nav>
+            <Link to="/about">About Me</Link>
+            <Link to="/projects">Projects</Link>
+            <a
+              className="buttonAnchor"
+              href="https://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>View Resume</button>
+            </a>
+          </nav>
+
+          <div className="toggleCon">
+            <div className="dark-mode__toggle">
+              <div className="toggle" />
+            </div>
+            <em>Enable Dark Mode!</em>
+          </div>
+
+        </div>
       </div>
     </header>
   )
