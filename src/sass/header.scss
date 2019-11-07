@@ -49,6 +49,17 @@ header {
             top: 2px;
             left: 18px;
           }
+
+          .dark-mode {
+            color: #fff;
+            
+            .dark-mode__toggle {
+              background: $primary_color;
+            }
+            .toggle {
+              background: #0965ab;
+            }
+          }
         }
       }
 
