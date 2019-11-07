@@ -1,9 +1,7 @@
-
-
 header {
   padding: 1em 0;
-  border-bottom: 0.08rem solid rgb(180, 180, 180);
-  
+  border-bottom: 0.1em solid rgb(180, 180, 180);
+
   .headerContentContainer {
     display: flex;
     justify-content: space-between;
@@ -20,21 +18,33 @@ header {
 
     nav {
       font-size: 0.8rem;
+      font-family: "PT Sans", "sans-serif";
+      font-weight: 500;
 
       a {
         margin-left: 2em;
         color: hsla(0, 0%, 0%, 0.8);
         text-decoration: none;
-      }
-      button {
-        padding: 0.6em 1.2em;
-        border-radius: 0 1em ;
-        border: 0.13em solid hsla(0, 0%, 0%, 0.8);
-        background: transparent;
-        color: hsla(0, 0%, 0%, 0.8);
+        letter-spacing: 0.1em;
+        padding-bottom: 0.2em;
 
         &:hover {
-          cursor: pointer;
+          border-bottom: 0.2em solid #eb3349;
+        }
+
+        button {
+          padding: 0.6em 1.2em;
+          border-radius: 0 1em;
+          border: 0.13em solid hsla(0, 0%, 0%, 0.8);
+          background: transparent;
+          color: hsla(0, 0%, 0%, 0.8);
+
+          &:hover {
+            cursor: pointer;
+          background: #eb3349;
+          border: 0.13em solid #eb3349;
+          color: #fff;
+          }
         }
       }
     }

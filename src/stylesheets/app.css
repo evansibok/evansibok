@@ -1,6 +1,6 @@
 header {
   padding: 1em 0;
-  border-bottom: 0.08rem solid #b4b4b4;
+  border-bottom: 0.1em solid #b4b4b4;
 }
 header .headerContentContainer {
   display: flex;
@@ -16,21 +16,31 @@ header .headerContentContainer .brandLogoCon img {
 }
 header .headerContentContainer nav {
   font-size: 0.8rem;
+  font-family: "PT Sans", "sans-serif";
+  font-weight: 500;
 }
 header .headerContentContainer nav a {
   margin-left: 2em;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
+  letter-spacing: 0.1em;
+  padding-bottom: 0.2em;
 }
-header .headerContentContainer nav button {
+header .headerContentContainer nav a:hover {
+  border-bottom: 0.2em solid #eb3349;
+}
+header .headerContentContainer nav a button {
   padding: 0.6em 1.2em;
   border-radius: 0 1em;
   border: 0.13em solid rgba(0, 0, 0, 0.8);
   background: transparent;
   color: rgba(0, 0, 0, 0.8);
 }
-header .headerContentContainer nav button:hover {
+header .headerContentContainer nav a button:hover {
   cursor: pointer;
+  background: #eb3349;
+  border: 0.13em solid #eb3349;
+  color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */
