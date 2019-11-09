@@ -13,7 +13,7 @@ header {
 
       img {
         width: 130px;
-        margin-bottom: 0;
+        margin-bottom: -0.8em;
       }
     }
 
@@ -44,11 +44,6 @@ header {
             transition: 0.4s;
             width: 19px;
           }
-
-          .toggled {
-            top: 2px;
-            left: 18px;
-          }
         }
       }
 
@@ -70,15 +65,15 @@ header {
           button {
             padding: 0.6em 1.2em;
             border-radius: 0 1em;
-            border: 0.2em solid hsla(0, 0%, 0%, 0.8);
+            border: 0.2em solid $primary_color;
             background: transparent;
-            color: hsla(0, 0%, 0%, 0.8);
+            color: $primary_color;
 
             &:hover {
               cursor: pointer;
-              background: transparent;
+              background: $primary_color;
               border: 0.2em solid $primary_color;
-              color: $primary_color;
+              color: #fff;
             }
           }
         }
