@@ -92,20 +92,3 @@ header {
     }
   }
 }
-
-
-/**
-* DARK MODE STYLES
-**/
-
-.dark-mode {
-  color: #fff;
-  background: $dark_mode_bg;
-
-  .dark-mode__toggle {
-    background: $primary_color;
-  }
-  .toggle {
-    background: #fff;
-  }
-}

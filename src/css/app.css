@@ -77,18 +77,38 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   border-bottom: initial;
 }
 
-/**
-* DARK MODE STYLES
-**/
 .dark-mode {
   color: #fff;
   background: #000022;
 }
-.dark-mode .dark-mode__toggle {
+.dark-mode header .rightCon .toggleCon .dark-mode__toggle {
   background: #eb3349;
+  border: none;
+  border-radius: 50px;
+  height: 27px;
+  position: relative;
+  width: 45px;
 }
-.dark-mode .toggle {
-  background: #fff;
+.dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggle {
+  background: #222;
+  border-radius: 50px;
+  height: 19px;
+  top: 2px;
+  left: 3px;
+  position: absolute;
+  transition: 0.4s;
+  width: 19px;
+}
+.dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggled {
+  top: 2px;
+  left: 18px;
+}
+.dark-mode header .rightCon nav a {
+  color: #fff;
+}
+.dark-mode header .rightCon nav a button {
+  border: 0.2em solid #fff;
+  color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */
