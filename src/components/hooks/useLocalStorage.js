@@ -9,6 +9,11 @@ export const useLocalStorage = (key, initialValue) => {
     return currentLocalValue ? JSON.parse(currentLocalValue) : initialValue;
   })
 
-  const 
+  const setValue = value => {
+    setStoredValue(value);
+    localStorage.setItem(key, JSON.stringify(value));
+  }
+
+  return [ storedValue, setValue ]
 
 }
