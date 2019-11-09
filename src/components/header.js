@@ -1,7 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
+import { useDarkMode } from './hooks/useDarkMode';
 
 const Header = () => {
+
+  const [ darkMode, setDarkMode ] = useDarkMode(false)
+
+  const toggleHandler = evt => {
+    evt.preventDefault();
+    setDarkMode(!darkMode)
+  }
+
   return (
     <header
       style={{
@@ -28,7 +37,9 @@ const Header = () => {
 
         <div className="rightCon">
           <div className="toggleCon">
-            <div className="dark-mode__toggle">
+            <div 
+            className="dark-mode__toggle" 
+            onClick={toggleHandler}>
               <div className="toggle" />
             </div>
           </div>
