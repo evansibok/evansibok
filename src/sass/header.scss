@@ -37,12 +37,12 @@ header {
           .toggle {
             background: #222;
             border-radius: 50px;
-            height: 20px;
+            height:19px;
             top: 2px;
             left: 3px;
             position: absolute;
             transition: 0.4s;
-            width: 20px;
+            width:19px;
           }
 
           .toggled {
@@ -52,7 +52,7 @@ header {
 
           .dark-mode {
             color: #fff;
-            
+
             .dark-mode__toggle {
               background: $primary_color;
             }
@@ -81,16 +81,22 @@ header {
           button {
             padding: 0.6em 1.2em;
             border-radius: 0 1em;
-            border: 0.13em solid hsla(0, 0%, 0%, 0.8);
+            border: 0.2em solid hsla(0, 0%, 0%, 0.8);
             background: transparent;
             color: hsla(0, 0%, 0%, 0.8);
 
             &:hover {
               cursor: pointer;
-              background: $primary_color;
-              border: 0.13em solid $primary_color;
-              color: #fff;
+              background: transparent;
+              border: 0.2em solid $primary_color;
+              color: $primary_color;
             }
+          }
+        }
+
+        a:nth-of-type(3) {
+          &:hover {
+            border-bottom: initial;
           }
         }
       }
