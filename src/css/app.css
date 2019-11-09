@@ -46,15 +46,6 @@ header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggled 
   top: 2px;
   left: 18px;
 }
-header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .dark-mode {
-  color: #fff;
-}
-header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .dark-mode .dark-mode__toggle {
-  background: #eb3349;
-}
-header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .dark-mode .toggle {
-  background: #0965ab;
-}
 header .headerContentContainer .rightCon nav {
   font-family: "PT Sans", "sans-serif";
   font-weight: 500;
@@ -84,6 +75,20 @@ header .headerContentContainer .rightCon nav a button:hover {
 }
 header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   border-bottom: initial;
+}
+
+/**
+* DARK MODE STYLES
+**/
+.dark-mode {
+  color: #fff;
+  background: #000022;
+}
+.dark-mode .dark-mode__toggle {
+  background: #eb3349;
+}
+.dark-mode .toggle {
+  background: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */
