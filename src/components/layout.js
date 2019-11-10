@@ -11,7 +11,7 @@ import { Link } from "gatsby"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "../css/layout.css"
+import "../css/reset.css"
 import "../css/app.css"
 
 const Layout = ({ children }) => {
@@ -31,23 +31,16 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1080,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+      <div className="container">
+        <Header />
         <main>{children}</main>
-        <footer>
-          &copy; {new Date().getFullYear()}. Designed &amp; Developed with love
-          by
-          {` `}
-          <Link to="/">E V \ N S</Link>
-        </footer>
       </div>
+      <footer>
+        &copy; {new Date().getFullYear()}. Designed &amp; Developed with love
+        by
+          {` `}
+        <Link to="/">E V \ N S</Link>
+      </footer>
     </>
   )
 }
