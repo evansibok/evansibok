@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from 'react-helmet';
 // import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -32,6 +33,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="container">
+        <Helmet>
+          <link href="https://fonts.googleapis.com/css?family=Dosis|Nunito|PT+Sans|Kodchasan&display=swap" rel="stylesheet" />
+
+          <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"></link>
+        </Helmet>
         <div className="content">
           <Header />
           <main>{children}</main>
