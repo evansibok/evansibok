@@ -1,0 +1,89 @@
+header {
+  padding: 1em 0;
+  border-bottom: 0.1em solid rgb(180, 180, 180);
+  font-size: 0.8rem;
+
+  .headerContentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .brandLogoCon {
+      max-width: 100%;
+
+      img {
+        width: 130px;
+        margin-bottom: -0.8em;
+      }
+    }
+
+    .rightCon {
+      display: flex;
+      align-items: center;
+
+      .toggleCon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .dark-mode__toggle {
+          background: none;
+          border: 0.15em solid #222;
+          border-radius: 50px;
+          height: 27px;
+          position: relative;
+          width: 45px;
+
+          .toggle {
+            background: #222;
+            border-radius: 50px;
+            height: 19px;
+            top: 2px;
+            left: 3px;
+            position: absolute;
+            transition: 0.4s;
+            width: 19px;
+          }
+        }
+      }
+
+      nav {
+        font-family: "PT Sans", "sans-serif";
+        font-weight: 500;
+
+        a {
+          margin-left: 2em;
+          color: hsla(0, 0%, 0%, 0.8);
+          text-decoration: none;
+          letter-spacing: 0.1em;
+          padding-bottom: 0.2em;
+
+          &:hover {
+            border-bottom: 0.2em solid $primary_color;
+          }
+
+          button {
+            padding: 0.6em 1.2em;
+            border-radius: 0 1em;
+            border: 0.2em solid $primary_color;
+            background: transparent;
+            color: $primary_color;
+
+            &:hover {
+              cursor: pointer;
+              background: $primary_color;
+              border: 0.2em solid $primary_color;
+              color: #fff;
+            }
+          }
+        }
+
+        a:nth-of-type(3) {
+          &:hover {
+            border-bottom: initial;
+          }
+        }
+      }
+    }
+  }
+}

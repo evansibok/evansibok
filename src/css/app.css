@@ -1,0 +1,95 @@
+header {
+  padding: 1em 0;
+  border-bottom: 0.1em solid #b4b4b4;
+  font-size: 0.8rem;
+}
+header .headerContentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerContentContainer .brandLogoCon {
+  max-width: 100%;
+}
+header .headerContentContainer .brandLogoCon img {
+  width: 130px;
+  margin-bottom: -0.8em;
+}
+header .headerContentContainer .rightCon {
+  display: flex;
+  align-items: center;
+}
+header .headerContentContainer .rightCon .toggleCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle {
+  background: none;
+  border: 0.15em solid #222;
+  border-radius: 50px;
+  height: 27px;
+  position: relative;
+  width: 45px;
+}
+header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggle {
+  background: #222;
+  border-radius: 50px;
+  height: 19px;
+  top: 2px;
+  left: 3px;
+  position: absolute;
+  transition: 0.4s;
+  width: 19px;
+}
+header .headerContentContainer .rightCon nav {
+  font-family: "PT Sans", "sans-serif";
+  font-weight: 500;
+}
+header .headerContentContainer .rightCon nav a {
+  margin-left: 2em;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  padding-bottom: 0.2em;
+}
+header .headerContentContainer .rightCon nav a:hover {
+  border-bottom: 0.2em solid #eb3349;
+}
+header .headerContentContainer .rightCon nav a button {
+  padding: 0.6em 1.2em;
+  border-radius: 0 1em;
+  border: 0.2em solid #eb3349;
+  background: transparent;
+  color: #eb3349;
+}
+header .headerContentContainer .rightCon nav a button:hover {
+  cursor: pointer;
+  background: #eb3349;
+  border: 0.2em solid #eb3349;
+  color: #fff;
+}
+header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
+  border-bottom: initial;
+}
+
+.dark-mode {
+  color: #fff;
+  background: #000022;
+}
+.dark-mode header .rightCon .toggleCon .dark-mode__toggle {
+  background: #eb3349;
+  border: 0.15em solid #eb3349;
+}
+.dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggle {
+  background: #fff;
+}
+.dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggled {
+  top: 2px;
+  left: 19px;
+}
+.dark-mode header .rightCon nav a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -7,14 +7,14 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
-import "../styles/App.css"
+import "../css/layout.css"
+import "../css/app.css"
 
 const Layout = ({ children }) => {
-
   // Query data from GraphQL
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {
@@ -42,9 +42,10 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          &copy; {new Date().getFullYear()}. Designed &amp; Developed with love by
+          &copy; {new Date().getFullYear()}. Designed &amp; Developed with love
+          by
           {` `}
-          <a href="https://www.evansibok.com">E V \ N S</a>
+          <Link to="/">E V \ N S</Link>
         </footer>
       </div>
     </>
