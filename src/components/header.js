@@ -12,20 +12,8 @@ const Header = () => {
   }
 
   return (
-    <header
-      style={{
-        maxWidth: `100vw`,
-      }}
-    >
-      <div
-        className="headerContentContainer"
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1080,
-          padding: `0px 1.0875rem`,
-          paddingTop: 0,
-        }}
-      >
+    <header>
+      <div className="headerContentContainer">
         <div className="brandLogoCon">
           <Link to="/">
             <img
