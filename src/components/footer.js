@@ -4,12 +4,17 @@ import { Link } from 'gatsby';
 
 const Footer = () => {
   return (
-    <div>
-      &copy; {new Date().getFullYear()}. Designed &amp; Developed with love
-        by
-          {` `}
-      <Link to="/">E V \ N S</Link>
-    </div>
+    <footer>
+      <p>
+
+      &copy; {new Date().getFullYear()}. Designed &amp; Developed with &hearts;
+        by {` `} {` `}
+      <span className="letCol">
+        <Link to="/">E V \ N S</Link>
+      </span>
+      </p>
+
+    </footer>
   )
 }
 
