@@ -7,10 +7,10 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from './footer'
 import "../css/reset.css"
 import "../css/app.css"
 
@@ -32,15 +32,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="container">
-        <Header />
-        <main>{children}</main>
+        <div>
+          <Header />
+          <main>{children}</main>
+        </div>
+        <Footer />
       </div>
-      <footer>
-        &copy; {new Date().getFullYear()}. Designed &amp; Developed with love
-        by
-          {` `}
-        <Link to="/">E V \ N S</Link>
-      </footer>
     </>
   )
 }
