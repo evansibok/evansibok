@@ -7,11 +7,10 @@ const Footer = () => {
     <footer>
       <p>
 
-      &copy; {new Date().getFullYear()}. Designed &amp; Developed with &hearts;
-        by {` `} {` `}
-      <span className="letCol">
-        <Link to="/">E V \ N S</Link>
-      </span>
+        &copy; {new Date().getFullYear()}. Designed &amp; Developed with {`\u2665`} by {` `}
+        <span className="letCol">
+          <Link to="/">E V \ N S</Link>
+        </span>
       </p>
 
     </footer>
