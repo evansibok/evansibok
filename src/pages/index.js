@@ -12,7 +12,7 @@ const IndexPage = () => (
 				<span className="letCol">H</span>ello, I <span className="letCol">a</span>m <span className="letCol">E</span>vans
 			</h1>
 
-			<h4 className="h4HomeCon">A Nigerian born web developer with incredible love for UI/UX Design.</h4>
+			<h4 className="h4HomeCon">A Nigerian born frontend developer with incredible love for UI/UX Design.</h4>
 
 			<ul>
 				<a href="https://twitter.com/evansibok" target="_blank"
