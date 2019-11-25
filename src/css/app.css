@@ -149,7 +149,6 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .homeCon ul a:hover {
   color: #eb3349;
   border-bottom: 1px solid #eb3349;
-  transform: scale(1.1);
 }
 .homeCon ul a li {
   display: inline;

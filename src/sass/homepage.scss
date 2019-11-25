@@ -42,13 +42,12 @@
       padding-bottom: 0;
       border-bottom: 1px solid #222;
       font-family: "PT Sans", "sans-serif";
-
+      
       &:hover {
         color: $primary_color;
         border-bottom: 1px solid $primary_color;
-        transform: scale(1.1);
       }
-
+      
       li {
         display: inline;
       }
