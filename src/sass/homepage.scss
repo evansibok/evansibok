@@ -1,10 +1,45 @@
-.h1HomeCon {
-  text-transform: uppercase;
-  font-weight: 700;
-}
+.homeCon {
+  display: flex;
+  flex-direction: column;
 
-.h4HomeCon {
-  font-size: 2.5rem;
-  max-width: 750px;
-  line-height: 1.3em;
+  .h1HomeCon {
+    text-transform: uppercase;
+    font-weight: 700;
+
+    .letCol {
+      color: $primary_color;
+    }
+  }
+
+  .h4HomeCon {
+    font-size: 2.5rem;
+    max-width: 750px;
+    line-height: 1.3em;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+
+    a {
+      margin-right: 1em;
+      color: #222;
+      letter-spacing: 0.1em;
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 1px solid #222;
+
+      &:hover {
+        color: $primary_color;
+        border-bottom: 1px solid $primary_color;
+        transform: scale(1.1);
+      }
+
+      li {
+        display: inline;
+      }
+    }
+  }
 }

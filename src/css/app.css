@@ -104,15 +104,43 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   color: #fff;
 }
 
-.h1HomeCon {
+.homeCon {
+  display: flex;
+  flex-direction: column;
+}
+.homeCon .h1HomeCon {
   text-transform: uppercase;
   font-weight: 700;
 }
-
-.h4HomeCon {
+.homeCon .h1HomeCon .letCol {
+  color: #eb3349;
+}
+.homeCon .h4HomeCon {
   font-size: 2.5rem;
   max-width: 750px;
   line-height: 1.3em;
+}
+.homeCon ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+.homeCon ul a {
+  margin-right: 1em;
+  color: #222;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #222;
+}
+.homeCon ul a:hover {
+  color: #eb3349;
+  border-bottom: 1px solid #eb3349;
+  transform: scale(1.1);
+}
+.homeCon ul a li {
+  display: inline;
 }
 
 footer {
