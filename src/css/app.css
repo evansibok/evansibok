@@ -110,7 +110,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 }
 .homeCon .h1HomeCon {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   margin-top: 2em;
   margin-bottom: 0;
   font-family: "Dosis", "sans-serif";
@@ -126,7 +126,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   margin-top: 1em;
   margin-bottom: 0;
   font-family: "Nunito", "sans-serif";
-  font-weight: 900;
+  font-weight: 800;
 }
 .homeCon ul {
   list-style-type: none;
