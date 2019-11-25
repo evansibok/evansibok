@@ -111,6 +111,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .homeCon .h1HomeCon {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 2.4rem;
   margin-top: 2em;
   margin-bottom: 0;
   font-family: "Nunito", "sans-serif";
@@ -121,7 +122,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 }
 .homeCon .h4HomeCon {
   font-size: 2.8rem;
-  max-width: 750px;
+  max-width: 830px;
   line-height: 1.3em;
   margin-top: 1em;
   margin-bottom: 0;
