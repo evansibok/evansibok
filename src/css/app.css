@@ -69,7 +69,7 @@ header .headerContentContainer .rightCon nav a:hover {
   border-bottom: 0.2em solid #eb3349;
 }
 header .headerContentContainer .rightCon nav a button {
-  padding: 0.6em 1.2em;
+  padding: 0.4em 1.2em;
   border-radius: 0 1em;
   border: 0.2em solid #eb3349;
   background: transparent;
@@ -104,6 +104,17 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   color: #fff;
 }
 
+.h1HomeCon {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.h4HomeCon {
+  font-size: 2.5rem;
+  max-width: 750px;
+  line-height: 1.3em;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -119,7 +130,7 @@ footer p .heart {
   font-size: 0.6rem;
   color: #eb3349;
 }
-footer p .letCol a {
+footer p .footCol a {
   font-family: "Kodchasan", "sans-serif";
   color: #eb3349;
   font-weight: 600;
