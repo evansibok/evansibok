@@ -31,7 +31,7 @@ const IndexPage = () => (
 					rel="noopener noreferrer">
 					<li>Github</li>
 				</a>
-				<a href="https://twitter.com/evansibok" target="_blank"
+				<a href="mailto:evansibok@gmail.com" target="_blank"
 					rel="noopener noreferrer">
 					<li>Email</li>
 				</a>
