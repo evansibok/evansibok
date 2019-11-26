@@ -1,0 +1,7 @@
+@mixin sample_mixin {
+  font-family: "Nunito", sans-serif;
+}
+
+/**
+* Use as @include sample_mixin;
+*/

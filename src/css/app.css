@@ -1,3 +1,6 @@
+/**
+* Use as @include sample_mixin;
+*/
 .container {
   margin: 0 auto;
   max-width: 1024px;
@@ -12,7 +15,6 @@
 
 header {
   padding: 1em 0;
-  border-bottom: 0.1em solid #b4b4b4;
   font-size: 0.8rem;
 }
 header .headerContentContainer {
@@ -162,6 +164,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   display: flex;
   align-items: center;
   padding: 1em 0;
+  font-family: "Nunito", "sans-serif";
 }
 .pLCon .emptyDivs {
   background: black;
@@ -176,6 +179,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .aboutCon {
   display: flex;
   justify-content: space-between;
+  font-family: "Nunito", "sans-serif";
 }
 .aboutCon .leftCon {
   width: 600px;

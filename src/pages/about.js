@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageLabel } from "../components/page-label"
+import SocialLinks from "../components/social-links"
 
 const AboutPage = () => {
   return (
@@ -18,11 +19,10 @@ const AboutPage = () => {
         </div>
 
         <div className="rightCon">
-          <p>images</p>
-          
+          <p>images</p>  
         </div>
-
       </div>
+      <SocialLinks />
     </Layout>
   )
 }

@@ -1,6 +1,6 @@
 header {
   padding: 1em 0;
-  border-bottom: 0.1em solid rgb(180, 180, 180);
+  // border-bottom: 0.1em solid rgb(180, 180, 180);
   font-size: 0.8rem;
 
   .headerContentContainer {
@@ -48,7 +48,7 @@ header {
       }
 
       nav {
-        font-family: "PT Sans", "sans-serif";
+        font-family: $social_link_font;
         font-weight: 500;
 
         a {
