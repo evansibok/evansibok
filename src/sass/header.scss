@@ -1,5 +1,5 @@
 header {
-  padding: 1em 0;
+  padding: 1.2em 0;
   // border-bottom: 0.1em solid rgb(180, 180, 180);
   font-size: 0.8rem;
 
@@ -65,14 +65,14 @@ header {
           button {
             padding: 0.4em 1.2em;
             border-radius: 0 1em;
-            border: 0.2em solid $primary_color;
+            border: 0.15em solid $primary_color;
             background: transparent;
             color: $primary_color;
 
             &:hover {
               cursor: pointer;
               background: $primary_color;
-              border: 0.2em solid $primary_color;
+              border: 0.15em solid $primary_color;
               color: #fff;
             }
           }
