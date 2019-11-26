@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SocialLinks = () => {
+export const SocialLinks = () => {
   return (
     <div className="socialLinkCon">
       <ul>
@@ -28,5 +28,3 @@ const SocialLinks = () => {
     </div>
   )
 }
-
-export default SocialLinks
