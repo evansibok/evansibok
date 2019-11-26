@@ -29,20 +29,32 @@
   }
 
   .homeCon {
-
     ul {
-      a {
-        color: #fff;
-        border-bottom: 1px solid #fff;
-      }
+      @include dark-mode-social-ul;
     }
   }
 
   .pLCon {
-
+    .emptyDivs {
+      background: #fff;
+    }
   }
 
   .aboutCon {
 
+    .leftCon {
+    border: 2px dashed #fff;
+
+    }
+    .rightCon {
+    border: 2px dashed #fff;
+      
+    }
+  }
+
+  .socialLinkCon {
+    ul {
+      @include dark-mode-social-ul;
+    }
   }
 }

@@ -25,3 +25,10 @@
     }
   }
 }
+
+@mixin dark-mode-social-ul {
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}

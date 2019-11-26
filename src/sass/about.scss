@@ -9,6 +9,9 @@
     flex-direction: column;
     padding: 3em;
     border: 2px dashed #222;
+    /**
+    * Check for repeat code when the about page is completed
+    */
 
     p:last-child {
       margin-bottom: 0;

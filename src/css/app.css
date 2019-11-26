@@ -106,6 +106,20 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
+.dark-mode .pLCon .emptyDivs {
+  background: #fff;
+}
+.dark-mode .aboutCon .leftCon {
+  border: 2px dashed #fff;
+}
+.dark-mode .aboutCon .rightCon {
+  border: 2px dashed #fff;
+}
+.dark-mode .socialLinkCon ul a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
 .homeCon {
   display: flex;
   flex-direction: column;
@@ -221,6 +235,9 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   flex-direction: column;
   padding: 3em;
   border: 2px dashed #222;
+  /**
+  * Check for repeat code when the about page is completed
+  */
 }
 .aboutCon .leftCon p:last-child {
   margin-bottom: 0;
