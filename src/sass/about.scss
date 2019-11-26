@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   font-family: $primary_font;
-
+  
   .leftCon {
     width: 600px;
     display: flex;
@@ -12,6 +12,10 @@
     /**
     * Check for repeat code when the about page is completed
     */
+    
+    p {
+      font-size: 1rem;
+    }
 
     p:last-child {
       margin-bottom: 0;

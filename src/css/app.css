@@ -239,6 +239,9 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   * Check for repeat code when the about page is completed
   */
 }
+.aboutCon .leftCon p {
+  font-size: 1rem;
+}
 .aboutCon .leftCon p:last-child {
   margin-bottom: 0;
 }
