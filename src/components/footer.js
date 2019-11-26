@@ -8,7 +8,7 @@ const Footer = () => {
       <p>
 
         &copy; {new Date().getFullYear()}. Designed &amp; Developed with <i className="em-svg em-hearts"></i> by {` `}
-        <span className="letCol">
+        <span className="footCol">
           <Link to="/">E V \ N S</Link>
         </span>
       </p>

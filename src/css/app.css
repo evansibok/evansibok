@@ -69,7 +69,7 @@ header .headerContentContainer .rightCon nav a:hover {
   border-bottom: 0.2em solid #eb3349;
 }
 header .headerContentContainer .rightCon nav a button {
-  padding: 0.6em 1.2em;
+  padding: 0.4em 1.2em;
   border-radius: 0 1em;
   border: 0.2em solid #eb3349;
   background: transparent;
@@ -104,6 +104,57 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   color: #fff;
 }
 
+.homeCon {
+  display: flex;
+  flex-direction: column;
+}
+.homeCon .h1HomeCon {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-top: 2em;
+  margin-bottom: 0;
+  font-family: "Nunito", "sans-serif";
+  letter-spacing: 0.07em;
+}
+.homeCon .h1HomeCon .letCol {
+  color: #eb3349;
+}
+.homeCon .h4HomeCon {
+  font-size: 2.8rem;
+  max-width: 830px;
+  line-height: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-family: "Nunito", "sans-serif";
+  font-weight: 700;
+}
+.homeCon ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 2.8em;
+  margin-bottom: 0;
+}
+.homeCon ul a {
+  margin-right: 1em;
+  color: #222;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #222;
+  font-family: "PT Sans", "sans-serif";
+}
+.homeCon ul a:hover {
+  color: #eb3349;
+  border-bottom: 1px solid #eb3349;
+}
+.homeCon ul a li {
+  display: inline;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -119,7 +170,7 @@ footer p .heart {
   font-size: 0.6rem;
   color: #eb3349;
 }
-footer p .letCol a {
+footer p .footCol a {
   font-family: "Kodchasan", "sans-serif";
   color: #eb3349;
   font-weight: 600;
