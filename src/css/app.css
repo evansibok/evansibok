@@ -164,7 +164,6 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   padding: 1em 0;
 }
 .pLCon .emptyDivs {
-  content: " ";
   background: black;
   width: 40px;
   height: 5px;
@@ -172,6 +171,26 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .pLCon p {
   margin: 0 0.6em;
   text-transform: uppercase;
+}
+
+.aboutCon {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutCon .leftCon {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  border: 2px dashed #222;
+}
+.aboutCon .leftCon p:last-child {
+  margin-bottom: 0;
+}
+.aboutCon .rightCon {
+  width: 400px;
+  padding: 3em;
+  border: 2px dashed #222;
 }
 
 footer {
