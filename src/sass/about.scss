@@ -1,0 +1,26 @@
+.aboutCon {
+  display: flex;
+  justify-content: space-between;
+  font-family: $primary_font;
+
+  .leftCon {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    border: 2px dashed #222;
+    /**
+    * Check for repeat code when the about page is completed
+    */
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .rightCon {
+    width: 400px;
+    padding: 3em;
+    border: 2px dashed #222;
+  }
+}

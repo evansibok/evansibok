@@ -12,7 +12,6 @@
 
 header {
   padding: 1em 0;
-  border-bottom: 0.1em solid #b4b4b4;
   font-size: 0.8rem;
 }
 header .headerContentContainer {
@@ -98,10 +97,27 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 }
 .dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggled {
   top: 2px;
-  left: 19px;
+  left: 18px;
 }
 .dark-mode header .rightCon nav a {
   color: #fff;
+}
+.dark-mode .homeCon ul a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.dark-mode .pLCon .emptyDivs {
+  background: #fff;
+}
+.dark-mode .aboutCon .leftCon {
+  border: 2px dashed #fff;
+}
+.dark-mode .aboutCon .rightCon {
+  border: 2px dashed #fff;
+}
+.dark-mode .socialLinkCon ul a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .homeCon {
@@ -112,7 +128,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2.4rem;
-  margin-top: 2em;
+  margin-top: 1.8em;
   margin-bottom: 0;
   font-family: "Nunito", "sans-serif";
   letter-spacing: 0.07em;
@@ -136,11 +152,10 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   margin-bottom: 0;
 }
 .homeCon ul a {
-  margin-right: 1em;
+  margin-right: 1.2em;
   color: #222;
   letter-spacing: 0.1em;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -153,6 +168,84 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 }
 .homeCon ul a li {
   display: inline;
+}
+.homeCon ul a {
+  font-size: 0.9rem;
+}
+
+.pLCon {
+  display: flex;
+  align-items: center;
+  padding: 1.2em 0 2em 0;
+  font-family: "Nunito", "sans-serif";
+}
+.pLCon .emptyDivs {
+  background: black;
+  width: 35px;
+  height: 5px;
+}
+.pLCon p {
+  margin: 0 0.6em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.socialLinkCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialLinkCon ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 2.8em;
+  margin-bottom: 0;
+}
+.socialLinkCon ul a {
+  margin-right: 1.2em;
+  color: #222;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #222;
+  font-family: "PT Sans", "sans-serif";
+}
+.socialLinkCon ul a:hover {
+  color: #eb3349;
+  border-bottom: 1px solid #eb3349;
+}
+.socialLinkCon ul a li {
+  display: inline;
+}
+.socialLinkCon ul a {
+  font-size: 0.7rem;
+}
+
+.aboutCon {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Nunito", "sans-serif";
+}
+.aboutCon .leftCon {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  border: 2px dashed #222;
+  /**
+  * Check for repeat code when the about page is completed
+  */
+}
+.aboutCon .leftCon p:last-child {
+  margin-bottom: 0;
+}
+.aboutCon .rightCon {
+  width: 400px;
+  padding: 3em;
+  border: 2px dashed #222;
 }
 
 footer {

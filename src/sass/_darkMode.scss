@@ -15,7 +15,7 @@
 
           .toggled {
             top: 2px;
-            left: 19px;
+            left: 18px;
           }
         }
       }
@@ -25,6 +25,36 @@
           color: #fff;
         }
       }
+    }
+  }
+
+  .homeCon {
+    ul {
+      @include dark-mode-social-ul;
+    }
+  }
+
+  .pLCon {
+    .emptyDivs {
+      background: #fff;
+    }
+  }
+
+  .aboutCon {
+
+    .leftCon {
+    border: 2px dashed #fff;
+
+    }
+    .rightCon {
+    border: 2px dashed #fff;
+      
+    }
+  }
+
+  .socialLinkCon {
+    ul {
+      @include dark-mode-social-ul;
     }
   }
 }

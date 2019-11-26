@@ -23,10 +23,10 @@ const IndexPage = () => (
 					rel="noopener noreferrer">
 					<li>LinkedIn</li>
 				</a>
-				<a href="#" target="_blank"
+				{/* <a href="#" target="_blank"
 					rel="noopener noreferrer">
 					<li>Podcast</li>
-				</a>
+				</a> */}
 				<a href="https://github.com/evansibok" target="_blank"
 					rel="noopener noreferrer">
 					<li>Github</li>
