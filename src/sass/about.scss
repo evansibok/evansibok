@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     padding: 3em;
-    border: 2px dashed #222;
+    border: $about_dashed;
     /**
     * Check for repeat code when the about page is completed
     */
@@ -25,6 +25,6 @@
   .rightCon {
     width: 400px;
     padding: 3em;
-    border: 2px dashed #222;
+    border: $about_dashed;
   }
 }
