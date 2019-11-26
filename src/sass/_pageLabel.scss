@@ -1,0 +1,16 @@
+.pLCon {
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+
+  .emptyDivs {
+    background: black;
+    width: 40px;
+    height: 5px;
+  }
+
+  p {
+    margin: 0 0.6em;
+    text-transform: uppercase;
+  }
+}
