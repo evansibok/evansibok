@@ -158,6 +158,22 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   display: inline;
 }
 
+.pLCon {
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+}
+.pLCon .emptyDivs {
+  content: " ";
+  background: black;
+  width: 40px;
+  height: 5px;
+}
+.pLCon p {
+  margin: 0 0.6em;
+  text-transform: uppercase;
+}
+
 footer {
   display: flex;
   justify-content: center;
