@@ -15,10 +15,10 @@
 
     p {
       font-size: 0.9rem;
-    }
 
-    p:last-child {
-      margin-bottom: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 

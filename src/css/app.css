@@ -65,7 +65,7 @@ header .headerContentContainer .rightCon nav a {
   padding-bottom: 0.2em;
 }
 header .headerContentContainer .rightCon nav a:hover {
-  border-bottom: 0.2em solid #eb3349;
+  border-bottom: 0.15em solid #eb3349;
 }
 header .headerContentContainer .rightCon nav a button {
   padding: 0.4em 1.2em;
@@ -183,7 +183,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .pLCon .emptyDivs {
   background: black;
   width: 35px;
-  height: 5px;
+  height: 4px;
 }
 .pLCon p {
   margin: 0 0.6em;
@@ -273,6 +273,7 @@ footer p .footCol a {
   color: #eb3349;
   font-weight: 600;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 /*# sourceMappingURL=app.css.map */

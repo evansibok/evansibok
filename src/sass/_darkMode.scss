@@ -41,14 +41,11 @@
   }
 
   .aboutCon {
-
     .leftCon {
-    border: 2px dashed #fff;
-
+      border: $dark_mode_dashed;
     }
     .rightCon {
-    border: 2px dashed #fff;
-      
+      border: $dark_mode_dashed;
     }
   }
 
