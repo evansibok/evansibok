@@ -1,6 +1,3 @@
-/**
-* Use as @include sample_mixin;
-*/
 .container {
   margin: 0 auto;
   max-width: 1024px;
@@ -100,7 +97,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 }
 .dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggled {
   top: 2px;
-  left: 19px;
+  left: 18px;
 }
 .dark-mode header .rightCon nav a {
   color: #fff;
@@ -144,7 +141,6 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   margin-right: 1.2em;
   color: #222;
   letter-spacing: 0.1em;
-  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
   margin-bottom: 0;
@@ -159,21 +155,59 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .homeCon ul a li {
   display: inline;
 }
+.homeCon ul a {
+  font-size: 0.9rem;
+}
 
 .pLCon {
   display: flex;
   align-items: center;
-  padding: 1em 0;
+  padding: 1.2em 0 2em 0;
   font-family: "Nunito", "sans-serif";
 }
 .pLCon .emptyDivs {
   background: black;
-  width: 40px;
+  width: 35px;
   height: 5px;
 }
 .pLCon p {
   margin: 0 0.6em;
   text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.socialLinkCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialLinkCon ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 2.8em;
+  margin-bottom: 0;
+}
+.socialLinkCon ul a {
+  margin-right: 1.2em;
+  color: #222;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #222;
+  font-family: "PT Sans", "sans-serif";
+}
+.socialLinkCon ul a:hover {
+  color: #eb3349;
+  border-bottom: 1px solid #eb3349;
+}
+.socialLinkCon ul a li {
+  display: inline;
+}
+.socialLinkCon ul a {
+  font-size: 0.7rem;
 }
 
 .aboutCon {

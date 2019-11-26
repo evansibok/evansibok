@@ -2,7 +2,7 @@ import React from 'react'
 
 const SocialLinks = () => {
   return (
-    <div>
+    <div className="socialLinkCon">
       <ul>
         <a href="https://twitter.com/evansibok" target="_blank"
           rel="noopener noreferrer">

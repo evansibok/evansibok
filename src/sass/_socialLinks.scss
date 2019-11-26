@@ -1,0 +1,13 @@
+.socialLinkCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    @include social-ul;
+
+    a {
+      font-size: 0.7rem;
+    }
+  }
+}
