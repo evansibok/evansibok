@@ -11,6 +11,11 @@
     font-family: $primary_font;
     letter-spacing: 0.07em;
 
+    @media ($tablet) {
+      font-size: 2rem;
+      margin-top: 1.3em;
+    }
+
     .letCol {
       color: $primary_color;
     }
@@ -25,13 +30,28 @@
     font-family: $primary_font;
     font-weight: 700;
     letter-spacing: 0.01em;
+
+    @media ($tablet) {
+      font-size: 2.2rem;
+      width: 570px;
+      margin-top: 0.8em;
+      font-weight: 600;
+    }
   }
 
   ul {
     @include social-ul;
 
+    @media ($tablet) {
+      margin-top: 2em;
+    }
+
     a {
       font-size: 0.9rem;
+
+      @media ($tablet) {
+        font-size: 0.8rem;
+      }
     }
   }
 }
