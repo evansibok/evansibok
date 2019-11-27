@@ -253,10 +253,21 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   padding: 1.2em 0 2em 0;
   font-family: "Nunito", sans-serif;
 }
+@media (max-width: 800px) {
+  .pLCon {
+    padding: 1em 0 1.5em 0;
+  }
+}
 .pLCon .emptyDivs {
   background: black;
   width: 35px;
   height: 4px;
+}
+@media (max-width: 800px) {
+  .pLCon .emptyDivs {
+    width: 28px;
+    height: 3px;
+  }
 }
 .pLCon p {
   margin: 0 0.6em;
@@ -264,6 +275,12 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.1em;
+}
+@media (max-width: 800px) {
+  .pLCon p {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
 }
 
 .socialLinkCon {
