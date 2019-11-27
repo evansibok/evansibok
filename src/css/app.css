@@ -54,7 +54,7 @@ header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggle {
   width: 19px;
 }
 header .headerContentContainer .rightCon nav {
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-weight: 500;
 }
 header .headerContentContainer .rightCon nav a {
@@ -130,7 +130,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   font-size: 2.4rem;
   margin-top: 1.8em;
   margin-bottom: 0;
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
   letter-spacing: 0.07em;
 }
 .homeCon .h1HomeCon .letCol {
@@ -142,7 +142,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   line-height: 1.3em;
   margin-top: 1em;
   margin-bottom: 0;
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
@@ -178,7 +178,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   display: flex;
   align-items: center;
   padding: 1.2em 0 2em 0;
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
 }
 .pLCon .emptyDivs {
   background: black;
@@ -229,7 +229,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .aboutCon {
   display: flex;
   justify-content: space-between;
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
 }
 .aboutCon .leftCon {
   width: 600px;
@@ -258,7 +258,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   flex-direction: column;
   border: 1px solid #222;
   border-radius: 1em;
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
 }
 .projectCard .contentCon {
   margin: 1.5em 2em;
@@ -271,8 +271,8 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .projectCard .contentCon .cardHead h4 {
   margin-bottom: 0;
   text-transform: uppercase;
-  font-family: "Dosis", "sans-serif";
-  font-weight: bold;
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
   letter-spacing: 0.1em;
 }
 .projectCard .contentCon .cardHead ul {
@@ -323,7 +323,7 @@ footer {
   font-size: 0.6rem;
 }
 footer p {
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
   letter-spacing: 0.15em;
   margin: 0;
   padding: 1em;
