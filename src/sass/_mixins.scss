@@ -1,3 +1,15 @@
+@mixin anchor_reset {
+  color: #222;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "PT Sans", "sans-serif";
+
+  li {
+    display: inline;
+  }
+}
+
 @mixin social-ul {
   list-style-type: none;
   margin-left: 0;
@@ -5,23 +17,15 @@
   margin-bottom: 0;
 
   a {
+    @include anchor_reset;
     margin-right: 1.2em;
-    color: #222;
-    letter-spacing: 0.1em;
-    font-weight: 500;
-    text-decoration: none;
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: 1px solid #222;
-    font-family: "PT Sans", "sans-serif";
 
     &:hover {
       color: $primary_color;
       border-bottom: 1px solid $primary_color;
-    }
-
-    li {
-      display: inline;
     }
   }
 }

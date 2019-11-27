@@ -1,2 +1,59 @@
 .projectCon {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #222;
+  border-radius: 1em;
+  font-family: $primary_font;
+
+  .contentCon {
+    margin: 1em 2em;
+
+    .cardHead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h4 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-family: $secondary_font;
+      }
+
+      ul {
+        list-style-type: none;
+        margin-left: 0;
+        margin-bottom: 0;
+
+        a {
+          @include anchor_reset;
+          font-size: 0.8rem;
+
+          &:first-child {
+            border-bottom: 0.15em solid $primary_color;
+          }
+
+          &:last-child {
+            margin-left: 1em;
+            border-bottom: 0.15em solid $custom_link_color;
+          }
+        }
+      }
+    }
+
+    .cardBody {
+      display: flex;
+
+      .leftCon {
+        p {
+          font-size: 0.9rem;
+        }
+        .projectIcons {
+        }
+      }
+
+      .imageCon {
+        width: 200px;
+      }
+    }
+  }
 }

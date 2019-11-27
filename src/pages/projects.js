@@ -12,15 +12,17 @@ const ProjectsPage = () => {
 			<SEO title="Projects" />
 			<PageLabel name="Projects" />
 			<div className="projectCon">
-				<div>
+				<div className="contentCon">
 					<div className="cardHead">
 						<h4>Pintereach</h4>
 
 						<ul>
-							<a>
+							<a href="" target="_blank"
+								rel="noopener noreferrer">
 								<li>Website</li>
 							</a>
-							<a>
+							<a href="" target="_blank"
+								rel="noopener noreferrer">
 								<li>Github</li>
 							</a>
 						</ul>
