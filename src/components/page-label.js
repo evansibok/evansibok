@@ -1,10 +1,10 @@
 import React from 'react'
 
-export const PageLabel = () => {
+export const PageLabel = ({name}) => {
   return (
     <div className="pLCon">
       <div className="emptyDivs"></div>
-      <p>About Me</p>
+      <p>{name}</p>
       <div className="emptyDivs"></div>
     </div>
   )

@@ -19,7 +19,7 @@ const IndexPage = () => (
 					rel="noopener noreferrer">
 					<li>Twitter</li>
 				</a>
-				<a href="https://linkedin.com/evansibok" target="_blank"
+				<a href="https://linkedin.com/in/evansibok" target="_blank"
 					rel="noopener noreferrer">
 					<li>LinkedIn</li>
 				</a>

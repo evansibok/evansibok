@@ -1,0 +1,78 @@
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #222;
+  border-radius: 1em;
+  font-family: $primary_font;
+
+  .contentCon {
+    margin: 1.5em 2em;
+
+    .cardHead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.2em;
+
+      h4 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-family: $secondary_font;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+      }
+
+      ul {
+        list-style-type: none;
+        margin-left: 0;
+        margin-bottom: 0;
+
+        a {
+          @include anchor_reset;
+          font-size: 0.8rem;
+
+          &:first-child {
+            border-bottom: 0.15em solid $primary_color;
+          }
+
+          &:last-child {
+            margin-left: 1.5em;
+            border-bottom: 0.15em solid $custom_link_color;
+          }
+        }
+      }
+    }
+
+    .cardBody {
+      display: flex;
+      justify-content: space-between;
+
+      .leftCon {
+        width: 600px;
+        p {
+          font-size: 0.9rem;
+          margin-bottom: 1em;
+        }
+        .projectIcons {
+          svg {
+            margin-right: 0.8em;
+          }
+          img {
+            width: 25px;
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .imageCon {
+        width: 320px;
+        margin-bottom: 0;
+
+        img {
+          border-radius: 0.8em;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

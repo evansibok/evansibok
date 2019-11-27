@@ -41,14 +41,27 @@
   }
 
   .aboutCon {
-
     .leftCon {
-    border: 2px dashed #fff;
-
+      border: $dark_mode_dashed;
     }
     .rightCon {
-    border: 2px dashed #fff;
-      
+      border: $dark_mode_dashed;
+    }
+  }
+
+  .projectCard {
+    border: 1px solid #fff;
+
+    .contentCon {
+      .cardHead {
+        ul {
+          a {
+            li {
+              color: #fff;
+            }
+          }
+        }
+      }
     }
   }
 

@@ -11,7 +11,7 @@
 }
 
 header {
-  padding: 1em 0;
+  padding: 1.2em 0;
   font-size: 0.8rem;
 }
 header .headerContentContainer {
@@ -54,7 +54,7 @@ header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggle {
   width: 19px;
 }
 header .headerContentContainer .rightCon nav {
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-weight: 500;
 }
 header .headerContentContainer .rightCon nav a {
@@ -65,19 +65,19 @@ header .headerContentContainer .rightCon nav a {
   padding-bottom: 0.2em;
 }
 header .headerContentContainer .rightCon nav a:hover {
-  border-bottom: 0.2em solid #eb3349;
+  border-bottom: 0.15em solid #eb3349;
 }
 header .headerContentContainer .rightCon nav a button {
   padding: 0.4em 1.2em;
   border-radius: 0 1em;
-  border: 0.2em solid #eb3349;
+  border: 0.15em solid #eb3349;
   background: transparent;
   color: #eb3349;
 }
 header .headerContentContainer .rightCon nav a button:hover {
   cursor: pointer;
   background: #eb3349;
-  border: 0.2em solid #eb3349;
+  border: 0.15em solid #eb3349;
   color: #fff;
 }
 header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
@@ -115,6 +115,12 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .dark-mode .aboutCon .rightCon {
   border: 2px dashed #fff;
 }
+.dark-mode .projectCard {
+  border: 1px solid #fff;
+}
+.dark-mode .projectCard .contentCon .cardHead ul a li {
+  color: #fff;
+}
 .dark-mode .socialLinkCon ul a {
   color: #fff;
   border-bottom: 1px solid #fff;
@@ -130,7 +136,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   font-size: 2.4rem;
   margin-top: 1.8em;
   margin-bottom: 0;
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
   letter-spacing: 0.07em;
 }
 .homeCon .h1HomeCon .letCol {
@@ -142,8 +148,9 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   line-height: 1.3em;
   margin-top: 1em;
   margin-bottom: 0;
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
+  letter-spacing: 0.01em;
 }
 .homeCon ul {
   list-style-type: none;
@@ -152,22 +159,22 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   margin-bottom: 0;
 }
 .homeCon ul a {
-  margin-right: 1.2em;
   color: #222;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-decoration: none;
+  font-family: "PT Sans", "sans-serif";
+  margin-right: 1.2em;
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: 1px solid #222;
-  font-family: "PT Sans", "sans-serif";
+}
+.homeCon ul a li {
+  display: inline;
 }
 .homeCon ul a:hover {
   color: #eb3349;
   border-bottom: 1px solid #eb3349;
-}
-.homeCon ul a li {
-  display: inline;
 }
 .homeCon ul a {
   font-size: 0.9rem;
@@ -177,18 +184,19 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   display: flex;
   align-items: center;
   padding: 1.2em 0 2em 0;
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
 }
 .pLCon .emptyDivs {
   background: black;
   width: 35px;
-  height: 5px;
+  height: 4px;
 }
 .pLCon p {
   margin: 0 0.6em;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
+  letter-spacing: 0.1em;
 }
 
 .socialLinkCon {
@@ -203,22 +211,22 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   margin-bottom: 0;
 }
 .socialLinkCon ul a {
-  margin-right: 1.2em;
   color: #222;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-decoration: none;
+  font-family: "PT Sans", "sans-serif";
+  margin-right: 1.2em;
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: 1px solid #222;
-  font-family: "PT Sans", "sans-serif";
+}
+.socialLinkCon ul a li {
+  display: inline;
 }
 .socialLinkCon ul a:hover {
   color: #eb3349;
   border-bottom: 1px solid #eb3349;
-}
-.socialLinkCon ul a li {
-  display: inline;
 }
 .socialLinkCon ul a {
   font-size: 0.7rem;
@@ -227,7 +235,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .aboutCon {
   display: flex;
   justify-content: space-between;
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
 }
 .aboutCon .leftCon {
   width: 600px;
@@ -239,6 +247,9 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   * Check for repeat code when the about page is completed
   */
 }
+.aboutCon .leftCon p {
+  font-size: 0.9rem;
+}
 .aboutCon .leftCon p:last-child {
   margin-bottom: 0;
 }
@@ -248,13 +259,86 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   border: 2px dashed #222;
 }
 
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #222;
+  border-radius: 1em;
+  font-family: "Nunito", sans-serif;
+}
+.projectCard .contentCon {
+  margin: 1.5em 2em;
+}
+.projectCard .contentCon .cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2em;
+}
+.projectCard .contentCon .cardHead h4 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+.projectCard .contentCon .cardHead ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.projectCard .contentCon .cardHead ul a {
+  color: #222;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "PT Sans", "sans-serif";
+  font-size: 0.8rem;
+}
+.projectCard .contentCon .cardHead ul a li {
+  display: inline;
+}
+.projectCard .contentCon .cardHead ul a:first-child {
+  border-bottom: 0.15em solid #eb3349;
+}
+.projectCard .contentCon .cardHead ul a:last-child {
+  margin-left: 1.5em;
+  border-bottom: 0.15em solid #0955db;
+}
+.projectCard .contentCon .cardBody {
+  display: flex;
+  justify-content: space-between;
+}
+.projectCard .contentCon .cardBody .leftCon {
+  width: 600px;
+}
+.projectCard .contentCon .cardBody .leftCon p {
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+.projectCard .contentCon .cardBody .leftCon .projectIcons svg {
+  margin-right: 0.8em;
+}
+.projectCard .contentCon .cardBody .leftCon .projectIcons img {
+  width: 25px;
+  margin-bottom: 0;
+}
+.projectCard .contentCon .cardBody .imageCon {
+  width: 320px;
+  margin-bottom: 0;
+}
+.projectCard .contentCon .cardBody .imageCon img {
+  border-radius: 0.8em;
+  margin-bottom: 0;
+}
+
 footer {
   display: flex;
   justify-content: center;
   font-size: 0.6rem;
 }
 footer p {
-  font-family: "Nunito", "sans-serif";
+  font-family: "Nunito", sans-serif;
   letter-spacing: 0.15em;
   margin: 0;
   padding: 1em;
@@ -268,6 +352,7 @@ footer p .footCol a {
   color: #eb3349;
   font-weight: 600;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 /*# sourceMappingURL=app.css.map */
