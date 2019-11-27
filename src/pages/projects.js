@@ -33,10 +33,10 @@ const ProjectsPage = () => {
 		<Layout>
 			<SEO title="Projects" />
 			<PageLabel name="Projects" />
-			<div className="projectCon">
+			<div className="projectCard">
 				<div className="contentCon">
 					<div className="cardHead">
-						<h4>Pintereach</h4>
+						<h4>Pintereach Landing Page</h4>
 
 						<ul>
 							<a href="" target="_blank"

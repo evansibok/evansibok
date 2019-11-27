@@ -253,34 +253,34 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   border: 2px dashed #222;
 }
 
-.projectCon {
+.projectCard {
   display: flex;
   flex-direction: column;
   border: 1px solid #222;
   border-radius: 1em;
   font-family: "Nunito", "sans-serif";
 }
-.projectCon .contentCon {
-  margin: 1em 2em;
+.projectCard .contentCon {
+  margin: 1.5em 2em;
 }
-.projectCon .contentCon .cardHead {
+.projectCard .contentCon .cardHead {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.projectCon .contentCon .cardHead h4 {
+.projectCard .contentCon .cardHead h4 {
   margin-bottom: 0;
   text-transform: uppercase;
   font-family: "Dosis", "sans-serif";
   font-weight: bold;
   letter-spacing: 0.1em;
 }
-.projectCon .contentCon .cardHead ul {
+.projectCard .contentCon .cardHead ul {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 0;
 }
-.projectCon .contentCon .cardHead ul a {
+.projectCard .contentCon .cardHead ul a {
   color: #222;
   letter-spacing: 0.1em;
   font-weight: 500;
@@ -288,32 +288,33 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   font-family: "PT Sans", "sans-serif";
   font-size: 0.8rem;
 }
-.projectCon .contentCon .cardHead ul a li {
+.projectCard .contentCon .cardHead ul a li {
   display: inline;
 }
-.projectCon .contentCon .cardHead ul a:first-child {
+.projectCard .contentCon .cardHead ul a:first-child {
   border-bottom: 0.15em solid #eb3349;
 }
-.projectCon .contentCon .cardHead ul a:last-child {
+.projectCard .contentCon .cardHead ul a:last-child {
   margin-left: 1em;
   border-bottom: 0.15em solid #0955db;
 }
-.projectCon .contentCon .cardBody {
+.projectCard .contentCon .cardBody {
   display: flex;
   justify-content: space-between;
 }
-.projectCon .contentCon .cardBody .leftCon {
+.projectCard .contentCon .cardBody .leftCon {
   width: 600px;
 }
-.projectCon .contentCon .cardBody .leftCon p {
+.projectCard .contentCon .cardBody .leftCon p {
   font-size: 0.9rem;
 }
-.projectCon .contentCon .cardBody .imageCon {
-  width: 300px;
-  height: auto;
+.projectCard .contentCon .cardBody .imageCon {
+  width: 320px;
+  margin-bottom: 0;
 }
-.projectCon .contentCon .cardBody .imageCon img {
+.projectCard .contentCon .cardBody .imageCon img {
   border-radius: 0.8em;
+  margin-bottom: 0;
 }
 
 footer {

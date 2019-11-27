@@ -1,4 +1,4 @@
-.projectCon {
+.projectCard {
   display: flex;
   flex-direction: column;
   border: 1px solid #222;
@@ -6,7 +6,7 @@
   font-family: $primary_font;
 
   .contentCon {
-    margin: 1em 2em;
+    margin: 1.5em 2em;
 
     .cardHead {
       display: flex;
@@ -56,11 +56,12 @@
       }
 
       .imageCon {
-        width: 300px;
-        height: auto;
+        width: 320px;
+        margin-bottom: 0;
 
         img {
           border-radius: 0.8em;
+          margin-bottom: 0;
         }
       }
     }
