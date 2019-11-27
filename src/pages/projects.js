@@ -11,11 +11,7 @@ import CSS3 from "../components/svgs/css3-component"
 import JS from "../components/svgs/js-component"
 import Figma from "../components/svgs/figma-component"
 import Github from "../components/svgs/github-component"
-import Menu from "../components/svgs/menu-component"
 import ReactJS from "../components/svgs/react-js-component"
-import Sass from "../components/svgs/sass-component"
-import Trello from "../components/svgs/trello-component"
-import GraphQLIcon from "../components/svgs/graphql-component"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -24,6 +20,18 @@ const ProjectsPage = () => {
         fluid: {
           src: {
             eq: "/static/4a9773549091c227cd2eb82ccd9c5e3a/774d6/gatsby-icon.png"
+          }
+        }
+      ) {
+        fluid {
+          src
+          originalName
+        }
+      }
+      nasaScreenshot: imageSharp(
+        fluid: {
+          src: {
+            eq: "/static/49508c599e206dc960bc9e1ff6d0184b/af144/nasa-project-screenshot.png"
           }
         }
       ) {
@@ -50,8 +58,8 @@ const ProjectsPage = () => {
   const pintereach = data.pintereachScreenshot.fluid.src
   const pintereachAlt = data.pintereachScreenshot.fluid.originalName
 
-  const gatsbyImage = data.gatsbyIcon.fluid.src
-  const gatsbyImageAlt = data.gatsbyIcon.fluid.originalName
+  const nasaImage = data.nasaScreenshot.fluid.src
+  const nasaImageAlt = data.nasaScreenshot.fluid.originalName
 
   return (
     <Layout>
@@ -83,11 +91,11 @@ const ProjectsPage = () => {
           <div className="cardBody">
             <div className="leftCon">
               <p>
-                During my first build week with Lambda School, I built a landing
+                During my first build week at Lambda School, I built a landing
                 page using the skills I learnt, which included HTML5, CSS3, LESS
                 and JavaScript.
-                <br />
-                <br />
+              </p>
+              <p>
                 This project was meant to test my understanding of the concepts
                 I had previously learned.
               </p>
@@ -95,10 +103,51 @@ const ProjectsPage = () => {
                 <HTML5 />
                 <CSS3 />
                 <JS />
+                <Github />
               </div>
             </div>
             <div className="imageCon">
               <img src={pintereach} alt={pintereachAlt} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="projectCard">
+        <div className="contentCon">
+          <div className="cardHead">
+            <h4>Nasa Photo of the Day</h4>
+
+            <ul>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <li>Website</li>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <li>Github</li>
+              </a>
+            </ul>
+          </div>
+
+          <div className="cardBody">
+            <div className="leftCon">
+              <p>
+                A ReactJS app which queries NASA's api to display astronomical
+                photo of the day.
+              </p>
+              <p>
+                This project showed mastery on certain react app building
+                concepts like making Asynchronous api calls and displaying
+                received data for consumption.
+              </p>
+              <div className="projectIcons">
+                <HTML5 />
+                <CSS3 />
+                <Github />
+                <ReactJS />
+              </div>
+            </div>
+            <div className="imageCon">
+              <img src={nasaImage} alt={nasaImageAlt} />
             </div>
           </div>
         </div>

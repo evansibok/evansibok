@@ -4,6 +4,7 @@
   border: 1px solid #222;
   border-radius: 1em;
   font-family: $primary_font;
+  margin-bottom: 0.3em;
 
   .contentCon {
     margin: 1.5em 2em;
@@ -54,6 +55,8 @@
           margin-bottom: 1em;
         }
         .projectIcons {
+          display: flex;
+          align-items: center;
           svg {
             margin-right: 0.8em;
           }
