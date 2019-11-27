@@ -49,6 +49,22 @@
     }
   }
 
+  .projectCard {
+    border: 1px solid #fff;
+
+    .contentCon {
+      .cardHead {
+        ul {
+          a {
+            li {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .socialLinkCon {
     ul {
       @include dark-mode-social-ul;
