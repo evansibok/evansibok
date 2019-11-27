@@ -122,7 +122,11 @@ const ProjectsPage = () => {
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <li>Website</li>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/evansibok/nasa-photo-of-the-day"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <li>Github</li>
               </a>
             </ul>
