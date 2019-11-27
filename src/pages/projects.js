@@ -63,10 +63,18 @@ const ProjectsPage = () => {
             <h4>Pintereach Landing Page</h4>
 
             <ul>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://pintereach-ev1.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <li>Website</li>
               </a>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/Build-Week-Pintereach-1/Marketing-page-Evans"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <li>Github</li>
               </a>
             </ul>
@@ -75,34 +83,18 @@ const ProjectsPage = () => {
           <div className="cardBody">
             <div className="leftCon">
               <p>
-                Fort NG is a fashion company based in Nigeria. Customers place
-                orders by viewing items on instagram and sending messages. They
-                wanted an E-Commerce website for users to purchase items from as
-                well as a website where potential customers would get the latest
-                news.
+                During my first build week with Lambda School, I built a landing
+                page using the skills I learnt, which included HTML5, CSS3, LESS
+                and JavaScript.
                 <br />
                 <br />
-                The E-Commerce website was built from scratch using Laravel. An
-                admin portal was also built to enable admins manage news,
-                products, orders as well as website content.
+                This project was meant to test my understanding of the concepts
+                I had previously learned.
               </p>
               <div className="projectIcons">
                 <HTML5 />
                 <CSS3 />
                 <JS />
-                <Figma />
-                <Github />
-                <Menu />
-                <ReactJS />
-                <Sass />
-                <Trello />
-                <GraphQLIcon />
-                <img
-                  src={gatsbyImage}
-                  alt={gatsbyImageAlt}
-                  width="20px"
-                  marginBottom={0}
-                />
               </div>
             </div>
             <div className="imageCon">

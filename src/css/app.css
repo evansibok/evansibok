@@ -267,6 +267,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1.2em;
 }
 .projectCard .contentCon .cardHead h4 {
   margin-bottom: 0;
@@ -307,6 +308,14 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 }
 .projectCard .contentCon .cardBody .leftCon p {
   font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+.projectCard .contentCon .cardBody .leftCon .projectIcons svg {
+  margin-right: 0.8em;
+}
+.projectCard .contentCon .cardBody .leftCon .projectIcons img {
+  width: 25px;
+  margin-bottom: 0;
 }
 .projectCard .contentCon .cardBody .imageCon {
   width: 320px;
