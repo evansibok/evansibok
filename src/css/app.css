@@ -305,7 +305,6 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .projectCon .contentCon .cardBody .imageCon {
   width: 200px;
 }
-
 footer {
   display: flex;
   justify-content: center;

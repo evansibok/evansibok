@@ -27,13 +27,14 @@ const Header = () => {
       }
     }
   `)
+  const brandImage = data.imageSharp.fluid.src
 
   return (
     <header>
       <div className="headerContentContainer">
         <div className="brandLogoCon">
           <Link to="/">
-            <img src={data.imageSharp.fluid.src} alt="brand logo" />
+            <img src={brandImage} alt="brand logo" />
           </Link>
         </div>
 
