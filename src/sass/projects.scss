@@ -17,6 +17,8 @@
         margin-bottom: 0;
         text-transform: uppercase;
         font-family: $secondary_font;
+        font-weight: bold;
+        letter-spacing: 0.1em;
       }
 
       ul {
@@ -42,8 +44,10 @@
 
     .cardBody {
       display: flex;
+      justify-content: space-between;
 
       .leftCon {
+        width: 600px;
         p {
           font-size: 0.9rem;
         }
@@ -52,9 +56,11 @@
       }
 
       .imageCon {
-        width: 200px;
+        width: 300px;
+        height: auto;
 
         img {
+          border-radius: 0.8em;
         }
       }
     }

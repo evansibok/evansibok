@@ -17,24 +17,26 @@ const Header = () => {
       imageSharp(
         fluid: {
           src: {
-            eq: "/static/e152b5cfbba58a414f35c976307c3c1d/25835/evnsvec.png"
+            eq: "/static/e152b5cfbba58a414f35c976307c3c1d/25835/evans-logo.png"
           }
         }
       ) {
         fluid {
           src
+          originalName
         }
       }
     }
   `)
   const brandImage = data.imageSharp.fluid.src
+  const brandImageName = data.imageSharp.fluid.originalName
 
   return (
     <header>
       <div className="headerContentContainer">
         <div className="brandLogoCon">
           <Link to="/">
-            <img src={brandImage} alt="brand logo" />
+            <img src={brandImage} alt={brandImageName} />
           </Link>
         </div>
 

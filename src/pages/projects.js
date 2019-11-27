@@ -1,12 +1,34 @@
 import React from "react"
 
+import { useStaticQuery, graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
 
 import { PageLabel } from "../components/page-label"
 import { SocialLinks } from "../components/social-links"
 
 const ProjectsPage = () => {
+
+	const data = useStaticQuery(graphql`
+		query pintereachScreenshot {
+      imageSharp(
+        fluid: {
+          src: {
+            eq: "/static/e7b012f31370b5d97e350b212adffdee/af144/pintereach-screenshot.png"
+          }
+        }
+      ) {
+        fluid {
+          src
+          originalName
+        }
+      }
+    }
+	`)
+	const pintereach = data.imageSharp.fluid.src
+	const pintereachAlt = data.imageSharp.fluid.originalName
+
 	return (
 		<Layout>
 			<SEO title="Projects" />
@@ -42,7 +64,7 @@ const ProjectsPage = () => {
 							</div>
 						</div>
 						<div className="imageCon">
-							<img src="" alt="pintereach screenshot" />
+							<img src={pintereach} alt={pintereachAlt} />
 						</div>
 					</div>
 				</div>
