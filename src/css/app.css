@@ -162,16 +162,10 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .dark-mode .pLCon .emptyDivs {
   background: #fff;
 }
-.dark-mode .aboutCon .leftCon {
-  border: 2px dashed #fff;
-}
 @media (max-width: 800px) {
   .dark-mode .aboutCon .leftCon {
     border: none;
   }
-}
-.dark-mode .aboutCon .rightCon {
-  border: 2px dashed #fff;
 }
 @media (max-width: 800px) {
   .dark-mode .aboutCon .rightCon {
