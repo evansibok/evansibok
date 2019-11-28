@@ -90,6 +90,10 @@
           width: 260px;
         }
 
+        @media ($galaxyS5) {
+          width: 250px;
+        }
+
         p {
           font-size: 0.9rem;
           margin-bottom: 1em;
@@ -124,6 +128,11 @@
 
         @media ($pixel2) {
           width: 260px;
+          margin-bottom: 0.7em;
+        }
+
+        @media ($galaxyS5) {
+          width: 250px;
           margin-bottom: 0.7em;
         }
 

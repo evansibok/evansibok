@@ -12,6 +12,10 @@
   @media ($pixel2) {
     max-width: 320px;
   }
+
+  @media ($galaxyS5) {
+    max-width: 300px;
+  }
 }
 
 .content {
