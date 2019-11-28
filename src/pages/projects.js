@@ -14,7 +14,7 @@ import ReactJS from "../components/svgs/react-js-component"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
-    query allImages {
+    query projectsImages {
       nasaScreenshot: imageSharp(
         fluid: {
           src: {

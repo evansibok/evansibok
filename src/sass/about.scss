@@ -65,7 +65,19 @@
       @media ($mobile) {
         width: 1.5rem;
         margin-right: 1em;
+        margin-top: 0.3em;
       }
+    }
+
+    img {
+      width: 1.5rem;
+      margin-right: 1em;
+      margin-bottom: 0;
+      margin-top: 0.3em;
+    }
+
+    .fig {
+      width: 1rem;
     }
   }
 }

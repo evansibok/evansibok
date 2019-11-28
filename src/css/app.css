@@ -404,7 +404,17 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   .aboutCon .rightCon svg {
     width: 1.5rem;
     margin-right: 1em;
+    margin-top: 0.3em;
   }
+}
+.aboutCon .rightCon img {
+  width: 1.5rem;
+  margin-right: 1em;
+  margin-bottom: 0;
+  margin-top: 0.3em;
+}
+.aboutCon .rightCon .fig {
+  width: 1rem;
 }
 
 .projectCard {
