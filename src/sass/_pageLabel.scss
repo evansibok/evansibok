@@ -4,7 +4,7 @@
   padding: 1.2em 0 2em 0;
   font-family: $primary_font;
 
-  @media ($tablet) {
+  @media ($iPad) {
     padding: 1em 0 1.5em 0;
   }
 
@@ -13,7 +13,7 @@
     width: 35px;
     height: 4px;
 
-    @media ($tablet) {
+    @media ($iPad) {
       width: 28px;
       height: 3px;
     }
@@ -26,7 +26,7 @@
     font-weight: 700;
     letter-spacing: 0.1em;
 
-    @media ($tablet) {
+    @media ($iPad) {
       font-size: 0.7rem;
       font-weight: 600;
     }

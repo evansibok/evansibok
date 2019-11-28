@@ -11,7 +11,7 @@
     font-family: $primary_font;
     letter-spacing: 0.07em;
 
-    @media ($tablet) {
+    @media ($iPad) {
       font-size: 2rem;
       margin-top: 1.3em;
     }
@@ -36,7 +36,7 @@
     font-weight: 700;
     letter-spacing: 0.01em;
 
-    @media ($tablet) {
+    @media ($iPad) {
       font-size: 2.1rem;
       width: 550px;
       margin-top: 0.8em;
@@ -54,14 +54,14 @@
   ul {
     @include social-ul;
 
-    @media ($tablet) {
+    @media ($iPad) {
       margin-top: 2em;
     }
 
     a {
       font-size: 0.9rem;
 
-      @media ($tablet) {
+      @media ($iPad) {
         font-size: 0.8rem;
       }
     }
