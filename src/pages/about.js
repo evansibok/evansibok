@@ -5,6 +5,15 @@ import SEO from "../components/seo"
 
 import { PageLabel } from "../components/page-label"
 import { SocialLinks } from "../components/social-links"
+import HTML5 from "../components/svgs/html5-component"
+import CSS3 from "../components/svgs/css3-component"
+import JS from "../components/svgs/js-component"
+import SASS from "../components/svgs/sass-component"
+import ReactJS from "../components/svgs/react-js-component"
+import GraphQLIcon from "../components/svgs/graphql-component"
+import Github from "../components/svgs/github-component"
+import Figma from "../components/svgs/figma-component"
+import Trello from "../components/svgs/trello-component"
 
 const AboutPage = () => {
 	return (
@@ -19,8 +28,17 @@ const AboutPage = () => {
           </p>
 				</div>
 
+				<PageLabel name="Skills" />
 				<div className="rightCon">
-					<p>images</p>
+					<HTML5 />
+					<CSS3 />
+					<JS />
+					<ReactJS />
+					<SASS />
+					<GraphQLIcon />
+					<Github />
+					<Figma />
+					<Trello />
 				</div>
 			</div>
 			<SocialLinks />
