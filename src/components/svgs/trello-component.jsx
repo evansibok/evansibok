@@ -1,7 +1,7 @@
 import React from "react"
 
 const Trello = props => (
-  <svg width="1.5rem" viewBox="0 0 128 128" xmlSpace="preserve" {...props}>
+  <svg viewBox="0 0 128 128" xmlSpace="preserve" {...props}>
     <g clipRule="evenodd" fillRule="evenodd">
       <path fill="none" d="M0 0H128V128H0z" />
       <path

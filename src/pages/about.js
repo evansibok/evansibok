@@ -12,7 +12,6 @@ import SASS from "../components/svgs/sass-component"
 import ReactJS from "../components/svgs/react-js-component"
 import GraphQLIcon from "../components/svgs/graphql-component"
 import Github from "../components/svgs/github-component"
-import Figma from "../components/svgs/figma-component"
 import Trello from "../components/svgs/trello-component"
 
 const AboutPage = () => {
@@ -28,7 +27,6 @@ const AboutPage = () => {
           </p>
 				</div>
 
-				<PageLabel name="Skills" />
 				<div className="rightCon">
 					<HTML5 />
 					<CSS3 />
@@ -37,7 +35,6 @@ const AboutPage = () => {
 					<SASS />
 					<GraphQLIcon />
 					<Github />
-					<Figma />
 					<Trello />
 				</div>
 			</div>
