@@ -370,7 +370,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   }
 }
 .aboutCon .leftCon p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 .aboutCon .leftCon p:first-child {
   margin-bottom: 1.2em;
