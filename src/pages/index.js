@@ -9,7 +9,12 @@ const IndexPage = () => (
 
 		<div className="homeCon">
 			<h1 className="h1HomeCon">
-				<span className="letCol">H</span>ello, I <span className="letCol">a</span>m <span className="letCol">E</span>vans
+				<p>
+					<span className="letCol">H</span>ello,
+				</p>
+				<p>
+					I <span className="letCol">a</span>m <span className="letCol">E</span>vans
+				</p>
 			</h1>
 
 			<h4 className="h4HomeCon">A Nigerian born frontend developer with incredible love for UI/UX Design.</h4>

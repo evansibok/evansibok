@@ -7,7 +7,7 @@
 }
 @media (max-width: 800px) {
   .container {
-    width: 720px;
+    max-width: 720px;
   }
 }
 @media (max-width: 500px) {
@@ -178,6 +178,11 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .homeCon {
+    margin: 0 auto;
+  }
+}
 .homeCon .h1HomeCon {
   text-transform: uppercase;
   font-weight: 700;
@@ -196,6 +201,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 @media (max-width: 500px) {
   .homeCon .h1HomeCon {
     margin-top: 1em;
+    font-size: 1.7rem;
   }
 }
 .homeCon .h1HomeCon .letCol {
@@ -217,6 +223,14 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     width: 550px;
     margin-top: 0.8em;
     font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  .homeCon .h4HomeCon {
+    width: 300px;
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    margin-top: 0.4em;
   }
 }
 .homeCon ul {
