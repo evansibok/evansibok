@@ -16,7 +16,7 @@
       margin-top: 1.3em;
     }
 
-    @media ($mobile) {
+    @media ($pixel2) {
       margin-top: 1em;
       font-size: 1.7rem;
     }
@@ -43,7 +43,7 @@
       font-weight: 600;
     }
 
-    @media ($mobile) {
+    @media ($pixel2) {
       width: 300px;
       font-size: 1.8rem;
       line-height: 1.5em;

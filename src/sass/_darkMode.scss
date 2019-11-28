@@ -47,9 +47,17 @@
   .aboutCon {
     .leftCon {
       border: $dark_mode_dashed;
+
+      @media ($pixel2) {
+        border: none;
+      }
     }
     .rightCon {
       border: $dark_mode_dashed;
+
+      @media ($pixel2) {
+        border: none;
+      }
     }
   }
 

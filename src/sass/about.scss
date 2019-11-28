@@ -3,7 +3,7 @@
   justify-content: space-between;
   font-family: $primary_font;
 
-  @media ($mobile) {
+  @media ($pixel2) {
     flex-direction: column;
   }
 
@@ -22,7 +22,7 @@
       padding: 1.5em;
     }
 
-    @media ($mobile) {
+    @media ($pixel2) {
       width: 300px;
       margin-bottom: 1em;
       padding: 0;
@@ -55,14 +55,14 @@
       width: 300px;
     }
 
-    @media ($mobile) {
+    @media ($pixel2) {
       margin-top: 1em;
       padding: 0;
       border: none;
     }
 
     svg {
-      @media ($mobile) {
+      @media ($pixel2) {
         width: 1.5rem;
         margin-right: 1em;
         margin-top: 0.3em;

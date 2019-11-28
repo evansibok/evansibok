@@ -9,7 +9,7 @@
   .contentCon {
     margin: 1.5em 2em;
 
-    @media ($mobile) {
+    @media ($pixel2) {
       margin: 1.4em;
     }
 
@@ -23,7 +23,7 @@
         margin-bottom: 0.9em;
       }
 
-      @media ($mobile) {
+      @media ($pixel2) {
         flex-direction: column;
         align-items: flex-start;
       }
@@ -41,7 +41,7 @@
           font-size: 0.9rem;
         }
 
-        @media ($mobile) {
+        @media ($pixel2) {
           margin-bottom: 0.8em;
         }
       }
@@ -75,7 +75,7 @@
       display: flex;
       justify-content: space-between;
 
-      @media ($mobile) {
+      @media ($pixel2) {
         flex-direction: column-reverse;
       }
 
@@ -86,7 +86,7 @@
           width: 350px;
         }
 
-        @media ($mobile) {
+        @media ($pixel2) {
           width: 260px;
         }
 
@@ -122,7 +122,7 @@
           width: 260px;
         }
 
-        @media ($mobile) {
+        @media ($pixel2) {
           width: 260px;
           margin-bottom: 0.7em;
         }

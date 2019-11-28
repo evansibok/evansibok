@@ -61,7 +61,7 @@ header {
       .hamburger {
         display: none;
 
-        @media ($mobile) {
+        @media ($pixel2) {
           display: unset;
         }
       }
