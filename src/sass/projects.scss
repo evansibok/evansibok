@@ -9,6 +9,10 @@
   .contentCon {
     margin: 1.5em 2em;
 
+    @media ($mobile) {
+      margin: 1.4em;
+    }
+
     .cardHead {
       display: flex;
       justify-content: space-between;
@@ -17,6 +21,11 @@
 
       @media ($tablet) {
         margin-bottom: 0.9em;
+      }
+
+      @media ($mobile) {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
       h4 {
@@ -30,6 +39,10 @@
         @media ($tablet) {
           font-weight: 700;
           font-size: 0.9rem;
+        }
+
+        @media ($mobile) {
+          margin-bottom: 0.8em;
         }
       }
 
@@ -62,11 +75,19 @@
       display: flex;
       justify-content: space-between;
 
+      @media ($mobile) {
+        flex-direction: column-reverse;
+      }
+
       .leftCon {
         width: 600px;
 
         @media ($tablet) {
           width: 350px;
+        }
+
+        @media ($mobile) {
+          width: 260px;
         }
 
         p {
@@ -99,6 +120,11 @@
 
         @media ($tablet) {
           width: 260px;
+        }
+
+        @media ($mobile) {
+          width: 260px;
+          margin-bottom: 0.7em;
         }
 
         img {

@@ -405,6 +405,11 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .projectCard .contentCon {
   margin: 1.5em 2em;
 }
+@media (max-width: 500px) {
+  .projectCard .contentCon {
+    margin: 1.4em;
+  }
+}
 .projectCard .contentCon .cardHead {
   display: flex;
   justify-content: space-between;
@@ -414,6 +419,12 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 @media (max-width: 800px) {
   .projectCard .contentCon .cardHead {
     margin-bottom: 0.9em;
+  }
+}
+@media (max-width: 500px) {
+  .projectCard .contentCon .cardHead {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 .projectCard .contentCon .cardHead h4 {
@@ -428,6 +439,11 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   .projectCard .contentCon .cardHead h4 {
     font-weight: 700;
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 500px) {
+  .projectCard .contentCon .cardHead h4 {
+    margin-bottom: 0.8em;
   }
 }
 .projectCard .contentCon .cardHead ul {
@@ -462,12 +478,22 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .projectCard .contentCon .cardBody {
+    flex-direction: column-reverse;
+  }
+}
 .projectCard .contentCon .cardBody .leftCon {
   width: 600px;
 }
 @media (max-width: 800px) {
   .projectCard .contentCon .cardBody .leftCon {
     width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .projectCard .contentCon .cardBody .leftCon {
+    width: 260px;
   }
 }
 .projectCard .contentCon .cardBody .leftCon p {
@@ -501,6 +527,12 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 @media (max-width: 800px) {
   .projectCard .contentCon .cardBody .imageCon {
     width: 260px;
+  }
+}
+@media (max-width: 500px) {
+  .projectCard .contentCon .cardBody .imageCon {
+    width: 260px;
+    margin-bottom: 0.7em;
   }
 }
 .projectCard .contentCon .cardBody .imageCon img {
