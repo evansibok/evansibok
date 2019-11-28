@@ -7,14 +7,31 @@
     width: 600px;
     display: flex;
     flex-direction: column;
-    padding: 3em;
+    padding: 2.6em;
     border: $about_dashed;
     /**
     * Check for repeat code when the about page is completed
     */
 
+    @media ($tablet) {
+      width: 400px;
+      padding: 1.5em;
+    }
+
     p {
       font-size: 0.9rem;
+
+      @media ($tablet) {
+        font-size: 0.8rem;
+      }
+
+      &:first-child {
+        margin-bottom: 1.2em;
+
+        @media ($tablet) {
+          margin-bottom: 1em;
+        }
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -24,7 +41,11 @@
 
   .rightCon {
     width: 400px;
-    padding: 3em;
+    padding: 2.6em;
     border: $about_dashed;
+
+    @media ($tablet) {
+      width: 300px;
+    }
   }
 }

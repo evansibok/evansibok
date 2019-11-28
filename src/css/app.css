@@ -325,22 +325,46 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   width: 600px;
   display: flex;
   flex-direction: column;
-  padding: 3em;
+  padding: 2.6em;
   border: 2px dashed #222;
   /**
   * Check for repeat code when the about page is completed
   */
 }
+@media (max-width: 800px) {
+  .aboutCon .leftCon {
+    width: 400px;
+    padding: 1.5em;
+  }
+}
 .aboutCon .leftCon p {
   font-size: 0.9rem;
+}
+@media (max-width: 800px) {
+  .aboutCon .leftCon p {
+    font-size: 0.8rem;
+  }
+}
+.aboutCon .leftCon p:first-child {
+  margin-bottom: 1.2em;
+}
+@media (max-width: 800px) {
+  .aboutCon .leftCon p:first-child {
+    margin-bottom: 1em;
+  }
 }
 .aboutCon .leftCon p:last-child {
   margin-bottom: 0;
 }
 .aboutCon .rightCon {
   width: 400px;
-  padding: 3em;
+  padding: 2.6em;
   border: 2px dashed #222;
+}
+@media (max-width: 800px) {
+  .aboutCon .rightCon {
+    width: 300px;
+  }
 }
 
 .projectCard {
