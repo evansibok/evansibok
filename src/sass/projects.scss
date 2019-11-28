@@ -1,7 +1,7 @@
 .projectCard {
   display: flex;
   flex-direction: column;
-  border: 1px solid #222;
+  border: 1px solid rgb(206, 206, 206);
   border-radius: 1em;
   font-family: $primary_font;
   margin-bottom: 0.3em;
@@ -15,12 +15,22 @@
       align-items: center;
       margin-bottom: 1.2em;
 
+      @media ($tablet) {
+        margin-bottom: 0.9em;
+      }
+
       h4 {
         margin-bottom: 0;
         text-transform: uppercase;
         font-family: $secondary_font;
         font-weight: 800;
         letter-spacing: 0.1em;
+        font-size: 1.1rem;
+
+        @media ($tablet) {
+          font-weight: 700;
+          font-size: 0.9rem;
+        }
       }
 
       ul {
@@ -30,7 +40,11 @@
 
         a {
           @include anchor_reset;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
+
+          @media ($tablet) {
+            font-size: 0.8rem;
+          }
 
           &:first-child {
             border-bottom: 0.15em solid $primary_color;
@@ -50,19 +64,31 @@
 
       .leftCon {
         width: 600px;
+
+        @media ($tablet) {
+          width: 350px;
+        }
+
         p {
           font-size: 0.9rem;
           margin-bottom: 1em;
+
+          @media ($tablet) {
+            font-size: 0.8rem;
+            margin-bottom: 0.9em;
+          }
         }
         .projectIcons {
           display: flex;
           align-items: center;
           svg {
             margin-right: 0.8em;
-          }
-          img {
-            width: 25px;
-            margin-bottom: 0;
+            width: 1.5rem;
+
+            @media ($tablet) {
+              margin-right: 0.6em;
+              width: 1.2rem;
+            }
           }
         }
       }
@@ -71,9 +97,17 @@
         width: 320px;
         margin-bottom: 0;
 
+        @media ($tablet) {
+          width: 260px;
+        }
+
         img {
           border-radius: 0.8em;
           margin-bottom: 0;
+
+          @media ($tablet) {
+            border-radius: 0.6em;
+          }
         }
       }
     }

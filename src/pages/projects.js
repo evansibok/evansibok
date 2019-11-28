@@ -9,7 +9,6 @@ import { SocialLinks } from "../components/social-links"
 import HTML5 from "../components/svgs/html5-component"
 import CSS3 from "../components/svgs/css3-component"
 import JS from "../components/svgs/js-component"
-import Figma from "../components/svgs/figma-component"
 import Github from "../components/svgs/github-component"
 import ReactJS from "../components/svgs/react-js-component"
 
@@ -134,8 +133,8 @@ const ProjectsPage = () => {
               <div className="projectIcons">
                 <HTML5 />
                 <CSS3 />
-                <Github />
                 <ReactJS />
+                <Github />
               </div>
             </div>
             <div className="imageCon">
