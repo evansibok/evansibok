@@ -12,7 +12,8 @@
 }
 @media (max-width: 500px) {
   .container {
-    max-width: 400px;
+    max-width: 320px;
+    min-height: 75vh;
   }
 }
 
@@ -177,11 +178,6 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .homeCon {
   display: flex;
   flex-direction: column;
-}
-@media (max-width: 500px) {
-  .homeCon {
-    margin: 0 auto;
-  }
 }
 .homeCon .h1HomeCon {
   text-transform: uppercase;

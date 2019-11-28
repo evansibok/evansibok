@@ -10,7 +10,8 @@
   }
 
   @media ($mobile) {
-    max-width: 400px;
+    max-width: 320px;
+    min-height: 75vh;
   }
 }
 
