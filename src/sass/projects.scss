@@ -9,7 +9,7 @@
   .contentCon {
     margin: 1.5em 2em;
 
-    @media ($pixel2) {
+    @media ($iPhoneXSMax) {
       margin: 1.4em;
     }
 
@@ -23,7 +23,7 @@
         margin-bottom: 0.9em;
       }
 
-      @media ($pixel2) {
+      @media ($iPhoneXSMax) {
         flex-direction: column;
         align-items: flex-start;
       }
@@ -41,7 +41,7 @@
           font-size: 0.9rem;
         }
 
-        @media ($pixel2) {
+        @media ($iPhoneXSMax) {
           margin-bottom: 0.8em;
         }
       }
@@ -75,7 +75,7 @@
       display: flex;
       justify-content: space-between;
 
-      @media ($pixel2) {
+      @media ($iPhoneXSMax) {
         flex-direction: column-reverse;
       }
 
@@ -86,7 +86,7 @@
           width: 350px;
         }
 
-        @media ($pixel2) {
+        @media ($iPhoneXSMax) {
           width: 260px;
         }
 
@@ -126,7 +126,7 @@
           width: 260px;
         }
 
-        @media ($pixel2) {
+        @media ($iPhoneXSMax) {
           width: 260px;
           margin-bottom: 0.7em;
         }

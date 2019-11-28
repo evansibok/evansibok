@@ -61,7 +61,7 @@ header {
       .hamburger {
         display: none;
 
-        @media ($pixel2) {
+        @media ($iPhoneXSMax) {
           display: unset;
         }
       }

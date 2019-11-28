@@ -48,14 +48,14 @@
     .leftCon {
       border: $dark_mode_dashed;
 
-      @media ($pixel2) {
+      @media ($iPhoneXSMax) {
         border: none;
       }
     }
     .rightCon {
       border: $dark_mode_dashed;
 
-      @media ($pixel2) {
+      @media ($iPhoneXSMax) {
         border: none;
       }
     }

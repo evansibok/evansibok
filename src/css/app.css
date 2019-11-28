@@ -10,7 +10,7 @@
     max-width: 720px;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .container {
     max-width: 320px;
   }
@@ -84,7 +84,7 @@ header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggle {
 header .headerContentContainer .rightCon .hamburger {
   display: none;
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   header .headerContentContainer .rightCon .hamburger {
     display: unset;
   }
@@ -165,7 +165,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .dark-mode .aboutCon .leftCon {
   border: 2px dashed #fff;
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .dark-mode .aboutCon .leftCon {
     border: none;
   }
@@ -173,7 +173,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .dark-mode .aboutCon .rightCon {
   border: 2px dashed #fff;
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .dark-mode .aboutCon .rightCon {
     border: none;
   }
@@ -208,7 +208,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     margin-top: 1.3em;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .homeCon .h1HomeCon {
     margin-top: 1em;
     font-size: 1.7rem;
@@ -235,7 +235,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     font-weight: 600;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .homeCon .h4HomeCon {
     width: 300px;
     font-size: 1.8rem;
@@ -355,7 +355,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   justify-content: space-between;
   font-family: "Nunito", sans-serif;
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .aboutCon {
     flex-direction: column;
   }
@@ -376,7 +376,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     padding: 1.5em;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .aboutCon .leftCon {
     width: 300px;
     margin-bottom: 1em;
@@ -408,14 +408,14 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     width: 300px;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .aboutCon .rightCon {
     margin-top: 1em;
     padding: 0;
     border: none;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .aboutCon .rightCon svg {
     width: 1.5rem;
     margin-right: 1em;
@@ -443,7 +443,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .projectCard .contentCon {
   margin: 1.5em 2em;
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .projectCard .contentCon {
     margin: 1.4em;
   }
@@ -459,7 +459,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     margin-bottom: 0.9em;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .projectCard .contentCon .cardHead {
     flex-direction: column;
     align-items: flex-start;
@@ -479,7 +479,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     font-size: 0.9rem;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .projectCard .contentCon .cardHead h4 {
     margin-bottom: 0.8em;
   }
@@ -516,7 +516,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .projectCard .contentCon .cardBody {
     flex-direction: column-reverse;
   }
@@ -529,7 +529,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     width: 350px;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .projectCard .contentCon .cardBody .leftCon {
     width: 260px;
   }
@@ -572,7 +572,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     width: 260px;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .projectCard .contentCon .cardBody .imageCon {
     width: 260px;
     margin-bottom: 0.7em;
