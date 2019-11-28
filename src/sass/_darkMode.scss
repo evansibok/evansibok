@@ -48,16 +48,24 @@
     .leftCon {
       border: $dark_mode_dashed;
 
-      @media ($iPhoneXSMax) {
+      @media ($iPad) {
         border: none;
       }
+
+      // @media ($iPhoneXSMax) {
+      //   border: none;
+      // }
     }
     .rightCon {
       border: $dark_mode_dashed;
 
-      @media ($iPhoneXSMax) {
+      @media ($iPad) {
         border: none;
       }
+
+      // @media ($iPhoneXSMax) {
+      //   border: none;
+      // }
     }
   }
 

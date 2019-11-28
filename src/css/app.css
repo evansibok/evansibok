@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 920px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -165,7 +165,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .dark-mode .aboutCon .leftCon {
   border: 2px dashed #fff;
 }
-@media (max-width: 414px) {
+@media (max-width: 800px) {
   .dark-mode .aboutCon .leftCon {
     border: none;
   }
@@ -173,7 +173,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .dark-mode .aboutCon .rightCon {
   border: 2px dashed #fff;
 }
-@media (max-width: 414px) {
+@media (max-width: 800px) {
   .dark-mode .aboutCon .rightCon {
     border: none;
   }
@@ -214,14 +214,37 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     font-size: 1.7rem;
   }
 }
+.homeCon .h1HomeCon p {
+  margin-bottom: 0;
+}
+.homeCon .h1HomeCon p:first-child {
+  margin-bottom: 0.5em;
+}
+@media (max-width: 800px) {
+  .homeCon .h1HomeCon p:first-child {
+    margin-bottom: 0.3em;
+  }
+}
+@media (max-width: 414px) {
+  .homeCon .h1HomeCon p:first-child {
+    margin-bottom: 0.5em;
+  }
+}
+.homeCon .h1HomeCon p:last-child {
+  margin-bottom: 1em;
+}
+@media (max-width: 800px) {
+  .homeCon .h1HomeCon p:last-child {
+    margin-bottom: 0.8em;
+  }
+}
 .homeCon .h1HomeCon .letCol {
   color: #eb3349;
 }
 .homeCon .h4HomeCon {
   font-size: 2.8rem;
-  max-width: 830px;
+  max-width: 780px;
   line-height: 1.3em;
-  margin-top: 1em;
   margin-bottom: 0;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
@@ -231,7 +254,6 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   .homeCon .h4HomeCon {
     font-size: 2.1rem;
     width: 550px;
-    margin-top: 0.8em;
     font-weight: 600;
   }
 }
@@ -354,26 +376,30 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   display: flex;
   justify-content: space-between;
   font-family: "Nunito", sans-serif;
+  margin-top: 1em;
 }
-@media (max-width: 414px) {
+@media (max-width: 800px) {
   .aboutCon {
     flex-direction: column;
   }
 }
+@media (max-width: 414px) {
+  .aboutCon {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 .aboutCon .leftCon {
-  width: 600px;
+  width: 520px;
   display: flex;
   flex-direction: column;
-  padding: 2.6em;
-  border: 2px dashed #222;
   /**
   * Check for repeat code when the about page is completed
   */
 }
 @media (max-width: 800px) {
   .aboutCon .leftCon {
-    width: 400px;
-    padding: 1.5em;
+    width: 560px;
   }
 }
 @media (max-width: 414px) {
@@ -398,35 +424,59 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .aboutCon .leftCon p:last-child {
   margin-bottom: 0;
 }
-.aboutCon .rightCon {
-  width: 400px;
-  padding: 2.6em;
-  border: 2px dashed #222;
-}
 @media (max-width: 800px) {
-  .aboutCon .rightCon {
-    width: 300px;
+  .aboutCon .leftCon p:last-child {
+    margin-bottom: 1.6em;
   }
 }
 @media (max-width: 414px) {
+  .aboutCon .leftCon p:last-child {
+    margin-bottom: 1em;
+  }
+}
+.aboutCon .rightCon {
+  width: 320px;
+}
+@media (max-width: 414px) {
   .aboutCon .rightCon {
-    margin-top: 1em;
+    width: 300px;
     padding: 0;
     border: none;
   }
 }
-@media (max-width: 414px) {
+.aboutCon .rightCon svg {
+  width: 1.8rem;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+}
+@media (max-width: 800px) {
   .aboutCon .rightCon svg {
     width: 1.5rem;
+    margin-right: 1.2em;
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 414px) {
+  .aboutCon .rightCon svg {
     margin-right: 1em;
-    margin-top: 0.3em;
   }
 }
 .aboutCon .rightCon img {
-  width: 1.5rem;
-  margin-right: 1em;
-  margin-bottom: 0;
-  margin-top: 0.3em;
+  width: 1.8rem;
+  margin-bottom: 2em;
+  margin-right: 1.5em;
+}
+@media (max-width: 800px) {
+  .aboutCon .rightCon img {
+    width: 1.5rem;
+    margin-right: 1.2em;
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 414px) {
+  .aboutCon .rightCon img {
+    margin-right: 1em;
+  }
 }
 .aboutCon .rightCon .fig {
   width: 1rem;
