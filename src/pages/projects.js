@@ -106,7 +106,11 @@ const ProjectsPage = () => {
             <h4>Nasa Photo of the Day</h4>
 
             <ul>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://nasa-photo-of-the-day.evansibok.now.sh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <li>Website</li>
               </a>
               <a

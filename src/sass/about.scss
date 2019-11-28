@@ -3,6 +3,10 @@
   justify-content: space-between;
   font-family: $primary_font;
 
+  @media ($mobile) {
+    flex-direction: column;
+  }
+
   .leftCon {
     width: 600px;
     display: flex;
@@ -18,12 +22,15 @@
       padding: 1.5em;
     }
 
+    @media ($mobile) {
+      width: 300px;
+      margin-bottom: 1em;
+      padding: 0;
+      border: none;
+    }
+
     p {
       font-size: 0.9rem;
-
-      @media ($tablet) {
-        font-size: 0.8rem;
-      }
 
       &:first-child {
         margin-bottom: 1.2em;

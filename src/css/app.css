@@ -13,7 +13,6 @@
 @media (max-width: 500px) {
   .container {
     max-width: 320px;
-    min-height: 90vh;
   }
 }
 
@@ -341,6 +340,11 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   justify-content: space-between;
   font-family: "Nunito", sans-serif;
 }
+@media (max-width: 500px) {
+  .aboutCon {
+    flex-direction: column;
+  }
+}
 .aboutCon .leftCon {
   width: 600px;
   display: flex;
@@ -357,13 +361,16 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
     padding: 1.5em;
   }
 }
+@media (max-width: 500px) {
+  .aboutCon .leftCon {
+    width: 300px;
+    margin-bottom: 1em;
+    padding: 0;
+    border: none;
+  }
+}
 .aboutCon .leftCon p {
   font-size: 0.9rem;
-}
-@media (max-width: 800px) {
-  .aboutCon .leftCon p {
-    font-size: 0.8rem;
-  }
 }
 .aboutCon .leftCon p:first-child {
   margin-bottom: 1.2em;
