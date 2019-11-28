@@ -16,6 +16,10 @@
       margin-top: 1.3em;
     }
 
+    @media ($mobile) {
+      margin-top: 1em;
+    }
+
     .letCol {
       color: $primary_color;
     }
