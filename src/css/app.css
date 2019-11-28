@@ -208,8 +208,8 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 }
 @media (max-width: 800px) {
   .homeCon .h4HomeCon {
-    font-size: 2.2rem;
-    width: 570px;
+    font-size: 2.1rem;
+    width: 550px;
     margin-top: 0.8em;
     font-weight: 600;
   }
