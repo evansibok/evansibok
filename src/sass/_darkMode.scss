@@ -16,6 +16,10 @@
           .toggled {
             top: 2px;
             left: 18px;
+
+            @media ($tablet) {
+              left: 16px;
+            }
           }
         }
       }
