@@ -48,28 +48,21 @@ const Header = () => {
 						</div>
 					</div>
 
-					<div className="hamburger">
-						<a href="#">
-							<Menu />
-						</a>
-					</div>
+					<Menu />
 				</div>
 			</div>
-
-			<div className="rightCon">
-				<nav>
-					<Link to="/about">About Me</Link>
-					<Link to="/projects">Projects</Link>
-					<a
-						className="buttonAnchor"
-						href="https://google.com"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<button>View Resume</button>
-					</a>
-				</nav>
-			</div>
+			<nav>
+				<Link to="/about">About Me</Link>
+				<Link to="/projects">Projects</Link>
+				<a
+					className="buttonAnchor"
+					href="https://google.com"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<button>View Resume</button>
+				</a>
+			</nav>
 		</header>
 	)
 }

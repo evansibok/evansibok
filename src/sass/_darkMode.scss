@@ -19,7 +19,7 @@
               left: 18px;
 
               @media ($iPad) {
-                left: 16px;
+                left: 17px;
               }
             }
           }
@@ -27,11 +27,9 @@
       }
     }
 
-    .rightCon {
-      nav {
-        a {
-          color: #fff;
-        }
+    nav {
+      a {
+        color: #fff;
       }
     }
   }
