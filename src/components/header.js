@@ -6,14 +6,14 @@ import { useDarkMode } from "./hooks/useDarkMode"
 import Menu from './svgs/menu-component'
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useDarkMode(false)
+	const [darkMode, setDarkMode] = useDarkMode(false)
 
-  const toggleHandler = evt => {
-    evt.preventDefault()
-    setDarkMode(!darkMode)
-  }
+	const toggleHandler = evt => {
+		evt.preventDefault()
+		setDarkMode(!darkMode)
+	}
 
-  const data = useStaticQuery(graphql`
+	const data = useStaticQuery(graphql`
     query brandImageQuery {
       imageSharp(
         fluid: {
@@ -29,47 +29,51 @@ const Header = () => {
       }
     }
   `)
-  const brandImage = data.imageSharp.fluid.src
-  const brandImageName = data.imageSharp.fluid.originalName
+	const brandImage = data.imageSharp.fluid.src
+	const brandImageName = data.imageSharp.fluid.originalName
 
-  return (
-    <header>
-      <div className="headerContentContainer">
-        <div className="brandLogoCon">
-          <Link to="/">
-            <img src={brandImage} alt={brandImageName} />
-          </Link>
-        </div>
+	return (
+		<header>
+			<div className="headerContentContainer">
+				<div className="leftCon">
+					<div className="brandLogoCon">
+						<Link to="/">
+							<img src={brandImage} alt={brandImageName} />
+						</Link>
+					</div>
 
-        <div className="rightCon">
-          <div className="toggleCon">
-            <div className="dark-mode__toggle" onClick={toggleHandler}>
-              <div className={darkMode ? "toggle toggled" : "toggle"} />
-            </div>
-          </div>
+					<div className="toggleMenu">
+						<div className="toggleCon">
+							<div className="dark-mode__toggle" onClick={toggleHandler}>
+								<div className={darkMode ? "toggle toggled" : "toggle"} />
+							</div>
+						</div>
 
-          <div className="hamburger">
-            <a href="#">
-              <Menu />
-            </a>
-          </div>
+						<div className="hamburger">
+							<a href="#">
+								<Menu />
+							</a>
+						</div>
+					</div>
+				</div>
 
-          <nav>
-            <Link to="/about">About Me</Link>
-            <Link to="/projects">Projects</Link>
-            <a
-              className="buttonAnchor"
-              href="https://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button>View Resume</button>
-            </a>
-          </nav>
-        </div>
-      </div>
-    </header>
-  )
+				<div className="rightCon">
+					<nav>
+						<Link to="/about">About Me</Link>
+						<Link to="/projects">Projects</Link>
+						<a
+							className="buttonAnchor"
+							href="https://google.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>View Resume</button>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+	)
 }
 
 export default Header

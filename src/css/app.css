@@ -34,29 +34,22 @@ header .headerContentContainer {
   justify-content: space-between;
   align-items: center;
 }
-header .headerContentContainer .brandLogoCon {
+header .headerContentContainer .leftCon .brandLogoCon {
   max-width: 100%;
 }
-header .headerContentContainer .brandLogoCon img {
+header .headerContentContainer .leftCon .brandLogoCon img {
   width: 100px;
   margin-bottom: -0.6em;
 }
-header .headerContentContainer .rightCon {
+header .headerContentContainer .leftCon .toggleMenu {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
-@media (max-width: 800px) {
-  header .headerContentContainer .rightCon {
-    flex-direction: column;
-  }
-}
-header .headerContentContainer .rightCon .toggleCon {
+header .headerContentContainer .leftCon .toggleMenu .toggleCon {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle {
+header .headerContentContainer .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
   background: none;
   border: 0.15em solid #222;
   border-radius: 50px;
@@ -65,12 +58,12 @@ header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle {
   width: 45px;
 }
 @media (max-width: 800px) {
-  header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle {
+  header .headerContentContainer .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
     height: 24px;
     width: 40px;
   }
 }
-header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggle {
+header .headerContentContainer .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
   background: #222;
   border-radius: 50px;
   height: 19px;
@@ -81,18 +74,22 @@ header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggle {
   width: 19px;
 }
 @media (max-width: 800px) {
-  header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggle {
+  header .headerContentContainer .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
     height: 16px;
     width: 16px;
   }
 }
-header .headerContentContainer .rightCon .hamburger {
+header .headerContentContainer .leftCon .toggleMenu .hamburger {
   display: none;
 }
 @media (max-width: 800px) {
-  header .headerContentContainer .rightCon .hamburger {
+  header .headerContentContainer .leftCon .toggleMenu .hamburger {
     display: unset;
   }
+}
+header .headerContentContainer .rightCon {
+  display: flex;
+  align-items: center;
 }
 header .headerContentContainer .rightCon nav {
   font-family: "PT Sans", sans-serif;
@@ -141,19 +138,19 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   color: #fff;
   background: #000022;
 }
-.dark-mode header .rightCon .toggleCon .dark-mode__toggle {
+.dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
   background: #eb3349;
   border: 0.15em solid #eb3349;
 }
-.dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggle {
+.dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
   background: #fff;
 }
-.dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggled {
+.dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggled {
   top: 2px;
   left: 18px;
 }
 @media (max-width: 800px) {
-  .dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggled {
+  .dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggled {
     left: 16px;
   }
 }

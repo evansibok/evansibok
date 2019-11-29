@@ -8,67 +8,67 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    .brandLogoCon {
-      max-width: 100%;
+    .leftCon {
+      .brandLogoCon {
+        max-width: 100%;
 
-      img {
-        width: 100px;
-        margin-bottom: -0.6em;
+        img {
+          width: 100px;
+          margin-bottom: -0.6em;
+        }
+      }
+
+      .toggleMenu {
+        display: flex;
+        .toggleCon {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .dark-mode__toggle {
+            background: none;
+            border: 0.15em solid #222;
+            border-radius: 50px;
+            height: 27px;
+            position: relative;
+            width: 45px;
+
+            @media ($iPad) {
+              height: 24px;
+              width: 40px;
+            }
+
+            .toggle {
+              background: #222;
+              border-radius: 50px;
+              height: 19px;
+              top: 2px;
+              left: 2.5px;
+              position: absolute;
+              transition: 0.4s;
+              width: 19px;
+
+              @media ($iPad) {
+                height: 16px;
+                width: 16px;
+              }
+            }
+          }
+        }
+
+        .hamburger {
+          display: none;
+
+          @media ($iPad) {
+            display: unset;
+          }
+        }
       }
     }
 
     .rightCon {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-
-      @media ($iPad) {
-        flex-direction: column;
-      }
-
-      .toggleCon {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .dark-mode__toggle {
-          background: none;
-          border: 0.15em solid #222;
-          border-radius: 50px;
-          height: 27px;
-          position: relative;
-          width: 45px;
-
-          @media ($iPad) {
-            height: 24px;
-            width: 40px;
-          }
-
-          .toggle {
-            background: #222;
-            border-radius: 50px;
-            height: 19px;
-            top: 2px;
-            left: 2.5px;
-            position: absolute;
-            transition: 0.4s;
-            width: 19px;
-
-            @media ($iPad) {
-              height: 16px;
-              width: 16px;
-            }
-          }
-        }
-      }
-
-      .hamburger {
-        display: none;
-
-        @media ($iPad) {
-          display: unset;
-        }
-      }
 
       nav {
         font-family: $social_link_font;
