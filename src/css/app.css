@@ -28,28 +28,32 @@
 header {
   padding: 1.2em 0;
   font-size: 0.8rem;
-}
-header .headerContentContainer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-end;
 }
-header .headerContentContainer .leftCon .brandLogoCon {
+header .leftCon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+}
+header .leftCon .brandLogoCon {
   max-width: 100%;
 }
-header .headerContentContainer .leftCon .brandLogoCon img {
+header .leftCon .brandLogoCon img {
   width: 100px;
   margin-bottom: -0.6em;
 }
-header .headerContentContainer .leftCon .toggleMenu {
+header .leftCon .toggleMenu {
   display: flex;
 }
-header .headerContentContainer .leftCon .toggleMenu .toggleCon {
+header .leftCon .toggleMenu .toggleCon {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .headerContentContainer .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
+header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
   background: none;
   border: 0.15em solid #222;
   border-radius: 50px;
@@ -58,12 +62,12 @@ header .headerContentContainer .leftCon .toggleMenu .toggleCon .dark-mode__toggl
   width: 45px;
 }
 @media (max-width: 800px) {
-  header .headerContentContainer .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
+  header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
     height: 24px;
     width: 40px;
   }
 }
-header .headerContentContainer .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
+header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
   background: #222;
   border-radius: 50px;
   height: 19px;
@@ -74,28 +78,29 @@ header .headerContentContainer .leftCon .toggleMenu .toggleCon .dark-mode__toggl
   width: 19px;
 }
 @media (max-width: 800px) {
-  header .headerContentContainer .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
+  header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
     height: 16px;
     width: 16px;
   }
 }
-header .headerContentContainer .leftCon .toggleMenu .hamburger {
+header .leftCon .toggleMenu .hamburger {
   display: none;
 }
 @media (max-width: 800px) {
-  header .headerContentContainer .leftCon .toggleMenu .hamburger {
+  header .leftCon .toggleMenu .hamburger {
     display: unset;
   }
 }
-header .headerContentContainer .rightCon {
+header .rightCon {
   display: flex;
   align-items: center;
+  width: auto;
 }
-header .headerContentContainer .rightCon nav {
+header .rightCon nav {
   font-family: "PT Sans", sans-serif;
   font-weight: 500;
 }
-header .headerContentContainer .rightCon nav a {
+header .rightCon nav a {
   margin-left: 2em;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
@@ -103,14 +108,14 @@ header .headerContentContainer .rightCon nav a {
   padding-bottom: 0.2em;
 }
 @media (max-width: 800px) {
-  header .headerContentContainer .rightCon nav a {
+  header .rightCon nav a {
     margin-left: 1.2em;
   }
 }
-header .headerContentContainer .rightCon nav a:hover {
+header .rightCon nav a:hover {
   border-bottom: 0.15em solid #eb3349;
 }
-header .headerContentContainer .rightCon nav a button {
+header .rightCon nav a button {
   padding: 0.4em 1.2em;
   border-radius: 0 1em;
   border: 0.15em solid #eb3349;
@@ -118,19 +123,19 @@ header .headerContentContainer .rightCon nav a button {
   color: #eb3349;
 }
 @media (max-width: 800px) {
-  header .headerContentContainer .rightCon nav a button {
+  header .rightCon nav a button {
     padding: 0.2em 1em;
     background: #eb3349;
     color: #fff;
   }
 }
-header .headerContentContainer .rightCon nav a button:hover {
+header .rightCon nav a button:hover {
   cursor: pointer;
   background: #eb3349;
   border: 0.15em solid #eb3349;
   color: #fff;
 }
-header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
+header .rightCon nav a:nth-of-type(3):hover {
   border-bottom: initial;
 }
 

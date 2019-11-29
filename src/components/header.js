@@ -34,43 +34,41 @@ const Header = () => {
 
 	return (
 		<header>
-			<div className="headerContentContainer">
-				<div className="leftCon">
-					<div className="brandLogoCon">
-						<Link to="/">
-							<img src={brandImage} alt={brandImageName} />
-						</Link>
-					</div>
-
-					<div className="toggleMenu">
-						<div className="toggleCon">
-							<div className="dark-mode__toggle" onClick={toggleHandler}>
-								<div className={darkMode ? "toggle toggled" : "toggle"} />
-							</div>
-						</div>
-
-						<div className="hamburger">
-							<a href="#">
-								<Menu />
-							</a>
-						</div>
-					</div>
+			<div className="leftCon">
+				<div className="brandLogoCon">
+					<Link to="/">
+						<img src={brandImage} alt={brandImageName} />
+					</Link>
 				</div>
 
-				<div className="rightCon">
-					<nav>
-						<Link to="/about">About Me</Link>
-						<Link to="/projects">Projects</Link>
-						<a
-							className="buttonAnchor"
-							href="https://google.com"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<button>View Resume</button>
+				<div className="toggleMenu">
+					<div className="toggleCon">
+						<div className="dark-mode__toggle" onClick={toggleHandler}>
+							<div className={darkMode ? "toggle toggled" : "toggle"} />
+						</div>
+					</div>
+
+					<div className="hamburger">
+						<a href="#">
+							<Menu />
 						</a>
-					</nav>
+					</div>
 				</div>
+			</div>
+
+			<div className="rightCon">
+				<nav>
+					<Link to="/about">About Me</Link>
+					<Link to="/projects">Projects</Link>
+					<a
+						className="buttonAnchor"
+						href="https://google.com"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<button>View Resume</button>
+					</a>
+				</nav>
 			</div>
 		</header>
 	)
