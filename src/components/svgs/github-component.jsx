@@ -1,7 +1,7 @@
 import React from "react"
 
 const Github = props => (
-  <svg width="1.5rem" viewBox="0 0 60 60" fill="none" {...props}>
+  <svg viewBox="0 0 60 60" fill="none" {...props}>
     <path
       d="M30 59.792c16.569 0 30-13.385 30-29.896C60 13.385 46.569 0 30 0 13.431 0 0 13.385 0 29.896c0 16.511 13.431 29.896 30 29.896z"
       fill="#282828"

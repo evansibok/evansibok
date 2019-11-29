@@ -1,7 +1,7 @@
 import React from "react"
 
 const GraphQLIcon = props => (
-  <svg width="1.5rem" viewBox="0 0 400 400" {...props}>
+  <svg viewBox="0 0 400 400" {...props}>
     <path
       fill="#E10098"
       d="M57.468 302.66l-14.376-8.3 160.15-277.38 14.376 8.3z"

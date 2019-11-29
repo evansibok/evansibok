@@ -20,6 +20,7 @@ header {
     .rightCon {
       display: flex;
       align-items: center;
+      justify-content: space-between;
 
       .toggleCon {
         display: flex;
@@ -34,16 +35,34 @@ header {
           position: relative;
           width: 45px;
 
+          @media ($iPad) {
+            height: 24px;
+            width: 40px;
+          }
+
           .toggle {
             background: #222;
             border-radius: 50px;
             height: 19px;
             top: 2px;
-            left: 3px;
+            left: 2.5px;
             position: absolute;
             transition: 0.4s;
             width: 19px;
+
+            @media ($iPad) {
+              height: 16px;
+              width: 16px;
+            }
           }
+        }
+      }
+
+      .hamburger {
+        display: none;
+
+        @media ($iPhoneXSMax) {
+          display: unset;
         }
       }
 
@@ -58,6 +77,10 @@ header {
           letter-spacing: 0.08em;
           padding-bottom: 0.2em;
 
+          @media ($iPad) {
+            margin-left: 1.2em;
+          }
+
           &:hover {
             border-bottom: 0.15em solid $primary_color;
           }
@@ -68,6 +91,12 @@ header {
             border: 0.15em solid $primary_color;
             background: transparent;
             color: $primary_color;
+
+            @media ($iPad) {
+              padding: 0.2em 1em;
+              background: $primary_color;
+              color: #fff;
+            }
 
             &:hover {
               cursor: pointer;

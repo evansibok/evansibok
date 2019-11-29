@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { useDarkMode } from "./hooks/useDarkMode"
+import Menu from './svgs/menu-component'
 
 const Header = () => {
   const [darkMode, setDarkMode] = useDarkMode(false)
@@ -46,6 +47,13 @@ const Header = () => {
               <div className={darkMode ? "toggle toggled" : "toggle"} />
             </div>
           </div>
+
+          <div className="hamburger">
+            <a href="#">
+              <Menu />
+            </a>
+          </div>
+
           <nav>
             <Link to="/about">About Me</Link>
             <Link to="/projects">Projects</Link>

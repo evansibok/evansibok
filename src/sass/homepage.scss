@@ -11,6 +11,37 @@
     font-family: $primary_font;
     letter-spacing: 0.07em;
 
+    @media ($iPad) {
+      font-size: 2rem;
+      margin-top: 1.3em;
+    }
+
+    @media ($iPhoneXSMax) {
+      margin-top: 1em;
+      font-size: 1.7rem;
+    }
+
+    p {
+      margin-bottom: 0;
+
+      &:first-child {
+        margin-bottom: 0.5em;
+        @media ($iPad) {
+          margin-bottom: 0.3em;
+        }
+        @media ($iPhoneXSMax) {
+          margin-bottom: 0.5em;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 1em;
+        @media ($iPad) {
+          margin-bottom: 0.8em;
+        }
+      }
+    }
+
     .letCol {
       color: $primary_color;
     }
@@ -18,20 +49,40 @@
 
   .h4HomeCon {
     font-size: 2.8rem;
-    max-width: 830px;
+    max-width: 780px;
     line-height: 1.3em;
-    margin-top: 1em;
     margin-bottom: 0;
     font-family: $primary_font;
     font-weight: 700;
     letter-spacing: 0.01em;
+
+    @media ($iPad) {
+      font-size: 2.1rem;
+      width: 550px;
+      font-weight: 600;
+    }
+
+    @media ($iPhoneXSMax) {
+      width: 300px;
+      font-size: 1.8rem;
+      line-height: 1.5em;
+      margin-top: 0.4em;
+    }
   }
 
   ul {
     @include social-ul;
 
+    @media ($iPad) {
+      margin-top: 2em;
+    }
+
     a {
       font-size: 0.9rem;
+
+      @media ($iPad) {
+        font-size: 0.8rem;
+      }
     }
   }
 }

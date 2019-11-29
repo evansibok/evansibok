@@ -1,12 +1,17 @@
 .projectCard {
   display: flex;
   flex-direction: column;
-  border: 1px solid #222;
+  border: 1px solid rgb(206, 206, 206);
   border-radius: 1em;
   font-family: $primary_font;
+  margin-bottom: 0.3em;
 
   .contentCon {
     margin: 1.5em 2em;
+
+    @media ($iPhoneXSMax) {
+      margin: 1.4em;
+    }
 
     .cardHead {
       display: flex;
@@ -14,12 +19,31 @@
       align-items: center;
       margin-bottom: 1.2em;
 
+      @media ($iPad) {
+        margin-bottom: 0.9em;
+      }
+
+      @media ($iPhoneXSMax) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       h4 {
         margin-bottom: 0;
         text-transform: uppercase;
         font-family: $secondary_font;
         font-weight: 800;
         letter-spacing: 0.1em;
+        font-size: 1.1rem;
+
+        @media ($iPad) {
+          font-weight: 700;
+          font-size: 0.9rem;
+        }
+
+        @media ($iPhoneXSMax) {
+          margin-bottom: 0.8em;
+        }
       }
 
       ul {
@@ -29,7 +53,11 @@
 
         a {
           @include anchor_reset;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
+
+          @media ($iPad) {
+            font-size: 0.8rem;
+          }
 
           &:first-child {
             border-bottom: 0.15em solid $primary_color;
@@ -47,19 +75,45 @@
       display: flex;
       justify-content: space-between;
 
+      @media ($iPhoneXSMax) {
+        flex-direction: column-reverse;
+      }
+
       .leftCon {
         width: 600px;
+
+        @media ($iPad) {
+          width: 350px;
+        }
+
+        @media ($iPhoneXSMax) {
+          width: 260px;
+        }
+
+        @media ($galaxyS5) {
+          width: 250px;
+        }
+
         p {
           font-size: 0.9rem;
           margin-bottom: 1em;
+
+          @media ($iPad) {
+            font-size: 0.8rem;
+            margin-bottom: 0.4em;
+          }
         }
         .projectIcons {
+          display: flex;
+          align-items: center;
           svg {
             margin-right: 0.8em;
-          }
-          img {
-            width: 25px;
-            margin-bottom: 0;
+            width: 1.5rem;
+
+            @media ($iPad) {
+              margin-right: 0.6em;
+              width: 1.2rem;
+            }
           }
         }
       }
@@ -68,9 +122,27 @@
         width: 320px;
         margin-bottom: 0;
 
+        @media ($iPad) {
+          width: 260px;
+        }
+
+        @media ($iPhoneXSMax) {
+          width: 260px;
+          margin-bottom: 0.7em;
+        }
+
+        @media ($galaxyS5) {
+          width: 250px;
+          margin-bottom: 0.7em;
+        }
+
         img {
           border-radius: 0.8em;
           margin-bottom: 0;
+
+          @media ($iPad) {
+            border-radius: 0.6em;
+          }
         }
       }
     }

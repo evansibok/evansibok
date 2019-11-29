@@ -1,7 +1,7 @@
 import React from "react"
 
 const ReactJS = props => (
-  <svg width="1.5rem" viewBox="0 0 50 44" fill="none" {...props}>
+  <svg viewBox="0 0 50 44" fill="none" {...props}>
     <path
       d="M24.578 26.202a4.39 4.39 0 100-8.78 4.39 4.39 0 000 8.78z"
       fill="#00D8FF"

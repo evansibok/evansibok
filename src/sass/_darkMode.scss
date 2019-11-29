@@ -16,6 +16,10 @@
           .toggled {
             top: 2px;
             left: 18px;
+
+            @media ($iPad) {
+              left: 16px;
+            }
           }
         }
       }
@@ -42,10 +46,14 @@
 
   .aboutCon {
     .leftCon {
-      border: $dark_mode_dashed;
+      @media ($iPad) {
+        border: none;
+      }
     }
     .rightCon {
-      border: $dark_mode_dashed;
+      @media ($iPad) {
+        border: none;
+      }
     }
   }
 
