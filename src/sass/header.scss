@@ -22,6 +22,10 @@ header {
       align-items: center;
       justify-content: space-between;
 
+      @media ($iPad) {
+        flex-direction: column;
+      }
+
       .toggleCon {
         display: flex;
         justify-content: space-between;
@@ -61,7 +65,7 @@ header {
       .hamburger {
         display: none;
 
-        @media ($iPhoneXSMax) {
+        @media ($iPad) {
           display: unset;
         }
       }

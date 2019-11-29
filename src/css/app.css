@@ -46,6 +46,11 @@ header .headerContentContainer .rightCon {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 800px) {
+  header .headerContentContainer .rightCon {
+    flex-direction: column;
+  }
+}
 header .headerContentContainer .rightCon .toggleCon {
   display: flex;
   justify-content: space-between;
@@ -84,7 +89,7 @@ header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggle {
 header .headerContentContainer .rightCon .hamburger {
   display: none;
 }
-@media (max-width: 414px) {
+@media (max-width: 800px) {
   header .headerContentContainer .rightCon .hamburger {
     display: unset;
   }
