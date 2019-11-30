@@ -1,12 +1,13 @@
 header {
   display: flex;
-  padding: 1.2em 0;
+  padding: 2em 0;
   font-size: 0.8rem;
   justify-content: flex-end;
 
   @media screen and ($iPad) {
     flex-direction: column;
-    // border-bottom: 0.1em solid rgb(180, 180, 180);
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   .leftCon {
@@ -16,7 +17,7 @@ header {
     flex-grow: 1;
 
     @media screen and ($iPad) {
-      // border-bottom: 0.1em solid rgb(180, 180, 180);
+      margin-bottom: 2em;
     }
 
     .brandLogoCon {
@@ -25,6 +26,9 @@ header {
       img {
         width: 100px;
         margin-bottom: -0.6em;
+      }
+
+      @media screen and ($iPad) {
       }
     }
 
@@ -72,7 +76,11 @@ header {
 
         @media screen and ($iPad) {
           display: unset;
-          margin-left: 5em;
+          margin-left: 2em;
+        }
+
+        @media screen and ($iPhoneXSMax) {
+          margin-left: 1em;
         }
       }
     }
@@ -85,12 +93,19 @@ header {
     font-weight: 500;
 
     @media screen and ($iPad) {
-      border-top: 0.1em solid rgb(180, 180, 180);
       flex-direction: column;
       align-items: flex-start;
-      // margin-left: auto;
-      background: rgba(235, 51, 73, 0.2);
+      background: $mobile-nav-bg;
       // display: none;
+    }
+
+    @media screen and ($iPhoneXSMax) {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      bottom: 0;
+      left: 0;
+      background: $mobile-nav-bg;
     }
 
     a {
@@ -103,6 +118,13 @@ header {
       @media screen and ($iPad) {
         margin-left: 3em;
         margin-top: 1.5em;
+      }
+
+      @media screen and ($iPhoneXSMax) {
+        margin-left: 0;
+        margin-top: 5em;
+        align-self: center;
+        justify-self: center;
       }
 
       &:hover {
@@ -120,7 +142,12 @@ header {
           padding: 0.2em 1em;
           background: $primary_color;
           color: #fff;
-          margin-bottom: 1.5em;
+          margin-bottom: 2em;
+          border-radius: 0.3em;
+        }
+
+        @media screen and ($iPhoneXSMax) {
+          margin-bottom: 0;
         }
 
         &:hover {

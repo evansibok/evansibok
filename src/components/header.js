@@ -51,6 +51,7 @@ const Header = () => {
 					<Menu />
 				</div>
 			</div>
+
 			<nav>
 				<Link to="/about">About Me</Link>
 				<Link to="/projects">Projects</Link>

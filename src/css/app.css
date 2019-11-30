@@ -27,13 +27,15 @@
 
 header {
   display: flex;
-  padding: 1.2em 0;
+  padding: 2em 0;
   font-size: 0.8rem;
   justify-content: flex-end;
 }
 @media screen and (max-width: 800px) {
   header {
     flex-direction: column;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 }
 header .leftCon {
@@ -41,6 +43,11 @@ header .leftCon {
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
+}
+@media screen and (max-width: 800px) {
+  header .leftCon {
+    margin-bottom: 2em;
+  }
 }
 header .leftCon .brandLogoCon {
   max-width: 100%;
@@ -94,7 +101,12 @@ header .leftCon .toggleMenu svg {
 @media screen and (max-width: 800px) {
   header .leftCon .toggleMenu svg {
     display: unset;
-    margin-left: 5em;
+    margin-left: 2em;
+  }
+}
+@media screen and (max-width: 414px) {
+  header .leftCon .toggleMenu svg {
+    margin-left: 1em;
   }
 }
 header nav {
@@ -105,10 +117,19 @@ header nav {
 }
 @media screen and (max-width: 800px) {
   header nav {
-    border-top: 0.1em solid #b4b4b4;
     flex-direction: column;
     align-items: flex-start;
-    background: rgba(235, 51, 73, 0.2);
+    background: #e8c9c4;
+  }
+}
+@media screen and (max-width: 414px) {
+  header nav {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    background: #e8c9c4;
   }
 }
 header nav a {
@@ -122,6 +143,14 @@ header nav a {
   header nav a {
     margin-left: 3em;
     margin-top: 1.5em;
+  }
+}
+@media screen and (max-width: 414px) {
+  header nav a {
+    margin-left: 0;
+    margin-top: 5em;
+    align-self: center;
+    justify-self: center;
   }
 }
 header nav a:hover {
@@ -139,7 +168,13 @@ header nav a button {
     padding: 0.2em 1em;
     background: #eb3349;
     color: #fff;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+  }
+}
+@media screen and (max-width: 414px) {
+  header nav a button {
+    margin-bottom: 0;
   }
 }
 header nav a button:hover {
