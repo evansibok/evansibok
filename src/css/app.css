@@ -3,19 +3,19 @@
   max-width: 920px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .container {
     max-width: 720px;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .container {
     max-width: 320px;
   }
 }
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .container {
     max-width: 300px;
   }
@@ -26,32 +26,46 @@
 }
 
 header {
-  padding: 1.2em 0;
-  font-size: 0.8rem;
-}
-header .headerContentContainer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 2em 0;
+  font-size: 0.8rem;
+  justify-content: flex-end;
 }
-header .headerContentContainer .brandLogoCon {
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+header .leftCon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+@media screen and (max-width: 800px) {
+  header .leftCon {
+    margin-bottom: 2em;
+  }
+}
+header .leftCon .brandLogoCon {
   max-width: 100%;
 }
-header .headerContentContainer .brandLogoCon img {
+header .leftCon .brandLogoCon img {
   width: 100px;
   margin-bottom: -0.6em;
 }
-header .headerContentContainer .rightCon {
+header .leftCon .toggleMenu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-header .headerContentContainer .rightCon .toggleCon {
+header .leftCon .toggleMenu .toggleCon {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle {
+header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
   background: none;
   border: 0.15em solid #222;
   border-radius: 50px;
@@ -59,76 +73,110 @@ header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle {
   position: relative;
   width: 45px;
 }
-@media (max-width: 800px) {
-  header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle {
+@media screen and (max-width: 800px) {
+  header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
     height: 24px;
     width: 40px;
   }
 }
-header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggle {
+header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
   background: #222;
   border-radius: 50px;
   height: 19px;
   top: 2px;
-  left: 2.5px;
+  left: 3px;
   position: absolute;
   transition: 0.4s;
   width: 19px;
 }
-@media (max-width: 800px) {
-  header .headerContentContainer .rightCon .toggleCon .dark-mode__toggle .toggle {
+@media screen and (max-width: 800px) {
+  header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
     height: 16px;
     width: 16px;
   }
 }
-header .headerContentContainer .rightCon .hamburger {
+header .leftCon .toggleMenu svg {
   display: none;
 }
-@media (max-width: 414px) {
-  header .headerContentContainer .rightCon .hamburger {
+@media screen and (max-width: 800px) {
+  header .leftCon .toggleMenu svg {
     display: unset;
+    margin-left: 2em;
   }
 }
-header .headerContentContainer .rightCon nav {
+header nav {
+  display: flex;
+  align-items: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 500;
 }
-header .headerContentContainer .rightCon nav a {
+@media screen and (max-width: 800px) {
+  header nav {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #e8c9c4;
+    display: none;
+    z-index: 1;
+  }
+}
+header nav svg {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  header nav svg {
+    display: unset;
+    align-self: flex-end;
+    margin: 3em;
+  }
+}
+header nav a {
   margin-left: 2em;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   letter-spacing: 0.08em;
   padding-bottom: 0.2em;
 }
-@media (max-width: 800px) {
-  header .headerContentContainer .rightCon nav a {
-    margin-left: 1.2em;
+@media screen and (max-width: 800px) {
+  header nav a {
+    margin-left: 0;
+    margin-top: 3em;
+    align-self: center;
+    justify-self: center;
   }
 }
-header .headerContentContainer .rightCon nav a:hover {
+header nav a:hover {
   border-bottom: 0.15em solid #eb3349;
 }
-header .headerContentContainer .rightCon nav a button {
+header nav a button {
   padding: 0.4em 1.2em;
   border-radius: 0 1em;
   border: 0.15em solid #eb3349;
   background: transparent;
   color: #eb3349;
 }
-@media (max-width: 800px) {
-  header .headerContentContainer .rightCon nav a button {
-    padding: 0.2em 1em;
+@media screen and (max-width: 800px) {
+  header nav a button {
+    padding-right: 2em;
+    padding-left: 2em;
     background: #eb3349;
     color: #fff;
+    margin-bottom: 0;
+    border-radius: 0.3em;
   }
 }
-header .headerContentContainer .rightCon nav a button:hover {
+header nav a button:hover {
   cursor: pointer;
   background: #eb3349;
   border: 0.15em solid #eb3349;
   color: #fff;
 }
-header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
+header nav a:nth-of-type(3):hover {
   border-bottom: initial;
 }
 
@@ -136,24 +184,32 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   color: #fff;
   background: #000022;
 }
-.dark-mode header .rightCon .toggleCon .dark-mode__toggle {
+.dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
   background: #eb3349;
   border: 0.15em solid #eb3349;
 }
-.dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggle {
+.dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
   background: #fff;
 }
-.dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggled {
+.dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggled {
   top: 2px;
   left: 18px;
 }
-@media (max-width: 800px) {
-  .dark-mode header .rightCon .toggleCon .dark-mode__toggle .toggled {
-    left: 16px;
+@media screen and (max-width: 800px) {
+  .dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggled {
+    left: 17px;
   }
 }
-.dark-mode header .rightCon nav a {
+.dark-mode header .leftCon svg {
+  fill: #fff;
+}
+.dark-mode header nav a {
   color: #fff;
+}
+@media screen and (max-width: 800px) {
+  .dark-mode header nav a {
+    color: initial;
+  }
 }
 .dark-mode .homeCon ul a {
   color: #fff;
@@ -162,12 +218,12 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .dark-mode .pLCon .emptyDivs {
   background: #fff;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .dark-mode .aboutCon .leftCon {
     border: none;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .dark-mode .aboutCon .rightCon {
     border: none;
   }
@@ -196,13 +252,13 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   font-family: "Nunito", sans-serif;
   letter-spacing: 0.07em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .homeCon .h1HomeCon {
     font-size: 2rem;
     margin-top: 1.3em;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .homeCon .h1HomeCon {
     margin-top: 1em;
     font-size: 1.7rem;
@@ -214,12 +270,12 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .homeCon .h1HomeCon p:first-child {
   margin-bottom: 0.5em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .homeCon .h1HomeCon p:first-child {
     margin-bottom: 0.3em;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .homeCon .h1HomeCon p:first-child {
     margin-bottom: 0.5em;
   }
@@ -227,7 +283,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .homeCon .h1HomeCon p:last-child {
   margin-bottom: 1em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .homeCon .h1HomeCon p:last-child {
     margin-bottom: 0.8em;
   }
@@ -244,14 +300,14 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   font-weight: 700;
   letter-spacing: 0.01em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .homeCon .h4HomeCon {
     font-size: 2.1rem;
     width: 550px;
     font-weight: 600;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .homeCon .h4HomeCon {
     width: 300px;
     font-size: 1.8rem;
@@ -283,7 +339,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   color: #eb3349;
   border-bottom: 1px solid #eb3349;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .homeCon ul {
     margin-top: 2em;
   }
@@ -291,7 +347,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .homeCon ul a {
   font-size: 0.9rem;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .homeCon ul a {
     font-size: 0.8rem;
   }
@@ -303,7 +359,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   padding: 1.2em 0 2em 0;
   font-family: "Nunito", sans-serif;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .pLCon {
     padding: 1em 0 1.5em 0;
   }
@@ -313,7 +369,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   width: 35px;
   height: 4px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .pLCon .emptyDivs {
     width: 28px;
     height: 3px;
@@ -326,7 +382,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   font-weight: 700;
   letter-spacing: 0.1em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .pLCon p {
     font-size: 0.7rem;
     font-weight: 600;
@@ -372,12 +428,12 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   font-family: "Nunito", sans-serif;
   margin-top: 1em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .aboutCon {
     flex-direction: column;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .aboutCon {
     flex-direction: column;
     margin-top: 0.8em;
@@ -391,14 +447,14 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   * Check for repeat code when the about page is completed
   */
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .aboutCon .leftCon {
-    width: 560px;
+    width: 620px;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .aboutCon .leftCon {
-    width: 300px;
+    width: 310px;
     margin-bottom: 1em;
     padding: 0;
     border: none;
@@ -407,10 +463,15 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .aboutCon .leftCon p {
   font-size: 0.95rem;
 }
+@media screen and (max-width: 800px) {
+  .aboutCon .leftCon p {
+    font-size: 1.1rem;
+  }
+}
 .aboutCon .leftCon p:first-child {
   margin-bottom: 1.2em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .aboutCon .leftCon p:first-child {
     margin-bottom: 1em;
   }
@@ -418,12 +479,12 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .aboutCon .leftCon p:last-child {
   margin-bottom: 0;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .aboutCon .leftCon p:last-child {
     margin-bottom: 1.6em;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .aboutCon .leftCon p:last-child {
     margin-bottom: 1em;
   }
@@ -431,7 +492,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .aboutCon .rightCon {
   width: 320px;
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .aboutCon .rightCon {
     width: 300px;
     padding: 0;
@@ -443,14 +504,14 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   margin-right: 1.5em;
   margin-bottom: 2em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .aboutCon .rightCon svg {
     width: 1.5rem;
     margin-right: 1.2em;
     margin-bottom: 1em;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .aboutCon .rightCon svg {
     margin-right: 1em;
   }
@@ -460,14 +521,14 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   margin-bottom: 2em;
   margin-right: 1.5em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .aboutCon .rightCon img {
     width: 1.5rem;
     margin-right: 1.2em;
     margin-bottom: 1em;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .aboutCon .rightCon img {
     margin-right: 1em;
   }
@@ -487,7 +548,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .projectCard .contentCon {
   margin: 1.5em 2em;
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .projectCard .contentCon {
     margin: 1.4em;
   }
@@ -498,12 +559,12 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   align-items: center;
   margin-bottom: 1.2em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .projectCard .contentCon .cardHead {
     margin-bottom: 0.9em;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .projectCard .contentCon .cardHead {
     flex-direction: column;
     align-items: flex-start;
@@ -517,13 +578,13 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   letter-spacing: 0.1em;
   font-size: 1.1rem;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .projectCard .contentCon .cardHead h4 {
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .projectCard .contentCon .cardHead h4 {
     margin-bottom: 0.8em;
   }
@@ -544,9 +605,9 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .projectCard .contentCon .cardHead ul a li {
   display: inline;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .projectCard .contentCon .cardHead ul a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 .projectCard .contentCon .cardHead ul a:first-child {
@@ -560,7 +621,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .projectCard .contentCon .cardBody {
     flex-direction: column-reverse;
   }
@@ -568,17 +629,17 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
 .projectCard .contentCon .cardBody .leftCon {
   width: 600px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .projectCard .contentCon .cardBody .leftCon {
     width: 350px;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .projectCard .contentCon .cardBody .leftCon {
     width: 260px;
   }
 }
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .projectCard .contentCon .cardBody .leftCon {
     width: 250px;
   }
@@ -587,10 +648,9 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   font-size: 0.9rem;
   margin-bottom: 1em;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .projectCard .contentCon .cardBody .leftCon p {
-    font-size: 0.8rem;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.8em;
   }
 }
 .projectCard .contentCon .cardBody .leftCon .projectIcons {
@@ -601,7 +661,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   margin-right: 0.8em;
   width: 1.5rem;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .projectCard .contentCon .cardBody .leftCon .projectIcons svg {
     margin-right: 0.6em;
     width: 1.2rem;
@@ -611,18 +671,18 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   width: 320px;
   margin-bottom: 0;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .projectCard .contentCon .cardBody .imageCon {
     width: 260px;
   }
 }
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .projectCard .contentCon .cardBody .imageCon {
-    width: 260px;
+    width: 270px;
     margin-bottom: 0.7em;
   }
 }
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .projectCard .contentCon .cardBody .imageCon {
     width: 250px;
     margin-bottom: 0.7em;
@@ -632,7 +692,7 @@ header .headerContentContainer .rightCon nav a:nth-of-type(3):hover {
   border-radius: 0.8em;
   margin-bottom: 0;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .projectCard .contentCon .cardBody .imageCon img {
     border-radius: 0.6em;
   }

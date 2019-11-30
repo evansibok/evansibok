@@ -1,12 +1,24 @@
 header {
-  padding: 1.2em 0;
-  // border-bottom: 0.1em solid rgb(180, 180, 180);
+  display: flex;
+  padding: 2em 0;
   font-size: 0.8rem;
+  justify-content: flex-end;
 
-  .headerContentContainer {
+  @media screen and ($iPad) {
+    flex-direction: column;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .leftCon {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    @media screen and ($iPad) {
+      margin-bottom: 2em;
+    }
 
     .brandLogoCon {
       max-width: 100%;
@@ -15,13 +27,14 @@ header {
         width: 100px;
         margin-bottom: -0.6em;
       }
+
+      @media screen and ($iPad) {
+      }
     }
 
-    .rightCon {
+    .toggleMenu {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-
       .toggleCon {
         display: flex;
         justify-content: space-between;
@@ -35,7 +48,7 @@ header {
           position: relative;
           width: 45px;
 
-          @media ($iPad) {
+          @media screen and ($iPad) {
             height: 24px;
             width: 40px;
           }
@@ -45,12 +58,12 @@ header {
             border-radius: 50px;
             height: 19px;
             top: 2px;
-            left: 2.5px;
+            left: 3px;
             position: absolute;
             transition: 0.4s;
             width: 19px;
 
-            @media ($iPad) {
+            @media screen and ($iPad) {
               height: 16px;
               width: 16px;
             }
@@ -58,59 +71,91 @@ header {
         }
       }
 
-      .hamburger {
+      svg {
         display: none;
 
-        @media ($iPhoneXSMax) {
+        @media screen and ($iPad) {
           display: unset;
+          margin-left: 2em;
+        }
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    font-family: $social_link_font;
+    font-weight: 500;
+
+    @media screen and ($iPad) {
+      font-size: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: $mobile-nav-bg;
+      display: none;
+      z-index: 1;
+    }
+
+    svg {
+      display: none;
+      @media screen and ($iPad) {
+        display: unset;
+        align-self: flex-end;
+        margin: 3em;
+      }
+    }
+
+    a {
+      margin-left: 2em;
+      color: hsla(0, 0%, 0%, 0.8);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      padding-bottom: 0.2em;
+
+      @media screen and ($iPad) {
+        margin-left: 0;
+        margin-top: 3em;
+        align-self: center;
+        justify-self: center;
+      }
+
+      &:hover {
+        border-bottom: 0.15em solid $primary_color;
+      }
+
+      button {
+        padding: 0.4em 1.2em;
+        border-radius: 0 1em;
+        border: 0.15em solid $primary_color;
+        background: transparent;
+        color: $primary_color;
+
+        @media screen and ($iPad) {
+          padding-right: 2em;
+          padding-left: 2em;
+          background: $primary_color;
+          color: #fff;
+          margin-bottom: 0;
+          border-radius: 0.3em;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background: $primary_color;
+          border: 0.15em solid $primary_color;
+          color: #fff;
         }
       }
 
-      nav {
-        font-family: $social_link_font;
-        font-weight: 500;
-
-        a {
-          margin-left: 2em;
-          color: hsla(0, 0%, 0%, 0.8);
-          text-decoration: none;
-          letter-spacing: 0.08em;
-          padding-bottom: 0.2em;
-
-          @media ($iPad) {
-            margin-left: 1.2em;
-          }
-
-          &:hover {
-            border-bottom: 0.15em solid $primary_color;
-          }
-
-          button {
-            padding: 0.4em 1.2em;
-            border-radius: 0 1em;
-            border: 0.15em solid $primary_color;
-            background: transparent;
-            color: $primary_color;
-
-            @media ($iPad) {
-              padding: 0.2em 1em;
-              background: $primary_color;
-              color: #fff;
-            }
-
-            &:hover {
-              cursor: pointer;
-              background: $primary_color;
-              border: 0.15em solid $primary_color;
-              color: #fff;
-            }
-          }
-        }
-
-        a:nth-of-type(3) {
-          &:hover {
-            border-bottom: initial;
-          }
+      &:nth-of-type(3) {
+        &:hover {
+          border-bottom: initial;
         }
       }
     }
