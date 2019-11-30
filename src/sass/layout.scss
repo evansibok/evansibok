@@ -3,7 +3,7 @@
   max-width: 920px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 
   @media screen and ($iPad) {
     max-width: 720px;

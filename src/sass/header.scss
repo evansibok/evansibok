@@ -3,6 +3,7 @@ header {
   padding: 2em 0;
   font-size: 0.8rem;
   justify-content: flex-end;
+  z-index: 1;
 
   @media screen and ($iPad) {
     flex-direction: column;
