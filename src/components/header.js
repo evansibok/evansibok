@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import { useDarkMode } from "./hooks/useDarkMode"
 import Menu from "./svgs/menu-component"
-import CloseButton from "./svgs/close-button-component"
+import CloseIcon from "./svgs/close-component"
 
 const Header = () => {
   const [darkMode, setDarkMode] = useDarkMode(false)
@@ -33,6 +33,12 @@ const Header = () => {
   const brandImage = data.brandImage.fluid.src
   const brandImageName = data.brandImage.fluid.originalName
 
+  const menuButton = document.querySelector("#menu")
+  console.log(menuButton)
+
+  const closeButton = document.querySelector("#close")
+  console.log(closeButton)
+
   return (
     <header>
       <div className="leftCon">
@@ -54,7 +60,7 @@ const Header = () => {
       </div>
 
       <nav>
-        <CloseButton />
+        <CloseIcon />
         <Link to="/about">About Me</Link>
         <Link to="/projects">Projects</Link>
         <a

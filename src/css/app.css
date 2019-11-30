@@ -104,11 +104,6 @@ header .leftCon .toggleMenu svg {
     margin-left: 2em;
   }
 }
-@media screen and (max-width: 414px) {
-  header .leftCon .toggleMenu svg {
-    margin-left: 1em;
-  }
-}
 header nav {
   display: flex;
   align-items: center;
