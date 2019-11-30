@@ -18,18 +18,26 @@
               top: 2px;
               left: 18px;
 
-              @media ($iPad) {
+              @media screen and ($iPad) {
                 left: 17px;
               }
             }
           }
         }
       }
+
+      svg {
+        fill: #fff;
+      }
     }
 
     nav {
       a {
         color: #fff;
+
+        @media screen and ($iPad) {
+          color: initial;
+        }
       }
     }
   }
@@ -48,12 +56,12 @@
 
   .aboutCon {
     .leftCon {
-      @media ($iPad) {
+      @media screen and ($iPad) {
         border: none;
       }
     }
     .rightCon {
-      @media ($iPad) {
+      @media screen and ($iPad) {
         border: none;
       }
     }

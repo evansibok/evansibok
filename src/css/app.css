@@ -119,17 +119,24 @@ header nav {
   header nav {
     flex-direction: column;
     align-items: flex-start;
-    background: #e8c9c4;
-  }
-}
-@media screen and (max-width: 414px) {
-  header nav {
     position: absolute;
     width: 100vw;
     height: 100vh;
     bottom: 0;
     left: 0;
     background: #e8c9c4;
+    display: none;
+  }
+}
+header nav svg {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  header nav svg {
+    display: unset;
+    align-self: flex-end;
+    margin: 3em;
+    margin-right: 3.5em;
   }
 }
 header nav a {
@@ -140,12 +147,6 @@ header nav a {
   padding-bottom: 0.2em;
 }
 @media screen and (max-width: 800px) {
-  header nav a {
-    margin-left: 3em;
-    margin-top: 1.5em;
-  }
-}
-@media screen and (max-width: 414px) {
   header nav a {
     margin-left: 0;
     margin-top: 5em;
@@ -168,13 +169,8 @@ header nav a button {
     padding: 0.2em 1em;
     background: #eb3349;
     color: #fff;
-    margin-bottom: 2em;
-    border-radius: 0.3em;
-  }
-}
-@media screen and (max-width: 414px) {
-  header nav a button {
     margin-bottom: 0;
+    border-radius: 0.3em;
   }
 }
 header nav a button:hover {
@@ -202,13 +198,21 @@ header nav a:nth-of-type(3):hover {
   top: 2px;
   left: 18px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggled {
     left: 17px;
   }
 }
+.dark-mode header .leftCon svg {
+  fill: #fff;
+}
 .dark-mode header nav a {
   color: #fff;
+}
+@media screen and (max-width: 800px) {
+  .dark-mode header nav a {
+    color: initial;
+  }
 }
 .dark-mode .homeCon ul a {
   color: #fff;
@@ -217,12 +221,12 @@ header nav a:nth-of-type(3):hover {
 .dark-mode .pLCon .emptyDivs {
   background: #fff;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .dark-mode .aboutCon .leftCon {
     border: none;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .dark-mode .aboutCon .rightCon {
     border: none;
   }

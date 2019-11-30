@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import { useDarkMode } from "./hooks/useDarkMode"
 import Menu from "./svgs/menu-component"
+import CloseButton from "./svgs/close-button-component"
 
 const Header = () => {
   const [darkMode, setDarkMode] = useDarkMode(false)
@@ -27,25 +28,10 @@ const Header = () => {
           originalName
         }
       }
-      closeIcon: imageSharp(
-        fluid: {
-          src: {
-            eq: "/static/e4f189b598ca4ca44bf279c23f04f3a7/929d0/close-button.png"
-          }
-        }
-      ) {
-        fluid {
-          src
-          originalName
-        }
-      }
     }
   `)
   const brandImage = data.brandImage.fluid.src
   const brandImageName = data.brandImage.fluid.originalName
-
-  const closeButton = data.closeIcon.fluid.src
-  const closeButtonName = data.closeIcon.fluid.originalName
 
   return (
     <header>
@@ -68,7 +54,7 @@ const Header = () => {
       </div>
 
       <nav>
-        <img src={closeButton} alt={closeButtonName} />
+        <CloseButton />
         <Link to="/about">About Me</Link>
         <Link to="/projects">Projects</Link>
         <a
