@@ -36,12 +36,15 @@ const Header = () => {
   const menuClick = () => {
     const navigationMenu = document.querySelector("#navigation")
     navigationMenu.style.display = "inherit"
+
     document.body.style.overflow = "hidden"
   }
 
   const closeClick = () => {
     const navigationMenu = document.querySelector("#navigation")
     navigationMenu.style.display = "none"
+
+    document.body.style.overflow = "auto"
   }
 
   return (

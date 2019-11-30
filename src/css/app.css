@@ -3,7 +3,7 @@
   max-width: 920px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 @media (max-width: 800px) {
   .container {
@@ -121,6 +121,7 @@ header nav {
     left: 0;
     background: #e8c9c4;
     display: none;
+    z-index: 1;
   }
 }
 header nav svg {
