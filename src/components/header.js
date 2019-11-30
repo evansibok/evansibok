@@ -33,11 +33,15 @@ const Header = () => {
   const brandImage = data.brandImage.fluid.src
   const brandImageName = data.brandImage.fluid.originalName
 
-  const menuButton = document.querySelector("#menu")
-  console.log(menuButton)
+  const menuClick = () => {
+    const navigationMenu = document.querySelector("#navigation")
+    navigationMenu.style.display = "inherit"
+  }
 
-  const closeButton = document.querySelector("#close")
-  console.log(closeButton)
+  const closeClick = () => {
+    const navigationMenu = document.querySelector("#navigation")
+    navigationMenu.style.display = "none"
+  }
 
   return (
     <header>
@@ -55,12 +59,12 @@ const Header = () => {
             </div>
           </div>
 
-          <Menu />
+          <Menu onClick={menuClick} />
         </div>
       </div>
 
-      <nav>
-        <CloseIcon />
+      <nav id="navigation">
+        <CloseIcon onClick={closeClick} />
         <Link to="/about">About Me</Link>
         <Link to="/projects">Projects</Link>
         <a
