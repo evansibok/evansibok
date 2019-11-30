@@ -5,15 +5,15 @@
   flex-direction: column;
   height: 100vh;
 
-  @media ($iPad) {
+  @media screen and ($iPad) {
     max-width: 720px;
   }
 
-  @media ($iPhoneXSMax) {
+  @media screen and ($iPhoneXSMax) {
     max-width: 320px;
   }
 
-  @media ($galaxyS5) {
+  @media screen and ($galaxyS5) {
     max-width: 300px;
   }
 }
