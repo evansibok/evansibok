@@ -262,7 +262,7 @@ header nav a:nth-of-type(3):hover {
 @media screen and (max-width: 414px) {
   .homeCon .h1HomeCon {
     margin-top: 1em;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 }
 .homeCon .h1HomeCon p {
@@ -310,8 +310,8 @@ header nav a:nth-of-type(3):hover {
 }
 @media screen and (max-width: 414px) {
   .homeCon .h4HomeCon {
-    width: 300px;
-    font-size: 1.8rem;
+    width: 320px;
+    font-size: 2rem;
     line-height: 1.5em;
     margin-top: 0.4em;
   }
@@ -462,18 +462,12 @@ header nav a:nth-of-type(3):hover {
   }
 }
 .aboutCon .leftCon p {
-  font-size: 0.95rem;
-}
-@media screen and (max-width: 800px) {
-  .aboutCon .leftCon p {
-    font-size: 1.1rem;
-  }
-}
-.aboutCon .leftCon p:first-child {
+  font-size: 1rem;
   margin-bottom: 1.2em;
 }
 @media screen and (max-width: 800px) {
-  .aboutCon .leftCon p:first-child {
+  .aboutCon .leftCon p {
+    font-size: 1.2rem;
     margin-bottom: 1em;
   }
 }

@@ -17,7 +17,7 @@ const IndexPage = () => (
 				</p>
 			</h1>
 
-			<h4 className="h4HomeCon">A Nigerian born frontend developer with incredible love for UI/UX Design.</h4>
+			<h4 className="h4HomeCon">A frontend web developer based out of Nigeria with love for minimalistic design & user experience.</h4>
 
 			<ul>
 				<a href="https://twitter.com/evansibok" target="_blank"

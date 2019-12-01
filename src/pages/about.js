@@ -67,6 +67,9 @@ const AboutPage = () => {
             functional code for websites, I listen to music, watch fantasy
             shows, drink coffee, read a book or write a poem.
           </p>
+          <p>
+            Interests include VR/AR & Machine Learning
+          </p>
         </div>
 
         <div className="rightCon">
