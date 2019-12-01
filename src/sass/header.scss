@@ -127,6 +127,10 @@ header {
 
       &:hover {
         border-bottom: 0.15em solid $primary_color;
+
+        @media screen and ($iPad) {
+          border-bottom: none;
+        }
       }
 
       button {
