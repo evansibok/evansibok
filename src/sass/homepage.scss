@@ -6,7 +6,7 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2.4rem;
-    margin-top: 1.8em;
+    margin-top: 1em;
     margin-bottom: 0;
     font-family: $primary_font;
     letter-spacing: 0.07em;
@@ -17,8 +17,8 @@
     }
 
     @media screen and ($iPhoneXSMax) {
-      margin-top: 1em;
-      font-size: 1.7rem;
+      margin-top: 0;
+      font-size: 1.9rem;
     }
 
     p {
@@ -63,8 +63,8 @@
     }
 
     @media screen and ($iPhoneXSMax) {
-      width: 300px;
-      font-size: 1.8rem;
+      width: 320px;
+      font-size: 2rem;
       line-height: 1.5em;
       margin-top: 0.4em;
     }
