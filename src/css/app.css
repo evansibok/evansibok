@@ -27,7 +27,7 @@
 
 header {
   display: flex;
-  padding: 2em 0;
+  margin: 3em 0;
   font-size: 0.8rem;
   justify-content: flex-end;
   z-index: 1;
@@ -148,7 +148,6 @@ header nav a {
     margin-left: 0;
     margin-top: 3em;
     align-self: center;
-    justify-self: center;
   }
 }
 header nav a:hover {
@@ -248,7 +247,7 @@ header nav a:nth-of-type(3):hover {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2.4rem;
-  margin-top: 1.8em;
+  margin-top: 1em;
   margin-bottom: 0;
   font-family: "Nunito", sans-serif;
   letter-spacing: 0.07em;
@@ -261,7 +260,7 @@ header nav a:nth-of-type(3):hover {
 }
 @media screen and (max-width: 414px) {
   .homeCon .h1HomeCon {
-    margin-top: 1em;
+    margin-top: 0;
     font-size: 1.9rem;
   }
 }
@@ -363,6 +362,11 @@ header nav a:nth-of-type(3):hover {
 @media screen and (max-width: 800px) {
   .pLCon {
     padding: 1em 0 1.5em 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  .pLCon {
+    padding-top: 0;
   }
 }
 .pLCon .emptyDivs {

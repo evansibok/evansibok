@@ -8,6 +8,10 @@
     padding: 1em 0 1.5em 0;
   }
 
+  @media screen and ($iPhoneXSMax) {
+    padding-top: 0;
+  }
+
   .emptyDivs {
     background: black;
     width: 35px;

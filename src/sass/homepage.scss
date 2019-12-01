@@ -6,7 +6,7 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2.4rem;
-    margin-top: 1.8em;
+    margin-top: 1em;
     margin-bottom: 0;
     font-family: $primary_font;
     letter-spacing: 0.07em;
@@ -17,7 +17,7 @@
     }
 
     @media screen and ($iPhoneXSMax) {
-      margin-top: 1em;
+      margin-top: 0;
       font-size: 1.9rem;
     }
 
