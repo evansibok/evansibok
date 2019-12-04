@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 
-export const PageLabel = ({name}) => {
+export const PageLabel = ({ name }) => {
   return (
     <div className="pLCon">
       <div className="emptyDivs"></div>

@@ -19,7 +19,7 @@ const Header = () => {
       brandImage: imageSharp(
         fluid: {
           src: {
-            eq: "/static/e152b5cfbba58a414f35c976307c3c1d/25835/evans-logo.png"
+            eq: "/static/e152b5cfbba58a414f35c976307c3c1d/3a723/evans-logo.png"
           }
         }
       ) {

@@ -15,30 +15,18 @@ import ReactJS from "../components/svgs/react-js-component"
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
     query projectsImages {
-      nasaScreenshot: imageSharp(
-        fluid: {
-          src: {
-            eq: "/static/49508c599e206dc960bc9e1ff6d0184b/af144/nasa-project-screenshot.png"
-          }
-        }
-      ) {
-        fluid {
-          src
-          originalName
-        }
-      }
-      pintereachScreenshot: imageSharp(
-        fluid: {
-          src: {
-            eq: "/static/e7b012f31370b5d97e350b212adffdee/af144/pintereach-screenshot.png"
-          }
-        }
-      ) {
-        fluid {
-          src
-          originalName
-        }
-      }
+      nasaScreenshot: imageSharp(fluid: {src: {eq: "/static/49508c599e206dc960bc9e1ff6d0184b/a54c6/nasa-project-screenshot.png"}}) {
+    fluid {
+      src
+      originalName
+    }
+  }
+  pintereachScreenshot: imageSharp(fluid: {src: {eq: "/static/e7b012f31370b5d97e350b212adffdee/a54c6/pintereach-screenshot.png"}}) {
+    fluid {
+      src
+      originalName
+    }
+  }
     }
   `)
 

@@ -21,7 +21,7 @@ const AboutPage = () => {
       gatsbyIcon: imageSharp(
         fluid: {
           src: {
-            eq: "/static/4a9773549091c227cd2eb82ccd9c5e3a/774d6/gatsby-icon.png"
+            eq: "/static/4a9773549091c227cd2eb82ccd9c5e3a/7e783/gatsby-icon.png"
           }
         }
       ) {
@@ -33,7 +33,7 @@ const AboutPage = () => {
       figmaIcon: imageSharp(
         fluid: {
           src: {
-            eq: "/static/a786ce194a5c509fc76de9ec7f101529/774d6/figma-icon.png"
+            eq: "/static/a786ce194a5c509fc76de9ec7f101529/7e783/figma-icon.png"
           }
         }
       ) {
@@ -67,9 +67,7 @@ const AboutPage = () => {
             functional code for websites, I listen to music, watch fantasy
             shows, drink coffee, read a book or write a poem.
           </p>
-          <p>
-            Interests include VR/AR & Machine Learning
-          </p>
+          <p>Interests include VR/AR & Machine Learning</p>
         </div>
 
         <div className="rightCon">
