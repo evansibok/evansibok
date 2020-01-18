@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <p>
-        &copy; {new Date().getFullYear()}. Designed &amp; Developed with{" "}
+        &copy;{new Date().getFullYear()}. Designed &amp; Developed with{" "}
         <i className="em-svg em-hearts"></i> by {` `}
         <span className="footCol">
           <Link to="/">E V \ N S</Link>
