@@ -704,11 +704,11 @@ header nav a:nth-of-type(3):hover {
 footer {
   display: flex;
   font-size: 0.6rem;
-  padding: 2em 0;
+  padding: 5em 0 2em 0;
 }
 footer p {
   font-family: "Nunito", sans-serif;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   margin: 0;
 }
 footer p .heart {
