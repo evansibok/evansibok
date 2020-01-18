@@ -54,9 +54,9 @@ const Header = () => {
 
         <div className="toggleMenu">
           <div className="toggleCon">
-            <div className="dark-mode__toggle" onClick={toggleHandler}>
+            <button className="dark-mode__toggle" onClick={toggleHandler}>
               <div className={darkMode ? "toggle toggled" : "toggle"} />
-            </div>
+            </button>
           </div>
 
           <Menu onClick={menuClick} />
