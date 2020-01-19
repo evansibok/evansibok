@@ -720,7 +720,7 @@ footer p {
 @media screen and (max-width: 414px) {
   footer p {
     letter-spacing: 0.1em;
-    padding: 3em 0 1em 0;
+    padding: 3.5em 0 1em 0;
   }
 }
 footer p .heart {
