@@ -313,7 +313,7 @@ header nav a:nth-of-type(3):hover {
 }
 @media screen and (max-width: 414px) {
   .homeCon .h4HomeCon {
-    width: 320px;
+    width: 300px;
     font-size: 2rem;
     line-height: 1.5em;
     margin-top: 0.4em;

@@ -19,8 +19,7 @@ const IndexPage = () => (
       </h1>
 
       <h4 className="h4HomeCon">
-        A frontend web developer based out of Nigeria with love for minimalistic
-        design & user experience.
+        A web developer with love for minimalistic design & user experience.
       </h4>
 
       <ul>
