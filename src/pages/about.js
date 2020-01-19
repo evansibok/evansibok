@@ -57,6 +57,7 @@ const AboutPage = () => {
       <PageLabel name="About Me" />
       <div className="aboutCon">
         <div className="leftCon">
+          <p>Human <span role="img" aria-label="wink">😜</span></p>
           <p>
             I design and build websites using well crafted human-centered design
             approaches, modern tools and a combination of both sides of my

@@ -26,7 +26,7 @@
     }
 
     @media screen and ($iPhoneXSMax) {
-      width: 310px;
+      width: 284px;
       margin-bottom: 1em;
       padding: 0;
       border: none;
@@ -39,6 +39,10 @@
       @media screen and ($iPad) {
         font-size: 1.2rem;
         margin-bottom: 1em;
+      }
+
+      @media screen and ($iPhoneXSMax) {
+        font-size: 1.05rem;
       }
 
       &:last-child {

@@ -19,7 +19,7 @@ const IndexPage = () => (
       </h1>
 
       <h4 className="h4HomeCon">
-        A web developer with love for minimalistic design & user experience.
+        <p>A web developer living in Nigeria with an eye for minimalistic design and love for user experience.</p>
       </h4>
 
       <ul>
