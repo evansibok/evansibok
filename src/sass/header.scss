@@ -5,7 +5,7 @@ header {
   justify-content: flex-end;
   z-index: 1;
 
-  @media screen and ($iPad) {
+  @media screen and ($iPadPro) {
     flex-direction: column;
     border-bottom: none;
   }
@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     flex-grow: 1;
 
-    @media screen and ($iPad) {
+    @media screen and ($iPadPro) {
       margin-bottom: 2em;
     }
 
@@ -28,7 +28,7 @@ header {
         margin-bottom: -0.6em;
       }
 
-      @media screen and ($iPad) {
+      @media screen and ($iPadPro) {
       }
     }
 
@@ -48,7 +48,7 @@ header {
           position: relative;
           width: 45px;
 
-          @media screen and ($iPad) {
+          @media screen and ($iPadPro) {
             height: 24px;
             width: 40px;
           }
@@ -63,7 +63,7 @@ header {
             transition: 0.4s;
             width: 19px;
 
-            @media screen and ($iPad) {
+            @media screen and ($iPadPro) {
               height: 16px;
               width: 16px;
             }
@@ -74,7 +74,7 @@ header {
       svg {
         display: none;
 
-        @media screen and ($iPad) {
+        @media screen and ($iPadPro) {
           display: unset;
           margin-left: 2em;
         }
@@ -88,7 +88,7 @@ header {
     font-family: $social_link_font;
     font-weight: 500;
 
-    @media screen and ($iPad) {
+    @media screen and ($iPadPro) {
       font-size: 1.2rem;
       flex-direction: column;
       align-items: flex-start;
@@ -104,7 +104,7 @@ header {
 
     svg {
       display: none;
-      @media screen and ($iPad) {
+      @media screen and ($iPadPro) {
         display: unset;
         align-self: flex-end;
         margin: 3em;
@@ -118,7 +118,7 @@ header {
       letter-spacing: 0.08em;
       padding-bottom: 0.2em;
 
-      @media screen and ($iPad) {
+      @media screen and ($iPadPro) {
         margin-left: 0;
         margin-top: 3em;
         align-self: center;
@@ -127,7 +127,7 @@ header {
       &:hover {
         border-bottom: 0.15em solid $primary_color;
 
-        @media screen and ($iPad) {
+        @media screen and ($iPadPro) {
           border-bottom: none;
         }
       }
@@ -139,7 +139,7 @@ header {
         background: transparent;
         color: $primary_color;
 
-        @media screen and ($iPad) {
+        @media screen and ($iPadPro) {
           padding-right: 2em;
           padding-left: 2em;
           background: $primary_color;

@@ -14,6 +14,9 @@ import ReactJS from "../components/svgs/react-js-component"
 import GraphQLIcon from "../components/svgs/graphql-component"
 import Github from "../components/svgs/github-component"
 import Trello from "../components/svgs/trello-component"
+import NodeJS from "../components/svgs/node-js"
+import ExpressJS from "../components/svgs/express-js"
+import Redux from "../components/svgs/redux"
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -76,7 +79,10 @@ const AboutPage = () => {
           <CSS3 />
           <JS />
           <ReactJS />
+          <Redux />
           <SASS />
+          <NodeJS />
+          <ExpressJS />
           <GraphQLIcon />
           <img src={gatsbyImage} alt={gatsbyImageAlt} />
           <Github />
