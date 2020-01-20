@@ -103,6 +103,8 @@
       }
 
       &.express {
+        width: 2.5rem;
+        
         @media screen and ($iPadPro) {
           width: 2.2rem;
           margin-right: 1em;

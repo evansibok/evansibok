@@ -61,6 +61,11 @@
       }
     }
     .rightCon {
+      svg {
+        &.express {
+          fill: #fff;
+        }
+      }
       @media screen and ($iPadPro) {
         border: none;
       }

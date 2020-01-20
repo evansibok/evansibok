@@ -232,6 +232,9 @@ header nav a:nth-of-type(3):hover {
     border: none;
   }
 }
+.dark-mode .aboutCon .rightCon svg.express {
+  fill: #fff;
+}
 @media screen and (max-width: 1024px) {
   .dark-mode .aboutCon .rightCon {
     border: none;
@@ -318,7 +321,7 @@ header nav a:nth-of-type(3):hover {
 }
 @media screen and (max-width: 414px) {
   .homeCon .h4HomeCon {
-    width: 300px;
+    width: 290px;
     font-size: 1.6rem;
     line-height: 1.6em;
     margin-top: 0.4em;
@@ -557,6 +560,9 @@ header nav a:nth-of-type(3):hover {
   .aboutCon .rightCon svg.node {
     margin-right: 0.8em;
   }
+}
+.aboutCon .rightCon svg.express {
+  width: 2.5rem;
 }
 @media screen and (max-width: 1024px) {
   .aboutCon .rightCon svg.express {
