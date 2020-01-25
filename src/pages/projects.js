@@ -11,6 +11,7 @@ import CSS3 from "../components/svgs/css3-component"
 import JS from "../components/svgs/js-component"
 import Github from "../components/svgs/github-component"
 import ReactJS from "../components/svgs/react-js-component"
+import ProjectCard from "../components/projectCard"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -40,104 +41,46 @@ const ProjectsPage = () => {
     <Layout>
       <SEO title="Projects" />
       <PageLabel name="Projects" />
-      <div className="projectCard">
-        <div className="contentCon">
-          <div className="cardHead">
-            <h4>Pintereach Landing Page</h4>
 
-            <ul>
-              <a
-                href="https://pintereach-ev1.netlify.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <li>Website</li>
-              </a>
-              <a
-                href="https://github.com/Build-Week-Pintereach-1/Marketing-page-Evans"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <li>Github</li>
-              </a>
-            </ul>
-          </div>
+      <ProjectCard
+        projectTitle="Pintereach Landing Page"
+        websiteAnchorHref="https://pintereach-ev1.netlify.com/"
+        githubAnchorHref="https://github.com/Build-Week-Pintereach-1/Marketing-page-Evans"
+        pTag1="During my first build week at Lambda School, I built a landing page using the skills I learnt, which included HTML5, CSS3, LESS and JavaScript."
+        pTag2="This project was meant to test my understanding of the concepts I had previously learned."
+        cardImageSrc={pintereach}
+        cardImageAlt={pintereachAlt}
+      />
 
-          <div className="cardBody">
-            <div className="leftCon">
-              <p>
-                During my first build week at Lambda School, I built a landing
-                page using the skills I learnt, which included HTML5, CSS3, LESS
-                and JavaScript.
-              </p>
-              <p>
-                This project was meant to test my understanding of the concepts
-                I had previously learned.
-              </p>
-              <div className="projectIcons">
-                <HTML5 />
-                <CSS3 />
-                <JS />
-                <Github />
-              </div>
-            </div>
-            <div className="imageCon">
-              <img src={pintereach} alt={pintereachAlt} />
-            </div>
-          </div>
-        </div>
-      </div>
+      <ProjectCard
+        projectTitle="Nasa Photo of the Day"
+        websiteAnchorHref="https://nasa-photo-of-the-day.evansibok.now.sh/"
+        githubAnchorHref="https://github.com/evansibok/nasa-photo-of-the-day"
+        pTag1="A ReactJS app which queries NASA's api to display astronomical photo of the day."
+        pTag2="This project showed mastery on certain react app building concepts like making Asynchronous api calls and displaying received data for consumption."
+        cardImageSrc={nasaImage}
+        cardImageAlt={nasaImageAlt}
+      />
 
-      <div className="projectCard">
-        <div className="contentCon">
-          <div className="cardHead">
-            <h4>Nasa Photo of the Day</h4>
-
-            <ul>
-              <a
-                href="https://nasa-photo-of-the-day.evansibok.now.sh/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <li>Website</li>
-              </a>
-              <a
-                href="https://github.com/evansibok/nasa-photo-of-the-day"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <li>Github</li>
-              </a>
-            </ul>
-          </div>
-
-          <div className="cardBody">
-            <div className="leftCon">
-              <p>
-                A ReactJS app which queries NASA's api to display astronomical
-                photo of the day.
-              </p>
-              <p>
-                This project showed mastery on certain react app building
-                concepts like making Asynchronous api calls and displaying
-                received data for consumption.
-              </p>
-              <div className="projectIcons">
-                <HTML5 />
-                <CSS3 />
-                <ReactJS />
-                <Github />
-              </div>
-            </div>
-            <div className="imageCon">
-              <img src={nasaImage} alt={nasaImageAlt} />
-            </div>
-          </div>
-        </div>
-      </div>
       <SocialLinks />
     </Layout>
   )
 }
+
+// Pintereach Skills
+{/* <div className="projectIcons">
+  <HTML5 />
+  <CSS3 />
+  <JS />
+  <Github />
+</div> */}
+
+// NPOD Skills
+{/* <div className="projectIcons">
+  <HTML5 />
+  <CSS3 />
+  <JS />
+  <Github />
+</div> */}
 
 export default ProjectsPage
