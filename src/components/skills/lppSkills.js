@@ -7,7 +7,7 @@ import Github from "../svgs/github-component"
 import ReactJS from "../svgs/react-js-component"
 
 
-const NPOD = () => (
+const LPPSkills = () => (
   <div className="projectIcons">
     <HTML5 />
     <CSS3 />
@@ -17,4 +17,4 @@ const NPOD = () => (
   </div>
 )
 
-export default NPOD;
+export default LPPSkills;

@@ -8,6 +8,8 @@ import { PageLabel } from "../components/page-label"
 import { SocialLinks } from "../components/social-links"
 import ProjectCard from "../components/projectCard"
 import PintereachSkills from "../components/skills/pintereachSkills"
+import LPPSkills from "../components/skills/lppSkills"
+import ExpressReactSkills from "../components/skills/expressReactSkills"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -24,7 +26,7 @@ const ProjectsPage = () => {
           originalName
         }
       }
-      lpp2Screenshot: imageSharp(fluid: {src: {eq: "/static/84e1c49470368cea7cbe4efe1534836c/a54c6/lpp2.png"}}) {
+      expressReactScreenshot: imageSharp(fluid: {src: {eq: "/static/7399338059123b56c9fcfdc47bd009fb/a54c6/express-react-app-screenshot.png"}}) {
         fluid {
           src
           originalName
@@ -39,8 +41,13 @@ const ProjectsPage = () => {
   const lpp = data.lppScreenshot.fluid.src
   const lppAlt = data.lppScreenshot.fluid.originalName
 
+  const expressReactApp = data.expressReactScreenshot.fluid.src
+  const expressReactAppAlt = data.expressReactScreenshot.fluid.originalName
+
   const pintSkills = <PintereachSkills />;
-  // const lppSkills = <NPOD />;
+  const lppSkills = <LPPSkills />;
+  const expressReactSkills = <ExpressReactSkills />;
+
   return (
     <Layout>
       <SEO title="Projects" />
@@ -69,19 +76,20 @@ const ProjectsPage = () => {
         pTag2="During the build sprint, I worked remotely as a frontend architect on a team of two (2). It was a great learning experience on remote team collaboration. This project helped show mastery on certain react app building concepts like making Asynchronous api calls, authentication, routing and custom hook creation."
         cardImageSrc={lpp}
         cardImageAlt={lppAlt}
-        skills={pintSkills}
+        skills={lppSkills}
       />
 
-      {/* <ProjectCard
+      <ProjectCard
         projectTitle="EXPRESSJS/REACT APP BOILERPLATE"
+        web="Live App"
         gH="Github"
         githubAnchorHref="https://github.com/evansibok/express-react-monolith"
-        pTag1=""
-        pTag2=""
-        cardImageSrc={nasaImage}
-        cardImageAlt={nasaImageAlt}
-        skills={npodSkills}
-      /> */}
+        pTag1="This app demonstrates the steps that are taken to get a minimal app that uses nodejs and expressjs for backend and react for frontend running."
+        pTag2="The skills involved in building this project includes, creating an express server, an api to allow for test CRUD operations, integrating a React project in the same directory and finally deploying to the Heroku platform."
+        cardImageSrc={expressReactApp}
+        cardImageAlt={expressReactAppAlt}
+        skills={expressReactSkills}
+      />
 
       <SocialLinks />
     </Layout>
