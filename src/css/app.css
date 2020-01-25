@@ -246,6 +246,9 @@ header nav a:nth-of-type(3):hover {
 .dark-mode .projectCard .contentCon .cardHead ul a li {
   color: #fff;
 }
+.dark-mode .projectCard .contentCon .cardBody .leftCon .projectIcons svg.express {
+  fill: #fff;
+}
 .dark-mode .socialLinkCon ul a {
   color: #fff;
   border-bottom: 1px solid #fff;
@@ -466,9 +469,6 @@ header nav a:nth-of-type(3):hover {
   width: 520px;
   display: flex;
   flex-direction: column;
-  /**
-  * Check for repeat code when the about page is completed
-  */
 }
 @media screen and (max-width: 1024px) {
   .aboutCon .leftCon {
@@ -674,9 +674,14 @@ header nav a:nth-of-type(3):hover {
 .projectCard .contentCon .cardHead ul a:first-child {
   border-bottom: 0.15em solid #eb3349;
 }
-.projectCard .contentCon .cardHead ul a:last-child {
+.projectCard .contentCon .cardHead ul a:nth-child(2) {
   margin-left: 1.5em;
   border-bottom: 0.15em solid #0955db;
+}
+@media screen and (max-width: 414px) {
+  .projectCard .contentCon .cardHead ul a[href$="evansibok.github.io"] {
+    margin-left: 0;
+  }
 }
 .projectCard .contentCon .cardBody {
   display: flex;
@@ -726,6 +731,16 @@ header nav a:nth-of-type(3):hover {
   .projectCard .contentCon .cardBody .leftCon .projectIcons svg {
     margin-right: 0.6em;
     width: 1.2rem;
+  }
+}
+.projectCard .contentCon .cardBody .leftCon .projectIcons img {
+  width: 1.5rem;
+  margin-bottom: 0;
+  margin-right: 0.8em;
+}
+@media screen and (max-width: 1024px) {
+  .projectCard .contentCon .cardBody .leftCon .projectIcons img {
+    width: 1.3rem;
   }
 }
 .projectCard .contentCon .cardBody .imageCon {

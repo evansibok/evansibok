@@ -10,6 +10,7 @@ import ProjectCard from "../components/projectCard"
 import PintereachSkills from "../components/skills/pintereachSkills"
 import LPPSkills from "../components/skills/lppSkills"
 import ExpressReactSkills from "../components/skills/expressReactSkills"
+import EvnsSkills from "../components/skills/evnsSkills"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -32,6 +33,12 @@ const ProjectsPage = () => {
           originalName
         }
       }
+      evnsScreenshot: imageSharp(fluid: {src: {eq: "/static/8b2e364da024b4b76012337b9eb5ecf3/a54c6/evns-screenshot.png"}}) {
+        fluid {
+          src
+          originalName
+        }
+      }
     }
   `)
 
@@ -44,9 +51,13 @@ const ProjectsPage = () => {
   const expressReactApp = data.expressReactScreenshot.fluid.src
   const expressReactAppAlt = data.expressReactScreenshot.fluid.originalName
 
+  const evns = data.evnsScreenshot.fluid.src
+  const evnsAlt = data.evnsScreenshot.fluid.originalName
+
   const pintSkills = <PintereachSkills />;
   const lppSkills = <LPPSkills />;
   const expressReactSkills = <ExpressReactSkills />;
+  const evnsSkills = <EvnsSkills />;
 
   return (
     <Layout>
@@ -83,12 +94,24 @@ const ProjectsPage = () => {
         projectTitle="EXPRESSJS/REACT APP BOILERPLATE"
         web="Live App"
         gH="Github"
+        websiteAnchorHref="https://express-react-monolith.herokuapp.com/"
         githubAnchorHref="https://github.com/evansibok/express-react-monolith"
         pTag1="This app demonstrates the steps that are taken to get a minimal app that uses nodejs and expressjs for backend and react for frontend running."
         pTag2="The skills involved in building this project includes, creating an express server, an api to allow for test CRUD operations, integrating a React project in the same directory and finally deploying to the Heroku platform."
         cardImageSrc={expressReactApp}
         cardImageAlt={expressReactAppAlt}
         skills={expressReactSkills}
+      />
+
+      <ProjectCard
+        projectTitle="e v \ n s (This Website)"
+        gH="Github"
+        githubAnchorHref="https://github.com/evansibok/evansibok.github.io"
+        pTag1="This is the portfolio website of Evans Ibok."
+        pTag2="This website was built as a means to showcase projects I've worked on and technologies I'm proficient with."
+        cardImageSrc={evns}
+        cardImageAlt={evnsAlt}
+        skills={evnsSkills}
       />
 
       <SocialLinks />

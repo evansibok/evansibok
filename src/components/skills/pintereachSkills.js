@@ -5,6 +5,7 @@ import CSS3 from "../svgs/css3-component"
 import JS from "../svgs/js-component"
 import Github from "../svgs/github-component"
 
+
 const PintereachSkills = () => (
   <div className="projectIcons">
     <HTML5 />
