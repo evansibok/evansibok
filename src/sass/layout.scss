@@ -5,8 +5,12 @@
   flex-direction: column;
   min-height: 100vh;
 
-  @media screen and ($iPad) {
+  @media screen and ($iPadPro) {
     max-width: 720px;
+  }
+
+  @media screen and ($iPad) {
+    max-width: 600px;
   }
 
   @media screen and ($iPhoneXSMax) {

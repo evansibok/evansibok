@@ -14,6 +14,9 @@ import ReactJS from "../components/svgs/react-js-component"
 import GraphQLIcon from "../components/svgs/graphql-component"
 import Github from "../components/svgs/github-component"
 import Trello from "../components/svgs/trello-component"
+import NodeJS from "../components/svgs/node-js"
+import ExpressJS from "../components/svgs/express-js"
+import Redux from "../components/svgs/redux"
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -57,6 +60,7 @@ const AboutPage = () => {
       <PageLabel name="About Me" />
       <div className="aboutCon">
         <div className="leftCon">
+          <p>Human <span role="img" aria-label="wink">😜</span></p>
           <p>
             I design and build websites using well crafted human-centered design
             approaches, modern tools and a combination of both sides of my
@@ -75,7 +79,10 @@ const AboutPage = () => {
           <CSS3 />
           <JS />
           <ReactJS />
+          <Redux />
           <SASS />
+          <NodeJS />
+          <ExpressJS />
           <GraphQLIcon />
           <img src={gatsbyImage} alt={gatsbyImageAlt} />
           <Github />

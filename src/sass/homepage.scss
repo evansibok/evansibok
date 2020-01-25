@@ -11,7 +11,7 @@
     font-family: $primary_font;
     letter-spacing: 0.07em;
 
-    @media screen and ($iPad) {
+    @media screen and ($iPadPro) {
       font-size: 2rem;
       margin-top: 1.3em;
     }
@@ -26,7 +26,7 @@
 
       &:first-child {
         margin-bottom: 0.5em;
-        @media screen and ($iPad) {
+        @media screen and ($iPadPro) {
           margin-bottom: 0.3em;
         }
         @media screen and ($iPhoneXSMax) {
@@ -36,7 +36,7 @@
 
       &:last-child {
         margin-bottom: 1em;
-        @media screen and ($iPad) {
+        @media screen and ($iPadPro) {
           margin-bottom: 0.8em;
         }
       }
@@ -53,34 +53,39 @@
     line-height: 1.3em;
     margin-bottom: 0;
     font-family: $primary_font;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.01em;
 
-    @media screen and ($iPad) {
+    @media screen and ($iPadPro) {
       font-size: 2.1rem;
       width: 550px;
       font-weight: 600;
     }
 
     @media screen and ($iPhoneXSMax) {
-      width: 320px;
-      font-size: 2rem;
-      line-height: 1.5em;
+      width: 290px;
+      font-size: 1.7rem;
+      line-height: 1.6em;
       margin-top: 0.4em;
+    }
+
+    @media screen and ($galaxyS5) {
+      width: 270px;
+      font-size: 1.6rem;
     }
   }
 
   ul {
     @include social-ul;
 
-    @media screen and ($iPad) {
+    @media screen and ($iPadPro) {
       margin-top: 2em;
     }
 
     a {
       font-size: 0.9rem;
 
-      @media screen and ($iPad) {
+      @media screen and ($iPadPro) {
         font-size: 0.8rem;
       }
     }

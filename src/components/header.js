@@ -54,9 +54,9 @@ const Header = () => {
 
         <div className="toggleMenu">
           <div className="toggleCon">
-            <div className="dark-mode__toggle" onClick={toggleHandler}>
+            <button className="dark-mode__toggle" onClick={toggleHandler}>
               <div className={darkMode ? "toggle toggled" : "toggle"} />
-            </div>
+            </button>
           </div>
 
           <Menu onClick={menuClick} />
@@ -69,7 +69,7 @@ const Header = () => {
         <Link to="/projects">Projects</Link>
         <a
           className="buttonAnchor"
-          href="https://drive.google.com/open?id=1ooz6DDM2RemnxTEdM9Ja5rwNS3obGqUa"
+          href="https://drive.google.com/open?id=1Fil6FToQm-jVeHkasp1tgA1arenZwJD0"
           target="_blank"
           rel="noopener noreferrer"
         >

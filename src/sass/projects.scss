@@ -19,7 +19,7 @@
       align-items: center;
       margin-bottom: 1.2em;
 
-      @media screen and ($iPad) {
+      @media screen and ($iPadPro) {
         margin-bottom: 0.9em;
       }
 
@@ -36,7 +36,7 @@
         letter-spacing: 0.1em;
         font-size: 1.1rem;
 
-        @media screen and ($iPad) {
+        @media screen and ($iPadPro) {
           font-weight: 700;
           font-size: 1.1rem;
         }
@@ -55,7 +55,7 @@
           @include anchor_reset;
           font-size: 0.9rem;
 
-          @media screen and ($iPad) {
+          @media screen and ($iPadPro) {
             font-size: 0.9rem;
           }
 
@@ -63,9 +63,15 @@
             border-bottom: 0.15em solid $primary_color;
           }
 
-          &:last-child {
+          &:nth-child(2) {
             margin-left: 1.5em;
             border-bottom: 0.15em solid $custom_link_color;
+          }
+        }
+
+        a[href$="evansibok.github.io"] {
+          @media screen and ($iPhoneXSMax) {
+            margin-left: 0;
           }
         }
       }
@@ -82,7 +88,7 @@
       .leftCon {
         width: 600px;
 
-        @media screen and ($iPad) {
+        @media screen and ($iPadPro) {
           width: 350px;
         }
 
@@ -98,7 +104,7 @@
           font-size: 0.9rem;
           margin-bottom: 1em;
 
-          @media screen and ($iPad) {
+          @media screen and ($iPadPro) {
             margin-bottom: 0.8em;
           }
         }
@@ -109,9 +115,18 @@
             margin-right: 0.8em;
             width: 1.5rem;
 
-            @media screen and ($iPad) {
+            @media screen and ($iPadPro) {
               margin-right: 0.6em;
               width: 1.2rem;
+            }
+          }
+          img {
+            width: 1.5rem;
+            margin-bottom: 0;
+            margin-right: 0.8em;
+
+            @media screen and ($iPadPro) {
+              width: 1.3rem;
             }
           }
         }
@@ -121,7 +136,7 @@
         width: 320px;
         margin-bottom: 0;
 
-        @media screen and ($iPad) {
+        @media screen and ($iPadPro) {
           width: 260px;
         }
 
@@ -139,7 +154,7 @@
           border-radius: 0.8em;
           margin-bottom: 0;
 
-          @media screen and ($iPad) {
+          @media screen and ($iPadPro) {
             border-radius: 0.6em;
           }
         }

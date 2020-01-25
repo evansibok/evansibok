@@ -18,7 +18,7 @@
               top: 2px;
               left: 18px;
 
-              @media screen and ($iPad) {
+              @media screen and ($iPadPro) {
                 left: 17px;
               }
             }
@@ -35,7 +35,7 @@
       a {
         color: #fff;
 
-        @media screen and ($iPad) {
+        @media screen and ($iPadPro) {
           color: initial;
         }
       }
@@ -56,12 +56,17 @@
 
   .aboutCon {
     .leftCon {
-      @media screen and ($iPad) {
+      @media screen and ($iPadPro) {
         border: none;
       }
     }
     .rightCon {
-      @media screen and ($iPad) {
+      svg {
+        &.express {
+          fill: #fff;
+        }
+      }
+      @media screen and ($iPadPro) {
         border: none;
       }
     }
@@ -76,6 +81,15 @@
           a {
             li {
               color: #fff;
+            }
+          }
+        }
+      }
+      .cardBody {
+        .leftCon {
+          .projectIcons {
+            svg.express {
+              fill: #fff;
             }
           }
         }

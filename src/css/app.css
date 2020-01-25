@@ -5,9 +5,14 @@
   flex-direction: column;
   min-height: 100vh;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .container {
     max-width: 720px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 600px;
   }
 }
 @media screen and (max-width: 414px) {
@@ -32,7 +37,7 @@ header {
   justify-content: flex-end;
   z-index: 1;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header {
     flex-direction: column;
     border-bottom: none;
@@ -44,7 +49,7 @@ header .leftCon {
   justify-content: space-between;
   flex-grow: 1;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header .leftCon {
     margin-bottom: 2em;
   }
@@ -73,7 +78,7 @@ header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
   position: relative;
   width: 45px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
     height: 24px;
     width: 40px;
@@ -89,7 +94,7 @@ header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
   transition: 0.4s;
   width: 19px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
     height: 16px;
     width: 16px;
@@ -98,7 +103,7 @@ header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
 header .leftCon .toggleMenu svg {
   display: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header .leftCon .toggleMenu svg {
     display: unset;
     margin-left: 2em;
@@ -110,7 +115,7 @@ header nav {
   font-family: "PT Sans", sans-serif;
   font-weight: 500;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header nav {
     font-size: 1.2rem;
     flex-direction: column;
@@ -128,7 +133,7 @@ header nav {
 header nav svg {
   display: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header nav svg {
     display: unset;
     align-self: flex-end;
@@ -142,7 +147,7 @@ header nav a {
   letter-spacing: 0.08em;
   padding-bottom: 0.2em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header nav a {
     margin-left: 0;
     margin-top: 3em;
@@ -152,7 +157,7 @@ header nav a {
 header nav a:hover {
   border-bottom: 0.15em solid #eb3349;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header nav a:hover {
     border-bottom: none;
   }
@@ -164,7 +169,7 @@ header nav a button {
   background: transparent;
   color: #eb3349;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header nav a button {
     padding-right: 2em;
     padding-left: 2em;
@@ -199,7 +204,7 @@ header nav a:nth-of-type(3):hover {
   top: 2px;
   left: 18px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggled {
     left: 17px;
   }
@@ -210,7 +215,7 @@ header nav a:nth-of-type(3):hover {
 .dark-mode header nav a {
   color: #fff;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .dark-mode header nav a {
     color: initial;
   }
@@ -222,12 +227,15 @@ header nav a:nth-of-type(3):hover {
 .dark-mode .pLCon .emptyDivs {
   background: #fff;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .dark-mode .aboutCon .leftCon {
     border: none;
   }
 }
-@media screen and (max-width: 800px) {
+.dark-mode .aboutCon .rightCon svg.express {
+  fill: #fff;
+}
+@media screen and (max-width: 1024px) {
   .dark-mode .aboutCon .rightCon {
     border: none;
   }
@@ -237,6 +245,9 @@ header nav a:nth-of-type(3):hover {
 }
 .dark-mode .projectCard .contentCon .cardHead ul a li {
   color: #fff;
+}
+.dark-mode .projectCard .contentCon .cardBody .leftCon .projectIcons svg.express {
+  fill: #fff;
 }
 .dark-mode .socialLinkCon ul a {
   color: #fff;
@@ -256,7 +267,7 @@ header nav a:nth-of-type(3):hover {
   font-family: "Nunito", sans-serif;
   letter-spacing: 0.07em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .homeCon .h1HomeCon {
     font-size: 2rem;
     margin-top: 1.3em;
@@ -274,7 +285,7 @@ header nav a:nth-of-type(3):hover {
 .homeCon .h1HomeCon p:first-child {
   margin-bottom: 0.5em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .homeCon .h1HomeCon p:first-child {
     margin-bottom: 0.3em;
   }
@@ -287,7 +298,7 @@ header nav a:nth-of-type(3):hover {
 .homeCon .h1HomeCon p:last-child {
   margin-bottom: 1em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .homeCon .h1HomeCon p:last-child {
     margin-bottom: 0.8em;
   }
@@ -301,10 +312,10 @@ header nav a:nth-of-type(3):hover {
   line-height: 1.3em;
   margin-bottom: 0;
   font-family: "Nunito", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.01em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .homeCon .h4HomeCon {
     font-size: 2.1rem;
     width: 550px;
@@ -313,10 +324,16 @@ header nav a:nth-of-type(3):hover {
 }
 @media screen and (max-width: 414px) {
   .homeCon .h4HomeCon {
-    width: 320px;
-    font-size: 2rem;
-    line-height: 1.5em;
+    width: 290px;
+    font-size: 1.7rem;
+    line-height: 1.6em;
     margin-top: 0.4em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .homeCon .h4HomeCon {
+    width: 270px;
+    font-size: 1.6rem;
   }
 }
 .homeCon ul {
@@ -343,7 +360,7 @@ header nav a:nth-of-type(3):hover {
   color: #eb3349;
   border-bottom: 1px solid #eb3349;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .homeCon ul {
     margin-top: 2em;
   }
@@ -351,7 +368,7 @@ header nav a:nth-of-type(3):hover {
 .homeCon ul a {
   font-size: 0.9rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .homeCon ul a {
     font-size: 0.8rem;
   }
@@ -363,7 +380,7 @@ header nav a:nth-of-type(3):hover {
   padding: 1.2em 0 2em 0;
   font-family: "Nunito", sans-serif;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .pLCon {
     padding: 1em 0 1.5em 0;
   }
@@ -378,7 +395,7 @@ header nav a:nth-of-type(3):hover {
   width: 35px;
   height: 4px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .pLCon .emptyDivs {
     width: 28px;
     height: 3px;
@@ -391,7 +408,7 @@ header nav a:nth-of-type(3):hover {
   font-weight: 700;
   letter-spacing: 0.1em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .pLCon p {
     font-size: 0.7rem;
     font-weight: 600;
@@ -437,7 +454,7 @@ header nav a:nth-of-type(3):hover {
   font-family: "Nunito", sans-serif;
   margin-top: 1em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .aboutCon {
     flex-direction: column;
   }
@@ -452,37 +469,48 @@ header nav a:nth-of-type(3):hover {
   width: 520px;
   display: flex;
   flex-direction: column;
-  /**
-  * Check for repeat code when the about page is completed
-  */
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .aboutCon .leftCon {
     width: 620px;
   }
 }
+@media screen and (max-width: 800px) {
+  .aboutCon .leftCon {
+    width: 530px;
+  }
+}
 @media screen and (max-width: 414px) {
   .aboutCon .leftCon {
-    width: 310px;
+    width: 290px;
     margin-bottom: 1em;
     padding: 0;
     border: none;
+  }
+}
+@media screen and (max-width: 360px) {
+  .aboutCon .leftCon {
+    width: 280px;
   }
 }
 .aboutCon .leftCon p {
   font-size: 1rem;
   margin-bottom: 1.2em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .aboutCon .leftCon p {
-    font-size: 1.2rem;
     margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 414px) {
+  .aboutCon .leftCon p {
+    font-size: 1.05rem;
   }
 }
 .aboutCon .leftCon p:last-child {
   margin-bottom: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .aboutCon .leftCon p:last-child {
     margin-bottom: 1.6em;
   }
@@ -493,7 +521,7 @@ header nav a:nth-of-type(3):hover {
   }
 }
 .aboutCon .rightCon {
-  width: 320px;
+  width: 350px;
 }
 @media screen and (max-width: 414px) {
   .aboutCon .rightCon {
@@ -507,7 +535,7 @@ header nav a:nth-of-type(3):hover {
   margin-right: 1.5em;
   margin-bottom: 2em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .aboutCon .rightCon svg {
     width: 1.5rem;
     margin-right: 1.2em;
@@ -519,12 +547,42 @@ header nav a:nth-of-type(3):hover {
     margin-right: 1em;
   }
 }
+@media screen and (max-width: 1024px) {
+  .aboutCon .rightCon svg.node {
+    width: 2rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .aboutCon .rightCon svg.node {
+    width: 2.3rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .aboutCon .rightCon svg.node {
+    margin-right: 0.8em;
+  }
+}
+.aboutCon .rightCon svg.express {
+  width: 2.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .aboutCon .rightCon svg.express {
+    width: 2.2rem;
+    margin-right: 1em;
+  }
+}
+@media screen and (max-width: 414px) {
+  .aboutCon .rightCon svg.express {
+    width: 2.5rem;
+    margin-right: 0.9em;
+  }
+}
 .aboutCon .rightCon img {
   width: 1.8rem;
   margin-bottom: 2em;
   margin-right: 1.5em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .aboutCon .rightCon img {
     width: 1.5rem;
     margin-right: 1.2em;
@@ -562,7 +620,7 @@ header nav a:nth-of-type(3):hover {
   align-items: center;
   margin-bottom: 1.2em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .projectCard .contentCon .cardHead {
     margin-bottom: 0.9em;
   }
@@ -581,7 +639,7 @@ header nav a:nth-of-type(3):hover {
   letter-spacing: 0.1em;
   font-size: 1.1rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .projectCard .contentCon .cardHead h4 {
     font-weight: 700;
     font-size: 1.1rem;
@@ -608,7 +666,7 @@ header nav a:nth-of-type(3):hover {
 .projectCard .contentCon .cardHead ul a li {
   display: inline;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .projectCard .contentCon .cardHead ul a {
     font-size: 0.9rem;
   }
@@ -616,9 +674,14 @@ header nav a:nth-of-type(3):hover {
 .projectCard .contentCon .cardHead ul a:first-child {
   border-bottom: 0.15em solid #eb3349;
 }
-.projectCard .contentCon .cardHead ul a:last-child {
+.projectCard .contentCon .cardHead ul a:nth-child(2) {
   margin-left: 1.5em;
   border-bottom: 0.15em solid #0955db;
+}
+@media screen and (max-width: 414px) {
+  .projectCard .contentCon .cardHead ul a[href$="evansibok.github.io"] {
+    margin-left: 0;
+  }
 }
 .projectCard .contentCon .cardBody {
   display: flex;
@@ -632,7 +695,7 @@ header nav a:nth-of-type(3):hover {
 .projectCard .contentCon .cardBody .leftCon {
   width: 600px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .projectCard .contentCon .cardBody .leftCon {
     width: 350px;
   }
@@ -651,7 +714,7 @@ header nav a:nth-of-type(3):hover {
   font-size: 0.9rem;
   margin-bottom: 1em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .projectCard .contentCon .cardBody .leftCon p {
     margin-bottom: 0.8em;
   }
@@ -664,17 +727,27 @@ header nav a:nth-of-type(3):hover {
   margin-right: 0.8em;
   width: 1.5rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .projectCard .contentCon .cardBody .leftCon .projectIcons svg {
     margin-right: 0.6em;
     width: 1.2rem;
+  }
+}
+.projectCard .contentCon .cardBody .leftCon .projectIcons img {
+  width: 1.5rem;
+  margin-bottom: 0;
+  margin-right: 0.8em;
+}
+@media screen and (max-width: 1024px) {
+  .projectCard .contentCon .cardBody .leftCon .projectIcons img {
+    width: 1.3rem;
   }
 }
 .projectCard .contentCon .cardBody .imageCon {
   width: 320px;
   margin-bottom: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .projectCard .contentCon .cardBody .imageCon {
     width: 260px;
   }
@@ -695,7 +768,7 @@ header nav a:nth-of-type(3):hover {
   border-radius: 0.8em;
   margin-bottom: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .projectCard .contentCon .cardBody .imageCon img {
     border-radius: 0.6em;
   }
@@ -711,6 +784,12 @@ footer p {
   letter-spacing: 0.15em;
   margin: 0;
   padding: 1em;
+}
+@media screen and (max-width: 414px) {
+  footer p {
+    letter-spacing: 0.1em;
+    padding: 3em 0 2em 0;
+  }
 }
 footer p .heart {
   font-size: 0.6rem;
