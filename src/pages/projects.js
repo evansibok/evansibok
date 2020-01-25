@@ -43,6 +43,8 @@ const ProjectsPage = () => {
 
       <ProjectCard
         projectTitle="Pintereach Landing Page"
+        web="Website"
+        gH="Github"
         websiteAnchorHref="https://pintereach-ev1.netlify.com/"
         githubAnchorHref="https://github.com/Build-Week-Pintereach-1/Marketing-page-Evans"
         pTag1="During my first build week at Lambda School, I built a landing page using the skills I learnt, which included HTML5, CSS3, LESS and JavaScript."
@@ -54,10 +56,36 @@ const ProjectsPage = () => {
 
       <ProjectCard
         projectTitle="Nasa Photo of the Day"
+        web="Website"
+        gH="Github"
         websiteAnchorHref="https://nasa-photo-of-the-day.evansibok.now.sh/"
         githubAnchorHref="https://github.com/evansibok/nasa-photo-of-the-day"
         pTag1="A ReactJS app which queries NASA's api to display astronomical photo of the day."
         pTag2="This project showed mastery on certain react app building concepts like making Asynchronous api calls and displaying received data for consumption."
+        cardImageSrc={nasaImage}
+        cardImageAlt={nasaImageAlt}
+        skills={npodSkills}
+      />
+
+      <ProjectCard
+        projectTitle="Local Park Passport"
+        web="Website"
+        gH="Github"
+        websiteAnchorHref="https://front-end-deployed.now.sh/"
+        githubAnchorHref="https://github.com/Local-Park-Passport-Lambda-BW/Front-End"
+        pTag1=""
+        pTag2=""
+        cardImageSrc={nasaImage}
+        cardImageAlt={nasaImageAlt}
+        skills={npodSkills}
+      />
+
+      <ProjectCard
+        projectTitle="EXPRESSJS/REACT APP BOILERPLATE"
+        gH="Github"
+        githubAnchorHref="https://github.com/evansibok/express-react-monolith"
+        pTag1=""
+        pTag2=""
         cardImageSrc={nasaImage}
         cardImageAlt={nasaImageAlt}
         skills={npodSkills}

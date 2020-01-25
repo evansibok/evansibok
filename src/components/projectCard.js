@@ -8,7 +8,9 @@ const ProjectCard = ({
   pTag2,
   cardImageSrc,
   cardImageAlt,
-  skills
+  skills,
+  web,
+  gH
 }) => {
   return (
     <div className="projectCard">
@@ -22,14 +24,14 @@ const ProjectCard = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li>Website</li>
+              <li>{web}</li>
             </a>
             <a
               href={githubAnchorHref}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li>Github</li>
+              <li>{gH}</li>
             </a>
           </ul>
         </div>
