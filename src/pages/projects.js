@@ -6,12 +6,9 @@ import SEO from "../components/seo"
 
 import { PageLabel } from "../components/page-label"
 import { SocialLinks } from "../components/social-links"
-import HTML5 from "../components/svgs/html5-component"
-import CSS3 from "../components/svgs/css3-component"
-import JS from "../components/svgs/js-component"
-import Github from "../components/svgs/github-component"
-import ReactJS from "../components/svgs/react-js-component"
+import PintereachSkills from "../components/skills/pintereachSkills"
 import ProjectCard from "../components/projectCard"
+import NPOD from "../components/skills/npodSkills"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -37,6 +34,8 @@ const ProjectsPage = () => {
   const nasaImage = data.nasaScreenshot.fluid.src
   const nasaImageAlt = data.nasaScreenshot.fluid.originalName
 
+  const pintSkills = <PintereachSkills />;
+  const npodSkills = <NPOD />;
   return (
     <Layout>
       <SEO title="Projects" />
@@ -50,6 +49,7 @@ const ProjectsPage = () => {
         pTag2="This project was meant to test my understanding of the concepts I had previously learned."
         cardImageSrc={pintereach}
         cardImageAlt={pintereachAlt}
+        skills={pintSkills}
       />
 
       <ProjectCard
@@ -60,27 +60,12 @@ const ProjectsPage = () => {
         pTag2="This project showed mastery on certain react app building concepts like making Asynchronous api calls and displaying received data for consumption."
         cardImageSrc={nasaImage}
         cardImageAlt={nasaImageAlt}
+        skills={npodSkills}
       />
 
       <SocialLinks />
     </Layout>
   )
 }
-
-// Pintereach Skills
-{/* <div className="projectIcons">
-  <HTML5 />
-  <CSS3 />
-  <JS />
-  <Github />
-</div> */}
-
-// NPOD Skills
-{/* <div className="projectIcons">
-  <HTML5 />
-  <CSS3 />
-  <JS />
-  <Github />
-</div> */}
 
 export default ProjectsPage

@@ -7,7 +7,8 @@ const ProjectCard = ({
   pTag1,
   pTag2,
   cardImageSrc,
-  cardImageAlt
+  cardImageAlt,
+  skills
 }) => {
   return (
     <div className="projectCard">
@@ -41,12 +42,7 @@ const ProjectCard = ({
             <p>
               {pTag2}
             </p>
-            {/* <div className="projectIcons">
-              <HTML5 />
-              <CSS3 />
-              <JS />
-              <Github />
-            </div> */}
+            {skills}
           </div>
           <div className="imageCon">
             <img src={cardImageSrc} alt={cardImageAlt} />
