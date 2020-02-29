@@ -520,8 +520,29 @@ header nav a:nth-of-type(3):hover {
     margin-bottom: 1em;
   }
 }
+.aboutCon .leftCon .skills p {
+  font-size: 0.95rem;
+}
+.aboutCon .leftCon .skills ul {
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 520px;
+  margin: 0;
+}
+.aboutCon .leftCon .skills ul li {
+  margin-right: 1em;
+  padding: 0.3em 1em;
+  border: 1.5px solid springgreen;
+  border-radius: 0.6em;
+  font-size: 0.6rem;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
 .aboutCon .rightCon {
   width: 350px;
+  padding: 0;
 }
 @media screen and (max-width: 414px) {
   .aboutCon .rightCon {
@@ -533,8 +554,9 @@ header nav a:nth-of-type(3):hover {
 .aboutCon .rightCon img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 2em;
-  margin-right: 1.5em;
+  margin: 0;
+  border: 0.2em dashed springgreen;
+  border-radius: 50%;
 }
 
 .projectCard {
