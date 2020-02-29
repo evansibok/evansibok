@@ -456,12 +456,12 @@ header nav a:nth-of-type(3):hover {
 }
 @media screen and (max-width: 1024px) {
   .aboutCon {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 414px) {
   .aboutCon {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 0.8em;
   }
 }
@@ -472,17 +472,11 @@ header nav a:nth-of-type(3):hover {
 }
 @media screen and (max-width: 1024px) {
   .aboutCon .leftCon {
-    width: 620px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .aboutCon .leftCon {
-    width: 530px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 414px) {
   .aboutCon .leftCon {
-    width: 290px;
     margin-bottom: 1em;
     padding: 0;
     border: none;
@@ -527,7 +521,6 @@ header nav a:nth-of-type(3):hover {
   list-style: none;
   display: inline-flex;
   flex-wrap: wrap;
-  width: 520px;
   margin: 0;
 }
 .aboutCon .leftCon .skills ul li {
@@ -544,19 +537,30 @@ header nav a:nth-of-type(3):hover {
   width: 350px;
   padding: 0;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1024px) {
   .aboutCon .rightCon {
-    width: 300px;
-    padding: 0;
-    border: none;
+    width: 100%;
+    display: flex;
   }
 }
 .aboutCon .rightCon img {
   max-width: 100%;
   height: auto;
   margin: 0;
-  border: 0.2em dashed springgreen;
+  border: 0.2em dashed rgba(0, 0, 0, 0.8);
   border-radius: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .aboutCon .rightCon img {
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+}
+@media screen and (max-width: 414px) {
+  .aboutCon .rightCon img {
+    width: 80%;
+  }
 }
 
 .projectCard {

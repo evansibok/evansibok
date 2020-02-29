@@ -5,11 +5,11 @@
   margin-top: 1em;
 
   @media screen and ($iPadPro) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   @media screen and ($iPhoneXSMax) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 0.8em;
   }
 
@@ -19,15 +19,10 @@
     flex-direction: column;
 
     @media screen and ($iPadPro) {
-      width: 620px;
-    }
-
-    @media screen and ($iPad) {
-      width: 530px;
+      width: 100%;
     }
 
     @media screen and ($iPhoneXSMax) {
-      width: 290px;
       margin-bottom: 1em;
       padding: 0;
       border: none;
@@ -69,7 +64,6 @@
         list-style: none;
         display: inline-flex;
         flex-wrap: wrap;
-        width: 520px;
         margin: 0;
 
         li {
@@ -90,28 +84,27 @@
     width: 350px;
     padding: 0;
 
-    @media screen and ($iPhoneXSMax) {
-      width: 300px;
-      padding: 0;
-      border: none;
+    @media screen and ($iPadPro) {
+      width: 100%;
+      display: flex;
     }
 
     img {
       max-width: 100%;
       height: auto;
       margin: 0;
-      border: 0.2em dashed springgreen;
+      border: 0.2em dashed rgba(0, 0, 0, 0.8);
       border-radius: 50%;
 
-      // @media screen and ($iPadPro) {
-      //   width: 1.5rem;
-      //   margin-right: 1.2em;
-      //   margin-bottom: 1em;
-      // }
+      @media screen and ($iPadPro) {
+        width: 50%;
+        margin-top: 2em;
+        margin-bottom: 4em;
+      }
 
-      // @media screen and ($iPhoneXSMax) {
-      //   margin-right: 1em;
-      // }
+      @media screen and ($iPhoneXSMax) {
+        width: 80%;
+      }
     }
   }
 }
