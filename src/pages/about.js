@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import { PageLabel } from "../components/page-label"
 import { SocialLinks } from "../components/social-links"
+import { skills } from "../components/skills/skills-utils"
 import HTML5 from "../components/svgs/html5-component"
 import CSS3 from "../components/svgs/css3-component"
 import JS from "../components/svgs/js-component"
@@ -21,22 +22,10 @@ import Redux from "../components/svgs/redux"
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     query aboutImages {
-      gatsbyIcon: imageSharp(
+      evansImage: imageSharp(
         fluid: {
           src: {
-            eq: "/static/4a9773549091c227cd2eb82ccd9c5e3a/7e783/gatsby-icon.png"
-          }
-        }
-      ) {
-        fluid {
-          src
-          originalName
-        }
-      }
-      figmaIcon: imageSharp(
-        fluid: {
-          src: {
-            eq: "/static/a786ce194a5c509fc76de9ec7f101529/7e783/figma-icon.png"
+            eq: "/static/7cbe57754e8d5673cb29cde51e6c93d4/b17c1/evans.jpg"
           }
         }
       ) {
@@ -48,11 +37,8 @@ const AboutPage = () => {
     }
   `)
 
-  const gatsbyImage = data.gatsbyIcon.fluid.src
-  const gatsbyImageAlt = data.gatsbyIcon.fluid.originalName
-
-  const figmaImage = data.figmaIcon.fluid.src
-  const figmaImageAlt = data.figmaIcon.fluid.originalName
+  const evansImage = data.evansImage.fluid.src
+  const evansImageAlt = data.evansImage.fluid.originalName
 
   return (
     <Layout>
@@ -71,23 +57,25 @@ const AboutPage = () => {
             functional code for websites, I listen to music, watch fantasy
             shows, drink coffee, read a book or write a poem.
           </p>
-          <p>Interests include VR/AR & Machine Learning</p>
+          <p>I find that VR/AR & Machine Learning intrigue me.</p>
+          <div className="skills">
+            <p>My skills include:</p>
+            <ul>
+              {
+                skills.map((skill, i) => {
+                  return (
+                      <li key={i}>
+                        {skill}
+                      </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
         </div>
 
         <div className="rightCon">
-          <HTML5 />
-          <CSS3 />
-          <JS />
-          <ReactJS />
-          <Redux />
-          <SASS />
-          <NodeJS />
-          <ExpressJS />
-          <GraphQLIcon />
-          <img src={gatsbyImage} alt={gatsbyImageAlt} />
-          <Github />
-          <img src={figmaImage} alt={figmaImageAlt} className="fig" />
-          <Trello />
+          <img src={evansImage} alt={evansImageAlt} />
         </div>
       </div>
       <SocialLinks />

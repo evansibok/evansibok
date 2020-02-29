@@ -456,12 +456,12 @@ header nav a:nth-of-type(3):hover {
 }
 @media screen and (max-width: 1024px) {
   .aboutCon {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 414px) {
   .aboutCon {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 0.8em;
   }
 }
@@ -472,17 +472,11 @@ header nav a:nth-of-type(3):hover {
 }
 @media screen and (max-width: 1024px) {
   .aboutCon .leftCon {
-    width: 620px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .aboutCon .leftCon {
-    width: 530px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 414px) {
   .aboutCon .leftCon {
-    width: 290px;
     margin-bottom: 1em;
     padding: 0;
     border: none;
@@ -520,82 +514,53 @@ header nav a:nth-of-type(3):hover {
     margin-bottom: 1em;
   }
 }
+.aboutCon .leftCon .skills p {
+  font-size: 0.95rem;
+}
+.aboutCon .leftCon .skills ul {
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.aboutCon .leftCon .skills ul li {
+  margin-right: 1em;
+  padding: 0.3em 1em;
+  border: 1.5px solid springgreen;
+  border-radius: 0.6em;
+  font-size: 0.6rem;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
 .aboutCon .rightCon {
   width: 350px;
+  padding: 0;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1024px) {
   .aboutCon .rightCon {
-    width: 300px;
-    padding: 0;
-    border: none;
-  }
-}
-.aboutCon .rightCon svg {
-  width: 1.8rem;
-  margin-right: 1.5em;
-  margin-bottom: 2em;
-}
-@media screen and (max-width: 1024px) {
-  .aboutCon .rightCon svg {
-    width: 1.5rem;
-    margin-right: 1.2em;
-    margin-bottom: 1em;
-  }
-}
-@media screen and (max-width: 414px) {
-  .aboutCon .rightCon svg {
-    margin-right: 1em;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .aboutCon .rightCon svg.node {
-    width: 2rem;
-  }
-}
-@media screen and (max-width: 414px) {
-  .aboutCon .rightCon svg.node {
-    width: 2.3rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .aboutCon .rightCon svg.node {
-    margin-right: 0.8em;
-  }
-}
-.aboutCon .rightCon svg.express {
-  width: 2.5rem;
-}
-@media screen and (max-width: 1024px) {
-  .aboutCon .rightCon svg.express {
-    width: 2.2rem;
-    margin-right: 1em;
-  }
-}
-@media screen and (max-width: 414px) {
-  .aboutCon .rightCon svg.express {
-    width: 2.5rem;
-    margin-right: 0.9em;
+    width: 100%;
+    display: flex;
   }
 }
 .aboutCon .rightCon img {
-  width: 1.8rem;
-  margin-bottom: 2em;
-  margin-right: 1.5em;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  border: 0.2em dashed rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
 }
 @media screen and (max-width: 1024px) {
   .aboutCon .rightCon img {
-    width: 1.5rem;
-    margin-right: 1.2em;
-    margin-bottom: 1em;
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 4em;
   }
 }
 @media screen and (max-width: 414px) {
   .aboutCon .rightCon img {
-    margin-right: 1em;
+    width: 80%;
   }
-}
-.aboutCon .rightCon .fig {
-  width: 1rem;
 }
 
 .projectCard {

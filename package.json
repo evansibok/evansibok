@@ -2,7 +2,7 @@
   "name": "evans-ibok-website",
   "private": true,
   "description": "Evans Ibok's Portfolio Website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Evans Ibok <evansibok@gmail.com>",
   "dependencies": {
     "bufferutil": "^4.0.1",
