@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import { PageLabel } from "../components/page-label"
 import { SocialLinks } from "../components/social-links"
+import { skills } from "../components/skills/skills-utils"
 import HTML5 from "../components/svgs/html5-component"
 import CSS3 from "../components/svgs/css3-component"
 import JS from "../components/svgs/js-component"
@@ -89,7 +90,14 @@ const AboutPage = () => {
           <p>Interests include VR/AR & Machine Learning</p>
           <div>
             <p>My skills include:</p>
-            <ul>
+            {
+              skills.map(skill => {
+                return <ul>
+                  <li>{skill}</li>
+                </ul>
+              })
+            }
+            {/* <ul>
               <li>HTML5</li>
               <li>CSS3</li>
               <li>LESS</li>
@@ -105,7 +113,7 @@ const AboutPage = () => {
               <li>Github</li>
               <li>Figma</li>
               <li>Trello</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
 

@@ -70,50 +70,6 @@
       border: none;
     }
 
-    svg {
-      width: 1.8rem;
-      margin-right: 1.5em;
-      margin-bottom: 2em;
-
-      @media screen and ($iPadPro) {
-        width: 1.5rem;
-        margin-right: 1.2em;
-        margin-bottom: 1em;
-      }
-
-      @media screen and ($iPhoneXSMax) {
-        margin-right: 1em;
-      }
-
-      &.node {
-        @media screen and ($iPadPro) {
-          width: 2rem;
-        }
-
-        @media screen and ($iPhoneXSMax) {
-          width: 2.3rem;
-        }
-
-        @media screen and ($galaxyS5) {
-          margin-right: 0.8em;
-        }
-      }
-
-      &.express {
-        width: 2.5rem;
-        
-        @media screen and ($iPadPro) {
-          width: 2.2rem;
-          margin-right: 1em;
-        }
-
-        @media screen and ($iPhoneXSMax) {
-          width: 2.5rem;
-          margin-right: 0.9em;
-        }
-      }
-    }
-
     img {
       // width: 1.8rem;
       max-width: 100%;
@@ -130,10 +86,6 @@
       // @media screen and ($iPhoneXSMax) {
       //   margin-right: 1em;
       // }
-    }
-
-    .fig {
-      width: 1rem;
     }
   }
 }
