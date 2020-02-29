@@ -7,17 +7,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import { PageLabel } from "../components/page-label"
 import { SocialLinks } from "../components/social-links"
 import { skills } from "../components/skills/skills-utils"
-import HTML5 from "../components/svgs/html5-component"
-import CSS3 from "../components/svgs/css3-component"
-import JS from "../components/svgs/js-component"
-import SASS from "../components/svgs/sass-component"
-import ReactJS from "../components/svgs/react-js-component"
-import GraphQLIcon from "../components/svgs/graphql-component"
-import Github from "../components/svgs/github-component"
-import Trello from "../components/svgs/trello-component"
-import NodeJS from "../components/svgs/node-js"
-import ExpressJS from "../components/svgs/express-js"
-import Redux from "../components/svgs/redux"
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
