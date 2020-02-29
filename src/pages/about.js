@@ -72,10 +72,30 @@ const AboutPage = () => {
             shows, drink coffee, read a book or write a poem.
           </p>
           <p>Interests include VR/AR & Machine Learning</p>
+          <div>
+            <p>My skills include:</p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>LESS</li>
+              <li>SASS</li>
+              <li>JS</li>
+              <li>ReactJS</li>
+              <li>Redux</li>
+              <li>NodeJS</li>
+              <li>ExpressJS</li>
+              <li>Postgres</li>
+              <li>Knex.js</li>
+              <li>GatsbyJS</li>
+              <li>Github</li>
+              <li>Figma</li>
+              <li>Trello</li>
+            </ul>
+          </div>
         </div>
 
         <div className="rightCon">
-          <HTML5 />
+          {/* <HTML5 />
           <CSS3 />
           <JS />
           <ReactJS />
@@ -87,7 +107,8 @@ const AboutPage = () => {
           <img src={gatsbyImage} alt={gatsbyImageAlt} />
           <Github />
           <img src={figmaImage} alt={figmaImageAlt} className="fig" />
-          <Trello />
+          <Trello /> */}
+          <img src="{gatsbyImage}" alt="{gatsbyImageAlt}" />
         </div>
       </div>
       <SocialLinks />
