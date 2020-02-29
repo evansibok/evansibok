@@ -115,19 +115,21 @@
     }
 
     img {
-      width: 1.8rem;
+      // width: 1.8rem;
+      max-width: 100%;
+      height: auto;
       margin-bottom: 2em;
       margin-right: 1.5em;
 
-      @media screen and ($iPadPro) {
-        width: 1.5rem;
-        margin-right: 1.2em;
-        margin-bottom: 1em;
-      }
+      // @media screen and ($iPadPro) {
+      //   width: 1.5rem;
+      //   margin-right: 1.2em;
+      //   margin-bottom: 1em;
+      // }
 
-      @media screen and ($iPhoneXSMax) {
-        margin-right: 1em;
-      }
+      // @media screen and ($iPhoneXSMax) {
+      //   margin-right: 1em;
+      // }
     }
 
     .fig {

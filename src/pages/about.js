@@ -21,6 +21,18 @@ import Redux from "../components/svgs/redux"
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     query aboutImages {
+      evansImage: imageSharp(
+        fluid: {
+          src: {
+            eq: "/static/8ab3b947b1252d44d0090d87ae787e60/b17c1/ev.jpg"
+          }
+        }
+      ) {
+        fluid {
+          src
+          originalName
+        }
+      }
       gatsbyIcon: imageSharp(
         fluid: {
           src: {
@@ -53,6 +65,9 @@ const AboutPage = () => {
 
   const figmaImage = data.figmaIcon.fluid.src
   const figmaImageAlt = data.figmaIcon.fluid.originalName
+
+  const evansImage = data.evansImage.fluid.src
+  const evansImageAlt = data.evansImage.fluid.originalName
 
   return (
     <Layout>
@@ -108,7 +123,7 @@ const AboutPage = () => {
           <Github />
           <img src={figmaImage} alt={figmaImageAlt} className="fig" />
           <Trello /> */}
-          <img src="{gatsbyImage}" alt="{gatsbyImageAlt}" />
+          <img src={evansImage} alt={evansImageAlt} />
         </div>
       </div>
       <SocialLinks />
