@@ -1,2 +1,2 @@
-![Evans Logo](evans-logo.png)j
+![Evans Logo](evans-logo.png)
 # Evans Ibok Portfolio
