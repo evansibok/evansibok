@@ -67,7 +67,7 @@ const ProjectsPage = () => {
       <ProjectCard
         projectTitle="Pintereach Landing Page"
         web="Website"
-        gH="Github"
+        gH="GITHUB"
         websiteAnchorHref="https://pintereach-ev1.netlify.com/"
         githubAnchorHref="https://github.com/Build-Week-Pintereach-1/Marketing-page-Evans"
         pTag1="During my first build week at Lambda School, I built a landing page using the skills I learnt, which included HTML5, CSS3, LESS and JavaScript."
@@ -80,7 +80,7 @@ const ProjectsPage = () => {
       <ProjectCard
         projectTitle="Local Park Passport"
         web="Website"
-        gH="Github"
+        gH="GITHUB"
         websiteAnchorHref="https://front-end-deployed.now.sh/"
         githubAnchorHref="https://github.com/Local-Park-Passport-Lambda-BW/Front-End"
         pTag1="LPP was built as part of my one (1) week Lambda School sprint. The project was built as a means to make it easier for people to find conducive parks in their locales."
@@ -93,7 +93,7 @@ const ProjectsPage = () => {
       <ProjectCard
         projectTitle="EXPRESSJS/REACT APP BOILERPLATE"
         web="Live App"
-        gH="Github"
+        gH="GITHUB"
         websiteAnchorHref="https://express-react-monolith.herokuapp.com/"
         githubAnchorHref="https://github.com/evansibok/express-react-monolith"
         pTag1="This app demonstrates the steps that are taken to get a minimal app that uses nodejs and expressjs for backend and react for frontend running."
@@ -105,7 +105,7 @@ const ProjectsPage = () => {
 
       <ProjectCard
         projectTitle="e v \ n s (This Website)"
-        gH="Github"
+        gH="GITHUB"
         githubAnchorHref="https://github.com/evansibok/evansibok.github.io"
         pTag1="This is the portfolio website of Evans Ibok."
         pTag2="This website was built as a means to showcase projects I've worked on and technologies I'm proficient with."
