@@ -12,7 +12,6 @@ const ExpressReactSkills = () => (
   <div className="projectIcons">
     <CSS3 />
     <JS />
-    <ReactJS />
     <NodeJS />
     <ExpressJS />
     <Github />

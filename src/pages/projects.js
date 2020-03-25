@@ -65,13 +65,13 @@ const ProjectsPage = () => {
       <PageLabel name="Projects" />
 
       <ProjectCard
-        projectTitle="EXPRESSJS/REACT APP BOILERPLATE"
-        web="Live App"
-        gH="GITHUB"
-        websiteAnchorHref="https://express-react-monolith.herokuapp.com/"
-        githubAnchorHref="https://github.com/evansibok/express-react-monolith"
-        pTag1="This app demonstrates the steps that are taken to get a minimal app that uses nodejs and expressjs for backend and react for frontend running."
-        pTag2="The skills involved in building this project includes, creating an express server, an api to allow for test CRUD operations, integrating a React project in the same directory and finally deploying to the Heroku platform."
+        projectTitle="Droom"
+        web="Live Api"
+        gH="GitHub"
+        websiteAnchorHref="https://droom-jobs.herokuapp.com/"
+        githubAnchorHref="https://github.com/droom-build-week/Back-end"
+        pTag1="Backend Api that supports a Tinder-like app for job seekers and hiring companies."
+        pTag2="Started from scratch, this project was built remotely in a week with a team. The Api allows for authentication and CRUD operations for user, admin and company accounts. Tasks involved setting up an express server that utilised Node.js runtime environment, an SQLite development and test DB, Postgres production DB on Heroku and ESLinting and Jest configuration. A minor test was initiated using Supertest to verify that the Api server was live and ready for use."
         cardImageSrc={expressReactApp}
         cardImageAlt={expressReactAppAlt}
         skills={expressReactSkills}
