@@ -27,13 +27,19 @@ const ProjectsPage = () => {
           originalName
         }
       }
-      expressReactScreenshot: imageSharp(fluid: {src: {eq: "/static/7399338059123b56c9fcfdc47bd009fb/a54c6/express-react-app-screenshot.png"}}) {
+      evnsScreenshot: imageSharp(fluid: {src: {eq: "/static/8b2e364da024b4b76012337b9eb5ecf3/a54c6/evns-screenshot.png"}}) {
         fluid {
           src
           originalName
         }
       }
-      evnsScreenshot: imageSharp(fluid: {src: {eq: "/static/8b2e364da024b4b76012337b9eb5ecf3/a54c6/evns-screenshot.png"}}) {
+      droomScreenshot: imageSharp(
+        fluid: {
+          src: {
+            eq: "/static/8bed83732afd83307999d714f8e6f640/a54c6/droom.png"
+          }
+        }
+      ) {
         fluid {
           src
           originalName
@@ -42,22 +48,23 @@ const ProjectsPage = () => {
     }
   `)
 
-  const pintereach = data.pintereachScreenshot.fluid.src
-  const pintereachAlt = data.pintereachScreenshot.fluid.originalName
+
+  const droomScreenshot = data.droomScreenshot.fluid.src
+  const droomScreenshotAlt = data.droomScreenshot.fluid.originalName
 
   const lpp = data.lppScreenshot.fluid.src
   const lppAlt = data.lppScreenshot.fluid.originalName
 
-  const expressReactApp = data.expressReactScreenshot.fluid.src
-  const expressReactAppAlt = data.expressReactScreenshot.fluid.originalName
-
   const evns = data.evnsScreenshot.fluid.src
   const evnsAlt = data.evnsScreenshot.fluid.originalName
 
-  const pintSkills = <PintereachSkills />;
-  const lppSkills = <LPPSkills />;
+  const pintereach = data.pintereachScreenshot.fluid.src
+  const pintereachAlt = data.pintereachScreenshot.fluid.originalName
+
   const droomSkills = <DroomSkills />;
+  const lppSkills = <LPPSkills />;
   const evnsSkills = <EvnsSkills />;
+  const pintSkills = <PintereachSkills />;
 
   return (
     <Layout>
@@ -72,8 +79,8 @@ const ProjectsPage = () => {
         githubAnchorHref="https://github.com/droom-build-week/Back-end"
         pTag1="Backend Api that supports a Tinder-like app for job seekers and hiring companies."
         pTag2="Started from scratch, this project was built remotely in a week with a team. The Api allows for authentication and CRUD operations for user, admin and company accounts. Tasks involved setting up an express server that utilised Node.js runtime environment, an SQLite development and test DB, Postgres production DB on Heroku and ESLinting and Jest configuration. A minor test was initiated using Supertest to verify that the Api server was live and ready for use."
-        cardImageSrc={expressReactApp}
-        cardImageAlt={expressReactAppAlt}
+        cardImageSrc={droomScreenshot}
+        cardImageAlt={droomScreenshotAlt}
         skills={droomSkills}
       />
 
