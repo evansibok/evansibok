@@ -7,6 +7,7 @@ import PostGres from "../svgs/postgres-component";
 import Jest from '../svgs/jest-component';
 import ReactJS from '../svgs/react-js-component';
 import Redux from '../svgs/redux-component';
+import AntDesign from '../svgs/antd-component';
 
 const LambdaDoorSkills = () => {
   const data = useStaticQuery(graphql`
@@ -33,6 +34,7 @@ const LambdaDoorSkills = () => {
     <div className="projectIcons">
       <ReactJS />
       <Redux />
+      <AntDesign />
       <NodeJS />
       <ExpressJS />
       <PostGres />
