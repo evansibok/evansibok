@@ -658,7 +658,7 @@ header nav a:nth-of-type(3):hover {
   }
 }
 .projectCard .contentCon .cardBody .leftCon {
-  width: 600px;
+  width: 520px;
 }
 @media screen and (max-width: 1024px) {
   .projectCard .contentCon .cardBody .leftCon {

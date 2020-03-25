@@ -11,6 +11,7 @@ import PintereachSkills from "../components/skills/pintereachSkills"
 import LPPSkills from "../components/skills/lppSkills"
 import DroomSkills from "../components/skills/droomSkills"
 import EvnsSkills from "../components/skills/evnsSkills"
+import LambdaDoorSkills from "../components/skills/lambdaDoorSkills"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -45,9 +46,24 @@ const ProjectsPage = () => {
           originalName
         }
       }
+      lDoorScreenshot: imageSharp(
+        fluid: {
+          src: {
+            eq: "/static/cfc92e15a3be4bccaf154dc4c532fd70/a54c6/lambda-door-screenshot.png"
+          }
+        }
+      ) {
+        fluid {
+          src
+          originalName
+        }
+      }
     }
   `)
 
+
+  const lDoorScreenshot = data.lDoorScreenshot.fluid.src
+  const lDoorScreenshotAlt = data.lDoorScreenshot.fluid.originalName
 
   const droomScreenshot = data.droomScreenshot.fluid.src
   const droomScreenshotAlt = data.droomScreenshot.fluid.originalName
@@ -65,11 +81,25 @@ const ProjectsPage = () => {
   const lppSkills = <LPPSkills />;
   const evnsSkills = <EvnsSkills />;
   const pintSkills = <PintereachSkills />;
+  const lDoorSkills = <LambdaDoorSkills />;
 
   return (
     <Layout>
       <SEO title="Projects" />
       <PageLabel name="Projects" />
+
+      <ProjectCard
+        projectTitle="Lambda Door v2.0"
+        web="Frontend"
+        gH="Backend"
+        websiteAnchorHref="https://github.com/Labs-EU4/lambda-door-client"
+        githubAnchorHref="https://github.com/Labs-EU4/lambda-door-server"
+        pTag1="A job information platform for Lambda Students."
+        pTag2="Took over this project from a previous team. Built within an 8 weeks period that involved agile project planning and implementation. Together with my team we implemented a new dashboard redesign to enhance user experience and a peer chat feature between job seekers and hiring contact. This involved using technologies like firebase firestore, cron scheduler, slack authentication, ant design system and styled components."
+        cardImageSrc={lDoorScreenshot}
+        cardImageAlt={lDoorScreenshotAlt}
+        skills={lDoorSkills}
+      />
 
       <ProjectCard
         projectTitle="Droom"
@@ -78,7 +108,7 @@ const ProjectsPage = () => {
         websiteAnchorHref="https://droom-jobs.herokuapp.com/"
         githubAnchorHref="https://github.com/droom-build-week/Back-end"
         pTag1="Backend Api that supports a Tinder-like app for job seekers and hiring companies."
-        pTag2="Started from scratch, this project was built remotely in a week with a team. The Api allows for authentication and CRUD operations for user, admin and company accounts. Tasks involved setting up an express server that utilised Node.js runtime environment, an SQLite development and test DB, Postgres production DB on Heroku and ESLinting and Jest configuration. A minor test was initiated using Supertest to verify that the Api server was live and ready for use."
+        pTag2="Started from scratch, this project was built remotely within a week with a team. The Api allows for authentication and CRUD operations for user, admin and company accounts. Tasks involved setting up an express server that utilised Node.js runtime environment, an SQLite development and test DB, Postgres production DB on Heroku and ESLinting and Jest configuration. A minor test was initiated using Supertest to verify that the Api server was live and ready for use."
         cardImageSrc={droomScreenshot}
         cardImageAlt={droomScreenshotAlt}
         skills={droomSkills}
