@@ -65,19 +65,6 @@ const ProjectsPage = () => {
       <PageLabel name="Projects" />
 
       <ProjectCard
-        projectTitle="Local Park Passport"
-        web="Website"
-        gH="GITHUB"
-        websiteAnchorHref="https://front-end-deployed.now.sh/"
-        githubAnchorHref="https://github.com/Local-Park-Passport-Lambda-BW/Front-End"
-        pTag1="LPP was built as part of my one (1) week Lambda School sprint. The project was built as a means to make it easier for people to find conducive parks in their locales."
-        pTag2="During the build sprint, I worked remotely as a frontend architect on a team of two (2). It was a great learning experience on remote team collaboration. This project helped show mastery on certain react app building concepts like making Asynchronous api calls, authentication, routing and custom hook creation."
-        cardImageSrc={lpp}
-        cardImageAlt={lppAlt}
-        skills={lppSkills}
-      />
-
-      <ProjectCard
         projectTitle="EXPRESSJS/REACT APP BOILERPLATE"
         web="Live App"
         gH="GITHUB"
@@ -91,11 +78,24 @@ const ProjectsPage = () => {
       />
 
       <ProjectCard
+        projectTitle="Local Park Passport"
+        web="Website"
+        gH="GitHub"
+        websiteAnchorHref="https://front-end-deployed.now.sh/"
+        githubAnchorHref="https://github.com/Local-Park-Passport-Lambda-BW/Front-End"
+        pTag1="Local Park Passport enables you find the best parks around your neighbourhood."
+        pTag2="This project was built within a week in a remote environment that utilised agile methodology. The team consisted of both backend and frontend architects. Working as one of the frontend architects, it was a great learning experience on remote team collaboration. This project demonstrates mastery on certain frontend application building concepts like making asynchronous api calls, frontend authentication, routing, react custom hook creation and design system implementation (Reactstrap)."
+        cardImageSrc={lpp}
+        cardImageAlt={lppAlt}
+        skills={lppSkills}
+      />
+
+      <ProjectCard
         projectTitle="e v \ n s (This Website)"
-        gH="GITHUB"
+        gH="GitHub"
         githubAnchorHref="https://github.com/evansibok/evansibok.github.io"
         pTag1="This is the portfolio website of Evans Ibok."
-        pTag2="This website was built as a means to showcase projects I've worked on and technologies I'm proficient with."
+        pTag2="This website was built to introduce myself, showcase my past and current projects and technologies I'm proficient with."
         cardImageSrc={evns}
         cardImageAlt={evnsAlt}
         skills={evnsSkills}
@@ -104,7 +104,7 @@ const ProjectsPage = () => {
       <ProjectCard
         projectTitle="Pintereach Landing Page"
         web="Website"
-        gH="GITHUB"
+        gH="GitHub"
         websiteAnchorHref="https://pintereach-ev1.netlify.com/"
         githubAnchorHref="https://github.com/Build-Week-Pintereach-1/Marketing-page-Evans"
         pTag1="This is a marketing page project built during my first build week at Lambda School, I had learnt HTML5, CSS3, LESS and JavaScript."
