@@ -67,14 +67,6 @@ const Header = () => {
         <CloseIcon onClick={closeClick} />
         <Link to="/about">About Me</Link>
         <Link to="/projects">Projects</Link>
-        <a
-          className="buttonAnchor"
-          href="https://drive.google.com/open?id=1LhhLHqdngvL54pbWJvOIBr9iAhayG7LC"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button>View Resume</button>
-        </a>
       </nav>
     </header>
   )

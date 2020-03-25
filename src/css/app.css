@@ -162,32 +162,6 @@ header nav a:hover {
     border-bottom: none;
   }
 }
-header nav a button {
-  padding: 0.4em 1.2em;
-  border-radius: 0 1em;
-  border: 0.15em solid #eb3349;
-  background: transparent;
-  color: #eb3349;
-}
-@media screen and (max-width: 1024px) {
-  header nav a button {
-    padding-right: 2em;
-    padding-left: 2em;
-    background: #eb3349;
-    color: #fff;
-    margin-bottom: 3em;
-    border-radius: 0.3em;
-  }
-}
-header nav a button:hover {
-  cursor: pointer;
-  background: #eb3349;
-  border: 0.15em solid #eb3349;
-  color: #fff;
-}
-header nav a:nth-of-type(3):hover {
-  border-bottom: initial;
-}
 
 .dark-mode {
   color: #fff;
