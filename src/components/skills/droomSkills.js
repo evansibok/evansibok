@@ -6,16 +6,19 @@ import Github from "../svgs/github-component"
 import NodeJS from "../svgs/node-js"
 import ExpressJS from "../svgs/express-js"
 import PostGres from "../svgs/postgres-component";
+import Jest from '../svgs/jest-component';
 
-const ExpressReactSkills = () => (
+const DroomSkills = () => (
   <div className="projectIcons">
     <CSS3 />
     <JS />
     <NodeJS />
     <ExpressJS />
     <PostGres />
+    <img src="" alt="knex logo" />
+    <Jest />
     <Github />
   </div>
 )
 
-export default ExpressReactSkills;
+export default DroomSkills;

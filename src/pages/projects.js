@@ -9,7 +9,7 @@ import { SocialLinks } from "../components/social-links"
 import ProjectCard from "../components/projectCard"
 import PintereachSkills from "../components/skills/pintereachSkills"
 import LPPSkills from "../components/skills/lppSkills"
-import ExpressReactSkills from "../components/skills/expressReactSkills"
+import DroomSkills from "../components/skills/droomSkills"
 import EvnsSkills from "../components/skills/evnsSkills"
 
 const ProjectsPage = () => {
@@ -56,7 +56,7 @@ const ProjectsPage = () => {
 
   const pintSkills = <PintereachSkills />;
   const lppSkills = <LPPSkills />;
-  const expressReactSkills = <ExpressReactSkills />;
+  const droomSkills = <DroomSkills />;
   const evnsSkills = <EvnsSkills />;
 
   return (
@@ -74,7 +74,7 @@ const ProjectsPage = () => {
         pTag2="Started from scratch, this project was built remotely in a week with a team. The Api allows for authentication and CRUD operations for user, admin and company accounts. Tasks involved setting up an express server that utilised Node.js runtime environment, an SQLite development and test DB, Postgres production DB on Heroku and ESLinting and Jest configuration. A minor test was initiated using Supertest to verify that the Api server was live and ready for use."
         cardImageSrc={expressReactApp}
         cardImageAlt={expressReactAppAlt}
-        skills={expressReactSkills}
+        skills={droomSkills}
       />
 
       <ProjectCard
