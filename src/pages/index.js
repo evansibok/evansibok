@@ -46,7 +46,7 @@ const IndexPage = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <li>Github</li>
+          <li>GitHub</li>
         </a>
         <a
           href="mailto:evansibok@gmail.com"

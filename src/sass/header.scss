@@ -131,36 +131,6 @@ header {
           border-bottom: none;
         }
       }
-
-      button {
-        padding: 0.4em 1.2em;
-        border-radius: 0 1em;
-        border: 0.15em solid $primary_color;
-        background: transparent;
-        color: $primary_color;
-
-        @media screen and ($iPadPro) {
-          padding-right: 2em;
-          padding-left: 2em;
-          background: $primary_color;
-          color: #fff;
-          margin-bottom: 3em;
-          border-radius: 0.3em;
-        }
-
-        &:hover {
-          cursor: pointer;
-          background: $primary_color;
-          border: 0.15em solid $primary_color;
-          color: #fff;
-        }
-      }
-
-      &:nth-of-type(3) {
-        &:hover {
-          border-bottom: initial;
-        }
-      }
     }
   }
 }

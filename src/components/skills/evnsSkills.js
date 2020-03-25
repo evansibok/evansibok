@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import CSS3 from "../svgs/css3-component"
 import JS from "../svgs/js-component"
-import Github from "../svgs/github-component"
 import SASS from "../svgs/sass-component"
 import GraphQL from "../svgs/graphql-component"
 
@@ -36,7 +35,6 @@ const EvnsSkills = () => {
       <img src={gatsbyImage} alt={gatsbyImageAlt} />
       <GraphQL />
       <SASS />
-      <Github />
     </div >
   )
 }

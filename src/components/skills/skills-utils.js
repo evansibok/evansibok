@@ -11,7 +11,7 @@ export const skills = [
   "Postgres",
   "Knex.js",
   "GatsbyJS",
-  "Github",
+  "GitHub",
   "Figma",
   "Trello"
 ];

@@ -9,8 +9,9 @@ import { SocialLinks } from "../components/social-links"
 import ProjectCard from "../components/projectCard"
 import PintereachSkills from "../components/skills/pintereachSkills"
 import LPPSkills from "../components/skills/lppSkills"
-import ExpressReactSkills from "../components/skills/expressReactSkills"
+import DroomSkills from "../components/skills/droomSkills"
 import EvnsSkills from "../components/skills/evnsSkills"
+import LambdaDoorSkills from "../components/skills/lambdaDoorSkills"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -27,13 +28,31 @@ const ProjectsPage = () => {
           originalName
         }
       }
-      expressReactScreenshot: imageSharp(fluid: {src: {eq: "/static/7399338059123b56c9fcfdc47bd009fb/a54c6/express-react-app-screenshot.png"}}) {
+      evnsScreenshot: imageSharp(fluid: {src: {eq: "/static/8b2e364da024b4b76012337b9eb5ecf3/a54c6/evns-screenshot.png"}}) {
         fluid {
           src
           originalName
         }
       }
-      evnsScreenshot: imageSharp(fluid: {src: {eq: "/static/8b2e364da024b4b76012337b9eb5ecf3/a54c6/evns-screenshot.png"}}) {
+      droomScreenshot: imageSharp(
+        fluid: {
+          src: {
+            eq: "/static/8bed83732afd83307999d714f8e6f640/a54c6/droom.png"
+          }
+        }
+      ) {
+        fluid {
+          src
+          originalName
+        }
+      }
+      lDoorScreenshot: imageSharp(
+        fluid: {
+          src: {
+            eq: "/static/cfc92e15a3be4bccaf154dc4c532fd70/a54c6/lambda-door-screenshot.png"
+          }
+        }
+      ) {
         fluid {
           src
           originalName
@@ -42,22 +61,27 @@ const ProjectsPage = () => {
     }
   `)
 
-  const pintereach = data.pintereachScreenshot.fluid.src
-  const pintereachAlt = data.pintereachScreenshot.fluid.originalName
+
+  const lDoorScreenshot = data.lDoorScreenshot.fluid.src
+  const lDoorScreenshotAlt = data.lDoorScreenshot.fluid.originalName
+
+  const droomScreenshot = data.droomScreenshot.fluid.src
+  const droomScreenshotAlt = data.droomScreenshot.fluid.originalName
 
   const lpp = data.lppScreenshot.fluid.src
   const lppAlt = data.lppScreenshot.fluid.originalName
 
-  const expressReactApp = data.expressReactScreenshot.fluid.src
-  const expressReactAppAlt = data.expressReactScreenshot.fluid.originalName
-
   const evns = data.evnsScreenshot.fluid.src
   const evnsAlt = data.evnsScreenshot.fluid.originalName
 
-  const pintSkills = <PintereachSkills />;
+  const pintereach = data.pintereachScreenshot.fluid.src
+  const pintereachAlt = data.pintereachScreenshot.fluid.originalName
+
+  const droomSkills = <DroomSkills />;
   const lppSkills = <LPPSkills />;
-  const expressReactSkills = <ExpressReactSkills />;
   const evnsSkills = <EvnsSkills />;
+  const pintSkills = <PintereachSkills />;
+  const lDoorSkills = <LambdaDoorSkills />;
 
   return (
     <Layout>
@@ -65,53 +89,66 @@ const ProjectsPage = () => {
       <PageLabel name="Projects" />
 
       <ProjectCard
-        projectTitle="Pintereach Landing Page"
-        web="Website"
-        gH="GITHUB"
-        websiteAnchorHref="https://pintereach-ev1.netlify.com/"
-        githubAnchorHref="https://github.com/Build-Week-Pintereach-1/Marketing-page-Evans"
-        pTag1="During my first build week at Lambda School, I built a landing page using the skills I learnt, which included HTML5, CSS3, LESS and JavaScript."
-        pTag2="This project was meant to test my understanding of the concepts I had previously learned."
-        cardImageSrc={pintereach}
-        cardImageAlt={pintereachAlt}
-        skills={pintSkills}
+        projectTitle="Lambda Door v2.0"
+        web="Frontend"
+        gH="Backend"
+        websiteAnchorHref="https://github.com/Labs-EU4/lambda-door-client"
+        githubAnchorHref="https://github.com/Labs-EU4/lambda-door-server"
+        pTag1="A job information platform for Lambda Students."
+        pTag2="Took over this project from a previous team. Built within an 8 weeks period that involved agile project planning and implementation. Together with my team we implemented a new dashboard redesign to enhance user experience and a peer chat feature between job seekers and hiring contact. This involved using technologies like firebase firestore, cron scheduler, slack authentication, ant design system and styled components."
+        cardImageSrc={lDoorScreenshot}
+        cardImageAlt={lDoorScreenshotAlt}
+        skills={lDoorSkills}
+      />
+
+      <ProjectCard
+        projectTitle="Droom"
+        web="Live Api"
+        gH="GitHub"
+        websiteAnchorHref="https://droom-jobs.herokuapp.com/"
+        githubAnchorHref="https://github.com/droom-build-week/Back-end"
+        pTag1="Backend Api that supports a Tinder-like app for job seekers and hiring companies."
+        pTag2="Started from scratch, this project was built remotely within a week with a team. The Api allows for authentication and CRUD operations for user, admin and company accounts. Tasks involved setting up an express server that utilised Node.js runtime environment, an SQLite development and test DB, Postgres production DB on Heroku and ESLinting and Jest configuration. A minor test was initiated using Supertest to verify that the Api server was live and ready for use."
+        cardImageSrc={droomScreenshot}
+        cardImageAlt={droomScreenshotAlt}
+        skills={droomSkills}
       />
 
       <ProjectCard
         projectTitle="Local Park Passport"
         web="Website"
-        gH="GITHUB"
+        gH="GitHub"
         websiteAnchorHref="https://front-end-deployed.now.sh/"
         githubAnchorHref="https://github.com/Local-Park-Passport-Lambda-BW/Front-End"
-        pTag1="LPP was built as part of my one (1) week Lambda School sprint. The project was built as a means to make it easier for people to find conducive parks in their locales."
-        pTag2="During the build sprint, I worked remotely as a frontend architect on a team of two (2). It was a great learning experience on remote team collaboration. This project helped show mastery on certain react app building concepts like making Asynchronous api calls, authentication, routing and custom hook creation."
+        pTag1="Local Park Passport enables you find the best parks around your neighbourhood."
+        pTag2="This project was built within a week in a remote environment that utilised agile methodology. The team consisted of both backend and frontend architects. Working as one of the frontend architects, it was a great learning experience on remote team collaboration. This project demonstrates mastery on certain frontend application building concepts like making asynchronous api calls, frontend authentication, routing, react custom hook creation and design system implementation (Reactstrap)."
         cardImageSrc={lpp}
         cardImageAlt={lppAlt}
         skills={lppSkills}
       />
 
       <ProjectCard
-        projectTitle="EXPRESSJS/REACT APP BOILERPLATE"
-        web="Live App"
-        gH="GITHUB"
-        websiteAnchorHref="https://express-react-monolith.herokuapp.com/"
-        githubAnchorHref="https://github.com/evansibok/express-react-monolith"
-        pTag1="This app demonstrates the steps that are taken to get a minimal app that uses nodejs and expressjs for backend and react for frontend running."
-        pTag2="The skills involved in building this project includes, creating an express server, an api to allow for test CRUD operations, integrating a React project in the same directory and finally deploying to the Heroku platform."
-        cardImageSrc={expressReactApp}
-        cardImageAlt={expressReactAppAlt}
-        skills={expressReactSkills}
-      />
-
-      <ProjectCard
         projectTitle="e v \ n s (This Website)"
-        gH="GITHUB"
+        gH="GitHub"
         githubAnchorHref="https://github.com/evansibok/evansibok.github.io"
         pTag1="This is the portfolio website of Evans Ibok."
-        pTag2="This website was built as a means to showcase projects I've worked on and technologies I'm proficient with."
+        pTag2="This website was built to introduce myself, showcase my past and current projects and technologies I'm proficient with."
         cardImageSrc={evns}
         cardImageAlt={evnsAlt}
         skills={evnsSkills}
+      />
+
+      <ProjectCard
+        projectTitle="Pintereach Landing Page"
+        web="Website"
+        gH="GitHub"
+        websiteAnchorHref="https://pintereach-ev1.netlify.com/"
+        githubAnchorHref="https://github.com/Build-Week-Pintereach-1/Marketing-page-Evans"
+        pTag1="This is a marketing page project built during my first build week at Lambda School, I had learnt HTML5, CSS3, LESS and JavaScript."
+        pTag2="This project demonstrated mastery of the concepts I had been taught."
+        cardImageSrc={pintereach}
+        cardImageAlt={pintereachAlt}
+        skills={pintSkills}
       />
 
       <SocialLinks />
