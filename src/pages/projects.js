@@ -65,19 +65,6 @@ const ProjectsPage = () => {
       <PageLabel name="Projects" />
 
       <ProjectCard
-        projectTitle="Pintereach Landing Page"
-        web="Website"
-        gH="GITHUB"
-        websiteAnchorHref="https://pintereach-ev1.netlify.com/"
-        githubAnchorHref="https://github.com/Build-Week-Pintereach-1/Marketing-page-Evans"
-        pTag1="During my first build week at Lambda School, I built a landing page using the skills I learnt, which included HTML5, CSS3, LESS and JavaScript."
-        pTag2="This project was meant to test my understanding of the concepts I had previously learned."
-        cardImageSrc={pintereach}
-        cardImageAlt={pintereachAlt}
-        skills={pintSkills}
-      />
-
-      <ProjectCard
         projectTitle="Local Park Passport"
         web="Website"
         gH="GITHUB"
@@ -112,6 +99,19 @@ const ProjectsPage = () => {
         cardImageSrc={evns}
         cardImageAlt={evnsAlt}
         skills={evnsSkills}
+      />
+
+      <ProjectCard
+        projectTitle="Pintereach Landing Page"
+        web="Website"
+        gH="GITHUB"
+        websiteAnchorHref="https://pintereach-ev1.netlify.com/"
+        githubAnchorHref="https://github.com/Build-Week-Pintereach-1/Marketing-page-Evans"
+        pTag1="This is a marketing page project built during my first build week at Lambda School, I had learnt HTML5, CSS3, LESS and JavaScript."
+        pTag2="This project demonstrated mastery of the concepts I had been taught."
+        cardImageSrc={pintereach}
+        cardImageAlt={pintereachAlt}
+        skills={pintSkills}
       />
 
       <SocialLinks />
