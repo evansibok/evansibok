@@ -41,41 +41,6 @@
       display: flex;
       align-items: center;
 
-      ul {
-        list-style-type: none;
-        margin-left: 0;
-        margin-bottom: 0;
-
-        @media screen and ($iPhoneXSMax) {
-          display: none;
-        }
-
-        a {
-          @include anchor_reset;
-          font-size: 0.9rem;
-
-          @media screen and ($iPadPro) {
-            font-size: 0.9rem;
-          }
-
-          &:first-child {
-            border-bottom: 0.15em solid $primary_color;
-            margin-left: 1em;
-          }
-
-          &:nth-child(2) {
-            margin-left: 1.5em;
-            border-bottom: 0.15em solid $custom_link_color;
-          }
-        }
-
-        a[href$="evansibok.github.io"] {
-          @media screen and ($iPhoneXSMax) {
-            margin-left: 0;
-          }
-        }
-      }
-
       svg {
         margin-left: 1.5em;
         margin-bottom: 0;
@@ -85,6 +50,13 @@
   }
 
   .cardBodyCon {
+    .bodyLinks {
+      display: none;
+
+      @media screen and ($iPhoneXSMax) {
+        display: unset;
+      }
+    }
     .cardBody {
       display: flex;
       justify-content: space-between;

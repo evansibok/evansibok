@@ -539,6 +539,41 @@ header nav a:hover {
   }
 }
 
+.projectLinks ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.projectLinks ul a {
+  color: #3a3a3a;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "PT Sans", "sans-serif";
+  font-size: 0.9rem;
+}
+.projectLinks ul a li {
+  display: inline;
+}
+@media screen and (max-width: 1024px) {
+  .projectLinks ul a {
+    font-size: 0.9rem;
+  }
+}
+.projectLinks ul a:first-child {
+  border-bottom: 0.15em solid #eb3349;
+  margin-left: 1em;
+}
+.projectLinks ul a:nth-child(2) {
+  margin-left: 1.5em;
+  border-bottom: 0.15em solid #0955db;
+}
+@media screen and (max-width: 414px) {
+  .projectLinks ul a[href$="evansibok.github.io"] {
+    margin-left: 0;
+  }
+}
+
 .projectCard {
   display: flex;
   flex-direction: column;
@@ -584,49 +619,18 @@ header nav a:hover {
   display: flex;
   align-items: center;
 }
-.projectCard .cardHead .rightHead ul {
-  list-style-type: none;
-  margin-left: 0;
-  margin-bottom: 0;
-}
-@media screen and (max-width: 414px) {
-  .projectCard .cardHead .rightHead ul {
-    display: none;
-  }
-}
-.projectCard .cardHead .rightHead ul a {
-  color: #3a3a3a;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  text-decoration: none;
-  font-family: "PT Sans", "sans-serif";
-  font-size: 0.9rem;
-}
-.projectCard .cardHead .rightHead ul a li {
-  display: inline;
-}
-@media screen and (max-width: 1024px) {
-  .projectCard .cardHead .rightHead ul a {
-    font-size: 0.9rem;
-  }
-}
-.projectCard .cardHead .rightHead ul a:first-child {
-  border-bottom: 0.15em solid #eb3349;
-  margin-left: 1em;
-}
-.projectCard .cardHead .rightHead ul a:nth-child(2) {
-  margin-left: 1.5em;
-  border-bottom: 0.15em solid #0955db;
-}
-@media screen and (max-width: 414px) {
-  .projectCard .cardHead .rightHead ul a[href$="evansibok.github.io"] {
-    margin-left: 0;
-  }
-}
 .projectCard .cardHead .rightHead svg {
   margin-left: 1.5em;
   margin-bottom: 0;
   font-size: 1.2rem;
+}
+.projectCard .cardBodyCon .bodyLinks {
+  display: none;
+}
+@media screen and (max-width: 414px) {
+  .projectCard .cardBodyCon .bodyLinks {
+    display: unset;
+  }
 }
 .projectCard .cardBodyCon .cardBody {
   display: flex;
