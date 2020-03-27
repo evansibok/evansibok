@@ -231,6 +231,9 @@ header nav a:hover {
 .dark-mode .projectCard .cardBodyCon .projectLinks ul a li {
   color: #fff;
 }
+.dark-mode .projectCard .cardBodyCon .projectLinks.smallScreen ul {
+  border: none;
+}
 .dark-mode .projectCard .cardBodyCon .cardBody {
   border: none;
 }
@@ -599,7 +602,7 @@ header nav a:hover {
   }
 }
 .projectLinks.smallScreen ul {
-  padding-top: 1em;
+  padding: 1em 0 0 1em;
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
 }

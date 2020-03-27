@@ -107,6 +107,12 @@
             }
           }
         }
+
+        &.smallScreen {
+          ul {
+            border: none;
+          }
+        }
       }
       .cardBody {
         border: none;
