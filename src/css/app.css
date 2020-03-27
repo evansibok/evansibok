@@ -221,7 +221,7 @@ header nav a:hover {
 .dark-mode .projectCard .cardHead ul a li {
   color: #fff;
 }
-.dark-mode .projectCard .cardBody .leftCon .projectIcons svg.express {
+.dark-mode .projectCard .cardBodyCon .cardBody .leftCon .projectIcons svg.express {
   fill: #fff;
 }
 .dark-mode .socialLinkCon ul a {
@@ -549,14 +549,11 @@ header nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #cecece;
-  border-left: 1px solid #cecece;
-  border-right: 1px solid #cecece;
   padding: 1em;
-  border-radius: 0.3em;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
   background: #eee;
   cursor: pointer;
-  transition: 0.6s;
 }
 @media screen and (max-width: 1024px) {
   .projectCard .cardHead {
@@ -621,98 +618,102 @@ header nav a:hover {
     margin-left: 0;
   }
 }
-.projectCard .cardBody {
+.projectCard .cardBodyCon {
+  transition: 2s;
+}
+.projectCard .cardBodyCon .cardBody {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 1.5em 1em 1em 1em;
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
   border-bottom: 1px solid #cecece;
-  border-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
 }
 @media screen and (max-width: 414px) {
-  .projectCard .cardBody {
+  .projectCard .cardBodyCon .cardBody {
     flex-direction: column-reverse;
   }
 }
-.projectCard .cardBody .leftCon {
+.projectCard .cardBodyCon .cardBody .leftCon {
   width: 520px;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .cardBody .leftCon {
+  .projectCard .cardBodyCon .cardBody .leftCon {
     width: 350px;
   }
 }
 @media screen and (max-width: 414px) {
-  .projectCard .cardBody .leftCon {
+  .projectCard .cardBodyCon .cardBody .leftCon {
     width: 260px;
   }
 }
 @media screen and (max-width: 360px) {
-  .projectCard .cardBody .leftCon {
+  .projectCard .cardBodyCon .cardBody .leftCon {
     width: 250px;
   }
 }
-.projectCard .cardBody .leftCon p {
+.projectCard .cardBodyCon .cardBody .leftCon p {
   font-size: 0.9rem;
   margin-bottom: 1em;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .cardBody .leftCon p {
+  .projectCard .cardBodyCon .cardBody .leftCon p {
     margin-bottom: 0.8em;
   }
 }
-.projectCard .cardBody .leftCon .projectIcons {
+.projectCard .cardBodyCon .cardBody .leftCon .projectIcons {
   display: flex;
   align-items: center;
 }
-.projectCard .cardBody .leftCon .projectIcons svg {
+.projectCard .cardBodyCon .cardBody .leftCon .projectIcons svg {
   margin-right: 0.8em;
   width: 1.5rem;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .cardBody .leftCon .projectIcons svg {
+  .projectCard .cardBodyCon .cardBody .leftCon .projectIcons svg {
     margin-right: 0.6em;
     width: 1.2rem;
   }
 }
-.projectCard .cardBody .leftCon .projectIcons img {
+.projectCard .cardBodyCon .cardBody .leftCon .projectIcons img {
   width: 1.5rem;
   margin-bottom: 0;
   margin-right: 0.8em;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .cardBody .leftCon .projectIcons img {
+  .projectCard .cardBodyCon .cardBody .leftCon .projectIcons img {
     width: 1.3rem;
   }
 }
-.projectCard .cardBody .imageCon {
+.projectCard .cardBodyCon .cardBody .imageCon {
   width: 320px;
   margin-bottom: 0;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .cardBody .imageCon {
+  .projectCard .cardBodyCon .cardBody .imageCon {
     width: 260px;
   }
 }
 @media screen and (max-width: 414px) {
-  .projectCard .cardBody .imageCon {
+  .projectCard .cardBodyCon .cardBody .imageCon {
     width: 270px;
     margin-bottom: 0.7em;
   }
 }
 @media screen and (max-width: 360px) {
-  .projectCard .cardBody .imageCon {
+  .projectCard .cardBodyCon .cardBody .imageCon {
     width: 250px;
     margin-bottom: 0.7em;
   }
 }
-.projectCard .cardBody .imageCon img {
+.projectCard .cardBodyCon .cardBody .imageCon img {
   border-radius: 0.8em;
   margin-bottom: 0;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .cardBody .imageCon img {
+  .projectCard .cardBodyCon .cardBody .imageCon img {
     border-radius: 0.6em;
   }
 }
