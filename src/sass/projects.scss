@@ -50,11 +50,11 @@
   }
 
   .cardBodyCon {
-    .bodyLinks {
-      display: none;
-
-      @media screen and ($iPhoneXSMax) {
-        display: unset;
+    .projectLinks {
+      .smallScreen {
+        ul {
+          display: none;
+        }
       }
     }
     .cardBody {

@@ -4,11 +4,12 @@ const ProjectLinks = ({
   websiteAnchorHref,
   githubAnchorHref,
   web,
-  gH
+  gH,
+  extraClass
 }) => {
 
   return (
-    <div className="projectLinks">
+    <div className={`projectLinks ${extraClass ? extraClass : ''}`}>
       <ul>
         <a
           href={websiteAnchorHref}

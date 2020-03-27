@@ -4,10 +4,6 @@
     margin-left: 0;
     margin-bottom: 0;
 
-    // @media screen and ($iPhoneXSMax) {
-    //   // display: none;
-    // }
-
     a {
       @include anchor_reset;
       font-size: 0.9rem;
@@ -18,7 +14,6 @@
 
       &:first-child {
         border-bottom: 0.15em solid $primary_color;
-        margin-left: 1em;
       }
 
       &:nth-child(2) {
@@ -31,6 +26,26 @@
       @media screen and ($iPhoneXSMax) {
         margin-left: 0;
       }
+    }
+  }
+
+  &.bigScreen {
+    @media screen and ($iPhoneXSMax) {
+      display: none;
+    }
+  }
+
+  &.smallScreen {
+    display: none;
+
+    @media screen and ($iPhoneXSMax) {
+      display: unset;
+    }
+
+    ul {
+      padding-top: 1em;
+      border-left: 1px solid rgb(206, 206, 206);
+      border-right: 1px solid rgb(206, 206, 206);
     }
   }
 }

@@ -215,11 +215,24 @@ header nav a:hover {
     border: none;
   }
 }
-.dark-mode .projectCard {
-  border: 1px solid #fff;
-}
-.dark-mode .projectCard .cardHead ul a li {
+.dark-mode .projectCard .cardHead {
+  background: rgba(235, 51, 73, 0.7);
   color: #fff;
+}
+.dark-mode .projectCard .cardHead .rightHead .projectLinks ul a:first-child {
+  border-bottom: 0.15em solid #eb3349;
+}
+.dark-mode .projectCard .cardHead .rightHead .projectLinks ul a li {
+  color: #fff;
+}
+.dark-mode .projectCard .cardBodyCon .projectLinks ul a:first-child {
+  border-bottom: 0.15em solid #eb3349;
+}
+.dark-mode .projectCard .cardBodyCon .projectLinks ul a li {
+  color: #fff;
+}
+.dark-mode .projectCard .cardBodyCon .cardBody {
+  border: none;
 }
 .dark-mode .projectCard .cardBodyCon .cardBody .leftCon .projectIcons svg.express {
   fill: #fff;
@@ -562,7 +575,6 @@ header nav a:hover {
 }
 .projectLinks ul a:first-child {
   border-bottom: 0.15em solid #eb3349;
-  margin-left: 1em;
 }
 .projectLinks ul a:nth-child(2) {
   margin-left: 1.5em;
@@ -572,6 +584,24 @@ header nav a:hover {
   .projectLinks ul a[href$="evansibok.github.io"] {
     margin-left: 0;
   }
+}
+@media screen and (max-width: 414px) {
+  .projectLinks.bigScreen {
+    display: none;
+  }
+}
+.projectLinks.smallScreen {
+  display: none;
+}
+@media screen and (max-width: 414px) {
+  .projectLinks.smallScreen {
+    display: unset;
+  }
+}
+.projectLinks.smallScreen ul {
+  padding-top: 1em;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
 }
 
 .projectCard {
@@ -624,13 +654,8 @@ header nav a:hover {
   margin-bottom: 0;
   font-size: 1.2rem;
 }
-.projectCard .cardBodyCon .bodyLinks {
+.projectCard .cardBodyCon .projectLinks .smallScreen ul {
   display: none;
-}
-@media screen and (max-width: 414px) {
-  .projectCard .cardBodyCon .bodyLinks {
-    display: unset;
-  }
 }
 .projectCard .cardBodyCon .cardBody {
   display: flex;

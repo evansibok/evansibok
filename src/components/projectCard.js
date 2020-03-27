@@ -31,6 +31,7 @@ const ProjectCard = ({
             githubAnchorHref={githubAnchorHref}
             web={web}
             gH={gH}
+            extraClass={`bigScreen`}
           />
 
           {isOpen ? <FiChevronDown /> : <FiChevronRight />}
@@ -38,14 +39,13 @@ const ProjectCard = ({
       </div>
 
       <div className="cardBodyCon" style={{ display: isOpen ? 'unset' : 'none' }}>
-        <div className="bodyLinks">
-          <ProjectLinks
-            websiteAnchorHref={websiteAnchorHref}
-            githubAnchorHref={githubAnchorHref}
-            web={web}
-            gH={gH}
-          />
-        </div>
+        <ProjectLinks
+          websiteAnchorHref={websiteAnchorHref}
+          githubAnchorHref={githubAnchorHref}
+          web={web}
+          gH={gH}
+          extraClass={`smallScreen`}
+        />
         <div className="cardBody">
           <div className="leftCon">
             <p>
