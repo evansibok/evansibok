@@ -13,8 +13,7 @@ const IndexPage = () => (
           <span className="letCol">H</span>ello,
         </p>
         <p>
-          I <span className="letCol">a</span>m <span className="letCol">E</span>
-          vans
+          <span className="letCol">I </span>am Evans
         </p>
       </h1>
 
