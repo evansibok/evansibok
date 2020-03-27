@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FiChevronRight, FiChevronDown } from 'react-icons/fi';
 
 const ProjectCard = ({
   projectTitle,
@@ -24,22 +25,26 @@ const ProjectCard = ({
       <div className="cardHead" onClick={openProject}>
         <h4>{projectTitle}</h4>
 
-        <ul>
-          <a
-            href={websiteAnchorHref}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <li>{web}</li>
-          </a>
-          <a
-            href={githubAnchorHref}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <li>{gH}</li>
-          </a>
-        </ul>
+        <div className="rightHead">
+          <ul>
+            <a
+              href={websiteAnchorHref}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li>{web}</li>
+            </a>
+            <a
+              href={githubAnchorHref}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li>{gH}</li>
+            </a>
+          </ul>
+
+          {isOpen ? <FiChevronDown /> : <FiChevronRight />}
+        </div>
       </div>
 
       <div className="cardBodyCon" style={{ display: isOpen ? 'unset' : 'none' }}>

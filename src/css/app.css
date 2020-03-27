@@ -585,12 +585,16 @@ header nav a:hover {
     margin-bottom: 0.8em;
   }
 }
-.projectCard .cardHead ul {
+.projectCard .cardHead .rightHead {
+  display: flex;
+  align-items: center;
+}
+.projectCard .cardHead .rightHead ul {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 0;
 }
-.projectCard .cardHead ul a {
+.projectCard .cardHead .rightHead ul a {
   color: #3a3a3a;
   letter-spacing: 0.1em;
   font-weight: 500;
@@ -598,25 +602,31 @@ header nav a:hover {
   font-family: "PT Sans", "sans-serif";
   font-size: 0.9rem;
 }
-.projectCard .cardHead ul a li {
+.projectCard .cardHead .rightHead ul a li {
   display: inline;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .cardHead ul a {
+  .projectCard .cardHead .rightHead ul a {
     font-size: 0.9rem;
   }
 }
-.projectCard .cardHead ul a:first-child {
+.projectCard .cardHead .rightHead ul a:first-child {
   border-bottom: 0.15em solid #eb3349;
+  margin-left: 1em;
 }
-.projectCard .cardHead ul a:nth-child(2) {
+.projectCard .cardHead .rightHead ul a:nth-child(2) {
   margin-left: 1.5em;
   border-bottom: 0.15em solid #0955db;
 }
 @media screen and (max-width: 414px) {
-  .projectCard .cardHead ul a[href$="evansibok.github.io"] {
+  .projectCard .cardHead .rightHead ul a[href$="evansibok.github.io"] {
     margin-left: 0;
   }
+}
+.projectCard .cardHead .rightHead svg {
+  margin-left: 2em;
+  margin-bottom: 0;
+  font-size: 1.2rem;
 }
 .projectCard .cardBodyCon {
   transition: 2s;

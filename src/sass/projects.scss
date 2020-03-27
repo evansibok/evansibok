@@ -48,33 +48,44 @@
       }
     }
 
-    ul {
-      list-style-type: none;
-      margin-left: 0;
-      margin-bottom: 0;
+    .rightHead {
+      display: flex;
+      align-items: center;
+      ul {
+        list-style-type: none;
+        margin-left: 0;
+        margin-bottom: 0;
 
-      a {
-        @include anchor_reset;
-        font-size: 0.9rem;
-
-        @media screen and ($iPadPro) {
+        a {
+          @include anchor_reset;
           font-size: 0.9rem;
+
+          @media screen and ($iPadPro) {
+            font-size: 0.9rem;
+          }
+
+          &:first-child {
+            border-bottom: 0.15em solid $primary_color;
+            margin-left: 1em;
+          }
+
+          &:nth-child(2) {
+            margin-left: 1.5em;
+            border-bottom: 0.15em solid $custom_link_color;
+          }
         }
 
-        &:first-child {
-          border-bottom: 0.15em solid $primary_color;
-        }
-
-        &:nth-child(2) {
-          margin-left: 1.5em;
-          border-bottom: 0.15em solid $custom_link_color;
+        a[href$="evansibok.github.io"] {
+          @media screen and ($iPhoneXSMax) {
+            margin-left: 0;
+          }
         }
       }
 
-      a[href$="evansibok.github.io"] {
-        @media screen and ($iPhoneXSMax) {
-          margin-left: 0;
-        }
+      svg {
+        margin-left: 2em;
+        margin-bottom: 0;
+        font-size: 1.2rem;
       }
     }
   }
