@@ -21,7 +21,6 @@ const ProjectCard = ({
 
   return (
     <div className="projectCard">
-      {/* <div className="contentCon"> */}
       <div className="cardHead" onClick={openProject}>
         <h4>{projectTitle}</h4>
 
@@ -64,7 +63,6 @@ const ProjectCard = ({
         </div>
 
       </div>
-      {/* </div> */}
     </div>
   )
 }

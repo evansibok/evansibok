@@ -555,14 +555,9 @@ header nav a:hover {
   background: #eee;
   cursor: pointer;
 }
-@media screen and (max-width: 1024px) {
-  .projectCard .cardHead {
-    margin-bottom: 0.9em;
-  }
-}
 @media screen and (max-width: 414px) {
   .projectCard .cardHead {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 }
@@ -580,9 +575,9 @@ header nav a:hover {
     font-size: 1.1rem;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 360px) {
   .projectCard .cardHead h4 {
-    margin-bottom: 0.8em;
+    font-size: 1rem;
   }
 }
 .projectCard .cardHead .rightHead {
@@ -593,6 +588,11 @@ header nav a:hover {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 0;
+}
+@media screen and (max-width: 414px) {
+  .projectCard .cardHead .rightHead ul {
+    display: none;
+  }
 }
 .projectCard .cardHead .rightHead ul a {
   color: #3a3a3a;
@@ -624,12 +624,9 @@ header nav a:hover {
   }
 }
 .projectCard .cardHead .rightHead svg {
-  margin-left: 2em;
+  margin-left: 1.5em;
   margin-bottom: 0;
   font-size: 1.2rem;
-}
-.projectCard .cardBodyCon {
-  transition: 2s;
 }
 .projectCard .cardBodyCon .cardBody {
   display: flex;

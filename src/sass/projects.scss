@@ -4,13 +4,6 @@
   font-family: $primary_font;
   margin-bottom: 0.3em;
 
-  // .contentCon {
-  //   margin: 1.5em 2em;
-
-  //   @media screen and ($iPhoneXSMax) {
-  //     margin: 1.4em;
-  //   }
-
   .cardHead {
     display: flex;
     justify-content: space-between;
@@ -21,12 +14,8 @@
     background: #eee;
     cursor: pointer;
 
-    @media screen and ($iPadPro) {
-      margin-bottom: 0.9em;
-    }
-
     @media screen and ($iPhoneXSMax) {
-      flex-direction: column;
+      flex-direction: row;
       align-items: flex-start;
     }
 
@@ -43,18 +32,23 @@
         font-size: 1.1rem;
       }
 
-      @media screen and ($iPhoneXSMax) {
-        margin-bottom: 0.8em;
+      @media screen and ($galaxyS5) {
+        font-size: 1rem;
       }
     }
 
     .rightHead {
       display: flex;
       align-items: center;
+
       ul {
         list-style-type: none;
         margin-left: 0;
         margin-bottom: 0;
+
+        @media screen and ($iPhoneXSMax) {
+          display: none;
+        }
 
         a {
           @include anchor_reset;
@@ -83,7 +77,7 @@
       }
 
       svg {
-        margin-left: 2em;
+        margin-left: 1.5em;
         margin-bottom: 0;
         font-size: 1.2rem;
       }
@@ -91,8 +85,6 @@
   }
 
   .cardBodyCon {
-    transition: 2s;
-
     .cardBody {
       display: flex;
       justify-content: space-between;
@@ -183,6 +175,4 @@
       }
     }
   }
-
-  // }
 }
