@@ -217,10 +217,10 @@ header nav a:hover {
 .dark-mode .projectCard {
   border: 1px solid #fff;
 }
-.dark-mode .projectCard .contentCon .cardHead ul a li {
+.dark-mode .projectCard .cardHead ul a li {
   color: #fff;
 }
-.dark-mode .projectCard .contentCon .cardBody .leftCon .projectIcons svg.express {
+.dark-mode .projectCard .cardBody .leftCon .projectIcons svg.express {
   fill: #fff;
 }
 .dark-mode .socialLinkCon ul a {
@@ -540,37 +540,34 @@ header nav a:hover {
 .projectCard {
   display: flex;
   flex-direction: column;
-  border: 1px solid #cecece;
-  border-radius: 1em;
   font-family: "Nunito", sans-serif;
   margin-bottom: 0.3em;
 }
-.projectCard .contentCon {
-  margin: 1.5em 2em;
-}
-@media screen and (max-width: 414px) {
-  .projectCard .contentCon {
-    margin: 1.4em;
-  }
-}
-.projectCard .contentCon .cardHead {
+.projectCard .cardHead {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.2em;
+  border-top: 1px solid #cecece;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+  padding: 1em;
+  border-radius: 0.3em;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.6s;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .contentCon .cardHead {
+  .projectCard .cardHead {
     margin-bottom: 0.9em;
   }
 }
 @media screen and (max-width: 414px) {
-  .projectCard .contentCon .cardHead {
+  .projectCard .cardHead {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-.projectCard .contentCon .cardHead h4 {
+.projectCard .cardHead h4 {
   margin-bottom: 0;
   text-transform: uppercase;
   font-family: "Dosis", sans-serif;
@@ -579,22 +576,22 @@ header nav a:hover {
   font-size: 1.1rem;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .contentCon .cardHead h4 {
+  .projectCard .cardHead h4 {
     font-weight: 700;
     font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 414px) {
-  .projectCard .contentCon .cardHead h4 {
+  .projectCard .cardHead h4 {
     margin-bottom: 0.8em;
   }
 }
-.projectCard .contentCon .cardHead ul {
+.projectCard .cardHead ul {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 0;
 }
-.projectCard .contentCon .cardHead ul a {
+.projectCard .cardHead ul a {
   color: #3a3a3a;
   letter-spacing: 0.1em;
   font-weight: 500;
@@ -602,113 +599,118 @@ header nav a:hover {
   font-family: "PT Sans", "sans-serif";
   font-size: 0.9rem;
 }
-.projectCard .contentCon .cardHead ul a li {
+.projectCard .cardHead ul a li {
   display: inline;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .contentCon .cardHead ul a {
+  .projectCard .cardHead ul a {
     font-size: 0.9rem;
   }
 }
-.projectCard .contentCon .cardHead ul a:first-child {
+.projectCard .cardHead ul a:first-child {
   border-bottom: 0.15em solid #eb3349;
 }
-.projectCard .contentCon .cardHead ul a:nth-child(2) {
+.projectCard .cardHead ul a:nth-child(2) {
   margin-left: 1.5em;
   border-bottom: 0.15em solid #0955db;
 }
 @media screen and (max-width: 414px) {
-  .projectCard .contentCon .cardHead ul a[href$="evansibok.github.io"] {
+  .projectCard .cardHead ul a[href$="evansibok.github.io"] {
     margin-left: 0;
   }
 }
-.projectCard .contentCon .cardBody {
+.projectCard .cardBody {
   display: flex;
   justify-content: space-between;
+  padding: 1em;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  border-radius: 0.3em;
 }
 @media screen and (max-width: 414px) {
-  .projectCard .contentCon .cardBody {
+  .projectCard .cardBody {
     flex-direction: column-reverse;
   }
 }
-.projectCard .contentCon .cardBody .leftCon {
+.projectCard .cardBody .leftCon {
   width: 520px;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .contentCon .cardBody .leftCon {
+  .projectCard .cardBody .leftCon {
     width: 350px;
   }
 }
 @media screen and (max-width: 414px) {
-  .projectCard .contentCon .cardBody .leftCon {
+  .projectCard .cardBody .leftCon {
     width: 260px;
   }
 }
 @media screen and (max-width: 360px) {
-  .projectCard .contentCon .cardBody .leftCon {
+  .projectCard .cardBody .leftCon {
     width: 250px;
   }
 }
-.projectCard .contentCon .cardBody .leftCon p {
+.projectCard .cardBody .leftCon p {
   font-size: 0.9rem;
   margin-bottom: 1em;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .contentCon .cardBody .leftCon p {
+  .projectCard .cardBody .leftCon p {
     margin-bottom: 0.8em;
   }
 }
-.projectCard .contentCon .cardBody .leftCon .projectIcons {
+.projectCard .cardBody .leftCon .projectIcons {
   display: flex;
   align-items: center;
 }
-.projectCard .contentCon .cardBody .leftCon .projectIcons svg {
+.projectCard .cardBody .leftCon .projectIcons svg {
   margin-right: 0.8em;
   width: 1.5rem;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .contentCon .cardBody .leftCon .projectIcons svg {
+  .projectCard .cardBody .leftCon .projectIcons svg {
     margin-right: 0.6em;
     width: 1.2rem;
   }
 }
-.projectCard .contentCon .cardBody .leftCon .projectIcons img {
+.projectCard .cardBody .leftCon .projectIcons img {
   width: 1.5rem;
   margin-bottom: 0;
   margin-right: 0.8em;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .contentCon .cardBody .leftCon .projectIcons img {
+  .projectCard .cardBody .leftCon .projectIcons img {
     width: 1.3rem;
   }
 }
-.projectCard .contentCon .cardBody .imageCon {
+.projectCard .cardBody .imageCon {
   width: 320px;
   margin-bottom: 0;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .contentCon .cardBody .imageCon {
+  .projectCard .cardBody .imageCon {
     width: 260px;
   }
 }
 @media screen and (max-width: 414px) {
-  .projectCard .contentCon .cardBody .imageCon {
+  .projectCard .cardBody .imageCon {
     width: 270px;
     margin-bottom: 0.7em;
   }
 }
 @media screen and (max-width: 360px) {
-  .projectCard .contentCon .cardBody .imageCon {
+  .projectCard .cardBody .imageCon {
     width: 250px;
     margin-bottom: 0.7em;
   }
 }
-.projectCard .contentCon .cardBody .imageCon img {
+.projectCard .cardBody .imageCon img {
   border-radius: 0.8em;
   margin-bottom: 0;
 }
 @media screen and (max-width: 1024px) {
-  .projectCard .contentCon .cardBody .imageCon img {
+  .projectCard .cardBody .imageCon img {
     border-radius: 0.6em;
   }
 }

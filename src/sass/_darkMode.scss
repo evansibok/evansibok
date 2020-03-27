@@ -75,26 +75,26 @@
   .projectCard {
     border: 1px solid #fff;
 
-    .contentCon {
-      .cardHead {
-        ul {
-          a {
-            li {
-              color: #fff;
-            }
-          }
-        }
-      }
-      .cardBody {
-        .leftCon {
-          .projectIcons {
-            svg.express {
-              fill: #fff;
-            }
+    // .contentCon {
+    .cardHead {
+      ul {
+        a {
+          li {
+            color: #fff;
           }
         }
       }
     }
+    .cardBody {
+      .leftCon {
+        .projectIcons {
+          svg.express {
+            fill: #fff;
+          }
+        }
+      }
+    }
+    // }
   }
 
   .socialLinkCon {

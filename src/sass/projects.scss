@@ -1,164 +1,175 @@
 .projectCard {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(206, 206, 206);
-  border-radius: 1em;
   font-family: $primary_font;
   margin-bottom: 0.3em;
 
-  .contentCon {
-    margin: 1.5em 2em;
+  // .contentCon {
+  //   margin: 1.5em 2em;
+
+  //   @media screen and ($iPhoneXSMax) {
+  //     margin: 1.4em;
+  //   }
+
+  .cardHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(206, 206, 206);
+    border-left: 1px solid rgb(206, 206, 206);
+    border-right: 1px solid rgb(206, 206, 206);
+    padding: 1em;
+    border-radius: 0.3em;
+    background: #eee;
+    cursor: pointer;
+    transition: 0.6s;
+    // margin-bottom: 0.5em;
+
+    @media screen and ($iPadPro) {
+      margin-bottom: 0.9em;
+    }
 
     @media screen and ($iPhoneXSMax) {
-      margin: 1.4em;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    .cardHead {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1.2em;
+    h4 {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      font-family: $secondary_font;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      font-size: 1.1rem;
 
       @media screen and ($iPadPro) {
-        margin-bottom: 0.9em;
+        font-weight: 700;
+        font-size: 1.1rem;
       }
 
       @media screen and ($iPhoneXSMax) {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      h4 {
-        margin-bottom: 0;
-        text-transform: uppercase;
-        font-family: $secondary_font;
-        font-weight: 800;
-        letter-spacing: 0.1em;
-        font-size: 1.1rem;
-
-        @media screen and ($iPadPro) {
-          font-weight: 700;
-          font-size: 1.1rem;
-        }
-
-        @media screen and ($iPhoneXSMax) {
-          margin-bottom: 0.8em;
-        }
-      }
-
-      ul {
-        list-style-type: none;
-        margin-left: 0;
-        margin-bottom: 0;
-
-        a {
-          @include anchor_reset;
-          font-size: 0.9rem;
-
-          @media screen and ($iPadPro) {
-            font-size: 0.9rem;
-          }
-
-          &:first-child {
-            border-bottom: 0.15em solid $primary_color;
-          }
-
-          &:nth-child(2) {
-            margin-left: 1.5em;
-            border-bottom: 0.15em solid $custom_link_color;
-          }
-        }
-
-        a[href$="evansibok.github.io"] {
-          @media screen and ($iPhoneXSMax) {
-            margin-left: 0;
-          }
-        }
+        margin-bottom: 0.8em;
       }
     }
 
-    .cardBody {
-      display: flex;
-      justify-content: space-between;
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+      margin-bottom: 0;
 
-      @media screen and ($iPhoneXSMax) {
-        flex-direction: column-reverse;
-      }
-
-      .leftCon {
-        width: 520px;
+      a {
+        @include anchor_reset;
+        font-size: 0.9rem;
 
         @media screen and ($iPadPro) {
-          width: 350px;
-        }
-
-        @media screen and ($iPhoneXSMax) {
-          width: 260px;
-        }
-
-        @media screen and ($galaxyS5) {
-          width: 250px;
-        }
-
-        p {
           font-size: 0.9rem;
-          margin-bottom: 1em;
-
-          @media screen and ($iPadPro) {
-            margin-bottom: 0.8em;
-          }
         }
-        .projectIcons {
-          display: flex;
-          align-items: center;
-          svg {
-            margin-right: 0.8em;
-            width: 1.5rem;
 
-            @media screen and ($iPadPro) {
-              margin-right: 0.6em;
-              width: 1.2rem;
-            }
-          }
-          img {
-            width: 1.5rem;
-            margin-bottom: 0;
-            margin-right: 0.8em;
+        &:first-child {
+          border-bottom: 0.15em solid $primary_color;
+        }
 
-            @media screen and ($iPadPro) {
-              width: 1.3rem;
-            }
-          }
+        &:nth-child(2) {
+          margin-left: 1.5em;
+          border-bottom: 0.15em solid $custom_link_color;
         }
       }
 
-      .imageCon {
-        width: 320px;
-        margin-bottom: 0;
-
-        @media screen and ($iPadPro) {
-          width: 260px;
-        }
-
+      a[href$="evansibok.github.io"] {
         @media screen and ($iPhoneXSMax) {
-          width: 270px;
-          margin-bottom: 0.7em;
-        }
-
-        @media screen and ($galaxyS5) {
-          width: 250px;
-          margin-bottom: 0.7em;
-        }
-
-        img {
-          border-radius: 0.8em;
-          margin-bottom: 0;
-
-          @media screen and ($iPadPro) {
-            border-radius: 0.6em;
-          }
+          margin-left: 0;
         }
       }
     }
   }
+
+  .cardBody {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-left: 1px solid rgb(206, 206, 206);
+    border-right: 1px solid rgb(206, 206, 206);
+    border-bottom: 1px solid rgb(206, 206, 206);
+    border-radius: 0.3em;
+
+    @media screen and ($iPhoneXSMax) {
+      flex-direction: column-reverse;
+    }
+
+    .leftCon {
+      width: 520px;
+
+      @media screen and ($iPadPro) {
+        width: 350px;
+      }
+
+      @media screen and ($iPhoneXSMax) {
+        width: 260px;
+      }
+
+      @media screen and ($galaxyS5) {
+        width: 250px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 1em;
+
+        @media screen and ($iPadPro) {
+          margin-bottom: 0.8em;
+        }
+      }
+      .projectIcons {
+        display: flex;
+        align-items: center;
+        svg {
+          margin-right: 0.8em;
+          width: 1.5rem;
+
+          @media screen and ($iPadPro) {
+            margin-right: 0.6em;
+            width: 1.2rem;
+          }
+        }
+        img {
+          width: 1.5rem;
+          margin-bottom: 0;
+          margin-right: 0.8em;
+
+          @media screen and ($iPadPro) {
+            width: 1.3rem;
+          }
+        }
+      }
+    }
+
+    .imageCon {
+      width: 320px;
+      margin-bottom: 0;
+
+      @media screen and ($iPadPro) {
+        width: 260px;
+      }
+
+      @media screen and ($iPhoneXSMax) {
+        width: 270px;
+        margin-bottom: 0.7em;
+      }
+
+      @media screen and ($galaxyS5) {
+        width: 250px;
+        margin-bottom: 0.7em;
+      }
+
+      img {
+        border-radius: 0.8em;
+        margin-bottom: 0;
+
+        @media screen and ($iPadPro) {
+          border-radius: 0.6em;
+        }
+      }
+    }
+  }
+  // }
 }
