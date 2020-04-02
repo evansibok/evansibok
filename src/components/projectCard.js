@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FiChevronRight, FiChevronDown } from 'react-icons/fi';
+import ProjectLinks from './projectLinks';
 
 const ProjectCard = ({
   projectTitle,
@@ -12,30 +14,38 @@ const ProjectCard = ({
   web,
   gH
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openProject = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div className="projectCard">
-      <div className="contentCon">
-        <div className="cardHead">
-          <h4>{projectTitle}</h4>
+      <div className="cardHead" onClick={openProject}>
+        <h4>{projectTitle}</h4>
 
-          <ul>
-            <a
-              href={websiteAnchorHref}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li>{web}</li>
-            </a>
-            <a
-              href={githubAnchorHref}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li>{gH}</li>
-            </a>
-          </ul>
+        <div className="rightHead">
+          <ProjectLinks
+            websiteAnchorHref={websiteAnchorHref}
+            githubAnchorHref={githubAnchorHref}
+            web={web}
+            gH={gH}
+            extraClass={`bigScreen`}
+          />
+
+          {isOpen ? <FiChevronDown /> : <FiChevronRight />}
         </div>
+      </div>
 
+      <div className="cardBodyCon" style={{ display: isOpen ? 'unset' : 'none' }}>
+        <ProjectLinks
+          websiteAnchorHref={websiteAnchorHref}
+          githubAnchorHref={githubAnchorHref}
+          web={web}
+          gH={gH}
+          extraClass={`smallScreen`}
+        />
         <div className="cardBody">
           <div className="leftCon">
             <p>
@@ -50,6 +60,7 @@ const ProjectCard = ({
             <img src={cardImageSrc} alt={cardImageAlt} />
           </div>
         </div>
+
       </div>
     </div>
   )

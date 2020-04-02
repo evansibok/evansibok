@@ -132,7 +132,7 @@ const ProjectsPage = () => {
         gH="GitHub"
         githubAnchorHref="https://github.com/evansibok/evansibok.github.io"
         pTag1="This is the portfolio website of Evans Ibok."
-        pTag2="This website was built to introduce myself, showcase my past and current projects and technologies I'm proficient with."
+        pTag2="This website was built to introduce myself, showcase my past and current projects and technologies I'm proficient with. Built using GatsbyJS and hosted on Netlify."
         cardImageSrc={evns}
         cardImageAlt={evnsAlt}
         skills={evnsSkills}
