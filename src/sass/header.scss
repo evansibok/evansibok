@@ -27,9 +27,6 @@ header {
         width: 100px;
         margin-bottom: 0;
       }
-
-      @media screen and ($iPadPro) {
-      }
     }
 
     .toggleMenu {
@@ -93,35 +90,48 @@ header {
       flex-direction: column;
       align-items: flex-start;
       position: fixed;
-      width: 100vw;
+      width: 45vw;
       height: 100vh;
       top: 0;
-      left: 0;
-      background: $mobile-nav-bg;
+      right: 0;
+      background: rgb(236, 236, 236);
       display: none;
       z-index: 1;
+      -webkit-box-shadow: -1px 0px 10px 2px rgba(219, 219, 219, 1);
+      -moz-box-shadow: -1px 0px 10px 2px rgba(219, 219, 219, 1);
+      box-shadow: -1px 0px 10px 2px rgba(219, 219, 219, 1);
     }
 
     svg {
       display: none;
       @media screen and ($iPadPro) {
         display: unset;
-        align-self: flex-end;
-        margin: 3em;
+        align-self: flex-start;
+        margin: 2.5em 0 0 2.5em;
+        fill: #cf2d40;
       }
     }
 
     a {
-      margin-left: 2em;
+      text-align: right;
       color: hsla(0, 0%, 0%, 0.8);
       text-decoration: none;
       letter-spacing: 0.08em;
       padding-bottom: 0.2em;
 
       @media screen and ($iPadPro) {
-        margin-left: 0;
-        margin-top: 3em;
+        width: 100%;
+        margin-top: 5em;
         align-self: center;
+        color: #fff;
+        padding: 1em 3em;
+        background-color: #db2f43;
+      }
+
+      &:nth-of-type(2) {
+        @media screen and ($iPadPro) {
+          margin-top: 3em;
+        }
       }
 
       &:hover {
