@@ -32,11 +32,23 @@
     }
 
     nav {
+      @media screen and ($iPadPro) {
+        // color: initial;
+        background: $primary_color;
+        -webkit-box-shadow: unset;
+        -moz-box-shadow: unset;
+        box-shadow: unset;
+      }
+
+      svg {
+        fill: #fff;
+      }
+
       a {
         color: #fff;
 
         @media screen and ($iPadPro) {
-          color: initial;
+          background-color: #c22c3d;
         }
       }
     }

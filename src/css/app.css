@@ -221,12 +221,23 @@ header nav a:hover {
 .dark-mode header .leftCon svg {
   fill: #fff;
 }
+@media screen and (max-width: 1024px) {
+  .dark-mode header nav {
+    background: #eb3349;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+  }
+}
+.dark-mode header nav svg {
+  fill: #fff;
+}
 .dark-mode header nav a {
   color: #fff;
 }
 @media screen and (max-width: 1024px) {
   .dark-mode header nav a {
-    color: initial;
+    background-color: #c22c3d;
   }
 }
 .dark-mode .homeCon ul a {
