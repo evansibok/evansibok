@@ -50,6 +50,10 @@
         @media screen and ($iPadPro) {
           background-color: #c22c3d;
         }
+
+        @media screen and ($iPhoneXSMax) {
+          background-color: #c22c3d;
+        }
       }
     }
   }

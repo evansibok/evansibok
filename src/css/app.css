@@ -61,7 +61,7 @@ header .leftCon .brandLogoCon img {
   width: 100px;
   margin-bottom: 0;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1024px) {
   header .leftCon .brandLogoCon img {
     margin-top: 0.4em;
   }
@@ -147,6 +147,8 @@ header nav svg {
     align-self: flex-start;
     margin: 2.5em 0 0 2.5em;
     fill: #cf2d40;
+    width: 4%;
+    height: auto;
   }
 }
 @media screen and (max-width: 800px) {
@@ -156,7 +158,9 @@ header nav svg {
 }
 @media screen and (max-width: 414px) {
   header nav svg {
+    margin-top: 2.6em;
     margin-left: 1.5em;
+    width: 8%;
   }
 }
 header nav a {
@@ -181,6 +185,7 @@ header nav a {
 @media screen and (max-width: 414px) {
   header nav a {
     padding-right: 1.5em;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -236,6 +241,11 @@ header nav a:hover {
   color: #fff;
 }
 @media screen and (max-width: 1024px) {
+  .dark-mode header nav a {
+    background-color: #c22c3d;
+  }
+}
+@media screen and (max-width: 414px) {
   .dark-mode header nav a {
     background-color: #c22c3d;
   }

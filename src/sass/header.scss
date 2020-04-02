@@ -27,7 +27,7 @@ header {
         width: 100px;
         margin-bottom: 0;
 
-        @media screen and ($iPhoneXSMax) {
+        @media screen and ($iPadPro) {
           margin-top: 0.4em;
         }
       }
@@ -113,6 +113,8 @@ header {
         align-self: flex-start;
         margin: 2.5em 0 0 2.5em;
         fill: #cf2d40;
+        width: 4%;
+        height: auto;
       }
 
       @media screen and ($iPad) {
@@ -120,7 +122,9 @@ header {
       }
 
       @media screen and ($iPhoneXSMax) {
+        margin-top: 2.6em;
         margin-left: 1.5em;
+        width: 8%;
       }
     }
 
@@ -144,6 +148,7 @@ header {
 
       @media screen and ($iPhoneXSMax) {
         padding-right: 1.5em;
+        font-size: 1rem;
       }
 
       &:nth-of-type(2) {
