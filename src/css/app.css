@@ -133,9 +133,9 @@ header nav {
     background: #ececec;
     display: none;
     z-index: 1;
-    -webkit-box-shadow: -1px 0px 10px 2px #dbdbdb;
-    -moz-box-shadow: -1px 0px 10px 2px #dbdbdb;
-    box-shadow: -1px 0px 10px 2px #dbdbdb;
+    -webkit-box-shadow: -2px 0px 0px -3px #adadad;
+    -moz-box-shadow: -2px 0px 0px -3px #adadad;
+    box-shadow: -2px 0px 0px -3px #adadad;
   }
 }
 header nav svg {
