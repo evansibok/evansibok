@@ -61,6 +61,11 @@ header .leftCon .brandLogoCon img {
   width: 100px;
   margin-bottom: 0;
 }
+@media screen and (max-width: 1024px) {
+  header .leftCon .brandLogoCon img {
+    margin-top: 0.4em;
+  }
+}
 header .leftCon .toggleMenu {
   display: flex;
   align-items: center;
@@ -121,13 +126,16 @@ header nav {
     flex-direction: column;
     align-items: flex-start;
     position: fixed;
-    width: 100vw;
+    width: 60vw;
     height: 100vh;
     top: 0;
-    left: 0;
-    background: #e8c9c4;
+    right: 0;
+    background: #ececec;
     display: none;
     z-index: 1;
+    -webkit-box-shadow: -2px 0px 0px -3px #adadad;
+    -moz-box-shadow: -2px 0px 0px -3px #adadad;
+    box-shadow: -2px 0px 0px -3px #adadad;
   }
 }
 header nav svg {
@@ -136,22 +144,53 @@ header nav svg {
 @media screen and (max-width: 1024px) {
   header nav svg {
     display: unset;
-    align-self: flex-end;
-    margin: 3em;
+    align-self: flex-start;
+    margin: 2.5em 0 0 2.5em;
+    fill: #cf2d40;
+    width: 4%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  header nav svg {
+    margin: 2.5em 0 0 2em;
+  }
+}
+@media screen and (max-width: 414px) {
+  header nav svg {
+    margin-top: 2.6em;
+    margin-left: 1.5em;
+    width: 8%;
   }
 }
 header nav a {
-  margin-left: 2em;
+  text-align: right;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   letter-spacing: 0.08em;
   padding-bottom: 0.2em;
+  margin-left: 2em;
 }
 @media screen and (max-width: 1024px) {
   header nav a {
-    margin-left: 0;
+    width: 100%;
     margin-top: 3em;
+    margin-left: 0;
     align-self: center;
+    color: #fff;
+    padding: 1em 3em 1em 0;
+    background-color: #db2f43;
+  }
+}
+@media screen and (max-width: 414px) {
+  header nav a {
+    padding-right: 1.5em;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header nav a:nth-of-type(2) {
+    margin-top: 1em;
   }
 }
 header nav a:hover {
@@ -187,12 +226,28 @@ header nav a:hover {
 .dark-mode header .leftCon svg {
   fill: #fff;
 }
+@media screen and (max-width: 1024px) {
+  .dark-mode header nav {
+    background: #eb3349;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+  }
+}
+.dark-mode header nav svg {
+  fill: #fff;
+}
 .dark-mode header nav a {
   color: #fff;
 }
 @media screen and (max-width: 1024px) {
   .dark-mode header nav a {
-    color: initial;
+    background-color: #c22c3d;
+  }
+}
+@media screen and (max-width: 414px) {
+  .dark-mode header nav a {
+    background-color: #c22c3d;
   }
 }
 .dark-mode .homeCon ul a {
