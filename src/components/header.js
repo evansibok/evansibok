@@ -65,8 +65,13 @@ const Header = () => {
 
       <nav id="navigation">
         <CloseIcon onClick={closeClick} />
-        <Link to="/about">About Me</Link>
-        <Link to="/projects">Projects</Link>
+        <div>
+          <Link to="/about">About Me</Link>
+        </div>
+
+        <div>
+          <Link to="/projects">Projects</Link>
+        </div>
       </nav>
     </header>
   )

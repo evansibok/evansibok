@@ -148,7 +148,6 @@ header nav svg {
     margin: 2.5em 0 0 2.5em;
     fill: #cf2d40;
     width: 4%;
-    height: auto;
   }
 }
 @media screen and (max-width: 800px) {
@@ -163,43 +162,62 @@ header nav svg {
     width: 8%;
   }
 }
-header nav a {
-  text-align: right;
-  color: rgba(0, 0, 0, 0.8);
-  text-decoration: none;
-  letter-spacing: 0.08em;
-  padding-bottom: 0.2em;
+header nav div {
   margin-left: 2em;
 }
 @media screen and (max-width: 1024px) {
-  header nav a {
-    width: 100%;
+  header nav div {
+    display: flex;
     margin-top: 3em;
     margin-left: 0;
-    align-self: center;
-    color: #fff;
-    padding: 1em 3em 1em 0;
+    padding: 1em 0 1em 0;
+    width: 100%;
     background-color: #db2f43;
+    justify-content: flex-end;
   }
 }
 @media screen and (max-width: 414px) {
-  header nav a {
-    padding-right: 1.5em;
+  header nav div {
     font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  header nav a:nth-of-type(2) {
+  header nav div:nth-of-type(2) {
     margin-top: 1em;
   }
 }
-header nav a:hover {
+@media screen and (max-width: 414px) {
+  header nav div:nth-of-type(2) {
+    margin-top: 0.6em;
+  }
+}
+header nav div a {
+  padding-bottom: 0.3em;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+}
+header nav div a:hover {
   border-bottom: 0.15em solid #eb3349;
-  padding-bottom: 0.15em;
 }
 @media screen and (max-width: 1024px) {
-  header nav a:hover {
+  header nav div a:hover {
     border-bottom: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header nav div a {
+    width: 100%;
+    padding-right: 3em;
+    padding-bottom: 0;
+    justify-self: right;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 414px) {
+  header nav div a {
+    padding-right: 2em;
   }
 }
 
@@ -237,18 +255,13 @@ header nav a:hover {
 .dark-mode header nav svg {
   fill: #fff;
 }
-.dark-mode header nav a {
-  color: #fff;
-}
 @media screen and (max-width: 1024px) {
-  .dark-mode header nav a {
+  .dark-mode header nav div {
     background-color: #c22c3d;
   }
 }
-@media screen and (max-width: 414px) {
-  .dark-mode header nav a {
-    background-color: #c22c3d;
-  }
+.dark-mode header nav div a {
+  color: #fff;
 }
 .dark-mode .homeCon ul a {
   color: #fff;
