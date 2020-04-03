@@ -255,18 +255,13 @@ header nav div a:hover {
 .dark-mode header nav svg {
   fill: #fff;
 }
-.dark-mode header nav a {
-  color: #fff;
-}
 @media screen and (max-width: 1024px) {
-  .dark-mode header nav a {
+  .dark-mode header nav div {
     background-color: #c22c3d;
   }
 }
-@media screen and (max-width: 414px) {
-  .dark-mode header nav a {
-    background-color: #c22c3d;
-  }
+.dark-mode header nav div a {
+  color: #fff;
 }
 .dark-mode .homeCon ul a {
   color: #fff;

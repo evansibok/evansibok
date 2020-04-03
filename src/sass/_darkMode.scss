@@ -33,7 +33,6 @@
 
     nav {
       @media screen and ($iPadPro) {
-        // color: initial;
         background: $primary_color;
         -webkit-box-shadow: unset;
         -moz-box-shadow: unset;
@@ -44,15 +43,13 @@
         fill: #fff;
       }
 
-      a {
-        color: #fff;
-
+      div {
         @media screen and ($iPadPro) {
           background-color: #c22c3d;
         }
 
-        @media screen and ($iPhoneXSMax) {
-          background-color: #c22c3d;
+        a {
+          color: #fff;
         }
       }
     }
