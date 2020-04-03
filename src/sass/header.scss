@@ -114,7 +114,6 @@ header {
         margin: 2.5em 0 0 2.5em;
         fill: #cf2d40;
         width: 4%;
-        height: auto;
       }
 
       @media screen and ($iPad) {
@@ -128,26 +127,20 @@ header {
       }
     }
 
-    a {
-      text-align: right;
-      color: hsla(0, 0%, 0%, 0.8);
-      text-decoration: none;
-      letter-spacing: 0.08em;
-      padding-bottom: 0.2em;
+    div {
       margin-left: 2em;
 
       @media screen and ($iPadPro) {
-        width: 100%;
+        display: flex;
         margin-top: 3em;
         margin-left: 0;
-        align-self: center;
-        color: #fff;
-        padding: 1em 3em 1em 0;
+        padding: 1em 0 1em 0;
+        width: 100%;
         background-color: #db2f43;
+        justify-content: flex-end;
       }
 
       @media screen and ($iPhoneXSMax) {
-        padding-right: 1.5em;
         font-size: 0.9rem;
       }
 
@@ -155,14 +148,37 @@ header {
         @media screen and ($iPadPro) {
           margin-top: 1em;
         }
+
+        @media screen and ($iPhoneXSMax) {
+          margin-top: 0.6em;
+        }
       }
 
-      &:hover {
-        border-bottom: 0.15em solid $primary_color;
-        padding-bottom: 0.15em;
+      a {
+        padding-bottom: 0.3em;
+        text-align: right;
+        color: hsla(0, 0%, 0%, 0.8);
+        text-decoration: none;
+        letter-spacing: 0.08em;
+
+        &:hover {
+          border-bottom: 0.15em solid $primary_color;
+
+          @media screen and ($iPadPro) {
+            border-bottom: none;
+          }
+        }
 
         @media screen and ($iPadPro) {
-          border-bottom: none;
+          width: 100%;
+          padding-right: 3em;
+          padding-bottom: 0;
+          justify-self: right;
+          color: #fff;
+        }
+
+        @media screen and ($iPhoneXSMax) {
+          padding-right: 2em;
         }
       }
     }
