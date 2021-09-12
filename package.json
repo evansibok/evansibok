@@ -5,29 +5,29 @@
   "version": "1.0.0",
   "author": "Evans Ibok <evansibok@gmail.com>",
   "dependencies": {
-    "bufferutil": "^4.0.1",
-    "fibers": "^4.0.2",
-    "gatsby": "^2.18.25",
-    "gatsby-image": "^2.2.39",
-    "gatsby-plugin-manifest": "^2.2.37",
-    "gatsby-plugin-offline": "^3.0.32",
-    "gatsby-plugin-react-helmet": "^3.1.21",
-    "gatsby-plugin-sharp": "^2.3.13",
-    "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-sharp": "^2.3.13",
+    "bufferutil": "^4.0.3",
+    "fibers": "^4.0.3",
+    "gatsby": "^3.13.0",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^3.13.0",
+    "gatsby-plugin-offline": "^4.13.0",
+    "gatsby-plugin-react-helmet": "^4.13.0",
+    "gatsby-plugin-sharp": "^3.13.0",
+    "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-transformer-sharp": "^3.13.0",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
-    "react-icons": "^3.9.0",
-    "typescript": "^3.7.5",
-    "utf-8-validate": "^5.0.2"
+    "react-icons": "^3.11.0",
+    "typescript": "^4.4.3",
+    "utf-8-validate": "^5.0.5"
   },
   "devDependencies": {
-    "node-sass": "^4.13.1",
-    "prettier": "^1.19.1",
-    "sass": "^1.25.0",
-    "sass-loader": "^8.0.2"
+    "node-sass": "^6.0.1",
+    "prettier": "^2.4.0",
+    "sass": "^1.39.2",
+    "sass-loader": "^12.1.0"
   },
   "keywords": [
     "gatsby"
