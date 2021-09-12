@@ -2,28 +2,13 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from 'gatsby-plugin-image';
 
 import { PageLabel } from "../components/page-label"
 import { SocialLinks } from "../components/social-links"
 import { skills } from "../components/skills/skills-utils"
 
 const AboutPage = () => {
-  const data = useStaticQuery(graphql`
-    query aboutImages {
-      file(relativePath: { eq: "evans.jpg" }) {
-        childImageSharp {
-          fluid {
-            src
-            originalName
-          }
-        }
-      }
-    }
-  `)
-
-  const evansImage = data.file.childImageSharp.fluid.src
-  const evansImageAlt = data.file.childImageSharp.fluid.originalName
 
   return (
     <Layout>
@@ -60,7 +45,13 @@ const AboutPage = () => {
         </div>
 
         <div className="rightCon">
-          <img src={evansImage} alt={evansImageAlt} />
+          <StaticImage
+            src='../images/evans.jpg'
+            alt='evans'
+            layout='constrained'
+            width={400}
+            height={400}
+          />
         </div>
       </div>
       <SocialLinks />

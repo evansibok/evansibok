@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from 'gatsby-plugin-image';
 
 import { useDarkMode } from "./hooks/useDarkMode"
 import Menu from "./svgs/menu-component"
@@ -13,21 +13,6 @@ const Header = () => {
     evt.preventDefault()
     setDarkMode(!darkMode)
   }
-
-  const data = useStaticQuery(graphql`
-    query brandImage {
-      file(relativePath: { eq: "evans-logo.png" }) {
-        childImageSharp {
-          fluid {
-            src
-            originalName
-          }
-        }
-      }
-    }
-  `)
-  const brandImage = data.file.childImageSharp.fluid.src
-  const brandImageName = data.file.childImageSharp.fluid.originalName
 
   const menuClick = () => {
     const navigationMenu = document.querySelector("#navigation")
@@ -44,7 +29,12 @@ const Header = () => {
       <div className="leftCon">
         <div className="brandLogoCon">
           <Link to="/">
-            <img src={brandImage} alt={brandImageName} />
+            <StaticImage
+              src='../images/evans-logo.png'
+              alt='brand-logo'
+              layout='constrained'
+              // width={120}
+            />
           </Link>
         </div>
 

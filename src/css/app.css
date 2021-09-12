@@ -58,12 +58,12 @@ header .leftCon .brandLogoCon {
   max-width: 100%;
 }
 header .leftCon .brandLogoCon img {
-  width: 100px;
+  width: 120px;
   margin-bottom: 0;
 }
 @media screen and (max-width: 1024px) {
   header .leftCon .brandLogoCon img {
-    margin-top: 0.4em;
+    width: 100px;
   }
 }
 header .leftCon .toggleMenu {
