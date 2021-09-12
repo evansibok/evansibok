@@ -21,20 +21,6 @@ const AboutPage = () => {
       }
     }
   `)
-  // query aboutImages {
-  //   evansImage: imageSharp(
-  //     fluid: {
-  //       src: {
-  //         eq: "/static/7cbe57754e8d5673cb29cde51e6c93d4/b17c1/evans.jpg"
-  //       }
-  //     }
-  //   ) {
-  //     fluid {
-  //       src
-  //       originalName
-  //     }
-  //   }
-  // }
 
   const evansImage = data.file.childImageSharp.fluid.src
   const evansImageAlt = data.file.childImageSharp.fluid.originalName

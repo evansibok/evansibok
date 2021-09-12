@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { FiChevronRight, FiChevronDown } from 'react-icons/fi';
+import { StaticImage } from "gatsby-plugin-image"
+
 import ProjectLinks from './projectLinks';
+
 
 const ProjectCard = ({
   projectTitle,
@@ -57,7 +60,14 @@ const ProjectCard = ({
             {skills}
           </div>
           <div className="imageCon">
-            <img src={cardImageSrc} alt={cardImageAlt} />
+            <StaticImage
+              src={cardImageSrc}
+              alt={cardImageAlt}
+              placeholder="blurred"
+              layout="constrained"
+              // width={27}
+              // height={27}
+            />
           </div>
         </div>
 
