@@ -2,16 +2,16 @@ import React from "react"
 
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import { PageLabel } from "../components/page-label"
 import { SocialLinks } from "../components/social-links"
 import ProjectCard from "../components/projectCard"
-import PintereachSkills from "../components/skills/pintereachSkills"
-import LPPSkills from "../components/skills/lppSkills"
-import DroomSkills from "../components/skills/droomSkills"
-import EvnsSkills from "../components/skills/evnsSkills"
-import LambdaDoorSkills from "../components/skills/lambdaDoorSkills"
+import PintereachSkills from "../components/skills/PIntereachSkills"
+import LPPSkills from "../components/skills/LPPSkills"
+import DroomSkills from "../components/skills/DroomSkills"
+import EvnsSkills from "../components/skills/EvnsSkills"
+import LambdaDoorSkills from "../components/skills/LambdaDoorSkills"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -85,7 +85,7 @@ const ProjectsPage = () => {
 
   return (
     <Layout>
-      <SEO title="Projects" />
+      <Seo title="Projects" />
       <PageLabel name="Projects" />
 
       <ProjectCard

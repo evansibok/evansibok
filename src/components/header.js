@@ -15,23 +15,19 @@ const Header = () => {
   }
 
   const data = useStaticQuery(graphql`
-    query navImageQuery {
-      brandImage: imageSharp(
-        fluid: {
-          src: {
-            eq: "/static/e152b5cfbba58a414f35c976307c3c1d/3a723/evans-logo.png"
+    query brandImage {
+      file(relativePath: { eq: "evans-logo.png" }) {
+        childImageSharp {
+          fluid {
+            src
+            originalName
           }
-        }
-      ) {
-        fluid {
-          src
-          originalName
         }
       }
     }
   `)
-  const brandImage = data.brandImage.fluid.src
-  const brandImageName = data.brandImage.fluid.originalName
+  const brandImage = data.file.childImageSharp.fluid.src
+  const brandImageName = data.file.childImageSharp.fluid.originalName
 
   const menuClick = () => {
     const navigationMenu = document.querySelector("#navigation")

@@ -1,16 +1,17 @@
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby"
 
-import CSS3 from "../svgs/css3-component"
-import JsComp from "../svgs/js-component"
 import NodeJS from "../svgs/node-js"
 import ExpressJS from "../svgs/express-js"
 import PostGres from "../svgs/postgres-component";
 import Jest from '../svgs/jest-component';
+import ReactJS from '../svgs/react-js-component';
+import Redux from '../svgs/redux-component';
+import AntDesign from '../svgs/antd-component';
 
-const DroomSkills = () => {
+const LambdaDoorSkills = () => {
   const data = useStaticQuery(graphql`
-    query droomSkillsImage {
+    query lambdaSkillsImage {
       knexIcon: imageSharp(
         fluid: {
           src: {
@@ -31,8 +32,9 @@ const DroomSkills = () => {
 
   return (
     <div className="projectIcons">
-      <CSS3 />
-      <JsComp />
+      <ReactJS />
+      <Redux />
+      <AntDesign />
       <NodeJS />
       <ExpressJS />
       <PostGres />
@@ -42,4 +44,4 @@ const DroomSkills = () => {
   )
 }
 
-export default DroomSkills;
+export default LambdaDoorSkills;

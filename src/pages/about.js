@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { PageLabel } from "../components/page-label"
@@ -11,27 +11,37 @@ import { skills } from "../components/skills/skills-utils"
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     query aboutImages {
-      evansImage: imageSharp(
-        fluid: {
-          src: {
-            eq: "/static/7cbe57754e8d5673cb29cde51e6c93d4/b17c1/evans.jpg"
+      file(relativePath: { eq: "evans.jpg" }) {
+        childImageSharp {
+          fluid {
+            src
+            originalName
           }
-        }
-      ) {
-        fluid {
-          src
-          originalName
         }
       }
     }
   `)
+  // query aboutImages {
+  //   evansImage: imageSharp(
+  //     fluid: {
+  //       src: {
+  //         eq: "/static/7cbe57754e8d5673cb29cde51e6c93d4/b17c1/evans.jpg"
+  //       }
+  //     }
+  //   ) {
+  //     fluid {
+  //       src
+  //       originalName
+  //     }
+  //   }
+  // }
 
-  const evansImage = data.evansImage.fluid.src
-  const evansImageAlt = data.evansImage.fluid.originalName
+  const evansImage = data.file.childImageSharp.fluid.src
+  const evansImageAlt = data.file.childImageSharp.fluid.originalName
 
   return (
     <Layout>
-      <SEO title="About" />
+      <Seo title="About" />
       <PageLabel name="About Me" />
       <div className="aboutCon">
         <div className="leftCon">
