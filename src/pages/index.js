@@ -18,7 +18,7 @@ const IndexPage = () => {
               <span className="letCol">H</span>ello,
             </p>
             <p>
-              <span className="letCol">I </span>am Evans
+              <span className="letCol">I </span><span className="letCol">a</span>m <span className="letCol">E</span>vans
             </p>
           </h1>
 

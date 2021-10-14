@@ -30,23 +30,25 @@
     "sass-loader": "^12.1.0"
   },
   "keywords": [
-    "gatsby"
+    "evansibok",
+    "portfolio",
+    "resume"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby clean && npm run develop",
     "serve": "gatsby serve",
     "sass:watch": "cd src/ && sass --watch sass/app.scss css/app.css",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/evansibok/evansibok"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/evansibok/evansibok/issues"
   }
 }
