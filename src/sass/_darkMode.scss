@@ -1,6 +1,8 @@
 .dark-mode {
   color: #fff;
   background: $dark_mode_bg;
+  font-family: $primary_font;
+  font-weight: 300;
 
   header {
     .leftCon {
@@ -15,8 +17,8 @@
             }
 
             .toggled {
-              top: 2px;
-              left: 18px;
+              top: 0.15em;
+              left: 1.4em;
 
               @media screen and ($iPadPro) {
                 left: 17px;
@@ -30,32 +32,36 @@
         fill: #fff;
       }
     }
-
-    nav {
-      @media screen and ($iPadPro) {
-        background: $primary_color;
-        -webkit-box-shadow: unset;
-        -moz-box-shadow: unset;
-        box-shadow: unset;
-      }
-
-      svg {
-        fill: #fff;
-      }
-
-      div {
-        @media screen and ($iPadPro) {
-          background-color: #c22c3d;
-        }
-
-        a {
-          color: #fff;
-        }
-      }
-    }
   }
 
   .homeCon {
+    .left-home {
+      h4 {
+        font-weight: 400;
+      }
+
+      .content {
+        p {
+          font-weight: 300;
+
+          a {
+            font-weight: 400;
+          }
+        }
+      }
+
+      .my-projects {
+        .left-project {
+          ul {
+            a {
+              li {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
     ul {
       @include dark-mode-social-ul;
     }
@@ -143,6 +149,16 @@
   .socialLinkCon {
     ul {
       @include dark-mode-social-ul;
+    }
+  }
+
+  .left-project {
+    ul {
+      a {
+        li {
+          color: #fff;
+        }
+      }
     }
   }
 }
