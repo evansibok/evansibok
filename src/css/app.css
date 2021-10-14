@@ -321,11 +321,6 @@ header nav div a:hover {
   display: flex;
   font-family: "Nunito", sans-serif;
 }
-@media screen and (max-width: 1024px) {
-  .homeCon .upside {
-    flex-direction: column;
-  }
-}
 .homeCon .left-home {
   max-width: 60%;
   width: 60%;
@@ -348,7 +343,6 @@ header nav div a:hover {
 @media screen and (max-width: 1024px) {
   .homeCon .left-home .h1HomeCon {
     font-size: 1.8rem;
-    margin-top: 1.3em;
   }
 }
 @media screen and (max-width: 414px) {
@@ -462,14 +456,21 @@ header nav div a:hover {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
   .homeCon .right-home {
-    max-width: 100%;
-    width: 100%;
+    display: none;
   }
 }
 .homeCon .right-home img {
   width: 100px;
+}
+.homeCon .inside {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .homeCon .inside {
+    display: unset;
+  }
 }
 .homeCon .h4HomeCon {
   font-size: 2.4rem;

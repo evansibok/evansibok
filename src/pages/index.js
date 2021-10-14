@@ -22,6 +22,14 @@ const IndexPage = () => {
             </p>
           </h1>
 
+          <div className="inside">
+            <StaticImage
+              src='../images/evans-bitmoji.png'
+              alt='brand-logo'
+              layout='constrained'
+            />
+          </div>
+
           <h4>Software Engineer and human at heart 😜</h4>
 
           <div className="content">

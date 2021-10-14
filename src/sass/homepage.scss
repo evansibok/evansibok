@@ -6,16 +6,15 @@
     display: flex;
     font-family: $primary_font;
 
-    @media screen and ($iPadPro) {
-      flex-direction: column;
-    }
+    // @media screen and ($iPad) {
+    //   flex-direction: column;
+    // }
   }
 
   .left-home {
     max-width: 60%;
     width: 60%;
     font-size: 1rem;
-    // background-color: lightcoral;
 
     @media screen and ($iPadPro) {
       max-width: 100%;
@@ -32,7 +31,7 @@
 
       @media screen and ($iPadPro) {
         font-size: 1.8rem;
-        margin-top: 1.3em;
+        // margin-top: 1.3em;
       }
 
       @media screen and ($iPhoneXSMax) {
@@ -141,20 +140,26 @@
   }
 
   .right-home {
-    // background-color: cornflowerblue;
     max-width: 40%;
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @media screen and ($iPadPro) {
-      max-width: 100%;
-      width: 100%;
+    @media screen and ($iPad) {
+      display: none;
     }
 
     img {
       width: 100px;
+    }
+  }
+
+  .inside {
+    display: none;
+
+    @media screen and ($iPad) {
+      display: unset;
     }
   }
 
@@ -185,21 +190,4 @@
       font-size: 1.6rem;
     }
   }
-
-  // ul {
-  //   @include social-ul;
-  //   margin-top: 2em;
-
-  //   @media screen and ($iPadPro) {
-  //     margin-top: 2em;
-  //   }
-
-  //   a {
-  //     font-size: 0.9rem;
-
-  //     @media screen and ($iPadPro) {
-  //       font-size: 0.8rem;
-  //     }
-  //   }
-  // }
 }
