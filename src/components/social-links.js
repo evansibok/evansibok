@@ -25,6 +25,14 @@ export const SocialLinks = () => {
         >
           <li>GitHub</li>
         </a>
+        <a
+          href="mailto:evansibok@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className='hire-me'
+        >
+          <li>Hire Me</li>
+        </a>
       </ul>
     </div>
   )

@@ -67,164 +67,105 @@ header .leftCon .brandLogoCon img {
     width: 90px;
   }
 }
-header .leftCon .toggleMenu {
+header .right-con {
+  display: flex;
+}
+header .right-con .toggleMenu {
   display: flex;
   align-items: center;
 }
-header .leftCon .toggleMenu .toggleCon {
+header .right-con .toggleMenu .toggleCon {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
+header .right-con .toggleMenu .toggleCon .dark-mode__toggle {
   background: none;
   border: 0.15em solid #222;
   border-radius: 50px;
-  height: 27px;
+  height: 24px;
   position: relative;
   width: 45px;
 }
 @media screen and (max-width: 1024px) {
-  header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
-    height: 24px;
+  header .right-con .toggleMenu .toggleCon .dark-mode__toggle {
+    height: 22px;
     width: 40px;
   }
 }
-header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
+header .right-con .toggleMenu .toggleCon .dark-mode__toggle .toggle {
   background: #222;
   border-radius: 50px;
-  height: 19px;
-  top: 2px;
+  top: 0.15em;
   left: 3px;
   position: absolute;
   transition: 0.4s;
-  width: 19px;
+  width: 15px;
+  height: 15px;
 }
 @media screen and (max-width: 1024px) {
-  header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
-    height: 16px;
-    width: 16px;
+  header .right-con .toggleMenu .toggleCon .dark-mode__toggle .toggle {
+    top: 0.1em;
   }
 }
-header .leftCon .toggleMenu svg {
+@media screen and (max-width: 428px) {
+  header .right-con .toggleMenu .toggleCon .dark-mode__toggle .toggle {
+    top: 0.11em;
+  }
+}
+header .right-con .toggleMenu svg {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  header .leftCon .toggleMenu svg {
+  header .right-con .toggleMenu svg {
     display: unset;
     margin-left: 2em;
   }
 }
-header nav {
-  display: flex;
-  align-items: center;
-  font-family: "PT Sans", sans-serif;
+header .right-con nav ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 2.8em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+header .right-con nav ul a {
+  color: #3a3a3a;
+  letter-spacing: 0.1em;
   font-weight: 500;
-}
-@media screen and (max-width: 1024px) {
-  header nav {
-    font-size: 1.2rem;
-    flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-    width: 60vw;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    background: #ececec;
-    display: none;
-    z-index: 1;
-    -webkit-box-shadow: -2px 0px 0px -3px #adadad;
-    -moz-box-shadow: -2px 0px 0px -3px #adadad;
-    box-shadow: -2px 0px 0px -3px #adadad;
-  }
-}
-header nav svg {
-  display: none;
-}
-@media screen and (max-width: 1024px) {
-  header nav svg {
-    display: unset;
-    align-self: flex-start;
-    margin: 2.5em 0 0 2.5em;
-    fill: #cf2d40;
-    width: 4%;
-  }
-}
-@media screen and (max-width: 800px) {
-  header nav svg {
-    margin: 2.5em 0 0 2em;
-  }
-}
-@media screen and (max-width: 428px) {
-  header nav svg {
-    margin-top: 2.6em;
-    margin-left: 1.5em;
-    width: 8%;
-  }
-}
-header nav div {
-  margin-left: 2em;
-}
-@media screen and (max-width: 1024px) {
-  header nav div {
-    display: flex;
-    margin-top: 3em;
-    margin-left: 0;
-    padding: 1em 0 1em 0;
-    width: 100%;
-    background-color: #db2f43;
-    justify-content: flex-end;
-  }
-}
-@media screen and (max-width: 428px) {
-  header nav div {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  header nav div:nth-of-type(2) {
-    margin-top: 1em;
-  }
-}
-@media screen and (max-width: 428px) {
-  header nav div:nth-of-type(2) {
-    margin-top: 0.6em;
-  }
-}
-header nav div a {
-  padding-bottom: 0.3em;
-  text-align: right;
-  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
-  letter-spacing: 0.08em;
+  font-family: "PT Sans", "sans-serif";
+  margin-right: 1.2em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #3a3a3a;
 }
-header nav div a:hover {
-  border-bottom: 0.15em solid #eb3349;
+header .right-con nav ul a li {
+  display: inline;
+}
+header .right-con nav ul a:hover {
+  color: #eb3349;
+  border-bottom: 1px solid #eb3349;
+}
+header .right-con .hire-me {
+  background-color: #eb3349;
+  color: #fff;
+  border-bottom: none;
+  padding: 0.3em 0.8em;
+  margin-left: 2em;
+  margin-right: 0;
 }
 @media screen and (max-width: 1024px) {
-  header nav div a:hover {
-    border-bottom: none;
-  }
-}
-@media screen and (max-width: 1024px) {
-  header nav div a {
-    width: 100%;
-    padding-right: 3em;
-    padding-bottom: 0;
-    justify-self: right;
-    color: #fff;
-  }
-}
-@media screen and (max-width: 428px) {
-  header nav div a {
-    padding-right: 2em;
+  header .right-con .hire-me {
+    margin-left: 1em;
   }
 }
 
 .dark-mode {
   color: #fff;
   background: #000022;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
 }
 .dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
   background: #eb3349;
@@ -234,8 +175,8 @@ header nav div a:hover {
   background: #fff;
 }
 .dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggled {
-  top: 2px;
-  left: 18px;
+  top: 0.15em;
+  left: 1.4em;
 }
 @media screen and (max-width: 1024px) {
   .dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggled {
@@ -245,24 +186,17 @@ header nav div a:hover {
 .dark-mode header .leftCon svg {
   fill: #fff;
 }
-@media screen and (max-width: 1024px) {
-  .dark-mode header nav {
-    background: #eb3349;
-    -webkit-box-shadow: unset;
-    -moz-box-shadow: unset;
-    box-shadow: unset;
-  }
+.dark-mode .homeCon .left-home h4 {
+  font-weight: 400;
 }
-.dark-mode header nav svg {
-  fill: #fff;
+.dark-mode .homeCon .left-home .content p {
+  font-weight: 300;
 }
-@media screen and (max-width: 1024px) {
-  .dark-mode header nav div {
-    background-color: #c22c3d;
-  }
+.dark-mode .homeCon .left-home .content p a {
+  font-weight: 400;
 }
-.dark-mode header nav div a {
-  color: #fff;
+.dark-mode .homeCon .left-home .my-projects .left-project ul a li {
+  font-weight: 300;
 }
 .dark-mode .homeCon ul a {
   color: #fff;
@@ -579,6 +513,12 @@ header nav div a:hover {
 }
 .socialLinkCon ul a {
   font-size: 0.7rem;
+}
+.socialLinkCon ul a.hire-me {
+  background-color: #eb3349;
+  color: #fff;
+  border-bottom: none;
+  padding: 0.3em 0.8em;
 }
 
 .projectLinks ul {

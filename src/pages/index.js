@@ -110,9 +110,6 @@ const IndexPage = () => {
                 </a>
               </ul>
             </div>
-
-            {/* <div className="right-project">
-            </div> */}
           </div>
 
         </div>

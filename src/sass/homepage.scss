@@ -5,10 +5,6 @@
   .upside {
     display: flex;
     font-family: $primary_font;
-
-    // @media screen and ($iPad) {
-    //   flex-direction: column;
-    // }
   }
 
   .left-home {
@@ -31,7 +27,6 @@
 
       @media screen and ($iPadPro) {
         font-size: 1.8rem;
-        // margin-top: 1.3em;
       }
 
       @media screen and ($iPhoneXSMax) {
@@ -93,9 +88,6 @@
       }
 
       .left-project {
-        // max-width: 50%;
-        // width: 50%;
-
         ul {
           @include social-ul;
           margin-top: 0;
