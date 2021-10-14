@@ -24,11 +24,11 @@ header {
       max-width: 100%;
 
       img {
-        width: 120px;
+        width: 100px;
         margin-bottom: 0;
         
         @media screen and ($iPadPro) {
-          width: 100px;
+          width: 90px;
         }
       }
     }

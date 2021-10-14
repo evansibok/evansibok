@@ -12,10 +12,11 @@ const Layout = ({ children }) => {
     <>
       <div className="container">
         <Helmet>
-          <link
-            href="https://fonts.googleapis.com/css?family=Dosis|Nunito|PT+Sans|Kodchasan&display=swap"
-            rel="stylesheet"
-          />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+          <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Kodchasan:wght@300;400;500&family=Nunito:wght@300;400;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
           <link
             href="https://afeld.github.io/emoji-css/emoji.css"

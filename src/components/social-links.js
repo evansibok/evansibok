@@ -18,10 +18,6 @@ export const SocialLinks = () => {
         >
           <li>LinkedIn</li>
         </a>
-        {/* <a href="#" target="_blank"
-					rel="noopener noreferrer">
-					<li>Podcast</li>
-				</a> */}
         <a
           href="https://github.com/evansibok"
           target="_blank"

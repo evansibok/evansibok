@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 920px;
+  max-width: 1024px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -58,12 +58,12 @@ header .leftCon .brandLogoCon {
   max-width: 100%;
 }
 header .leftCon .brandLogoCon img {
-  width: 120px;
+  width: 100px;
   margin-bottom: 0;
 }
 @media screen and (max-width: 1024px) {
   header .leftCon .brandLogoCon img {
-    width: 100px;
+    width: 90px;
   }
 }
 header .leftCon .toggleMenu {
@@ -317,53 +317,159 @@ header nav div a:hover {
   display: flex;
   flex-direction: column;
 }
-.homeCon .h1HomeCon {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2rem;
-  margin-top: 0.5em;
-  margin-bottom: 0;
+.homeCon .upside {
+  display: flex;
   font-family: "Nunito", sans-serif;
+}
+@media screen and (max-width: 1024px) {
+  .homeCon .upside {
+    flex-direction: column;
+  }
+}
+.homeCon .left-home {
+  max-width: 60%;
+  width: 60%;
+  font-size: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .homeCon .left-home {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.homeCon .left-home .h1HomeCon {
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0;
   letter-spacing: 0.07em;
 }
 @media screen and (max-width: 1024px) {
-  .homeCon .h1HomeCon {
+  .homeCon .left-home .h1HomeCon {
     font-size: 1.8rem;
     margin-top: 1.3em;
   }
 }
 @media screen and (max-width: 414px) {
-  .homeCon .h1HomeCon {
+  .homeCon .left-home .h1HomeCon {
     margin-top: 0;
     font-size: 1.9rem;
   }
 }
-.homeCon .h1HomeCon p {
+.homeCon .left-home .h1HomeCon p {
   margin-bottom: 0;
 }
-.homeCon .h1HomeCon p:first-child {
+.homeCon .left-home .h1HomeCon p:first-child {
   margin-bottom: 0.5em;
 }
 @media screen and (max-width: 1024px) {
-  .homeCon .h1HomeCon p:first-child {
+  .homeCon .left-home .h1HomeCon p:first-child {
     margin-bottom: 0.3em;
   }
 }
 @media screen and (max-width: 414px) {
-  .homeCon .h1HomeCon p:first-child {
+  .homeCon .left-home .h1HomeCon p:first-child {
     margin-bottom: 0.5em;
   }
 }
-.homeCon .h1HomeCon p:last-child {
+.homeCon .left-home .h1HomeCon p:last-child {
   margin-bottom: 1em;
 }
 @media screen and (max-width: 1024px) {
-  .homeCon .h1HomeCon p:last-child {
+  .homeCon .left-home .h1HomeCon p:last-child {
     margin-bottom: 0.8em;
   }
 }
-.homeCon .h1HomeCon .letCol {
+.homeCon .left-home h4 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.9em;
+}
+.homeCon .left-home .content {
+  font-size: 0.95rem;
+}
+.homeCon .left-home .content p {
+  font-weight: 400;
+  margin-bottom: 0.9em;
+}
+.homeCon .left-home .content p a {
   color: #eb3349;
+  font-weight: 600;
+}
+.homeCon .left-home .content p a:hover {
+  color: inherit;
+}
+.homeCon .left-home .my-projects h4 {
+  text-decoration: underline;
+  margin-top: 1.4em;
+  margin-bottom: 0.1em;
+}
+.homeCon .left-home .my-projects .left-project ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 2.8em;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.homeCon .left-home .my-projects .left-project ul a {
+  color: #3a3a3a;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "PT Sans", "sans-serif";
+  margin-right: 1.2em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #3a3a3a;
+}
+.homeCon .left-home .my-projects .left-project ul a li {
+  display: inline;
+}
+.homeCon .left-home .my-projects .left-project ul a:hover {
+  color: #eb3349;
+  border-bottom: 1px solid #eb3349;
+}
+.homeCon .left-home .my-projects .left-project ul a {
+  font-size: 0.9rem;
+  letter-spacing: unset;
+  line-height: 3em;
+  margin-right: 1.5em;
+  border-bottom: none;
+  text-decoration: underline;
+}
+.homeCon .left-home .my-projects .left-project ul a:hover {
+  cursor: pointer;
+  border-bottom: none;
+}
+.homeCon .left-home .my-projects .left-project ul a:first-child {
+  margin-left: 0;
+}
+.homeCon .left-home .my-projects .left-project ul li {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+.homeCon .letCol {
+  color: #eb3349;
+}
+.homeCon .right-home {
+  max-width: 40%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .homeCon .right-home {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.homeCon .right-home img {
+  width: 100px;
 }
 .homeCon .h4HomeCon {
   font-size: 2.4rem;
@@ -393,44 +499,6 @@ header nav div a:hover {
   .homeCon .h4HomeCon {
     width: 270px;
     font-size: 1.6rem;
-  }
-}
-.homeCon ul {
-  list-style-type: none;
-  margin-left: 0;
-  margin-top: 2.8em;
-  margin-bottom: 0;
-  margin-top: 2em;
-}
-.homeCon ul a {
-  color: #3a3a3a;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  text-decoration: none;
-  font-family: "PT Sans", "sans-serif";
-  margin-right: 1.2em;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: 1px solid #3a3a3a;
-}
-.homeCon ul a li {
-  display: inline;
-}
-.homeCon ul a:hover {
-  color: #eb3349;
-  border-bottom: 1px solid #eb3349;
-}
-@media screen and (max-width: 1024px) {
-  .homeCon ul {
-    margin-top: 2em;
-  }
-}
-.homeCon ul a {
-  font-size: 0.9rem;
-}
-@media screen and (max-width: 1024px) {
-  .homeCon ul a {
-    font-size: 0.8rem;
   }
 }
 
