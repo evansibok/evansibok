@@ -1,14 +1,13 @@
 {
   "name": "evans-ibok-website",
   "private": true,
-  "description": "Evans Ibok's Portfolio Website",
+  "description": "Evans Ibok's Website",
   "version": "1.0.0",
   "author": "Evans Ibok <evansibok@gmail.com>",
   "dependencies": {
     "bufferutil": "^4.0.3",
     "fibers": "^4.0.3",
     "gatsby": "^3.13.0",
-    "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^1.13.0",
     "gatsby-plugin-manifest": "^3.13.0",
     "gatsby-plugin-offline": "^4.13.0",

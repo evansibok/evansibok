@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FiChevronRight, FiChevronDown } from 'react-icons/fi';
-import { GatsbyImage } from "gatsby-plugin-image"
 
 import ProjectLinks from './projectLinks';
-
 
 const ProjectCard = ({
   projectTitle,
@@ -11,7 +10,7 @@ const ProjectCard = ({
   githubAnchorHref,
   pTag1,
   pTag2,
-  cardImageSrc,
+  cardImageData,
   cardImageAlt,
   skills,
   web,
@@ -22,6 +21,8 @@ const ProjectCard = ({
   const openProject = () => {
     setIsOpen(!isOpen);
   }
+
+  console.log('cardImageData', cardImageData)
 
   return (
     <div className="projectCard">
@@ -61,12 +62,9 @@ const ProjectCard = ({
           </div>
           <div className="imageCon">
             <GatsbyImage
-              src={cardImageSrc}
+              // image={image}
               alt={cardImageAlt}
-              placeholder="blurred"
-              layout="constrained"
-              // width={27}
-              // height={27}
+              width={400}
             />
           </div>
         </div>
