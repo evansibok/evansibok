@@ -155,6 +155,10 @@ header .right-con .hire-me {
   margin-left: 2em;
   margin-right: 0;
 }
+header .right-con .hire-me:hover {
+  color: #fff;
+  border-bottom: none;
+}
 @media screen and (max-width: 1024px) {
   header .right-con .hire-me {
     margin-left: 1em;

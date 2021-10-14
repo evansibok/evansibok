@@ -105,6 +105,11 @@ header {
       margin-left: 2em;
       margin-right: 0;
 
+      &:hover {
+        color: #fff;
+        border-bottom: none;
+      }
+
       @media screen and ($iPadPro) {
         margin-left: 1em;
       }
