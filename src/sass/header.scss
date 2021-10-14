@@ -8,6 +8,7 @@ header {
   @media screen and ($iPadPro) {
     flex-direction: column;
     border-bottom: none;
+    padding: 2em 0;
   }
 
   .leftCon {
@@ -17,7 +18,7 @@ header {
     flex-grow: 1;
 
     @media screen and ($iPadPro) {
-      margin-bottom: 2em;
+      margin-bottom: 1em;
     }
 
     .brandLogoCon {
@@ -26,7 +27,7 @@ header {
       img {
         width: 100px;
         margin-bottom: 0;
-        
+
         @media screen and ($iPadPro) {
           width: 90px;
         }

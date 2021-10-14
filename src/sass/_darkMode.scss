@@ -145,4 +145,14 @@
       @include dark-mode-social-ul;
     }
   }
+
+  .left-project {
+    ul {
+      a {
+        li {
+          color: #fff;
+        }
+      }
+    }
+  }
 }

@@ -15,12 +15,12 @@
     max-width: 600px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   .container {
     max-width: 320px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
   .container {
     max-width: 300px;
   }
@@ -41,6 +41,7 @@ header {
   header {
     flex-direction: column;
     border-bottom: none;
+    padding: 2em 0;
   }
 }
 header .leftCon {
@@ -51,7 +52,7 @@ header .leftCon {
 }
 @media screen and (max-width: 1024px) {
   header .leftCon {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 }
 header .leftCon .brandLogoCon {
@@ -155,7 +156,7 @@ header nav svg {
     margin: 2.5em 0 0 2em;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   header nav svg {
     margin-top: 2.6em;
     margin-left: 1.5em;
@@ -176,7 +177,7 @@ header nav div {
     justify-content: flex-end;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   header nav div {
     font-size: 0.9rem;
   }
@@ -186,7 +187,7 @@ header nav div {
     margin-top: 1em;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   header nav div:nth-of-type(2) {
     margin-top: 0.6em;
   }
@@ -215,7 +216,7 @@ header nav div a:hover {
     color: #fff;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   header nav div a {
     padding-right: 2em;
   }
@@ -312,6 +313,9 @@ header nav div a:hover {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
+.dark-mode .left-project ul a li {
+  color: #fff;
+}
 
 .homeCon {
   display: flex;
@@ -345,7 +349,7 @@ header nav div a:hover {
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   .homeCon .left-home .h1HomeCon {
     margin-top: 0;
     font-size: 1.9rem;
@@ -362,7 +366,7 @@ header nav div a:hover {
     margin-bottom: 0.3em;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   .homeCon .left-home .h1HomeCon p:first-child {
     margin-bottom: 0.5em;
   }
@@ -488,7 +492,7 @@ header nav div a:hover {
     font-weight: 600;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   .homeCon .h4HomeCon {
     width: 290px;
     font-size: 1.7rem;
@@ -496,7 +500,7 @@ header nav div a:hover {
     margin-top: 0.4em;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
   .homeCon .h4HomeCon {
     width: 270px;
     font-size: 1.6rem;
@@ -514,7 +518,7 @@ header nav div a:hover {
     padding: 1em 0 1.5em 0;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   .pLCon {
     padding-top: 0;
   }
@@ -605,12 +609,12 @@ header nav div a:hover {
   margin-left: 1.5em;
   border-bottom: 0.15em solid #0955db;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   .projectLinks ul a[href$="evansibok.github.io"] {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   .projectLinks.bigScreen {
     display: none;
   }
@@ -618,7 +622,7 @@ header nav div a:hover {
 .projectLinks.smallScreen {
   display: none;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   .projectLinks.smallScreen {
     display: unset;
   }
@@ -640,7 +644,7 @@ footer p {
   margin: 0;
   padding: 1.5em;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   footer p {
     letter-spacing: 0.1em;
     padding: 3em 0 2em 0;
