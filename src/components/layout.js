@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
           <link
             href="https://afeld.github.io/emoji-css/emoji.css"
             rel="stylesheet"
-          ></link>
+          />
         </Helmet>
         <div className="content">
           <Header />

@@ -1,9 +1,9 @@
 @mixin anchor_reset {
-  color: rgb(58, 58, 58);
+  color: $secondary-color;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-decoration: none;
-  font-family: "PT Sans", "sans-serif";
+  font-family: 'PT Sans', 'sans-serif';
 
   li {
     display: inline;
@@ -13,7 +13,6 @@
 @mixin social-ul {
   list-style-type: none;
   margin-left: 0;
-  margin-top: 2.8em;
   margin-bottom: 0;
 
   a {
@@ -21,7 +20,7 @@
     margin-right: 1.2em;
     margin-bottom: 0;
     padding-bottom: 0;
-    border-bottom: 1px solid rgb(58, 58, 58);
+    border-bottom: 1px solid $secondary-color;
 
     &:hover {
       color: $primary_color;

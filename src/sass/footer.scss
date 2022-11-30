@@ -1,7 +1,10 @@
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 0.6rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: $secondary-color;
 
   p {
     font-family: $primary_font;
@@ -14,18 +17,13 @@ footer {
       padding: 3em 0 2em 0;
     }
 
-    .heart {
-      font-size: 0.6rem;
-      color: $primary_color;
-    }
-
     .footCol {
       a {
         font-family: "Kodchasan", "sans-serif";
         color: $primary_color;
-        font-weight: 600;
+        font-weight: 700;
         text-decoration: none;
-        letter-spacing: 0.03em;
+        letter-spacing: 0;
       }
     }
   }

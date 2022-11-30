@@ -1,5 +1,5 @@
 .dark-mode {
-  color: #fff;
+  color: $white;
   background: $dark_mode_bg;
   font-family: $primary_font;
   font-weight: 300;
@@ -13,7 +13,7 @@
             border: 0.15em solid $primary_color;
 
             .toggle {
-              background: #fff;
+              background: $white;
             }
 
             .toggled {
@@ -29,7 +29,7 @@
       }
 
       svg {
-        fill: #fff;
+        fill: $white;
       }
     }
   }
@@ -69,7 +69,7 @@
 
   .pLCon {
     .emptyDivs {
-      background: #fff;
+      background: $white;
     }
   }
 
@@ -82,7 +82,7 @@
     .rightCon {
       svg {
         &.express {
-          fill: #fff;
+          fill: $white;
         }
       }
       @media screen and ($iPadPro) {
@@ -94,7 +94,7 @@
   .projectCard {
     .cardHead {
       background: rgba(235, 51, 73, 0.7);
-      color: #fff;
+      color: $white;
 
       .rightHead {
         .projectLinks {
@@ -105,7 +105,7 @@
               }
 
               li {
-                color: #fff;
+                color: $white;
               }
             }
           }
@@ -122,7 +122,7 @@
             }
 
             li {
-              color: #fff;
+              color: $white;
             }
           }
         }
@@ -138,7 +138,7 @@
         .leftCon {
           .projectIcons {
             svg.express {
-              fill: #fff;
+              fill: $white;
             }
           }
         }
@@ -156,9 +156,13 @@
     ul {
       a {
         li {
-          color: #fff;
+          color: $white;
         }
       }
     }
+  }
+
+  footer {
+    color: $white;
   }
 }

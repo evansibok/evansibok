@@ -1,185 +1,82 @@
-.homeCon {
+.home {
   display: flex;
   flex-direction: column;
+  font-family: $primary_font;
+  color: $secondary_color;
+  justify-content: center;
+  align-items: center;
 
-  .upside {
-    display: flex;
+  .h1-home {
+    text-transform: uppercase;
     font-family: $primary_font;
-  }
-
-  .left-home {
-    max-width: 60%;
-    width: 60%;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    letter-spacing: 0;
 
     @media screen and ($iPadPro) {
-      max-width: 100%;
-      width: 100%;
+      font-size: 1.8rem;
     }
 
-    .h1HomeCon {
-      text-transform: uppercase;
-      font-family: $primary_font;
-      font-weight: 600;
-      font-size: 1.3rem;
+    @media screen and ($iPhoneXSMax) {
+      margin-top: 0;
+      font-size: 1.9rem;
+    }
+
+    p {
       margin-bottom: 0;
-      letter-spacing: 0.07em;
 
-      @media screen and ($iPadPro) {
-        font-size: 1.8rem;
-      }
-
-      @media screen and ($iPhoneXSMax) {
-        margin-top: 0;
-        font-size: 1.9rem;
-      }
-
-      p {
-        margin-bottom: 0;
-
-        &:first-child {
+      &:first-child {
+        margin-bottom: 0.5em;
+        @media screen and ($iPadPro) {
+          margin-bottom: 0.3em;
+        }
+        @media screen and ($iPhoneXSMax) {
           margin-bottom: 0.5em;
-          @media screen and ($iPadPro) {
-            margin-bottom: 0.3em;
-          }
-          @media screen and ($iPhoneXSMax) {
-            margin-bottom: 0.5em;
-          }
         }
+      }
 
-        &:last-child {
-          margin-bottom: 1em;
-          @media screen and ($iPadPro) {
-            margin-bottom: 0.8em;
-          }
+      &:last-child {
+        margin-bottom: 1em;
+        @media screen and ($iPadPro) {
+          margin-bottom: 0.8em;
         }
       }
     }
+  }
 
-    h4 {
-      font-family: $primary_font;
-      font-weight: 600;
-      font-size: 0.95rem;
+  h4 {
+    font-family: $primary_font;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.9em;
+  }
+
+  .content {
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 35px;
+    p {
+      font-weight: 400;
       margin-bottom: 0.9em;
-    }
+      a {
+        color: $primary_color;
+        font-weight: 700;
 
-    .content {
-      font-size: 0.95rem;
-      p {
-        font-weight: 400;
-        margin-bottom: 0.9em;
-        a {
-          color: $primary_color;
-          font-weight: 600;
-
-          &:hover {
-            color: inherit;
-          }
+        &:hover {
+          color: inherit;
         }
       }
     }
+  }
 
-    .my-projects {
-      h4 {
-        text-decoration: underline;
-        margin-top: 1.4em;
-
-        margin-bottom: 0.1em;
-      }
-
-      .left-project {
-        ul {
-          @include social-ul;
-          margin-top: 0;
-
-          display: flex;
-          flex-wrap: wrap;
-
-          a {
-            font-size: 0.9rem;
-            letter-spacing: unset;
-            line-height: 3em;
-            margin-right: 1.5em;
-            border-bottom: none;
-            text-decoration: underline;
-
-            &:hover {
-              cursor: pointer;
-              border-bottom: none;
-            }
-
-            &:first-child {
-              margin-left: 0;
-            }
-          }
-
-          li {
-            font-family: $primary_font;
-            font-weight: 400;
-          }
-        }
-      }
-
-      // .right-project {
-      //   max-width: 50%;
-      //   width: 50%;
-      // }
-    }
+  .avatar {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
   }
 
   .letCol {
     color: $primary_color;
-  }
-
-  .right-home {
-    max-width: 40%;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @media screen and ($iPad) {
-      display: none;
-    }
-
-    img {
-      width: 100px;
-    }
-  }
-
-  .inside {
-    display: none;
-
-    @media screen and ($iPad) {
-      display: unset;
-    }
-  }
-
-  .h4HomeCon {
-    font-size: 2.4rem;
-    max-width: 750px;
-    line-height: 1.3em;
-    margin-bottom: 0;
-    font-family: $primary_font;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-
-    @media screen and ($iPadPro) {
-      font-size: 2.1rem;
-      width: 550px;
-      font-weight: 600;
-    }
-
-    @media screen and ($iPhoneXSMax) {
-      width: 290px;
-      font-size: 1.7rem;
-      line-height: 1.6em;
-      margin-top: 0.4em;
-    }
-
-    @media screen and ($galaxyS5) {
-      width: 270px;
-      font-size: 1.6rem;
-    }
   }
 }

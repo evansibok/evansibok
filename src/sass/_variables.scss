@@ -1,19 +1,17 @@
-$primary_color: #eb3349;
-$secondary_color: #f45c43;
+$primary_color: #0DC679;
+$secondary_color: #031553;
+$white: #fff;
 
 $primary_font: "Nunito", sans-serif;
 $secondary_font: "Dosis", sans-serif;
 $social_link_font: "PT Sans", sans-serif;
 
-$custom_link_color: #0955db;
-$about_dashed: 2px dashed #222;
-
-$dark_mode_bg: rgb(0, 0, 34);
-$dark_mode_dashed: 2px dashed #fff;
+$dark_mode_bg: $secondary_color;
+$dark_mode_dashed: 2px dashed $white;
 
 $iPhoneXSMax: "max-width: 428px";
 $galaxyS5: "max-width: 390px";
 $iPadPro: "max-width: 1024px";
 $iPad: "max-width: 800px";
 
-$mobile-nav-bg: #e8c9c4;
+$mobile-nav-bg: $white;

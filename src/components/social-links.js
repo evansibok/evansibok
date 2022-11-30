@@ -1,4 +1,5 @@
 import React from "react"
+import HireMeButton from "./HireMeButton/HireMeButton"
 
 export const SocialLinks = () => {
   return (
@@ -12,7 +13,7 @@ export const SocialLinks = () => {
           <li>LinkedIn</li>
         </a>
         <a
-          href="https://twitter.com/evansibok"
+          href="https://twitter.com/fairygodfatherv"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -25,15 +26,10 @@ export const SocialLinks = () => {
         >
           <li>GitHub</li>
         </a>
-        <a
-          href="mailto:evansibok@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className='hire-me'
-        >
-          <li>Hire Me</li>
-        </a>
+        <HireMeButton />
       </ul>
     </div>
   )
 }
+
+export default SocialLinks
