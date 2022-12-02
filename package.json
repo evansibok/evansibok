@@ -4,6 +4,10 @@
   "description": "Evans Ibok's Website",
   "version": "1.0.0",
   "author": "Evans Ibok <evansibok@gmail.com>",
+  "engines": {
+    "node": ">=14.19 <=16.x",
+    "yarn": ">=1.15"
+  },
   "dependencies": {
     "bufferutil": "^4.0.3",
     "fibers": "^4.0.3",
