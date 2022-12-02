@@ -6,10 +6,14 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and ($iPadPro) {
+    margin-bottom: 2em;
+  }
+
   .h1-home {
     text-transform: uppercase;
     font-family: $primary_font;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.3rem;
     margin-bottom: 0;
     letter-spacing: 0;
@@ -50,12 +54,23 @@
     font-weight: 700;
     font-size: 0.95rem;
     margin-bottom: 0.9em;
+    text-align: center;
+
+    @media screen and ($galaxyS5) {
+      width: 250px;
+      line-height: 1.6em;
+    }
   }
 
   .content {
     text-align: center;
     font-size: 1.05rem;
     line-height: 35px;
+
+    @media screen and ($galaxyS5) {
+      width: 290px;
+    }
+
     p {
       font-weight: 400;
       margin-bottom: 0.9em;
@@ -73,10 +88,48 @@
   .avatar {
     width: 200px;
     height: 200px;
-    margin-bottom: 30px;
+    margin: 94px 0 30px 0;
+
+    @media screen and ($iPadPro) {
+      margin: 40px 0 30px 0;
+    }
   }
 
   .letCol {
     color: $primary_color;
+  }
+
+  .work-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+    h4 {
+      text-align: left;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.1em;
+    }
+
+    .work-info {
+      display: flex;
+      align-items: center;
+
+      .company {
+        margin-bottom: 0;
+        margin-right: 0.3em;
+      }
+
+      .role {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+      }
+
+       .timeline {
+        font-size: 0.7rem;
+        margin-bottom: 0;
+        font-style: italic;
+      }
+    }
   }
 }

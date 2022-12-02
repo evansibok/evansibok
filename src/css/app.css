@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 428px) {
   .container {
-    max-width: 320px;
+    max-width: 370px;
   }
 }
 @media screen and (max-width: 390px) {
@@ -27,7 +27,7 @@
 }
 
 .content {
-  flex-grow: 1;
+  flex: 1 1 auto;
 }
 
 header {
@@ -145,6 +145,9 @@ header .right-con nav ul a {
 header .right-con nav ul a li {
   display: inline;
 }
+header .right-con nav ul a:last-child {
+  margin-right: 0;
+}
 header .right-con nav ul a:hover {
   color: #0DC679;
   border-bottom: 1px solid #0DC679;
@@ -193,69 +196,16 @@ header .right-con .hire-me:hover {
 .dark-mode header .leftCon svg {
   fill: #fff;
 }
-.dark-mode .homeCon .left-home h4 {
-  font-weight: 400;
+.dark-mode .home {
+  color: #fff;
 }
-.dark-mode .homeCon .left-home .content p {
-  font-weight: 300;
-}
-.dark-mode .homeCon .left-home .content p a {
-  font-weight: 400;
-}
-.dark-mode .homeCon .left-home .my-projects .left-project ul a li {
-  font-weight: 300;
-}
-.dark-mode .homeCon ul a {
+.dark-mode .home ul a {
   color: #fff;
   border-bottom: 1px solid #fff;
-}
-.dark-mode .pLCon .emptyDivs {
-  background: #fff;
-}
-@media screen and (max-width: 1024px) {
-  .dark-mode .aboutCon .leftCon {
-    border: none;
-  }
-}
-.dark-mode .aboutCon .rightCon svg.express {
-  fill: #fff;
-}
-@media screen and (max-width: 1024px) {
-  .dark-mode .aboutCon .rightCon {
-    border: none;
-  }
-}
-.dark-mode .projectCard .cardHead {
-  background: rgba(235, 51, 73, 0.7);
-  color: #fff;
-}
-.dark-mode .projectCard .cardHead .rightHead .projectLinks ul a:first-child {
-  border-bottom: 0.15em solid #0DC679;
-}
-.dark-mode .projectCard .cardHead .rightHead .projectLinks ul a li {
-  color: #fff;
-}
-.dark-mode .projectCard .cardBodyCon .projectLinks ul a:first-child {
-  border-bottom: 0.15em solid #0DC679;
-}
-.dark-mode .projectCard .cardBodyCon .projectLinks ul a li {
-  color: #fff;
-}
-.dark-mode .projectCard .cardBodyCon .projectLinks.smallScreen ul {
-  border: none;
-}
-.dark-mode .projectCard .cardBodyCon .cardBody {
-  border: none;
-}
-.dark-mode .projectCard .cardBodyCon .cardBody .leftCon .projectIcons svg.express {
-  fill: #fff;
 }
 .dark-mode .socialLinkCon ul a {
   color: #fff;
   border-bottom: 1px solid #fff;
-}
-.dark-mode .left-project ul a li {
-  color: #fff;
 }
 .dark-mode footer {
   color: #fff;
@@ -269,10 +219,15 @@ header .right-con .hire-me:hover {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .home {
+    margin-bottom: 2em;
+  }
+}
 .home .h1-home {
   text-transform: uppercase;
   font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 0;
   letter-spacing: 0;
@@ -317,11 +272,23 @@ header .right-con .hire-me:hover {
   font-weight: 700;
   font-size: 0.95rem;
   margin-bottom: 0.9em;
+  text-align: center;
+}
+@media screen and (max-width: 390px) {
+  .home h4 {
+    width: 250px;
+    line-height: 1.6em;
+  }
 }
 .home .content {
   text-align: center;
   font-size: 1.05rem;
   line-height: 35px;
+}
+@media screen and (max-width: 390px) {
+  .home .content {
+    width: 290px;
+  }
 }
 .home .content p {
   font-weight: 400;
@@ -337,10 +304,43 @@ header .right-con .hire-me:hover {
 .home .avatar {
   width: 200px;
   height: 200px;
-  margin-bottom: 30px;
+  margin: 94px 0 30px 0;
+}
+@media screen and (max-width: 1024px) {
+  .home .avatar {
+    margin: 40px 0 30px 0;
+  }
 }
 .home .letCol {
   color: #0DC679;
+}
+.home .work-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.home .work-container h4 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.1em;
+}
+.home .work-container .work-info {
+  display: flex;
+  align-items: center;
+}
+.home .work-container .work-info .company {
+  margin-bottom: 0;
+  margin-right: 0.3em;
+}
+.home .work-container .work-info .role {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+.home .work-container .work-info .timeline {
+  font-size: 0.7rem;
+  margin-bottom: 0;
+  font-style: italic;
 }
 
 .socialLinkCon {
@@ -367,6 +367,9 @@ header .right-con .hire-me:hover {
 .socialLinkCon ul a li {
   display: inline;
 }
+.socialLinkCon ul a:last-child {
+  margin-right: 0;
+}
 .socialLinkCon ul a:hover {
   color: #0DC679;
   border-bottom: 1px solid #0DC679;
@@ -390,24 +393,42 @@ footer {
   font-size: 0.8rem;
   color: #031553;
 }
+@media screen and (max-width: 428px) {
+  footer {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  footer {
+    font-size: 0.65rem;
+  }
+}
 footer p {
   font-family: "Nunito", sans-serif;
   letter-spacing: 0.15em;
   margin: 0;
   padding: 1.5em;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 390px) {
   footer p {
     letter-spacing: 0.1em;
-    padding: 3em 0 2em 0;
+    padding: 1.5em 0 2em 0;
   }
 }
-footer p .footCol a {
+footer p .footCol button {
   font-family: "Kodchasan", "sans-serif";
   color: #0DC679;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0;
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+footer p .footCol button.ev:hover {
+  color: #031553;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */

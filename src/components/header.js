@@ -20,15 +20,19 @@ const Header = () => {
       <div className='leftCon'>
         <div className='brandLogoCon'>
           <Link to='/'>
-            {darkMode ? (<StaticImage
-              src={darkLogo}
-              alt='brand-logo'
-              layout='constrained'
-            />) : (<StaticImage
-              src={lightLogo}
-              alt='brand-logo'
-              layout='constrained'
-            />)}
+            {darkMode ? (
+              <StaticImage
+                src={darkLogo}
+                alt='brand-logo'
+                layout='constrained'
+              />
+            ) : (
+              <StaticImage
+                src={lightLogo}
+                alt='brand-logo'
+                layout='constrained'
+              />
+            )}
           </Link>
         </div>
 

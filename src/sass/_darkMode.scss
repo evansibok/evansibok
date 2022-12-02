@@ -34,131 +34,16 @@
     }
   }
 
-  .homeCon {
-    .left-home {
-      h4 {
-        font-weight: 400;
-      }
-
-      .content {
-        p {
-          font-weight: 300;
-
-          a {
-            font-weight: 400;
-          }
-        }
-      }
-
-      .my-projects {
-        .left-project {
-          ul {
-            a {
-              li {
-                font-weight: 300;
-              }
-            }
-          }
-        }
-      }
-    }
+  .home {
+    color: $white;
     ul {
       @include dark-mode-social-ul;
-    }
-  }
-
-  .pLCon {
-    .emptyDivs {
-      background: $white;
-    }
-  }
-
-  .aboutCon {
-    .leftCon {
-      @media screen and ($iPadPro) {
-        border: none;
-      }
-    }
-    .rightCon {
-      svg {
-        &.express {
-          fill: $white;
-        }
-      }
-      @media screen and ($iPadPro) {
-        border: none;
-      }
-    }
-  }
-
-  .projectCard {
-    .cardHead {
-      background: rgba(235, 51, 73, 0.7);
-      color: $white;
-
-      .rightHead {
-        .projectLinks {
-          ul {
-            a {
-              &:first-child {
-                border-bottom: 0.15em solid $primary_color;
-              }
-
-              li {
-                color: $white;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .cardBodyCon {
-      .projectLinks {
-        ul {
-          a {
-            &:first-child {
-              border-bottom: 0.15em solid $primary_color;
-            }
-
-            li {
-              color: $white;
-            }
-          }
-        }
-
-        &.smallScreen {
-          ul {
-            border: none;
-          }
-        }
-      }
-      .cardBody {
-        border: none;
-        .leftCon {
-          .projectIcons {
-            svg.express {
-              fill: $white;
-            }
-          }
-        }
-      }
     }
   }
 
   .socialLinkCon {
     ul {
       @include dark-mode-social-ul;
-    }
-  }
-
-  .left-project {
-    ul {
-      a {
-        li {
-          color: $white;
-        }
-      }
     }
   }
 

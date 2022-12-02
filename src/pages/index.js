@@ -4,13 +4,11 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = () => {
-
-  return <Layout>
+const IndexPage = () => (
+  <Layout>
     <Seo title="Evans Ibok" />
 
     <div className="home">
-
       <div className="avatar">
         <StaticImage
           src='../images/dopey-ape.png'
@@ -25,7 +23,7 @@ const IndexPage = () => {
         </p>
       </h1>
 
-      <h4>Software Engineer and human at heart 😜</h4>
+      <h4>Software Engineer and Human at heart 😜</h4>
 
       <div className="content">
         <p>
@@ -41,18 +39,12 @@ const IndexPage = () => {
             rel="noopener noreferrer"
           >
             write technical articles
-          </a>. My free time is spent watching fantasy shows and animes, listening to audiobooks and music, and spending time in nature.
+          </a>. My free time is spent watching fantasy shows and animes, listening to audiobooks, music, and spending time in nature.
         </p>
 
         <p>
-          Talk to me about <a
-            href="https://acquiralabs.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            turning your business ideas into scalable software solutions
-          </a>, building web3 DApps, and <a
-
+          Talk to me about{' '} software development, web3 development and{' '}
+          <a
             href="mailto:evansibok@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -62,8 +54,16 @@ const IndexPage = () => {
         </p>
       </div>
 
+      {/* <div className='work-container'>
+        <h4>Work</h4>
+        <div className='work-info'>
+            <h6 className='company'>ApeSwap Finance - </h6>
+            <p className='role'>Jr. Frontend Developer</p>
+            <p className='timeline'>(2021 - 2022)</p>
+        </div>
+      </div> */}
     </div>
   </Layout>
-}
+)
 
 export default IndexPage
