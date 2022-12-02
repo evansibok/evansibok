@@ -4,6 +4,10 @@
   "description": "Evans Ibok's Website",
   "version": "1.0.0",
   "author": "Evans Ibok <evansibok@gmail.com>",
+  "engines": {
+    "node": ">=14.19 <=16.x",
+    "yarn": ">=1.15"
+  },
   "dependencies": {
     "bufferutil": "^4.0.3",
     "fibers": "^4.0.3",
@@ -39,7 +43,7 @@
     "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "gatsby clean && npm run develop",
+    "start": "gatsby clean && yarn run develop",
     "serve": "gatsby serve",
     "sass:watch": "cd src/ && sass --watch sass/app.scss css/app.css",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
