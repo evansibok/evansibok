@@ -53,15 +53,6 @@ const IndexPage = () => (
           </a>.
         </p>
       </div>
-
-      {/* <div className='work-container'>
-        <h4>Work</h4>
-        <div className='work-info'>
-            <h6 className='company'>ApeSwap Finance - </h6>
-            <p className='role'>Jr. Frontend Developer</p>
-            <p className='timeline'>(2021 - 2022)</p>
-        </div>
-      </div> */}
     </div>
   </Layout>
 )
