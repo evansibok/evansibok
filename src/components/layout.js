@@ -30,11 +30,11 @@ const Layout = ({ children }) => (
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-111423075-1"
         />
-        <Script>
+        {/* <Script>
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}; gtag('js', new Date()); gtag('config',
           'UA-111423075-1');
-        </Script>
+        </Script> */}
       </Helmet>
       <div className="content">
         <Header />
