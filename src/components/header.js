@@ -39,7 +39,7 @@ const Header = () => {
         <div className="right-con">
           <div className='toggleMenu'>
             <div className='toggleCon'>
-              <button className='dark-mode__toggle' onClick={toggleHandler}>
+              <button className='dark-mode__toggle' onClick={toggleHandler} aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}>
                 <div className={darkMode ? 'toggle toggled' : 'toggle'} />
               </button>
             </div>
