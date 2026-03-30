@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 428px) {
   .container {
-    max-width: 320px;
+    max-width: 370px;
   }
 }
 @media screen and (max-width: 390px) {
@@ -27,12 +27,12 @@
 }
 
 .content {
-  flex-grow: 1;
+  flex: 1 1 auto;
 }
 
 header {
   display: flex;
-  padding: 3em 0;
+  padding: 1.5em 0;
   font-size: 0.9rem;
   justify-content: flex-end;
   z-index: 1;
@@ -74,6 +74,9 @@ header .right-con .toggleMenu {
   display: flex;
   align-items: center;
 }
+header .right-con .toggleMenu :hover {
+  cursor: pointer;
+}
 header .right-con .toggleMenu .toggleCon {
   display: flex;
   justify-content: space-between;
@@ -81,7 +84,7 @@ header .right-con .toggleMenu .toggleCon {
 }
 header .right-con .toggleMenu .toggleCon .dark-mode__toggle {
   background: none;
-  border: 0.15em solid #222;
+  border: 0.15em solid #031553;
   border-radius: 50px;
   height: 24px;
   position: relative;
@@ -94,7 +97,7 @@ header .right-con .toggleMenu .toggleCon .dark-mode__toggle {
   }
 }
 header .right-con .toggleMenu .toggleCon .dark-mode__toggle .toggle {
-  background: #222;
+  background: #031553;
   border-radius: 50px;
   top: 0.15em;
   left: 3px;
@@ -125,12 +128,11 @@ header .right-con .toggleMenu svg {
 header .right-con nav ul {
   list-style-type: none;
   margin-left: 0;
-  margin-top: 2.8em;
   margin-bottom: 0;
   margin-top: 0;
 }
 header .right-con nav ul a {
-  color: #3a3a3a;
+  color: #031553;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-decoration: none;
@@ -138,22 +140,26 @@ header .right-con nav ul a {
   margin-right: 1.2em;
   margin-bottom: 0;
   padding-bottom: 0;
-  border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #031553;
 }
 header .right-con nav ul a li {
   display: inline;
 }
+header .right-con nav ul a:last-child {
+  margin-right: 0;
+}
 header .right-con nav ul a:hover {
-  color: #eb3349;
-  border-bottom: 1px solid #eb3349;
+  color: #0DC679;
+  border-bottom: 1px solid #0DC679;
 }
 header .right-con .hire-me {
-  background-color: #eb3349;
+  background-color: #0DC679;
   color: #fff;
   border-bottom: none;
   padding: 0.3em 0.8em;
   margin-left: 2em;
   margin-right: 0;
+  border-radius: 5px;
 }
 header .right-con .hire-me:hover {
   color: #fff;
@@ -167,13 +173,13 @@ header .right-con .hire-me:hover {
 
 .dark-mode {
   color: #fff;
-  background: #000022;
+  background: #031553;
   font-family: "Nunito", sans-serif;
   font-weight: 300;
 }
 .dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle {
-  background: #eb3349;
-  border: 0.15em solid #eb3349;
+  background: #0DC679;
+  border: 0.15em solid #0DC679;
 }
 .dark-mode header .leftCon .toggleMenu .toggleCon .dark-mode__toggle .toggle {
   background: #fff;
@@ -190,300 +196,151 @@ header .right-con .hire-me:hover {
 .dark-mode header .leftCon svg {
   fill: #fff;
 }
-.dark-mode .homeCon .left-home h4 {
-  font-weight: 400;
+.dark-mode .home {
+  color: #fff;
 }
-.dark-mode .homeCon .left-home .content p {
-  font-weight: 300;
-}
-.dark-mode .homeCon .left-home .content p a {
-  font-weight: 400;
-}
-.dark-mode .homeCon .left-home .my-projects .left-project ul a li {
-  font-weight: 300;
-}
-.dark-mode .homeCon ul a {
+.dark-mode .home ul a {
   color: #fff;
   border-bottom: 1px solid #fff;
-}
-.dark-mode .pLCon .emptyDivs {
-  background: #fff;
-}
-@media screen and (max-width: 1024px) {
-  .dark-mode .aboutCon .leftCon {
-    border: none;
-  }
-}
-.dark-mode .aboutCon .rightCon svg.express {
-  fill: #fff;
-}
-@media screen and (max-width: 1024px) {
-  .dark-mode .aboutCon .rightCon {
-    border: none;
-  }
-}
-.dark-mode .projectCard .cardHead {
-  background: rgba(235, 51, 73, 0.7);
-  color: #fff;
-}
-.dark-mode .projectCard .cardHead .rightHead .projectLinks ul a:first-child {
-  border-bottom: 0.15em solid #eb3349;
-}
-.dark-mode .projectCard .cardHead .rightHead .projectLinks ul a li {
-  color: #fff;
-}
-.dark-mode .projectCard .cardBodyCon .projectLinks ul a:first-child {
-  border-bottom: 0.15em solid #eb3349;
-}
-.dark-mode .projectCard .cardBodyCon .projectLinks ul a li {
-  color: #fff;
-}
-.dark-mode .projectCard .cardBodyCon .projectLinks.smallScreen ul {
-  border: none;
-}
-.dark-mode .projectCard .cardBodyCon .cardBody {
-  border: none;
-}
-.dark-mode .projectCard .cardBodyCon .cardBody .leftCon .projectIcons svg.express {
-  fill: #fff;
 }
 .dark-mode .socialLinkCon ul a {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
-.dark-mode .left-project ul a li {
+.dark-mode footer {
   color: #fff;
 }
 
-.homeCon {
+.home {
   display: flex;
   flex-direction: column;
-}
-.homeCon .upside {
-  display: flex;
   font-family: "Nunito", sans-serif;
-}
-.homeCon .left-home {
-  max-width: 60%;
-  width: 60%;
-  font-size: 1rem;
+  color: #031553;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 1024px) {
-  .homeCon .left-home {
-    max-width: 100%;
-    width: 100%;
+  .home {
+    margin-bottom: 2em;
   }
 }
-.homeCon .left-home .h1HomeCon {
+.home .h1-home {
   text-transform: uppercase;
   font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 0;
-  letter-spacing: 0.07em;
+  letter-spacing: 0;
 }
 @media screen and (max-width: 1024px) {
-  .homeCon .left-home .h1HomeCon {
+  .home .h1-home {
     font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 428px) {
-  .homeCon .left-home .h1HomeCon {
+  .home .h1-home {
     margin-top: 0;
     font-size: 1.9rem;
   }
 }
-.homeCon .left-home .h1HomeCon p {
+.home .h1-home p {
   margin-bottom: 0;
 }
-.homeCon .left-home .h1HomeCon p:first-child {
+.home .h1-home p:first-child {
   margin-bottom: 0.5em;
 }
 @media screen and (max-width: 1024px) {
-  .homeCon .left-home .h1HomeCon p:first-child {
+  .home .h1-home p:first-child {
     margin-bottom: 0.3em;
   }
 }
 @media screen and (max-width: 428px) {
-  .homeCon .left-home .h1HomeCon p:first-child {
+  .home .h1-home p:first-child {
     margin-bottom: 0.5em;
   }
 }
-.homeCon .left-home .h1HomeCon p:last-child {
+.home .h1-home p:last-child {
   margin-bottom: 1em;
 }
 @media screen and (max-width: 1024px) {
-  .homeCon .left-home .h1HomeCon p:last-child {
+  .home .h1-home p:last-child {
     margin-bottom: 0.8em;
   }
 }
-.homeCon .left-home h4 {
+.home h4 {
   font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
   margin-bottom: 0.9em;
-}
-.homeCon .left-home .content {
-  font-size: 0.95rem;
-}
-.homeCon .left-home .content p {
-  font-weight: 400;
-  margin-bottom: 0.9em;
-}
-.homeCon .left-home .content p a {
-  color: #eb3349;
-  font-weight: 600;
-}
-.homeCon .left-home .content p a:hover {
-  color: inherit;
-}
-.homeCon .left-home .my-projects h4 {
-  text-decoration: underline;
-  margin-top: 1.4em;
-  margin-bottom: 0.1em;
-}
-.homeCon .left-home .my-projects .left-project ul {
-  list-style-type: none;
-  margin-left: 0;
-  margin-top: 2.8em;
-  margin-bottom: 0;
-  margin-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.homeCon .left-home .my-projects .left-project ul a {
-  color: #3a3a3a;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  text-decoration: none;
-  font-family: "PT Sans", "sans-serif";
-  margin-right: 1.2em;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: 1px solid #3a3a3a;
-}
-.homeCon .left-home .my-projects .left-project ul a li {
-  display: inline;
-}
-.homeCon .left-home .my-projects .left-project ul a:hover {
-  color: #eb3349;
-  border-bottom: 1px solid #eb3349;
-}
-.homeCon .left-home .my-projects .left-project ul a {
-  font-size: 0.9rem;
-  letter-spacing: unset;
-  line-height: 3em;
-  margin-right: 1.5em;
-  border-bottom: none;
-  text-decoration: underline;
-}
-.homeCon .left-home .my-projects .left-project ul a:hover {
-  cursor: pointer;
-  border-bottom: none;
-}
-.homeCon .left-home .my-projects .left-project ul a:first-child {
-  margin-left: 0;
-}
-.homeCon .left-home .my-projects .left-project ul li {
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-}
-.homeCon .letCol {
-  color: #eb3349;
-}
-.homeCon .right-home {
-  max-width: 40%;
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 800px) {
-  .homeCon .right-home {
-    display: none;
-  }
-}
-.homeCon .right-home img {
-  width: 100px;
-}
-.homeCon .inside {
-  display: none;
-}
-@media screen and (max-width: 800px) {
-  .homeCon .inside {
-    display: unset;
-  }
-}
-.homeCon .h4HomeCon {
-  font-size: 2.4rem;
-  max-width: 750px;
-  line-height: 1.3em;
-  margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-@media screen and (max-width: 1024px) {
-  .homeCon .h4HomeCon {
-    font-size: 2.1rem;
-    width: 550px;
-    font-weight: 600;
-  }
-}
-@media screen and (max-width: 428px) {
-  .homeCon .h4HomeCon {
-    width: 290px;
-    font-size: 1.7rem;
-    line-height: 1.6em;
-    margin-top: 0.4em;
-  }
+  text-align: center;
 }
 @media screen and (max-width: 390px) {
-  .homeCon .h4HomeCon {
-    width: 270px;
-    font-size: 1.6rem;
+  .home h4 {
+    width: 250px;
+    line-height: 1.6em;
   }
 }
-
-.pLCon {
+.home .content {
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 35px;
+}
+@media screen and (max-width: 390px) {
+  .home .content {
+    width: 290px;
+  }
+}
+.home .content p {
+  font-weight: 400;
+  margin-bottom: 0.9em;
+}
+.home .content p a {
+  color: #0DC679;
+  font-weight: 700;
+}
+.home .content p a:hover {
+  color: inherit;
+}
+.home .avatar {
+  width: 200px;
+  height: 200px;
+  margin: 94px 0 30px 0;
+}
+@media screen and (max-width: 1024px) {
+  .home .avatar {
+    margin: 40px 0 30px 0;
+  }
+}
+.home .letCol {
+  color: #0DC679;
+}
+.home .work-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.home .work-container h4 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.1em;
+}
+.home .work-container .work-info {
   display: flex;
   align-items: center;
-  padding: 1.2em 0 2em 0;
-  font-family: "Nunito", sans-serif;
 }
-@media screen and (max-width: 1024px) {
-  .pLCon {
-    padding: 1em 0 1.5em 0;
-  }
+.home .work-container .work-info .company {
+  margin-bottom: 0;
+  margin-right: 0.3em;
 }
-@media screen and (max-width: 428px) {
-  .pLCon {
-    padding-top: 0;
-  }
-}
-.pLCon .emptyDivs {
-  background: black;
-  width: 35px;
-  height: 4px;
-}
-@media screen and (max-width: 1024px) {
-  .pLCon .emptyDivs {
-    width: 28px;
-    height: 3px;
-  }
-}
-.pLCon p {
-  margin: 0 0.6em;
-  text-transform: uppercase;
+.home .work-container .work-info .role {
   font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  margin-bottom: 0;
 }
-@media screen and (max-width: 1024px) {
-  .pLCon p {
-    font-size: 0.7rem;
-    font-weight: 600;
-  }
+.home .work-container .work-info .timeline {
+  font-size: 0.7rem;
+  margin-bottom: 0;
+  font-style: italic;
 }
 
 .socialLinkCon {
@@ -494,11 +351,10 @@ header .right-con .hire-me:hover {
 .socialLinkCon ul {
   list-style-type: none;
   margin-left: 0;
-  margin-top: 2.8em;
   margin-bottom: 0;
 }
 .socialLinkCon ul a {
-  color: #3a3a3a;
+  color: #031553;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-decoration: none;
@@ -506,81 +362,46 @@ header .right-con .hire-me:hover {
   margin-right: 1.2em;
   margin-bottom: 0;
   padding-bottom: 0;
-  border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #031553;
 }
 .socialLinkCon ul a li {
   display: inline;
 }
+.socialLinkCon ul a:last-child {
+  margin-right: 0;
+}
 .socialLinkCon ul a:hover {
-  color: #eb3349;
-  border-bottom: 1px solid #eb3349;
+  color: #0DC679;
+  border-bottom: 1px solid #0DC679;
 }
 .socialLinkCon ul a {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .socialLinkCon ul a.hire-me {
-  background-color: #eb3349;
+  background-color: #0DC679;
   color: #fff;
   border-bottom: none;
   padding: 0.3em 0.8em;
-}
-
-.projectLinks ul {
-  list-style-type: none;
-  margin-left: 0;
-  margin-bottom: 0;
-}
-.projectLinks ul a {
-  color: #3a3a3a;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  text-decoration: none;
-  font-family: "PT Sans", "sans-serif";
-  font-size: 0.9rem;
-}
-.projectLinks ul a li {
-  display: inline;
-}
-@media screen and (max-width: 1024px) {
-  .projectLinks ul a {
-    font-size: 0.9rem;
-  }
-}
-.projectLinks ul a:first-child {
-  border-bottom: 0.15em solid #eb3349;
-}
-.projectLinks ul a:nth-child(2) {
-  margin-left: 1.5em;
-  border-bottom: 0.15em solid #0955db;
-}
-@media screen and (max-width: 428px) {
-  .projectLinks ul a[href$="evansibok.github.io"] {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 428px) {
-  .projectLinks.bigScreen {
-    display: none;
-  }
-}
-.projectLinks.smallScreen {
-  display: none;
-}
-@media screen and (max-width: 428px) {
-  .projectLinks.smallScreen {
-    display: unset;
-  }
-}
-.projectLinks.smallScreen ul {
-  padding: 1em 0 0 1em;
-  border-left: 1px solid #cecece;
-  border-right: 1px solid #cecece;
+  border-radius: 5px;
 }
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 0.6rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #031553;
+}
+@media screen and (max-width: 428px) {
+  footer {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  footer {
+    font-size: 0.65rem;
+  }
 }
 footer p {
   font-family: "Nunito", sans-serif;
@@ -588,22 +409,26 @@ footer p {
   margin: 0;
   padding: 1.5em;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 390px) {
   footer p {
     letter-spacing: 0.1em;
-    padding: 3em 0 2em 0;
+    padding: 1.5em 0 2em 0;
   }
 }
-footer p .heart {
-  font-size: 0.6rem;
-  color: #eb3349;
-}
-footer p .footCol a {
+footer p .footCol button {
   font-family: "Kodchasan", "sans-serif";
-  color: #eb3349;
-  font-weight: 600;
+  color: #0DC679;
+  font-weight: 700;
   text-decoration: none;
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+footer p .footCol button.ev:hover {
+  color: #031553;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */

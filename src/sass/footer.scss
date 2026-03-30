@@ -1,7 +1,18 @@
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 0.6rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: $secondary-color;
+
+  @media screen and ($iPhoneXSMax) {
+    font-size: 0.7rem;
+  }
+
+  @media screen and ($galaxyS5) {
+    font-size: 0.65rem;
+  }
 
   p {
     font-family: $primary_font;
@@ -9,23 +20,27 @@ footer {
     margin: 0;
     padding: 1.5em;
 
-    @media screen and ($iPhoneXSMax) {
+    @media screen and ($galaxyS5) {
       letter-spacing: 0.1em;
-      padding: 3em 0 2em 0;
-    }
-
-    .heart {
-      font-size: 0.6rem;
-      color: $primary_color;
+      padding: 1.5em 0 2em 0;
     }
 
     .footCol {
-      a {
+      button {
         font-family: "Kodchasan", "sans-serif";
         color: $primary_color;
-        font-weight: 600;
+        font-weight: 700;
         text-decoration: none;
-        letter-spacing: 0.03em;
+        letter-spacing: 0;
+        background: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+
+        &.ev:hover {
+          color: $secondary-color;
+          cursor: pointer;
+        }
       }
     }
   }
