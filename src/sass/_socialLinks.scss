@@ -7,13 +7,14 @@
     @include social-ul;
 
     a {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
 
       &.hire-me {
         background-color: $primary-color;
         color: #fff;
         border-bottom: none;
         padding: 0.3em 0.8em;
+        border-radius: 5px;
       }
     }
   }

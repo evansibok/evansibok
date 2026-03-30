@@ -3,9 +3,12 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image';
 
 import { useDarkMode } from './hooks/useDarkMode'
+import HireMeButton from './HireMeButton/HireMeButton';
 
 const Header = () => {
   const [darkMode, setDarkMode] = useDarkMode(false)
+  const lightLogo = '../images/evans-logo-light.png'
+  const darkLogo = '../images/evans-logo-dark.png'
 
   const toggleHandler = evt => {
     evt.preventDefault()
@@ -17,11 +20,19 @@ const Header = () => {
       <div className='leftCon'>
         <div className='brandLogoCon'>
           <Link to='/'>
-            <StaticImage
-              src='../images/evans-logo.png'
-              alt='brand-logo'
-              layout='constrained'
-            />
+            {darkMode ? (
+              <StaticImage
+                src={darkLogo}
+                alt='brand-logo'
+                layout='constrained'
+              />
+            ) : (
+              <StaticImage
+                src={lightLogo}
+                alt='brand-logo'
+                layout='constrained'
+              />
+            )}
           </Link>
         </div>
 
@@ -36,14 +47,7 @@ const Header = () => {
 
           <nav>
             <ul>
-              <a
-                href="mailto:evansibok@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className='hire-me'
-              >
-                <li>Hire Me</li>
-              </a>
+              <HireMeButton />
             </ul>
           </nav>
         </div>

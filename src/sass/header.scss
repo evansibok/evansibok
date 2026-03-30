@@ -1,6 +1,6 @@
 header {
   display: flex;
-  padding: 3em 0;
+  padding: 1.5em 0;
   font-size: 0.9rem;
   justify-content: flex-end;
   z-index: 1;
@@ -41,6 +41,11 @@ header {
     .toggleMenu {
       display: flex;
       align-items: center;
+
+      :hover {
+        cursor: pointer;
+      }
+
       .toggleCon {
         display: flex;
         justify-content: space-between;
@@ -48,7 +53,7 @@ header {
 
         .dark-mode__toggle {
           background: none;
-          border: 0.15em solid #222;
+          border: 0.15em solid $secondary_color;
           border-radius: 50px;
           height: 24px;
           position: relative;
@@ -60,7 +65,7 @@ header {
           }
 
           .toggle {
-            background: #222;
+            background: $secondary_color;
             border-radius: 50px;
             top: 0.15em;
             left: 3px;
@@ -99,14 +104,15 @@ header {
 
     .hire-me {
       background-color: $primary-color;
-      color: #fff;
+      color: $white;
       border-bottom: none;
       padding: 0.3em 0.8em;
       margin-left: 2em;
       margin-right: 0;
+      border-radius: 5px;
 
       &:hover {
-        color: #fff;
+        color: $white;
         border-bottom: none;
       }
 
