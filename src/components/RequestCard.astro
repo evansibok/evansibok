@@ -1,0 +1,28 @@
+---
+// The 404 page's "what happened" card: the path the visitor asked for and the status, in the snippet style.
+import Snippet from "./Snippet.astro";
+
+const code = `# request
+path   = "…"
+status = 404`;
+---
+
+<request-card>
+  <Snippet code={code} label="Request details" />
+</request-card>
+
+<script>
+  // The 404 page is one static file for every missing URL, so the path is only known in the browser.
+  class RequestCard extends HTMLElement {
+    connectedCallback() {
+      const path = this.querySelector(".v");
+      if (path) path.textContent = JSON.stringify(location.pathname);
+    }
+  }
+
+  customElements.define("request-card", RequestCard);
+</script>
+
+<style>
+  request-card { display: block; justify-self: start; min-width: min(100%, 22rem); }
+</style>

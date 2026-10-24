@@ -1,8 +1,51 @@
 ---
 import Page from "../layouts/Page.astro";
-import Hero from "../components/Hero.astro";
+import Sticker from "../components/Sticker.astro";
+import RequestCard from "../components/RequestCard.astro";
+import PillLink from "../components/PillLink.astro";
+import { profile } from "../data/profile";
+
+const digits = [
+  { char: "4", tint: "sun", tilt: -6 },
+  { char: "0", tint: "sky", tilt: 3 },
+  { char: "4", tint: "coral", tilt: -2 },
+] as const;
 ---
 
 <Page title="Not found" nav={[{ label: "evns.fyi", href: "/" }]}>
-  <Hero title="Nothing here.">That page doesn't exist. <a href="/">Go back home</a>.</Hero>
+  <section class="nf">
+    <div class="digits" role="img" aria-label="404">
+      {
+        digits.map((d, i) => (
+          <Sticker variant="tile" tint={d.tint} tilt={d.tilt} class:list={[{ bob: i === 1 }]} aria-hidden="true">
+            {d.char}
+          </Sticker>
+        ))
+      }
+    </div>
+    <h1>Nothing lives at this address.</h1>
+    <p class="lead">The link may be old, or there may be a typo in it. Either way, nothing broke. The page just isn't here.</p>
+    <RequestCard />
+    <ul class="actions">
+      <li><PillLink href="/" tone="sun">Back home</PillLink></li>
+      <li><PillLink href={`mailto:${profile.contact.email}`}>Email me about it</PillLink></li>
+    </ul>
+  </section>
 </Page>
+
+<style>
+  .nf { display: grid; gap: 22px; padding-block: 72px 56px; }
+  .digits { display: flex; gap: clamp(10px, 3cqi, 18px); margin-bottom: 18px; }
+  .digits > :global(.bob) { animation: bob 3.2s ease-in-out infinite; }
+  @keyframes bob {
+    50% { transform: rotate(-4deg) translateY(-8px); }
+  }
+  h1 {
+    margin: 0;
+    font: 800 clamp(1.9rem, 7cqi, 2.75rem) / 1.08 var(--display);
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+  .lead { margin: 0; font-size: var(--step-1); line-height: 1.55; max-width: 34em; color: var(--muted); text-wrap: pretty; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 4px 0 0; padding: 0; list-style: none; font-size: var(--step--1); }
+</style>

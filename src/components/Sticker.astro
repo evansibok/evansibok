@@ -1,16 +1,18 @@
 ---
-// A tilted, ink-outlined label: section titles, the role pill, year tags.
-interface Props {
+// A tilted, ink-outlined label: section titles, the role pill, year tags, and the big 404 tiles.
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"span"> {
   as?: "h2" | "p" | "span";
   tint?: "sun" | "mint" | "sky" | "coral";
   tilt?: number;
-  variant?: "label" | "pill" | "tag";
+  variant?: "label" | "pill" | "tag" | "tile";
 }
 
-const { as: Tag = "span", tint = "sun", tilt = 0, variant = "label" } = Astro.props;
+const { as: Tag = "span", tint = "sun", tilt = 0, variant = "label", class: className, ...rest } = Astro.props;
 ---
 
-<Tag class:list={["sticker", variant]} style={`--fill: var(--${tint}); --tilt: ${tilt}deg`}><slot /></Tag>
+<Tag class:list={["sticker", variant, className]} style={`--fill: var(--${tint}); --tilt: ${tilt}deg`} {...rest}><slot /></Tag>
 
 <style>
   .sticker {
@@ -46,5 +48,18 @@ const { as: Tag = "span", tint = "sun", tilt = 0, variant = "label" } = Astro.pr
     font: 500 0.75rem/1.25 var(--mono);
     letter-spacing: 0.08em;
     border-radius: 6px;
+  }
+  .tile {
+    display: grid;
+    place-items: center;
+    width: clamp(5.25rem, 24cqi, 8.5rem);
+    max-width: 100%;
+    aspect-ratio: 4 / 5;
+    padding: 0;
+    text-box: normal;
+    font: 800 clamp(3.6rem, 17cqi, 6rem) / 1 var(--display);
+    letter-spacing: -0.04em;
+    border-radius: 22px;
+    box-shadow: 6px 6px 0 var(--shadow);
   }
 </style>
