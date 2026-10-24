@@ -1,15 +1,15 @@
 ---
 // A list of essays with their dates, used on the home page and the writing index.
-import { essayUrl, month, monthYear, type Essay } from "../lib/writing";
+import { essayUrl, dayMonth, shortDate, isoDate, type Essay } from "../lib/writing";
 
 interface Props {
   essays: Essay[];
-  // "month" when a year heading already sits above the list.
-  date?: "month" | "monthYear";
+  // "dayMonth" when a year heading already sits above the list.
+  date?: "dayMonth" | "full";
 }
 
-const { essays, date = "monthYear" } = Astro.props;
-const format = date === "month" ? month : monthYear;
+const { essays, date = "full" } = Astro.props;
+const format = date === "dayMonth" ? dayMonth : shortDate;
 ---
 
 <ul class="posts">
@@ -17,7 +17,7 @@ const format = date === "month" ? month : monthYear;
     essays.map((e) => (
       <li>
         <a href={essayUrl(e)}>{e.data.title}</a>
-        <time datetime={e.data.date.toISOString().slice(0, 7)}>{format(e.data.date)}</time>
+        <time datetime={isoDate(e.data.date)}>{format(e.data.date)}</time>
       </li>
     ))
   }

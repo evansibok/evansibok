@@ -12,6 +12,11 @@ export function essayUrl(essay: Essay): string {
   return `/writing/${essay.id}/`;
 }
 
-export const monthYear = (d: Date) => d.toLocaleDateString("en-GB", { month: "short", year: "numeric", timeZone: "UTC" });
-export const month = (d: Date) => d.toLocaleDateString("en-GB", { month: "short", timeZone: "UTC" });
-export const longDate = (d: Date) => d.toLocaleDateString("en-GB", { month: "long", year: "numeric", timeZone: "UTC" });
+// Publish dates, always with the day: "24 Oct 2026", "24 Oct" (under a year heading), "24 October 2026".
+const fmt = (opts: Intl.DateTimeFormatOptions) => (d: Date) =>
+  d.toLocaleDateString("en-GB", { day: "numeric", timeZone: "UTC", ...opts });
+export const shortDate = fmt({ month: "short", year: "numeric" });
+export const dayMonth = fmt({ month: "short" });
+export const longDate = fmt({ month: "long", year: "numeric" });
+// For <time datetime>: the full calendar date.
+export const isoDate = (d: Date) => d.toISOString().slice(0, 10);
