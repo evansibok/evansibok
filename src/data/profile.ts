@@ -96,5 +96,5 @@ reads_untrusted = true`,
     email: "evans@evns.fyi",
   },
 
-  elsewhere: "Away from the keyboard: fantasy series, anime, music, and time in nature.",
+  elsewhere: "Away from the keyboard: books, poetry, fantasy series, anime, music, and time in nature.",
 };
