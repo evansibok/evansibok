@@ -8,6 +8,7 @@ import PostList from "../components/PostList.astro";
 import EmailCopy from "../components/EmailCopy.astro";
 import { profile } from "../data/profile";
 import { publishedEssays } from "../lib/writing";
+import { personSchema, websiteSchema } from "../lib/schema";
 
 const latest = (await publishedEssays()).slice(0, 3);
 const hasWriting = latest.length > 0;
@@ -20,7 +21,7 @@ const nav = [
 ];
 ---
 
-<Page nav={nav}>
+<Page nav={nav} jsonLd={[personSchema(), websiteSchema()]}>
   <Hero title={profile.name} eyebrow={profile.role} links={profile.links}>
     {profile.thesis.before}<em>{profile.thesis.highlight}</em>{profile.thesis.after}
   </Hero>

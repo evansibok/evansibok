@@ -3,6 +3,7 @@ import { render } from "astro:content";
 import Page from "../../layouts/Page.astro";
 import Card from "../../components/Card.astro";
 import { publishedEssays, longDate, type Essay } from "../../lib/writing";
+import { articleSchema } from "../../lib/schema";
 
 export async function getStaticPaths() {
   const essays = await publishedEssays();
@@ -19,7 +20,18 @@ const nav = [
 ];
 ---
 
-<Page title={essay.data.title} description={essay.data.description} nav={nav} read>
+<Page
+  title={essay.data.title}
+  description={essay.data.description}
+  nav={nav}
+  read
+  type="article"
+  publishedAt={essay.data.date}
+  image={`/og/writing/${essay.id}.png`}
+  imageAlt={essay.data.title}
+  markdown={`/writing/${essay.id}.md`}
+  jsonLd={[articleSchema(essay)]}
+>
   <Card as="article" pad="essay" class="essay">
     <a class="back" href="/writing/">← All writing</a>
     <header>
