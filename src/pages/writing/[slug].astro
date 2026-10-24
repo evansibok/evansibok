@@ -1,0 +1,38 @@
+---
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { publishedEssays, longDate, type Essay } from "../../lib/writing";
+
+export async function getStaticPaths() {
+  const essays = await publishedEssays();
+  return essays.map((essay) => ({ params: { slug: essay.id }, props: { essay } }));
+}
+
+const { essay } = Astro.props as { essay: Essay };
+const { Content } = await render(essay);
+const words = essay.body?.split(/\s+/).filter(Boolean).length ?? 0;
+const minutes = Math.max(1, Math.round(words / 230));
+const nav = [
+  { label: "Writing", href: "/writing/" },
+  { label: "evns.fyi", href: "/" },
+];
+---
+
+<Base title={essay.data.title} description={essay.data.description}>
+  <div class="wrap wrap-read">
+    <Header links={nav} />
+    <article class="essay">
+      <a class="back" href="/writing/">← All writing</a>
+      <header>
+        <h1>{essay.data.title}</h1>
+        <span class="meta">{longDate(essay.data.date)} · {minutes} min read</span>
+      </header>
+      <div class="prose">
+        <Content />
+      </div>
+    </article>
+    <Footer />
+  </div>
+</Base>

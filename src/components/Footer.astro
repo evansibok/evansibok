@@ -1,0 +1,44 @@
+---
+import { profile } from "../data/profile";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="foot">
+  <span>© {year} {profile.name}</span>
+  <div class="theme" role="group" aria-label="Theme">
+    <button type="button" data-theme-set="system">System</button>
+    <button type="button" data-theme-set="light">Light</button>
+    <button type="button" data-theme-set="dark">Dark</button>
+  </div>
+</footer>
+
+<script>
+  const KEY = "evns-theme";
+  const root = document.documentElement;
+
+  function apply(theme: string) {
+    if (theme === "light" || theme === "dark") root.setAttribute("data-theme", theme);
+    else root.removeAttribute("data-theme");
+    document.querySelectorAll<HTMLButtonElement>("[data-theme-set]").forEach((b) => {
+      b.setAttribute("aria-pressed", String(b.dataset.themeSet === theme));
+    });
+  }
+
+  let saved = "system";
+  try {
+    saved = localStorage.getItem(KEY) ?? "system";
+  } catch {}
+  apply(saved);
+
+  document.querySelectorAll<HTMLButtonElement>("[data-theme-set]").forEach((b) => {
+    b.addEventListener("click", () => {
+      const theme = b.dataset.themeSet ?? "system";
+      apply(theme);
+      try {
+        if (theme === "system") localStorage.removeItem(KEY);
+        else localStorage.setItem(KEY, theme);
+      } catch {}
+    });
+  });
+</script>

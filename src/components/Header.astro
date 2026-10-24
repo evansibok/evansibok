@@ -1,0 +1,16 @@
+---
+import { profile } from "../data/profile";
+
+interface Props {
+  links: { label: string; href: string }[];
+}
+
+const { links } = Astro.props;
+---
+
+<header class="top">
+  <a class="mark" href="/">{profile.name}</a>
+  <nav aria-label="Site">
+    {links.map((l) => <a href={l.href}>{l.label}</a>)}
+  </nav>
+</header>
