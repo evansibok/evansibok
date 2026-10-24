@@ -1,10 +1,10 @@
 ---
-// One thing Evans has built: its name, whether it's still being built, what it does, and where to find it.
+// One side project: its name (with a pulsing dot while in progress), what it does, and where to find it.
 import Snippet from "./Snippet.astro";
-import type { BuiltItem } from "../data/profile";
+import type { Project } from "../data/profile";
 
 interface Props {
-  item: BuiltItem;
+  item: Project;
 }
 
 const { item } = Astro.props;
@@ -13,7 +13,7 @@ const { item } = Astro.props;
 <div class="item">
   <div class="head">
     <span class="name">{item.name}</span>
-    <span class:list={["status", item.status]}>{item.status === "building" ? "Building" : "Shipped"}</span>
+    {item.status === "building" && <span class="live" role="img" aria-label="In progress" title="In progress"></span>}
   </div>
   <p>{item.body}</p>
   {item.snippet && <Snippet code={item.snippet.code} label={item.snippet.label} />}
@@ -26,22 +26,15 @@ const { item } = Astro.props;
   .item { display: grid; gap: 14px; }
   .head { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
   .name { font: 700 var(--step-1) var(--display); }
-  .status {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font: 500 var(--step--1) var(--mono);
-    color: var(--muted);
-  }
-  .status::before {
-    content: "";
+  /* Shown only while a project is in progress. */
+  .live {
     width: 10px;
     height: 10px;
     border-radius: 50%;
+    background: var(--coral);
     box-shadow: 0 0 0 3px var(--surface), 0 0 0 5px var(--ink);
+    animation: pulse 1.8s ease-in-out infinite;
   }
-  .building::before { background: var(--coral); animation: pulse 1.8s ease-in-out infinite; }
-  .shipped::before { background: var(--mint); }
   @keyframes pulse {
     50% { transform: scale(1.25); }
   }

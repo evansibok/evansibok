@@ -14,4 +14,4 @@ dist/
 # OS and editor
 .DS_Store
 .vscode/
-.claude/worktrees/
+.claude/

@@ -2,7 +2,7 @@
 import Page from "../layouts/Page.astro";
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
-import BuiltItem from "../components/BuiltItem.astro";
+import ProjectItem from "../components/ProjectItem.astro";
 import Timeline from "../components/Timeline.astro";
 import PostList from "../components/PostList.astro";
 import EmailCopy from "../components/EmailCopy.astro";
@@ -14,7 +14,7 @@ const latest = (await publishedEssays()).slice(0, 3);
 const hasWriting = latest.length > 0;
 
 const nav = [
-  { label: "Built", href: "#built" },
+  { label: "Projects", href: "#projects" },
   { label: "Work", href: "#work" },
   ...(hasWriting ? [{ label: "Writing", href: "#writing" }] : []),
   { label: "Contact", href: "#contact" },
@@ -26,13 +26,13 @@ const nav = [
     {profile.thesis.before}<em>{profile.thesis.highlight}</em>{profile.thesis.after}
   </Hero>
 
-  <Section id="built" label="Built">
-    {profile.built.map((item) => <BuiltItem item={item} />)}
+  <Section id="projects" label="Projects">
+    {profile.projects.map((item) => <ProjectItem item={item} />)}
   </Section>
 
   <Section id="work" label="Work" tint="sky">
     <Timeline roles={profile.work} />
-    <p class="aside"><b>Works in</b> {profile.stack}</p>
+    <p class="aside"><b>Works with</b> {profile.stack}</p>
     <p class="aside"><b>Trained at</b> {profile.trainedAt}</p>
   </Section>
 

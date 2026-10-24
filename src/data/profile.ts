@@ -5,9 +5,10 @@ export interface Link {
   href: string;
 }
 
-export interface BuiltItem {
+// Side projects. One that becomes an actual product or company moves to `work`.
+export interface Project {
   name: string;
-  // "building" shows a pulsing marker; "shipped" a still one.
+  // "building" shows a pulsing dot next to the name; "shipped" shows nothing.
   status: "building" | "shipped";
   body: string;
   // Shown as a small code card; lines are highlighted as TOML.
@@ -41,7 +42,7 @@ export const profile = {
     { label: "X", href: "https://x.com/iamevns" },
   ] satisfies Link[],
 
-  built: [
+  projects: [
     {
       name: "Nanny",
       status: "building",
@@ -61,7 +62,7 @@ reads_untrusted = true`,
         { label: "github.com/nanny-run/nanny", href: "https://github.com/nanny-run/nanny" },
       ],
     },
-  ] satisfies BuiltItem[],
+  ] satisfies Project[],
 
   work: [
     {
@@ -93,9 +94,10 @@ reads_untrusted = true`,
     },
   ] satisfies Role[],
 
-  stack: "TypeScript, Rust, Python, React, Node, NestJS, GraphQL, PostgreSQL.",
+  stack:
+    "TypeScript, Rust, Python, React, Next.js, Astro, Tailwind, Storybook, Node.js, NestJS, Express, FastAPI, GraphQL, PostgreSQL, MongoDB, Redis, Prisma, SQLAlchemy, LangGraph, MCP, Vitest, Pytest, Docker, GitHub Actions.",
   trainedAt:
-    "Bloom Institute of Technology (formerly Lambda School), full-stack web development and computer science, 2019 – 2020.",
+    "Lambda School (now Bloom Institute of Technology), full-stack web development and computer science, 2019 – 2020.",
 
   contact: {
     pitch: "Building agents, or something that needs a hard line around what it may do? I'd like to hear about it.",
