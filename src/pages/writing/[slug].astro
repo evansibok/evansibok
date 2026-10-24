@@ -52,7 +52,8 @@ const nav = [
     margin: 0;
     font: 800 clamp(1.75rem, 5cqi, 2.25rem) / 1.15 var(--display);
     letter-spacing: -0.03em;
-    text-wrap: balance;
+    /* Fill each line (balance leaves short lines and empty space on phones); pretty still avoids a lone last word. */
+    text-wrap: pretty;
   }
   .meta { font: var(--step--1) var(--mono); color: var(--faint); }
 </style>

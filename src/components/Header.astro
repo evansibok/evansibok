@@ -27,7 +27,12 @@ const { links } = Astro.props;
     font-size: var(--step--1);
   }
   a { text-decoration: none; }
-  .mark { display: inline-flex; align-items: center; gap: 5px; font: 800 1.05rem var(--display); letter-spacing: -0.01em; }
-  nav { display: flex; flex-wrap: wrap; gap: 18px; color: var(--muted); }
+  .mark { display: inline-flex; align-items: center; gap: 5px; font: 800 1.05rem var(--display); letter-spacing: -0.01em; white-space: nowrap; }
+  nav { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); }
+  /* Narrow screens: name on its own row, links in one row beneath it. */
+  @container site (max-width: 560px) {
+    .top { flex-direction: column; align-items: flex-start; gap: 14px; }
+    nav { gap: 6px 16px; }
+  }
   nav a:hover { color: var(--accent); }
 </style>
