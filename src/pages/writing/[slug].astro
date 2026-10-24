@@ -2,7 +2,7 @@
 import { render } from "astro:content";
 import Page from "../../layouts/Page.astro";
 import Card from "../../components/Card.astro";
-import { publishedEssays, longDate, type Essay } from "../../lib/writing";
+import { publishedEssays, longDate, isoDate, type Essay } from "../../lib/writing";
 import { articleSchema } from "../../lib/schema";
 
 export async function getStaticPaths() {
@@ -36,7 +36,7 @@ const nav = [
     <a class="back" href="/writing/">← All writing</a>
     <header>
       <h1>{essay.data.title}</h1>
-      <span class="meta">{longDate(essay.data.date)} · {minutes} min read</span>
+      <span class="meta"><time datetime={isoDate(essay.data.date)}>{longDate(essay.data.date)}</time> · {minutes} min read</span>
     </header>
     <div class="prose">
       <Content />
