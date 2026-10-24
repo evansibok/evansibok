@@ -6,7 +6,7 @@
   "author": "Evans Ibok <evans@evns.fyi>",
   "license": "MIT",
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "scripts": {
     "dev": "astro dev",
