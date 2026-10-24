@@ -1,50 +1,48 @@
-## About Me
-[![LinkedIn](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/in/evansibok)
-![Profile Views](https://komarev.com/ghpvc/?username=evansibok&style=flat-square&color=blue)
+### Hi, I'm Evans
+
+Most of my work sits where software meets accountability: who can do what, and how you prove what happened. Right now that means payments by day and AI agent guardrails in the open.
+
+**Building [Nanny](https://github.com/nanny-run/nanny):** an open-source authorization and audit layer for AI agents. You declare which tools an agent may call; if it tries anything else, Nanny stops the run and records why. [Docs](https://docs.nanny.run)
+
+**Latest essay:** [Put the human in the system, not the prompt](https://evns.fyi/writing/put-the-human-in-the-system-not-the-prompt/)
+
+[evns.fyi](https://evns.fyi) · [LinkedIn](https://linkedin.com/in/evansibok) · [X](https://x.com/iamevns) · evans@evns.fyi
+
+![Profile views](https://komarev.com/ghpvc/?username=evansibok&style=flat-square&color=blue)
+
+### Works with
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)](#)
-[![Python](https://img.shields.io/badge/python-%23306998.svg?logo=python&logoColor=white)](#)
-[![Rust](https://img.shields.io/badge/rust-%23D34516.svg?logo=rust&logoColor=white)](#)
-[![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](#)
-[![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
-[![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?logo=express&logoColor=%2361DAFB)](#)
-[![Nest](https://img.shields.io/badge/Nest.js-%23E0234E.svg?logo=nestjs&logoColor=white)](#)
-[![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=fff)](#)
-[![Postgres](https://img.shields.io/badge/Postgres-%23316192.svg?logo=postgresql&logoColor=white)](#)
-[![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white)](#)
-[![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?logo=redis&logoColor=white)](#)
-[![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)](#)
-[![TypeORM](https://img.shields.io/badge/TypeORM-FE0803?logo=typeorm&logoColor=fff)](#)
-
-<!--
-[![AWS](https://custom-icon-badges.demolab.com/badge/AWS-%23FF9900.svg?logo=aws&logoColor=white)](#)
-[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=fff)](#)
-[![Terraform](https://img.shields.io/badge/Terraform-844FBA?logo=terraform&logoColor=fff)](#)
+[![Rust](https://img.shields.io/badge/Rust-D34516?logo=rust&logoColor=fff)](#)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](#)
+[![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff)](#)
+[![Astro](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff)](#)
+[![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=fff)](#)
+[![Storybook](https://img.shields.io/badge/Storybook-FF4785?logo=storybook&logoColor=fff)](#)
+[![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=fff)](#)
+[![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=fff)](#)
+[![Express](https://img.shields.io/badge/Express-404D59?logo=express&logoColor=fff)](#)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=fff)](#)
+[![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=fff)](#)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff)](#)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff)](#)
+[![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=fff)](#)
+[![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=fff)](#)
+[![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=fff)](#)
+[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?logo=langgraph&logoColor=fff)](#)
+[![MCP](https://img.shields.io/badge/MCP-000?logo=modelcontextprotocol&logoColor=fff)](#)
+[![Vitest](https://img.shields.io/badge/Vitest-6E9F18?logo=vitest&logoColor=fff)](#)
+[![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?logo=pytest&logoColor=fff)](#)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#)
-[![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?&logo=go&logoColor=white)](#)
--->
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=fff)](#)
 
-### 👋 Hi, I'm **Evans**
-A passionate Full-Stack Software Engineer with expertise in building scalable, high-performance web applications. I specialize in modern JavaScript/TypeScript ecosystems, cloud-native architectures, and agile development practices.
+### Stats
 
-🔧 **Core Competencies:**
-- **Languages:** Typescript, Python, Rust
-- **Frontend:** React, responsive design, and UI development
-- **Backend:** Node.js, Express, NestJS, and RESTful APIs <!-- and microservices architecture -->
-- **Database:** PostgreSQL, MongoDB, Redis, and data modeling optimization
-- **Testing:** Jest, Pytest TDD/BDD practices, and automated testing strategies
-<!-- - **DevOps:** Docker, Kubernetes, AWS, CI/CD pipelines, and infrastructure as code -->
-
-💡 I'm passionate about writing clean, maintainable code, implementing best practices, and staying current with emerging technologies. Always eager to
-collaborate on innovative projects that solve real-world problems and deliver exceptional user experiences.
-
-**🚀 Currently exploring:** Rust <!--Go,-->  and Cloud-native technologies to build next-generation distributed systems.
-
-
-## 🎉  Stats
 [![GH Streak](http://github-readme-streak-stats.herokuapp.com?user=evansibok&theme=dark&background=000000)](https://git.io/streak-stats)
 
 [![GH stats](https://github-readme-stats.vercel.app/api?username=evansibok&show_icons=true&theme=yeblu&bg_color=000022&border_radius=10&title_color=EB3349&icon_color=F45C43&border_color=F45C43&hide=issues)](https://github.com/anuraghazra/github-readme-stats)
 
-
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=evansibok&show_icons=true&theme=yeblu&bg_color=000022&border_radius=10&title_color=EB3349&icon_color=EB3349&border_color=F45C43&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+<sub>This repo is also the source of [evns.fyi](https://evns.fyi), built with Astro.</sub>
