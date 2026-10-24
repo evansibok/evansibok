@@ -1,0 +1,69 @@
+---
+// System / Light / Dark switch. The saved choice is applied before paint by the inline script in Base.astro.
+const options = ["system", "light", "dark"] as const;
+---
+
+<theme-toggle class="theme" role="group" aria-label="Theme">
+  {options.map((o) => <button type="button" data-theme={o}>{o[0].toUpperCase() + o.slice(1)}</button>)}
+</theme-toggle>
+
+<script>
+  const KEY = "evns-theme";
+
+  class ThemeToggle extends HTMLElement {
+    connectedCallback() {
+      this.select(this.saved());
+      this.addEventListener("click", (event) => {
+        const button = (event.target as HTMLElement).closest<HTMLButtonElement>("button[data-theme]");
+        if (button) this.select(button.dataset.theme ?? "system", true);
+      });
+    }
+
+    saved(): string {
+      try {
+        return localStorage.getItem(KEY) ?? "system";
+      } catch {
+        return "system";
+      }
+    }
+
+    select(theme: string, persist = false) {
+      const root = document.documentElement;
+      if (theme === "light" || theme === "dark") root.dataset.theme = theme;
+      else delete root.dataset.theme;
+
+      for (const b of this.querySelectorAll<HTMLButtonElement>("button")) {
+        b.setAttribute("aria-pressed", String(b.dataset.theme === theme));
+      }
+
+      if (!persist) return;
+      try {
+        if (theme === "system") localStorage.removeItem(KEY);
+        else localStorage.setItem(KEY, theme);
+      } catch {}
+    }
+  }
+
+  customElements.define("theme-toggle", ThemeToggle);
+</script>
+
+<style>
+  .theme {
+    display: inline-flex;
+    padding: 2px;
+    background: var(--surface);
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    box-shadow: 3px 3px 0 var(--shadow);
+  }
+  button {
+    font: 500 0.75rem var(--sans);
+    color: var(--muted);
+    background: none;
+    border: 0;
+    border-radius: 999px;
+    padding: 3px 10px;
+    cursor: pointer;
+  }
+  button[aria-pressed="true"] { background: var(--sun); color: var(--sticker-ink); }
+</style>

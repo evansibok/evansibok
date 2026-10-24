@@ -1,0 +1,53 @@
+---
+// An email address with a Copy button. Falls back to selecting the address when the clipboard is unavailable.
+interface Props {
+  email: string;
+}
+
+const { email } = Astro.props;
+---
+
+<email-copy class="email">
+  <a class="addr" href={`mailto:${email}`}>{email}</a>
+  <button class="copy" type="button">Copy</button>
+</email-copy>
+
+<script>
+  class EmailCopy extends HTMLElement {
+    connectedCallback() {
+      const address = this.querySelector<HTMLAnchorElement>(".addr");
+      const button = this.querySelector<HTMLButtonElement>(".copy");
+      if (!address || !button) return;
+
+      button.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(address.textContent ?? "");
+          button.textContent = "Copied";
+        } catch {
+          getSelection()?.selectAllChildren(address);
+          button.textContent = "Selected";
+        }
+        setTimeout(() => (button.textContent = "Copy"), 1600);
+      });
+    }
+  }
+
+  customElements.define("email-copy", EmailCopy);
+</script>
+
+<style>
+  .email { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+  .addr { font: var(--step-0) var(--mono); }
+  .copy {
+    font: 600 var(--step--1) var(--sans);
+    color: var(--sticker-ink);
+    cursor: pointer;
+    background: var(--sun);
+    border: 2px solid var(--ink);
+    border-radius: 10px;
+    padding: 5px 14px;
+    box-shadow: 3px 3px 0 var(--shadow);
+    transition: transform 0.12s, box-shadow 0.12s;
+  }
+  .copy:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--shadow); }
+</style>

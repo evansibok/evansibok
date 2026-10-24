@@ -1,0 +1,57 @@
+---
+import { render } from "astro:content";
+import Page from "../../layouts/Page.astro";
+import Card from "../../components/Card.astro";
+import { publishedEssays, longDate, type Essay } from "../../lib/writing";
+import { articleSchema } from "../../lib/schema";
+
+export async function getStaticPaths() {
+  const essays = await publishedEssays();
+  return essays.map((essay) => ({ params: { slug: essay.id }, props: { essay } }));
+}
+
+const { essay } = Astro.props as { essay: Essay };
+const { Content } = await render(essay);
+const words = essay.body?.split(/\s+/).filter(Boolean).length ?? 0;
+const minutes = Math.max(1, Math.round(words / 230));
+const nav = [
+  { label: "Writing", href: "/writing/" },
+  { label: "evns.fyi", href: "/" },
+];
+---
+
+<Page
+  title={essay.data.title}
+  description={essay.data.description}
+  nav={nav}
+  read
+  type="article"
+  publishedAt={essay.data.date}
+  image={`/og/writing/${essay.id}.png`}
+  imageAlt={essay.data.title}
+  markdown={`/writing/${essay.id}.md`}
+  jsonLd={[articleSchema(essay)]}
+>
+  <Card as="article" pad="essay" class="essay">
+    <a class="back" href="/writing/">← All writing</a>
+    <header>
+      <h1>{essay.data.title}</h1>
+      <span class="meta">{longDate(essay.data.date)} · {minutes} min read</span>
+    </header>
+    <div class="prose">
+      <Content />
+    </div>
+  </Card>
+</Page>
+
+<style>
+  .essay { margin: 40px 0 36px; }
+  .back { font-size: var(--step--1); color: var(--muted); text-decoration: none; }
+  header { display: grid; gap: 10px; margin: 36px 0; }
+  h1 {
+    margin: 0;
+    font: 800 clamp(1.75rem, 5cqi, 2.25rem) / 1.15 var(--display);
+    letter-spacing: -0.03em;
+  }
+  .meta { font: var(--step--1) var(--mono); color: var(--faint); }
+</style>

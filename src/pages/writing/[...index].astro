@@ -1,0 +1,45 @@
+---
+// The writing index only exists once at least one essay is published.
+import Page from "../../layouts/Page.astro";
+import Card from "../../components/Card.astro";
+import Sticker from "../../components/Sticker.astro";
+import PostList from "../../components/PostList.astro";
+import { publishedEssays } from "../../lib/writing";
+
+export async function getStaticPaths() {
+  const essays = await publishedEssays();
+  return essays.length > 0 ? [{ params: { index: undefined } }] : [];
+}
+
+const byYear = Map.groupBy(await publishedEssays(), (e) => e.data.date.getUTCFullYear());
+const nav = [
+  { label: "Writing", href: "/writing/" },
+  { label: "evns.fyi", href: "/" },
+  { label: "RSS", href: "/rss.xml" },
+];
+---
+
+<Page title="Writing" description="Essays by Evans Ibok on building software that stays inside its limits." nav={nav}>
+  <section class="head">
+    <h1>Writing</h1>
+    <p>Essays on building software that stays inside its limits: permissions, safety, and the people on the other side of the system.</p>
+  </section>
+  <Card class="years">
+    {
+      [...byYear].map(([year, essays]) => (
+        <div class="year">
+          <Sticker as="h2" variant="tag" tint="sky">{year}</Sticker>
+          <PostList essays={essays} date="month" />
+        </div>
+      ))
+    }
+  </Card>
+</Page>
+
+<style>
+  .head { padding-block: 72px 32px; display: grid; gap: 10px; }
+  h1 { margin: 0; font: 800 var(--step-3) / 1.1 var(--display); letter-spacing: -0.03em; }
+  .head p { margin: 0; color: var(--muted); max-width: 52ch; }
+  .years { display: grid; gap: 28px; margin-bottom: 36px; }
+  .year { display: grid; gap: 10px; }
+</style>

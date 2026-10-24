@@ -1,0 +1,28 @@
+---
+// The ink-outlined surface with a hard offset shadow that every content block sits on.
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"div"> {
+  as?: "div" | "section" | "article";
+  pad?: "section" | "list" | "essay";
+}
+
+const { as: Tag = "div", pad = "list", class: className, ...rest } = Astro.props;
+---
+
+<Tag class:list={["card", `pad-${pad}`, className]} {...rest}><slot /></Tag>
+
+<style>
+  .card {
+    background: var(--surface);
+    border: 2px solid var(--ink);
+    border-radius: 16px;
+    box-shadow: 6px 6px 0 var(--shadow);
+  }
+  .pad-section { padding: 26px 22px 22px; }
+  .pad-list { padding: 24px; }
+  .pad-essay { padding: 32px; }
+  @container site (max-width: 520px) {
+    .pad-essay { padding: 20px 18px; }
+  }
+</style>

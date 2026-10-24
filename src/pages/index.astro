@@ -1,0 +1,61 @@
+---
+import Page from "../layouts/Page.astro";
+import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
+import ProjectItem from "../components/ProjectItem.astro";
+import Timeline from "../components/Timeline.astro";
+import PostList from "../components/PostList.astro";
+import EmailCopy from "../components/EmailCopy.astro";
+import { profile } from "../data/profile";
+import { publishedEssays } from "../lib/writing";
+import { personSchema, websiteSchema } from "../lib/schema";
+
+const latest = (await publishedEssays()).slice(0, 3);
+const hasWriting = latest.length > 0;
+
+const nav = [
+  { label: "Projects", href: "#projects" },
+  { label: "Work", href: "#work" },
+  ...(hasWriting ? [{ label: "Writing", href: "#writing" }] : []),
+  { label: "Contact", href: "#contact" },
+];
+---
+
+<Page nav={nav} jsonLd={[personSchema(), websiteSchema()]}>
+  <Hero title={profile.name} eyebrow={profile.role} links={profile.links}>
+    {profile.thesis.before}<em>{profile.thesis.highlight}</em>{profile.thesis.after}
+  </Hero>
+
+  <Section id="projects" label="Projects">
+    {profile.projects.map((item) => <ProjectItem item={item} />)}
+  </Section>
+
+  <Section id="work" label="Work" tint="sky">
+    <Timeline roles={profile.work} />
+    <p class="aside"><b>Works with</b> {profile.stack}</p>
+    <p class="aside"><b>Trained at</b> {profile.trainedAt}</p>
+  </Section>
+
+  {
+    hasWriting && (
+      <Section id="writing" label="Writing" tint="coral">
+        <PostList essays={latest} />
+        <a class="more" href="/writing/">All writing →</a>
+      </Section>
+    )
+  }
+
+  <Section id="contact" label="Contact" tint="mint">
+    <p>{profile.contact.pitch}</p>
+    <EmailCopy email={profile.contact.email} />
+  </Section>
+
+  <Section label="Elsewhere">
+    <p>{profile.elsewhere}</p>
+  </Section>
+</Page>
+
+<style>
+  .aside, .more { font-size: var(--step--1); color: var(--muted); }
+  .aside b { font-weight: 500; color: var(--fg); }
+</style>

@@ -1,0 +1,50 @@
+---
+// Renders a small TOML snippet with three colours: comments, keys and values.
+interface Props {
+  code: string;
+  label: string;
+}
+
+const { code, label } = Astro.props;
+
+type Part = { cls?: "k" | "v" | "c"; text: string };
+
+function highlight(line: string): Part[] {
+  if (line.startsWith("#")) return [{ cls: "c", text: line }];
+  if (line.startsWith("[")) return [{ cls: "k", text: line }];
+  const eq = line.indexOf(" = ");
+  if (eq === -1) return [{ text: line }];
+  // Colour strings, numbers and booleans; leave brackets and commas plain.
+  const value = line
+    .slice(eq + 3)
+    .split(/("[^"]*"|\b\d+\b|\btrue\b|\bfalse\b)/)
+    .filter(Boolean)
+    .map((text): Part => (/^("|\d|true|false)/.test(text) ? { cls: "v", text } : { text }));
+  return [{ cls: "k", text: line.slice(0, eq) }, { text: " = " }, ...value];
+}
+
+const lines = code.split("\n").map(highlight);
+---
+
+<pre class="decl" aria-label={label}>{
+  lines.map((parts, i) => (
+    <>{parts.map((p) => (p.cls ? <span class={p.cls}>{p.text}</span> : p.text))}{i < lines.length - 1 ? "\n" : ""}</>
+  ))
+}</pre>
+
+<style>
+  .decl {
+    margin: 2px 0 0;
+    padding: 12px 14px;
+    overflow-x: auto;
+    white-space: pre;
+    font: 400 var(--step--1)/1.7 var(--mono);
+    color: var(--code-fg);
+    background: var(--code-bg);
+    border: 2px solid var(--ink);
+    border-radius: 12px;
+  }
+  .k { color: var(--code-key); }
+  .v { color: var(--mint); }
+  .c { color: var(--code-comment); }
+</style>

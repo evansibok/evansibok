@@ -1,0 +1,24 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+import { profile } from "../data/profile";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="foot">
+  <span>© {year} {profile.name}</span>
+  <ThemeToggle />
+</footer>
+
+<style>
+  .foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    padding-block: 28px 64px;
+    font-size: var(--step--1);
+    color: var(--faint);
+  }
+</style>
