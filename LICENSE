@@ -1,6 +1,11 @@
-The MIT License (MIT)
+Copyright (c) 2026 Evans Ibok
 
-Copyright (c) 2015 gatsbyjs
+This repository contains two kinds of material under different terms.
+
+1. Code
+
+The source code (everything except the content listed in part 2) is licensed
+under the MIT License:
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -20,3 +25,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+2. Content
+
+The following are not covered by the MIT License. All rights reserved.
+
+- Essays and other writing in src/content/
+- Personal and biographical text in src/data/profile.ts
+- The E\ logo (src/lib/icon.ts) and every image generated from it
+- README.md
+
+You may read, quote briefly with attribution, and link to this content. Do not
+republish, adapt, or reuse it, or use the logo, without written permission
+from Evans Ibok (evans@evns.fyi).
