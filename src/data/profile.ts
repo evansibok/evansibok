@@ -5,11 +5,13 @@ export interface Link {
   href: string;
 }
 
-export interface NowItem {
-  title: string;
+export interface BuiltItem {
+  name: string;
+  // "building" shows a pulsing marker; "shipped" a still one.
+  status: "building" | "shipped";
   body: string;
   // Shown as a small code card; lines are highlighted as TOML.
-  snippet?: string;
+  snippet?: { label: string; code: string };
   links: Link[];
 }
 
@@ -39,23 +41,27 @@ export const profile = {
     { label: "X", href: "https://x.com/iamevns" },
   ] satisfies Link[],
 
-  now: [
+  built: [
     {
-      title: "Building Nanny",
+      name: "Nanny",
+      status: "building",
       body: "Nanny is an open-source authorization and audit layer for AI agents. You declare which tools an agent may call and under what rules. If it tries anything else, Nanny stops the run and records why. No soft warnings, no negotiation.",
-      snippet: `# nanny.toml
+      snippet: {
+        label: "Example nanny.toml",
+        code: `# nanny.toml
 [tools]
 allowed = ["web_search", "save_findings"]
 
 [tools.web_search]
 max_calls = 30
 reads_untrusted = true`,
+      },
       links: [
         { label: "docs.nanny.run", href: "https://docs.nanny.run" },
         { label: "github.com/nanny-run/nanny", href: "https://github.com/nanny-run/nanny" },
       ],
     },
-  ] satisfies NowItem[],
+  ] satisfies BuiltItem[],
 
   work: [
     {

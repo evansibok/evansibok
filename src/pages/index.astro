@@ -2,7 +2,7 @@
 import Page from "../layouts/Page.astro";
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
-import NowItem from "../components/NowItem.astro";
+import BuiltItem from "../components/BuiltItem.astro";
 import Timeline from "../components/Timeline.astro";
 import PostList from "../components/PostList.astro";
 import EmailCopy from "../components/EmailCopy.astro";
@@ -13,7 +13,7 @@ const latest = (await publishedEssays()).slice(0, 3);
 const hasWriting = latest.length > 0;
 
 const nav = [
-  { label: "Now", href: "#now" },
+  { label: "Built", href: "#built" },
   { label: "Work", href: "#work" },
   ...(hasWriting ? [{ label: "Writing", href: "#writing" }] : []),
   { label: "Contact", href: "#contact" },
@@ -25,8 +25,8 @@ const nav = [
     {profile.thesis.before}<em>{profile.thesis.highlight}</em>{profile.thesis.after}
   </Hero>
 
-  <Section id="now" label="Now">
-    {profile.now.map((item) => <NowItem item={item} />)}
+  <Section id="built" label="Built">
+    {profile.built.map((item) => <BuiltItem item={item} />)}
   </Section>
 
   <Section id="work" label="Work" tint="sky">
