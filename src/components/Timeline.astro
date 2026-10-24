@@ -1,0 +1,38 @@
+---
+// Work history: dates in a narrow left column, company, title and one line each.
+import type { Role } from "../data/profile";
+
+interface Props {
+  roles: Role[];
+}
+
+const { roles } = Astro.props;
+---
+
+<ol class="timeline">
+  {
+    roles.map((r) => (
+      <li>
+        <span class="when">{r.when}</span>
+        <span class="what">
+          {r.company} <span>{r.companyNote ? `${r.companyNote} · ` : "· "}{r.title}</span>
+        </span>
+        <p>{r.summary}</p>
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; }
+  li { display: grid; grid-template-columns: 1fr; gap: 2px; }
+  .when { font: 500 var(--step--1) var(--mono); color: var(--accent); font-variant-numeric: tabular-nums; }
+  .what { font: 700 1.0625rem var(--display); }
+  .what span { font: 400 1rem var(--sans); color: var(--muted); }
+  p { margin: 0; color: var(--muted); max-width: 62ch; text-wrap: pretty; }
+  @container site (min-width: 520px) {
+    li { grid-template-columns: 6.5rem 1fr; column-gap: 16px; }
+    .when { grid-column: 1; grid-row: 1; padding-top: 0.2em; }
+    li > :not(.when) { grid-column: 2; }
+  }
+</style>

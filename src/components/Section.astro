@@ -1,0 +1,31 @@
+---
+// A home-page section: a card with a sticker label pinned over its top edge.
+import Card from "./Card.astro";
+import Sticker from "./Sticker.astro";
+
+interface Props {
+  id?: string;
+  label: string;
+  tint?: "sun" | "mint" | "sky" | "coral";
+}
+
+const tilts = { sun: -2, sky: 1.5, coral: -2, mint: 1 } as const;
+const { id, label, tint = "sun" } = Astro.props;
+---
+
+<Card as="section" pad="section" id={id} class="section">
+  <Sticker as="h2" tint={tint} tilt={tilts[tint]}>{label}</Sticker>
+  <div class="body"><slot /></div>
+</Card>
+
+<style>
+  .section {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 40px;
+    scroll-margin-top: 24px;
+  }
+  .section > :global(.sticker) { margin-top: -38px; }
+  .body { min-width: 0; display: grid; gap: 14px; }
+  .body :global(p) { margin: 0; max-width: 62ch; text-wrap: pretty; }
+</style>

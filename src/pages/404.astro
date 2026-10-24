@@ -1,16 +1,8 @@
 ---
-import Base from "../layouts/Base.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Page from "../layouts/Page.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<Base title="Not found">
-  <div class="wrap">
-    <Header links={[{ label: "evns.fyi", href: "/" }]} />
-    <section class="hero">
-      <h1>Nothing here.</h1>
-      <p class="thesis">That page doesn't exist. <a href="/">Go back home</a>.</p>
-    </section>
-    <Footer />
-  </div>
-</Base>
+<Page title="Not found" nav={[{ label: "evns.fyi", href: "/" }]}>
+  <Hero title="Nothing here.">That page doesn't exist. <a href="/">Go back home</a>.</Hero>
+</Page>

@@ -1,0 +1,25 @@
+---
+// Every page's shell: the document head, a centred column, the header and the footer.
+import Base from "./Base.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import type { Link } from "../data/profile";
+
+interface Props {
+  title?: string;
+  description?: string;
+  nav: Link[];
+  // The wider reading column used by essays.
+  read?: boolean;
+}
+
+const { title, description, nav, read = false } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <div class:list={["wrap", { read }]}>
+    <Header links={nav} />
+    <slot />
+    <Footer />
+  </div>
+</Base>

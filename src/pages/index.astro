@@ -1,13 +1,15 @@
 ---
-import Base from "../layouts/Base.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import Snippet from "../components/Snippet.astro";
+import Page from "../layouts/Page.astro";
+import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
+import NowItem from "../components/NowItem.astro";
+import Timeline from "../components/Timeline.astro";
+import PostList from "../components/PostList.astro";
+import EmailCopy from "../components/EmailCopy.astro";
 import { profile } from "../data/profile";
-import { publishedEssays, essayUrl, monthYear } from "../lib/writing";
+import { publishedEssays } from "../lib/writing";
 
-const essays = await publishedEssays();
-const latest = essays.slice(0, 3);
+const latest = (await publishedEssays()).slice(0, 3);
 const hasWriting = latest.length > 0;
 
 const nav = [
@@ -18,123 +20,41 @@ const nav = [
 ];
 ---
 
-<Base>
-  <div class="wrap">
-    <Header links={nav} />
+<Page nav={nav}>
+  <Hero title={profile.name} eyebrow={profile.role} links={profile.links}>
+    {profile.thesis.before}<em>{profile.thesis.highlight}</em>{profile.thesis.after}
+  </Hero>
 
-    <section class="hero">
-      <p class="role">{profile.role}</p>
-      <h1>
-        {profile.name}<svg class="squiggle" viewBox="0 0 168 14" aria-hidden="true"
-          ><path
-            d="M2 9 C 14 2, 24 2, 34 8 S 56 14, 68 7 S 90 1, 102 8 S 124 14, 136 7 S 156 2, 166 7"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="3.5"
-            stroke-linecap="round"></path></svg
-        >
-      </h1>
-      <p class="thesis">
-        {profile.thesis.before}<em>{profile.thesis.highlight}</em>{profile.thesis.after}
-      </p>
-      <ul class="links">
-        {profile.links.map((l) => <li><a href={l.href} target="_blank" rel="noopener">{l.label}</a></li>)}
-      </ul>
-    </section>
+  <Section id="now" label="Now">
+    {profile.now.map((item) => <NowItem item={item} />)}
+  </Section>
 
-    <section class="section" id="now">
-      <h2>Now</h2>
-      <div class="body">
-        {
-          profile.now.map((item) => (
-            <div class="now-item">
-              <span class="now-tag">{item.title}</span>
-              <p>{item.body}</p>
-              {item.snippet && <Snippet code={item.snippet} label="Example nanny.toml" />}
-              <div class="inline-links">
-                {item.links.map((l) => <a href={l.href} target="_blank" rel="noopener">{l.label} ↗</a>)}
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </section>
+  <Section id="work" label="Work" tint="sky">
+    <Timeline roles={profile.work} />
+    <p class="aside"><b>Works in</b> {profile.stack}</p>
+    <p class="aside"><b>Trained at</b> {profile.trainedAt}</p>
+  </Section>
 
-    <section class="section tint-sky" id="work">
-      <h2>Work</h2>
-      <div class="body">
-        <ol class="timeline">
-          {
-            profile.work.map((r) => (
-              <li>
-                <span class="when">{r.when}</span>
-                <span class="what">
-                  {r.company} <span>{r.companyNote ? `${r.companyNote} · ` : "· "}{r.title}</span>
-                </span>
-                <p>{r.summary}</p>
-              </li>
-            ))
-          }
-        </ol>
-        <p class="stack"><b>Works in</b> {profile.stack}</p>
-        <p class="stack"><b>Trained at</b> {profile.trainedAt}</p>
-      </div>
-    </section>
+  {
+    hasWriting && (
+      <Section id="writing" label="Writing" tint="coral">
+        <PostList essays={latest} />
+        <a class="more" href="/writing/">All writing →</a>
+      </Section>
+    )
+  }
 
-    {
-      hasWriting && (
-        <section class="section tint-coral" id="writing">
-          <h2>Writing</h2>
-          <div class="body">
-            <ul class="posts">
-              {latest.map((e) => (
-                <li>
-                  <a href={essayUrl(e)}>{e.data.title}</a>
-                  <time datetime={e.data.date.toISOString().slice(0, 7)}>{monthYear(e.data.date)}</time>
-                </li>
-              ))}
-            </ul>
-            <a class="more" href="/writing/">All writing →</a>
-          </div>
-        </section>
-      )
-    }
+  <Section id="contact" label="Contact" tint="mint">
+    <p>{profile.contact.pitch}</p>
+    <EmailCopy email={profile.contact.email} />
+  </Section>
 
-    <section class="section tint-mint" id="contact">
-      <h2>Contact</h2>
-      <div class="body">
-        <p>{profile.contact.pitch}</p>
-        <div class="email">
-          <a class="addr" href={`mailto:${profile.contact.email}`}>{profile.contact.email}</a>
-          <button class="copy" type="button" data-copy={profile.contact.email}>Copy</button>
-        </div>
-      </div>
-    </section>
+  <Section label="Elsewhere">
+    <p>{profile.elsewhere}</p>
+  </Section>
+</Page>
 
-    <section class="section">
-      <h2>Elsewhere</h2>
-      <div class="body">
-        <p>{profile.elsewhere}</p>
-      </div>
-    </section>
-
-    <Footer />
-  </div>
-</Base>
-
-<script>
-  document.querySelectorAll<HTMLButtonElement>("[data-copy]").forEach((btn) => {
-    btn.addEventListener("click", async () => {
-      const reset = () => setTimeout(() => (btn.textContent = "Copy"), 1600);
-      try {
-        await navigator.clipboard.writeText(btn.dataset.copy ?? "");
-        btn.textContent = "Copied";
-      } catch {
-        const addr = btn.previousElementSibling;
-        if (addr) getSelection()?.selectAllChildren(addr);
-        btn.textContent = "Selected";
-      }
-      reset();
-    });
-  });
-</script>
+<style>
+  .aside, .more { font-size: var(--step--1); color: var(--muted); }
+  .aside b { font-weight: 500; color: var(--fg); }
+</style>

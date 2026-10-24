@@ -31,3 +31,20 @@ const lines = code.split("\n").map(highlight);
     <>{parts.map((p) => (p.cls ? <span class={p.cls}>{p.text}</span> : p.text))}{i < lines.length - 1 ? "\n" : ""}</>
   ))
 }</pre>
+
+<style>
+  .decl {
+    margin: 2px 0 0;
+    padding: 12px 14px;
+    overflow-x: auto;
+    white-space: pre;
+    font: 400 var(--step--1)/1.7 var(--mono);
+    color: var(--code-fg);
+    background: var(--code-bg);
+    border: 2px solid var(--ink);
+    border-radius: 12px;
+  }
+  .k { color: var(--code-key); }
+  .v { color: var(--mint); }
+  .c { color: var(--code-comment); }
+</style>

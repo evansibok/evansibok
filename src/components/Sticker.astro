@@ -1,0 +1,50 @@
+---
+// A tilted, ink-outlined label: section titles, the role pill, year tags.
+interface Props {
+  as?: "h2" | "p" | "span";
+  tint?: "sun" | "mint" | "sky" | "coral";
+  tilt?: number;
+  variant?: "label" | "pill" | "tag";
+}
+
+const { as: Tag = "span", tint = "sun", tilt = 0, variant = "label" } = Astro.props;
+---
+
+<Tag class:list={["sticker", variant]} style={`--fill: var(--${tint}); --tilt: ${tilt}deg`}><slot /></Tag>
+
+<style>
+  .sticker {
+    display: inline-block;
+    justify-self: start;
+    margin: 0;
+    color: var(--sticker-ink);
+    background: var(--fill);
+    border: 2px solid var(--ink);
+    transform: rotate(var(--tilt));
+    /* Trim the box to the letters, so the font's built-in spacing doesn't add room below. */
+    text-box: trim-both cap alphabetic;
+    padding: var(--pad-y) var(--pad-x);
+  }
+  @supports not (text-box: trim-both cap alphabetic) {
+    .sticker { padding: calc(var(--pad-y) - 3px) var(--pad-x); }
+  }
+  .label {
+    --pad-y: 7px; --pad-x: 10px;
+    font: 700 0.875rem/1.25 var(--display);
+    letter-spacing: 0.02em;
+    border-radius: 8px;
+  }
+  .pill {
+    --pad-y: 8px; --pad-x: 12px;
+    font: 600 var(--step--1)/1.25 var(--sans);
+    letter-spacing: 0.01em;
+    border-radius: 999px;
+    box-shadow: 3px 3px 0 var(--shadow);
+  }
+  .tag {
+    --pad-y: 5px; --pad-x: 8px;
+    font: 500 0.75rem/1.25 var(--mono);
+    letter-spacing: 0.08em;
+    border-radius: 6px;
+  }
+</style>

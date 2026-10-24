@@ -1,8 +1,9 @@
 ---
 import { profile } from "../data/profile";
+import type { Link } from "../data/profile";
 
 interface Props {
-  links: { label: string; href: string }[];
+  links: Link[];
 }
 
 const { links } = Astro.props;
@@ -14,3 +15,18 @@ const { links } = Astro.props;
     {links.map((l) => <a href={l.href}>{l.label}</a>)}
   </nav>
 </header>
+
+<style>
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding-block: 28px 0;
+    font-size: var(--step--1);
+  }
+  a { text-decoration: none; }
+  .mark { font: 800 1.05rem var(--display); letter-spacing: -0.01em; }
+  nav { display: flex; flex-wrap: wrap; gap: 18px; color: var(--muted); }
+  nav a:hover { color: var(--accent); }
+</style>
